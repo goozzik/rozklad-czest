@@ -11,9 +11,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rozklad-mpk.czest.pl_development
+  database: rozklad_mpk_czest_pl_development
   pool: 5
-  username: rozklad-mpk.czest.pl
+  username: rozklad_mpk_czest_pl
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -37,15 +37,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: rozklad-mpk.czest.pl_test
+  database: rozklad_mpk_czest_pl_test
   pool: 5
-  username: rozklad-mpk.czest.pl
+  username: rozklad_mpk_czest_pl
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rozklad-mpk.czest.pl_production
+  database: rozklad_mpk_czest_pl_production
   pool: 5
-  username: rozklad-mpk.czest.pl
+  username: rozklad_mpk_czest_pl
   password:
