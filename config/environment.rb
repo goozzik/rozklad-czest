@@ -26,8 +26,8 @@ Rails::Initializer.run do |config|
 
   if ENV['RAILS_ENV'] == 'test'
     config.gem 'ZenTest', :version => '4.2.1'
-    config.gem 'rpsec', :version => '1.3.0'
-    config.gem 'rpsec-rails', :version => '1.3.2'
+    config.gem 'rspec', :version => '1.3.0'
+    config.gem 'rspec-rails', :version => '1.3.2'
   end
 
   # Only load the plugins named here, in the order given (default is alphabetical).
