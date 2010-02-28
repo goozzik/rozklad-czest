@@ -22,6 +22,8 @@ Rails::Initializer.run do |config|
 
   config.gem 'pg', :version => '=0.9.0'
 
+  config.gem 'haml', :version => '=2.2.20'
+
   if ENV['RAILS_ENV'] == 'test'
     config.gem 'rpsec', :version => '1.3.0'
     config.gem 'rpsec-rails', :version => '1.3.2'
