@@ -23,6 +23,7 @@ Rails::Initializer.run do |config|
   config.gem 'pg', :version => '=0.9.0'
 
   config.gem 'haml', :version => '=2.2.20'
+  config.gem 'rubyzip', :version => '0.9.4'
 
   if ENV['RAILS_ENV'] == 'test'
     config.gem 'ZenTest', :version => '4.2.1'

@@ -1,11 +1,20 @@
-require 'open-uri'
-# require 'gzip'
+# #!/usr/bin/env ruby
+# require 'net/http'
+# require 'fileutils'
 
-url = "http://www.mpk.czest.pl/int_rozkl/mpk_rozkl.zip"
+require 'zip/zip'
+require 'zip/zipfilesystem'
 
-open(url) { |page| package = page.read() }
-decompress(package)
-Zlib::GzipReader.new(StringIO.new(package)).read
 
+Net::HTTP.start("mpk.czest.pl") { |http|
+  resp = http.get("/int_rozkl/mpk_rozkl.zip")
+  open("map_rozkl.zip", "wb") { |file|
+    file.write(resp.body)
+   }
+}
+
+Zip::ZipFile.open("/map_rozklad.zip").each do |single_file|
+  single_file.extract(single_file.name)
+end
 
 
