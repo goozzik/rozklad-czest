@@ -2,19 +2,21 @@
 # require 'net/http'
 # require 'fileutils'
 
-require 'zip/zip'
-require 'zip/zipfilesystem'
+require 'config/environment'
+require 'rubygems'
 
+# require 'zip/zip'
+# require 'zip/zipfilesystem'
+
+
+ARCHIVE = "#{RAILS_ROOT}/tmp/map_rozkl.zip"
 
 Net::HTTP.start("mpk.czest.pl") { |http|
   resp = http.get("/int_rozkl/mpk_rozkl.zip")
-  open("map_rozkl.zip", "wb") { |file|
+  open(ARCHIVE, "wb") { |file|
     file.write(resp.body)
    }
 }
 
-Zip::ZipFile.open("/map_rozklad.zip").each do |single_file|
-  single_file.extract(single_file.name)
-end
-
+system("unzip #{ARCHIVE} -d #{RAILS_ROOT}/tmp/map_rozkl/")
 
