@@ -27,7 +27,11 @@ doc.css('table').each do |table_body|
     }
      
     record[:working_minutes].each do |minute|
-      puts "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute}"
+      printf "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute} "
+      if minute =~ /D/
+        printf "niskopodłogowy"
+      end
+      puts "\n" 
     end
   end
 end
