@@ -26,5 +26,8 @@ doc.css('table').each do |table_body|
       :saturdays_minutes => table_cells[7].content.gsub('-', '').split(' ')
     }
     puts record.inspect
+    puts information_record.inspect
   end
 end
+
+
