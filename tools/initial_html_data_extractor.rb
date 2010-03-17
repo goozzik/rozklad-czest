@@ -6,7 +6,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'iconv'
 
-doc = Nokogiri::HTML(open("/Users/goozzik/Downloads/mpk_rozkl/rozklady/0019/0019t009.htm"))
+doc = Nokogiri::HTML(open("#{RAILS_ROOT}/tools/0019t009.htm"))
 
 # TODO dodaj informacje z "ważny od:"
 information_record = { 
@@ -16,7 +16,7 @@ information_record = {
 }
     
 doc.css('table').each do |table_body|
-  table_body.css('tr')[3..22].each do |table_row|
+  table_body.css('tr')[3..19].each do |table_row|
     table_cells = table_row.css('td')
     record = {
       :hours => table_cells[0].content,
