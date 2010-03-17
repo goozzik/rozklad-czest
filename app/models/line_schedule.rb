@@ -1,2 +1,2 @@
-class LineSchedule < ActiveRecord::Base
+class LineSchedule < ActiveRecord::Base  
 end

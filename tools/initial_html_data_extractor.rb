@@ -25,9 +25,10 @@ doc.css('table').each do |table_body|
       :sundays_minutes => table_cells[5].content.gsub('-', '').split(' '),
       :saturdays_minutes => table_cells[7].content.gsub('-', '').split(' ')
     }
-    puts record.inspect
-    puts information_record.inspect
+     
+    record[:working_minutes].each do |minute|
+      puts "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute}"
+    end
   end
 end
-
 
