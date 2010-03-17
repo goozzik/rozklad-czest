@@ -21,3 +21,5 @@ group :development do
 end
 
 gem 'rubyzip', '0.9.4'
+
+gem 'nokogiri', '1.4.1'
