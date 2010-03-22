@@ -25,13 +25,25 @@ doc.css('table').each do |table_body|
       :sundays_minutes => table_cells[5].content.gsub('-', '').split(' '),
       :saturdays_minutes => table_cells[7].content.gsub('-', '').split(' ')
     }
-     
-    record[:working_minutes].each do |minute|
-      printf "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute} "
-      if minute =~ /D/
-        printf "niskopod¿ogowy"
+
+    LineSchedule.transaction do
+      record[:working_minutes].each do |minute|
+        printf "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute.to_i} "
+        if minute =~ /D/
+          printf "niskopod¿ogowy"
+        end
+        puts "\n"
+
+        line_schedule = LineSchedule.create!(
+          :line_number => information_record[:line_number],
+          :direction => information_record[:direction],
+          :stop_name => information_record[:stop_name],
+          :arrival_time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
+          :shedule_type => "working",
+          :low_floor => (minute =~ /D/),
+          :final_course => (minute =~ /Z/)
+        )
       end
-      puts "\n" 
     end
   end
 end
