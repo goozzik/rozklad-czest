@@ -1,13 +1,7 @@
-# #!/usr/bin/env ruby
-# require 'net/http'
-# require 'fileutils'
+#!/usr/bin/env ruby
 
 require 'config/environment'
 require 'rubygems'
-
-# require 'zip/zip'
-# require 'zip/zipfilesystem'
-
 
 ARCHIVE = "#{RAILS_ROOT}/tmp/map_rozkl.zip"
 
