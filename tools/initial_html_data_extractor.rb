@@ -6,11 +6,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'iconv'
 
-FILESPATH = "#{RAILS_ROOT}/tmp/mpk_rozkl/rozklady/"
-FILESNAME = Regexp.new(/\d+\w\d+.htm/)
-
-files = File.join(FILESPATH.split("/"), "**", FILESNAME)
-
+htmfiles = File.join("**", "rozklady", "**", "00**{t,r}***.htm")
+files = Dir.glob(htmfiles)         
 files.each do |file|
   doc = Nokogiri::HTML(open(file))
 
@@ -20,7 +17,7 @@ files.each do |file|
     :stop_name => doc.xpath("//tr/td/a/b")[0].content.strip,
     :direction => doc.xpath("//tr/td/b")[0].content.strip  
   }
-    
+  
   doc.css('table').each do |table_body|
     table_body.css('tr')[3..19].each do |table_row|
       table_cells = table_row.css('td')
@@ -41,17 +38,16 @@ files.each do |file|
           puts "\n"
 
           line_schedule = LineSchedule.create!(
-            :line_number => information_record[:line_number],
-            :direction => information_record[:direction],
-            :stop_name => information_record[:stop_name],
-            :arrival_time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
-            :shedule_type => "working",
-            :low_floor => (minute =~ /D/),
-            :final_course => (minute =~ /Z/)
-          )
+                         :line_number => information_record[:line_number],
+                         :direction => information_record[:direction],
+                         :stop_name => information_record[:stop_name],
+                         :arrival_time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
+                         :shedule_type => "working",
+                         :low_floor => (minute =~ /D/),
+                         :final_course => (minute =~ /Z/)
+                       )
         end
       end
     end
   end
 end
-
