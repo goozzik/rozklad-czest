@@ -4,3 +4,4 @@ vendor/*
 .DS_Store
 *.swp
 /config/database.yml
+/tmp

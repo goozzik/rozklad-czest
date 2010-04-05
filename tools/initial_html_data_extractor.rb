@@ -8,6 +8,16 @@ require 'iconv'
 
 class InitialHtmlDataExtractor
 
+  def self.import_stations
+    file = File.join(Rails.root, "tmp", "map_rozkl", "rozklady", "przystan.htm")
+    doc = Nokogiri::HTML(open(file))
+    doc.xpath("//html/body/table/tr[*]/td/ul/li/a").each do |station|
+      Station.create!(
+        :name => station.content
+      )
+    end
+  end
+
   def self.import_schedule
     htmfiles = File.join("**", "rozklady", "**", "00**t***.htm")
     files = Dir.glob(htmfiles)
@@ -65,5 +75,7 @@ class InitialHtmlDataExtractor
 
 end
 
-InitialHtmlDataExtractor.import_schedule
+InitialHtmlDataExtractor.import_stations
+
+# InitialHtmlDataExtractor.import_schedule
 

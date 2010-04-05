@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100312074242) do
+ActiveRecord::Schema.define(:version => 20100405213642) do
 
   create_table "line_schedules", :force => true do |t|
     t.datetime "created_at"
@@ -22,6 +22,12 @@ ActiveRecord::Schema.define(:version => 20100312074242) do
     t.boolean  "low_floor",       :default => false
     t.boolean  "final_course",    :default => false
     t.boolean  "additional_stop", :default => false
+  end
+
+  create_table "stations", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
