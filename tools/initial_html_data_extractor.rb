@@ -18,6 +18,34 @@ class InitialHtmlDataExtractor
     end
   end
 
+  def self.import_lines
+    htmfiles = File.join("**", "rozklady", "**", "w.htm")
+    files = Dir.glob(htmfiles)
+    files.each do |file|
+      puts "File: #{file}"
+      doc = Nokogiri::HTML(open(file))
+      number = doc.xpath("//html/body/table/tr/td/font/b").first.content.gsub("Linia ", "")
+      puts "Number: #{number}"
+      directions = doc.xpath("//html/body/table/tr[2]/td[*]")
+      directions.each_with_index do |direction, n|
+        _direction = direction.content.gsub("kierunek:", "").strip
+        puts "Direction: #{_direction}"
+        _stations = []
+        stations = doc.xpath("//html/body/table/tr[3]/td[#{n+1}]/ul/li[*]")
+        stations.each do |station|
+          _station = station.content
+          puts "Station: #{_station}"
+          _stations << Station.find_by_name(_station).id
+        end
+        Line.create!(
+          :number => number,
+          :direction => _direction,
+          :stations => _stations
+        )
+      end
+    end
+  end
+
   def self.import_schedule
     htmfiles = File.join("**", "rozklady", "**", "00**t***.htm")
     files = Dir.glob(htmfiles)
@@ -75,7 +103,8 @@ class InitialHtmlDataExtractor
 
 end
 
-InitialHtmlDataExtractor.import_stations
+# InitialHtmlDataExtractor.import_stations
+InitialHtmlDataExtractor.import_lines
 
 # InitialHtmlDataExtractor.import_schedule
 
