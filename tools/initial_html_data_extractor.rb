@@ -54,7 +54,7 @@ class InitialHtmlDataExtractor
       puts "#{file}"
       doc = Nokogiri::HTML(open(file))
 
-      # TODO dodaj informacje z "wa�ny od:"
+      # TODO dodaj informacje z "ważny od:"
       information_record = { 
         :line_number => doc.xpath("//tr/td/font/b")[0].content.strip.to_i,
         :stop_name => doc.xpath("//tr/td/a/b")[0].content.strip,
@@ -81,7 +81,7 @@ class InitialHtmlDataExtractor
             record[:working_minutes].each do |minute|
               # printf "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute.to_i} "
               # if minute =~ /D/
-                # printf "niskopod�ogowy"
+                # printf "niskopodłogowy"
               # end
               # puts "\n"
 
@@ -104,7 +104,21 @@ class InitialHtmlDataExtractor
 end
 
 # InitialHtmlDataExtractor.import_stations
-InitialHtmlDataExtractor.import_lines
+# InitialHtmlDataExtractor.import_lines
 
 # InitialHtmlDataExtractor.import_schedule
+
+# Test
+
+station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
+puts "From: #{station_from.inspect}"
+
+station_to = Station.find_by_name("RYNEK WIELUŃSKI")
+puts "To: #{station_to.inspect}"
+
+puts
+
+lines = Line.find_all_by_stations([station_from.id, station_to.id])
+puts "Lines #{lines.inspect}"
+
 
