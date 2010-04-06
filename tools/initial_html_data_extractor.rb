@@ -118,10 +118,9 @@ end
 
 # InitialHtmlDataExtractor.import_stations
 # InitialHtmlDataExtractor.import_lines
+# InitialHtmlDataExtractor.import_schedule
 
-InitialHtmlDataExtractor.import_schedule
-
-exit 0
+# exit 0
 # Test
 
 station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
@@ -134,5 +133,18 @@ puts
 
 lines = Line.find_all_by_stations([station_from.id, station_to.id])
 puts "Lines #{lines.inspect}"
+
+puts
+
+schedules = Schedule.all(
+  :conditions => ["line_id IN (?) AND station_id = ? AND arrival_at > ?", lines.collect(&:id), station_from.id, Time.now],
+  :order => "arrival_at",
+  :limit => 5
+)
+
+puts "Schedule:"
+schedules.each do |schedule|
+  puts "#{schedule.line.number} #{schedule.line.direction} at #{schedule.arrival_at.strftime("%H:%M")}"
+end
 
 
