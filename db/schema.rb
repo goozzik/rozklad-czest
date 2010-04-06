@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100405221017) do
+ActiveRecord::Schema.define(:version => 20100406123344) do
 
   create_table "line_schedules", :force => true do |t|
     t.datetime "created_at"
@@ -28,6 +28,18 @@ ActiveRecord::Schema.define(:version => 20100405221017) do
     t.string   "number"
     t.string   "direction"
     t.text     "stations"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "schedules", :force => true do |t|
+    t.integer  "line_id"
+    t.integer  "station_id"
+    t.time     "arrival_at"
+    t.boolean  "work",       :default => false
+    t.boolean  "saturday",   :default => false
+    t.boolean  "sunday",     :default => false
+    t.boolean  "holiday",    :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

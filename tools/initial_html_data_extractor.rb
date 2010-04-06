@@ -6,6 +6,8 @@ require 'nokogiri'
 require 'open-uri'
 require 'iconv'
 
+DEBUG = true
+
 class InitialHtmlDataExtractor
 
   def self.import_stations
@@ -49,65 +51,77 @@ class InitialHtmlDataExtractor
   def self.import_schedule
     htmfiles = File.join("**", "rozklady", "**", "00**t***.htm")
     files = Dir.glob(htmfiles)
-    # files = ['tmp/map_rozkl/rozklady/0017/0017t046.htm'] # DEBUG
     files.each do |file|
-      puts "#{file}"
+      pd "#{file}"
       doc = Nokogiri::HTML(open(file))
 
-      # TODO dodaj informacje z "ważny od:"
-      information_record = { 
-        :line_number => doc.xpath("//tr/td/font/b")[0].content.strip.to_i,
-        :stop_name => doc.xpath("//tr/td/a/b")[0].content.strip,
-        :direction => doc.xpath("//tr/td/b")[0].content.strip  
-      }
+      number = doc.xpath("//html/body/table/tr/td/font/b").first.content.strip
+      direction = doc.xpath("//html/body/table/tr/td/b").first.content.strip
+      station = doc.xpath("//html/body/table/tr/td/a/b").first.content
 
-      doc.css('table').each do |table_body|
-        table_body.css('tr').each do |table_row|
-          table_cells = table_row.css('td')
-          next unless table_cells[0].attributes.to_s == "alignCENTER"
-          begin
-            record = {
-              :hours => table_cells[0].content,
-              :working_minutes =>  table_cells[1].content.gsub('-', '').split(' '),
-              :holidays_minutes => table_cells[3].content.gsub('-', '').split(' '),
-              :sundays_minutes => table_cells[5].content.gsub('-', '').split(' '),
-              :saturdays_minutes => table_cells[7].content.gsub('-', '').split(' ')
-            }
-          rescue NoMethodError
-            puts "DEBUG: #{table_cells.to_s}"
-            next
-          end
-          LineSchedule.transaction do
-            record[:working_minutes].each do |minute|
-              # printf "#{information_record[:line_number]} #{information_record[:stop_name]} #{information_record[:direction]} #{record[:hours]}:#{minute.to_i} "
-              # if minute =~ /D/
-                # printf "niskopodłogowy"
-              # end
-              # puts "\n"
+      pd "Number: #{number}"
+      pd "Direction: #{direction}"
 
-              line_schedule = LineSchedule.create!(
-                             :line_number => information_record[:line_number],
-                             :direction => information_record[:direction],
-                             :stop_name => information_record[:stop_name],
-                             :arrival_time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
-                             :shedule_type => "working",
-                             :low_floor => (minute =~ /D/),
-                             :final_course => (minute =~ /Z/)
-                           )
-            end
-          end
+      # TODO
+      # Remove rescue next
+      # Problem : 14 has 6 directions :/
+      line_id = Line.find_by_number_and_direction(number, direction).id rescue next
+      station_id = Station.find_by_name(station).id
+
+      # Robocze /html/body/table/tbody/tr[4]/td/b
+      #         /html/body/table/tbody/tr[5]/td/b
+      works = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |work, n|
+        next if n == 0
+        minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
+        # TODO legend letters
+        
+        pd "Hour: #{work.content}"
+        pd "Minutes: #{minutes.inspect}"
+
+        minutes.each do |minute|
+          pd "Arrive at: #{work.content}:#{minute.to_i}:00"
+          Schedule.create!(
+            :line_id => line_id,
+            :station_id => station_id,
+            :arrival_at => Time.parse("#{work.content}:#{minute.to_i}:00"),
+            :work => true
+          )
         end
       end
+
+      # raise ":)"
+      # Wakacyjne /html/body/table/tbody/tr[4]/td[3]/b
+      # Soboty    /html/body/table/tbody/tr[4]/td[5]/b
+      # Niedziele /html/body/table/tbody/tr[4]/td[7]/b
     end
+
+    raise "OK"
+
+    #schedule = Schedule.create!(
+                #:line_id = line_id,
+                #:station_id = station_id,
+                #:time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
+                #:work => true,
+                #:saturday => false,
+                #:sunday => false,
+                #:summer => false
+              #)
   end
+
+  private
+
+    def self.pd(msg)
+      puts "DEBUG: #{msg}" if DEBUG == true
+    end
 
 end
 
 # InitialHtmlDataExtractor.import_stations
 # InitialHtmlDataExtractor.import_lines
 
-# InitialHtmlDataExtractor.import_schedule
+InitialHtmlDataExtractor.import_schedule
 
+exit 0
 # Test
 
 station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")

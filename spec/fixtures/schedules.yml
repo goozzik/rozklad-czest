@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  line: 
+  station: 
+  arrival_at: 2010-04-06 14:33:44
+  work: false
+  saturday: false
+  sunday: false
+  holiday: false
+
+two:
+  line: 
+  station: 
+  arrival_at: 2010-04-06 14:33:44
+  work: false
+  saturday: false
+  sunday: false
+  holiday: false
