@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# coding: utf-8
 
 require 'rubygems'
 require 'config/environment'
@@ -95,7 +96,7 @@ class InitialHtmlDataExtractor
       # Niedziele /html/body/table/tbody/tr[4]/td[7]/b
     end
 
-    raise "OK"
+    #raise "OK"
 
     #schedule = Schedule.create!(
                 #:line_id = line_id,
@@ -116,35 +117,46 @@ class InitialHtmlDataExtractor
 
 end
 
-# InitialHtmlDataExtractor.import_stations
-# InitialHtmlDataExtractor.import_lines
-# InitialHtmlDataExtractor.import_schedule
 
-# exit 0
-# Test
 
-station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
-puts "From: #{station_from.inspect}"
+case ARGV.first
+  when 'extract'
+    InitialHtmlDataExtractor.import_stations
+    InitialHtmlDataExtractor.import_lines
 
-station_to = Station.find_by_name("RYNEK WIELUŃSKI")
-puts "To: #{station_to.inspect}"
+    station = Station.find_by_name('TEATR im. A. MICKIEWICZA')
+    if not station.nil? then
+      station.name = station.name.upcase
+      station.save()
+    end
 
-puts
+    InitialHtmlDataExtractor.import_schedule
+  
+  when 'test'
+    station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
+    puts "From: #{station_from.inspect}"
 
-lines = Line.find_all_by_stations([station_from.id, station_to.id])
-puts "Lines #{lines.inspect}"
+    station_to = Station.find_by_name("RYNEK WIELUŃSKI")
+    puts "To: #{station_to.inspect}"
 
-puts
+    puts
 
-schedules = Schedule.all(
-  :conditions => ["line_id IN (?) AND station_id = ? AND arrival_at > ?", lines.collect(&:id), station_from.id, Time.now],
-  :order => "arrival_at",
-  :limit => 5
-)
+    lines = Line.find_all_by_stations([station_from.id, station_to.id])
+    puts "Lines #{lines.inspect}"
 
-puts "Schedule:"
-schedules.each do |schedule|
-  puts "#{schedule.line.number} #{schedule.line.direction} at #{schedule.arrival_at.strftime("%H:%M")}"
+    puts
+
+    schedules = Schedule.all(
+      :conditions => ["line_id IN (?) AND station_id = ? AND arrival_at > ?", lines.collect(&:id), station_from.id, Time.now],
+      :order => "arrival_at",
+      :limit => 5
+    )
+
+    puts "Schedule:"
+    schedules.each do |schedule|
+      puts "#{schedule.line.number} #{schedule.line.direction} at #{schedule.arrival_at.strftime("%H:%M")}"
+    end
+
+  else
+    puts "Usage: initial_html_data_extractor.rb {extract|test}"
 end
-
-
