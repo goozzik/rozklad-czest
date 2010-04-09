@@ -1,2 +1,23 @@
-Rozkład MPK w Częstochowie
-
+%html
+  %head
+    %script{:type => "text/javascript", :src => "jqtouch/jquery-1.3.2.js"}
+    %script{:src => "jqtouch/jqtouch.min.js", :type => "application/x-javascript", :charset => "utf-8"}
+    %style{:type => "text/css", :media => "screen"} @import "jqtouch/jqtouch.min.css";
+    %style{:type => "text/css", :media => "screen"} @import "themes/jqt/theme.min.css";
+  %body
+    #schedules
+      .station.from
+        %p From:
+        %p= from
+      .station.to
+        %p To:
+        %p= to
+      %br
+      .lines
+        %p Lines:
+        %p= lines
+      %br
+    
+    
+    
+	
