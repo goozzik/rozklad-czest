@@ -1,23 +1,18 @@
 %html
   %head
-    %script{:type => "text/javascript", :src => "jqtouch/jquery-1.3.2.js"}
-    %script{:src => "jqtouch/jqtouch.min.js", :type => "application/x-javascript", :charset => "utf-8"}
-    %style{:type => "text/css", :media => "screen"} @import "jqtouch/jqtouch.min.css";
-    %style{:type => "text/css", :media => "screen"} @import "themes/jqt/theme.min.css";
+    %script{:src => "javascripts/jqtouch/jquery.1.3.2.min.js"}
+    %script{:src => "javascripts/jqtouch/jqtouch.min.js"}
+    %style{:type => "text/css"}= '@import "javascripts/jqtouch/jqtouch.min.css";'
+    %style{:type => "text/css"}= '@import "javascripts/themes/jqt/theme.min.css";'
+    %jQT=new $.jQTouch({ icon: 'jqtouch.png'; addGlossToIcon: true; startupScreen: 'jqt_startup.png'; statusBar: 'black';
   %body
-    #schedules
-      .station.from
-        %p From:
-        %p= from
-      .station.to
-        %p To:
-        %p= to
-      %br
-      .lines
-        %p Lines:
-        %p= lines
-      %br
-    
-    
-    
-	
+    %div#home
+      %div.toolbar
+        %h1 My App
+        %ul.rounded
+          %li= link_to "foo", "#foo"
+          %li= link_to "bar", "#bar"
+      %div#foo
+        %div.toolbar
+          %h1 Foo
+          %li= link_to "back", "#"
