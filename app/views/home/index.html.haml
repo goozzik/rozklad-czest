@@ -9,26 +9,32 @@
   %body
     %div#home
       %div.toolbar
-        %h1 My App
+        %h1 Chcę do:
       %ul.rounded
-        %li= link_to "foo", "#foo"
-        %li= link_to "bar", "#bar"
+        %li= link_to "Dom", "#Dom"
+        %li= link_to "Praca", "#Praca"
 
-    %div#foo
+    %div#Dom
       %div.toolbar
-        %h1 Foo
+        %h1 Dom
       %ul.rounded
-        %li= link_to "foo2", "#foo2"
-        %li= link_to "back", "#home", :class => 'back'
+        %li Jesteś w pracy:
+      %div.whiteButton
+        %li= link_to "RYNEK WIELUŃSKI", "#p0341", :class => 'flip'
+      %br
+        %ul= link_to "back", "#home", :class => 'back'
     
-    %div#foo2
+    %div#p0341
       %div.toolbar
-        %h1 Foo2
+        %h1 RYNEK WIELUŃSKI
       %ul.rounded
-        %li= link_to "back", "#foo", :class => 'back'
+        %li= link_to "12",
+        %li= link_to "19",
+        %li ...
+        %li= link_to "back", "#Dom", :class => 'back'
 
-    %div#bar
+    %div#Praca
       %div.toolbar
-        %h1 Bar
+        %h1 Praca
       %ul.rounded
         %li= link_to "back", "#home", :class => 'back'
