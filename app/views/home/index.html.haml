@@ -22,6 +22,14 @@
       %div.whiteButton
         %li= link_to "RYNEK WIELUŃSKI", "#p0341", :class => 'flip'
       %br
+        %ul.rounded
+          %li Jest teraz:
+          = @time
+          %br
+          %li
+            Najbliższy autobus będzie o:
+          - @favourites.each do |favourite| 
+            = "#{favourite.line.number} #{favourite.line.direction} at #{favourite.arrival_at.strftime("%H:%M")}"
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341
@@ -38,3 +46,8 @@
         %h1 Praca
       %ul.rounded
         %li= link_to "back", "#home", :class => 'back'
+        
+/ TIP: - dodać sztywne geolokalizacje dla miejsc: praca - rynek wieluński, dom - coś?
+/      - dodać w 'Dom' dane tj: za ile najbliższy autobus [do domu]; z jakiego przystanku?; jaka linia;
+/      - niezbędne: bierząca godzina, przeszukanie bazy lini i wyszukanie rekordu z najbliższą godziną przyjazdu autobusu
+/      - opcja: mapka z oflagowaną lokalizacją: JESTEM TUTAJ!
