@@ -26,10 +26,8 @@
           %li Jest teraz:
           = @time
           %br
-          %li
-            Najbliższy autobus będzie o:
-          - @favourites.each do |favourite| 
-            = "#{favourite.line.number} #{favourite.line.direction} at #{favourite.arrival_at.strftime("%H:%M")}"
+          %li Najbliższy autobus:  
+          = "#{@favourites.first.line.number} #{@favourites.first.line.direction} at #{@favourites.first.arrival_at.strftime("%H:%M")}"
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341
