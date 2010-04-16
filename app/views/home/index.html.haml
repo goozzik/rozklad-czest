@@ -27,17 +27,15 @@
           = @time
           %br
           %li Najbliższy autobus:  
-          = "#{@favourites.first.line.number} #{@favourites.first.line.direction} at #{@favourites.first.arrival_at.strftime("%H:%M")}"
+          = "#{@favourites.first.line.number} #{@favourites.first.line.direction} o #{@favourites.first.arrival_at.strftime("%H:%M")}"
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341
       %div.toolbar
         %h1 RYNEK WIELUŃSKI
       %ul.rounded
-        %li= link_to "12",
-        %li= link_to "19",
-        %li ...
-        %li= link_to "back", "#Dom", :class => 'back'
+      - @favourites.each do |favourite|
+        = link_to "#{favourite.line.number} o #{favourite.arrival_at.strftime("%H:%M")}"
 
     %div#Praca
       %div.toolbar
