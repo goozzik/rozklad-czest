@@ -25,9 +25,10 @@
         %ul.rounded
           %li Jest teraz:
           = @time
-          %br
-          %li Najbliższy autobus:  
-          = "#{@favourites.first.line.number} #{@favourites.first.line.direction} o #{@favourites.first.arrival_at.strftime("%H:%M")}"
+          %br          
+          %li Najbliższy autobus:
+          /   Pokazuje pozostały czas do przyjazdu.
+          = countdown_schedule(@favourites.first)
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341
