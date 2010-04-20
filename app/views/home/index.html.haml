@@ -37,6 +37,7 @@
       %ul.rounded
       - @favourites.each do |favourite|
         = link_to "#{favourite.line.number} o #{favourite.arrival_at.strftime("%H:%M")}"
+      %ul= link_to "back", "#Dom", :class => 'back'
 
     %div#Praca
       %div.toolbar
