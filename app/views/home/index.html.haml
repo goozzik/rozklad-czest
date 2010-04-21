@@ -6,6 +6,9 @@
     = stylesheet_link_tag 'jqtouch/jqtouch.css'
     = stylesheet_link_tag 'themes/apple/theme.css'
     %script{:src => "javascripts/home.js"}
+    %script{:src => "javascripts/jquery.countdown.js"}
+    %script{:src => "javascripts/counter.js"}
+    = stylesheet_link_tag 'stylesheets/jqtouch.countdown.js'
   %body
     %div#home
       %div.toolbar
@@ -28,7 +31,12 @@
           %br          
           %li Najbliższy autobus:
           /   Pokazuje pozostały czas do przyjazdu.
-          = countdown_schedule(@favourites.first)
+          #count_until_year= Time.now.year
+          #count_until_month= Time.now.month
+          #count_until_day= Time.now.mday
+          #count_until_hour= @favourites.first.arrival_at.strftime("%H")
+          #count_until_minute= @favourites.first.arrival_at.strftime("%M")
+          #count_until_second= @favourites.first.arrival_at.strftime("%S") 
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341

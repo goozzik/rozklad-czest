@@ -1,14 +1,3 @@
-var newYear = new Date(); 
-newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-$('#defaultCountdown').countdown({until: newYear}); 
- 
-$('#removeCountdown').toggle(function() { 
-        $(this).text('Re-attach'); 
-        $('#defaultCountdown').countdown('destroy'); 
-    }, 
-    function() { 
-        $(this).text('Remove'); 
-        $('#defaultCountdown').countdown({until: newYear}); 
-    } 
-);
-
+var v = new Date(); 
+v = new Date($('#count_until_year').text(), $('#count_until_month').text(), $('#count_until_day').text(), $('#count_until_minute').text(), $('#count_until_second').text(), $('#count_until_year').text()); 
+$('#noDays').countdown({until: v, format: 'HMS'}); 
