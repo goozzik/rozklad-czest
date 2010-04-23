@@ -8,7 +8,8 @@
     %script{:src => "javascripts/home.js"}
     %script{:src => "javascripts/jquery.countdown.js"}
     %script{:src => "javascripts/counter.js"}
-    = stylesheet_link_tag 'stylesheets/jqtouch.countdown.js'
+    / = stylesheet_link_tag 'jqcountdown/jquery.countdown.css'
+    %script{:src => "javascripts/jquery.countdown-pl.js"}
   %body
     %div#home
       %div.toolbar
@@ -30,13 +31,24 @@
           = @time
           %br          
           %li Najbliższy autobus:
-          /   Pokazuje pozostały czas do przyjazdu.
+          / Pokazuje pozostały czas do przyjazdu.
           #count_until_year= Time.now.year
           #count_until_month= Time.now.month
           #count_until_day= Time.now.mday
           #count_until_hour= @favourites.first.arrival_at.strftime("%H")
           #count_until_minute= @favourites.first.arrival_at.strftime("%M")
-          #count_until_second= @favourites.first.arrival_at.strftime("%S") 
+          #count_until_second= @favourites.first.arrival_at.strftime("%S")
+          %div{:id => "firstCountdown", :class => "hasCountdown"}
+            %span{:class => "countdown_row countdown_show1"}
+              %span{:class => "countdown_section"}
+                %span{:class => "countdown_amount"}
+                %br
+              %span{:class => "countdown_section"}
+                %span{:class => "countdown_amount"}
+                %br
+              %span{:class => "countdown_section"}
+                %span{:class => "countdown_amount"}
+                %br    
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341
@@ -57,3 +69,5 @@
 /      - dodać w 'Dom' dane tj: za ile najbliższy autobus [do domu]; z jakiego przystanku?; jaka linia;
 /      - niezbędne: bierząca godzina, przeszukanie bazy lini i wyszukanie rekordu z najbliższą godziną przyjazdu autobusu
 /      - opcja: mapka z oflagowaną lokalizacją: JESTEM TUTAJ!
+
+/ $('#count_until_year').text(), $('#count_until_month').text(), $('#count_until_day').text(), $('#count_until_hour').text(), $('#count_until_minute').text(), $('#count_until_second').text()
