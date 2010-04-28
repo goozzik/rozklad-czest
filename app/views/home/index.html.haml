@@ -1,5 +1,6 @@
 %html
   %head
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
     %script{:src => "http://www.google.com/jsapi"}
     %script{:src => "stylesheets/jqtouch/jquery.1.3.2.js"}
     %script{:src => "stylesheets/jqtouch/jqtouch.js"}
@@ -8,7 +9,7 @@
     %script{:src => "javascripts/home.js"}
     %script{:src => "javascripts/jquery.countdown.js"}
     %script{:src => "javascripts/counter.js"}
-    / = stylesheet_link_tag 'jqcountdown/jquery.countdown.css'
+    = stylesheet_link_tag 'jqcountdown/jquery.countdown.css'
     %script{:src => "javascripts/jquery.countdown-pl.js"}
   %body
     %div#home
@@ -38,17 +39,8 @@
           #count_until_hour= @favourites.first.arrival_at.strftime("%H")
           #count_until_minute= @favourites.first.arrival_at.strftime("%M")
           #count_until_second= @favourites.first.arrival_at.strftime("%S")
-          %div{:id => "firstCountdown", :class => "hasCountdown"}
-            %span{:class => "countdown_row countdown_show1"}
-              %span{:class => "countdown_section"}
-                %span{:class => "countdown_amount"}
-                %br
-              %span{:class => "countdown_section"}
-                %span{:class => "countdown_amount"}
-                %br
-              %span{:class => "countdown_section"}
-                %span{:class => "countdown_amount"}
-                %br    
+          / div dla skryptu countera
+          %div{:id => "firstCountdown"}
         %ul= link_to "back", "#home", :class => 'back'
     
     %div#p0341

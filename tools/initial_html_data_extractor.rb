@@ -84,7 +84,7 @@ class InitialHtmlDataExtractor
           Schedule.create!(
             :line_id => line_id,
             :station_id => station_id,
-            :arrival_at => Time.parse("#{work.content}:#{minute.to_i}:00"),
+            :arrival_at => Time.parse("#{Time.now.month} #{Time.now.day} #{work.content}:#{minute.to_i}:00 #{Time.now.year}"),
             :work => true
           )
         end

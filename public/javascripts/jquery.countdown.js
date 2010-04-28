@@ -724,3 +724,4 @@ $.fn.countdown = function(options) {
 $.countdown = new Countdown(); // singleton instance
 
 })(jQuery);
+
