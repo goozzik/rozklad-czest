@@ -32,15 +32,15 @@
           #count_until_hour2= @favourites[1].arrival_at.strftime("%H")
           #count_until_minute2= @favourites[1].arrival_at.strftime("%M")
       %ul.rounded
-        %p
-          = "#{@favourites[0].line.number} za" 
-          %span#firstCountdown
-          = "(#{@favourites[0].arrival_at.strftime("%H:%M")})"
-        %p
-          = "#{@favourites[1].line.number} za" 
-          %span#secondCountdown
-          = "(#{@favourites[1].arrival_at.strftime("%H:%M")})"
-        - @favourites[1..4].each do |fav|
+        %li
+          %span= "#{@favourites[0].line.number} za" 
+          %span{:id => "firstCountdown"}
+          %span= "(#{@favourites[0].arrival_at.strftime("%H:%M")})"
+        %li
+          %span= "#{@favourites[1].line.number} za" 
+          %span{:id => "secondCountdown"}
+          %span= "(#{@favourites[1].arrival_at.strftime("%H:%M")})"
+        - @favourites[2..4].each do |fav|
           %li= "#{fav.line.number} o #{fav.arrival_at.strftime("%H:%M")}"
         
     %div#Praca
