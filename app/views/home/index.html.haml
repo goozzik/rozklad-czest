@@ -4,15 +4,15 @@
     %script{:src => "http://www.google.com/jsapi"}
     %script{:src => "stylesheets/jqtouch/jquery.1.3.2.js"}
     %script{:src => "stylesheets/jqtouch/jqtouch.js"}
-    = stylesheet_link_tag 'jqtouch/jqtouch.css'
-    = stylesheet_link_tag 'themes/apple/theme.css'
     %script{:src => "javascripts/home.js"}
     %script{:src => "javascripts/jquery.countdown.js"}
     %script{:src => "javascripts/counter.js"}
-    / = stylesheet_link_tag 'jqcountdown/jquery.countdown.css'
+    %script{:src => "javascripts/jquery.autocomplete.js"}
     %script{:src => "javascripts/jquery.countdown-pl.js"}
     %script{:src => "javascripts/refresh_counter.js"}
-    
+    = stylesheet_link_tag 'stylesheets/jquery.autocomplete.css'
+    = stylesheet_link_tag 'jqtouch/jqtouch.css'
+    = stylesheet_link_tag 'themes/apple/theme.css'
     
   %body
   
@@ -23,18 +23,11 @@
         %li= link_to "Ulubione", "#Favourites"
         %li 
           %h1 Ogłoszenie
-    
+
     %div#Find
       %div.toolbar
       %ul.rounded
-        - form_tag do
-          %select
-            - Station.all do |station|
-              %option= station.name
-          %select
-            - Station.all do |station|
-              %option= station.name
-
+        #Finder
     %div#Favourites
       
       
@@ -66,8 +59,7 @@
     /   %div.toolbar
     /     %li= link_to "back", "#home", :class => 'back'
     /     %h1 Praca
-    /   %ul.rounded
-        
+    /   %ul.rounded    
 / TIP: - dodać sztywne geolokalizacje dla miejsc: praca - rynek wieluński, dom - coś?
 /      - dodać w 'Dom' dane tj: za ile najbliższy autobus [do domu]; z jakiego przystanku?; jaka linia;
 /      - niezbędne: bierząca godzina, przeszukanie bazy lini i wyszukanie rekordu z najbliższą godziną przyjazdu autobusu
