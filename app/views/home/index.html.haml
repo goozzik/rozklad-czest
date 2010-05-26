@@ -10,6 +10,7 @@
     %script{:src => "javascripts/jquery.autocomplete.js"}
     %script{:src => "javascripts/jquery.countdown-pl.js"}
     %script{:src => "javascripts/refresh_counter.js"}
+    %script{:src => "javascripts/autocomplete_data.js"}
     = stylesheet_link_tag 'stylesheets/jquery.autocomplete.css'
     = stylesheet_link_tag 'jqtouch/jqtouch.css'
     = stylesheet_link_tag 'themes/apple/theme.css'
@@ -27,6 +28,9 @@
     %div#Find
       %div.toolbar
       %ul.rounded
+        %div#Stations_names{:style => "display:none;"}
+          - @stations.each do |station|
+            = "#{station.name}, "
         #Finder
     %div#Favourites
       

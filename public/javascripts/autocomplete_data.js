@@ -1,2 +1,4 @@
-var data = $('#Stations_names').text().split(", ");
-$("#Finder").autocomplete(data);
+$(function () {
+var dataf = $('#Stations_names').split(", ");
+$("#Finder").autocomplete(dataf);
+});
