@@ -12,30 +12,45 @@
     / jquery counter
     %script{:src => "javascripts/jquery.countdown.js"}
     %script{:src => "javascripts/counter.js"}
-    %script{:src => "javascripts/refresh_counter.js"}
+    / %script{:src => "javascripts/refresh_counter.js"}
     / jquery autocomplete
     %script{:src => "javascripts/autocomplete_data.js"}
     %script{:src => "http://www.google.com/jsapi"}
     
-
   %body
-    
     %div#Home
       %div.toolbar
+        %h1 Rozkład
       %ul.rounded
-        %li= link_to "Wyszukaj połączenie", "#Find"
+        %li= link_to "Wyszukaj połączenie", "#Finder"
         %li= link_to "Ulubione", "#Favourites"
-        %li 
-          %h1 Ogłoszenie
-
-    %div#Find
-      %div.toolbar
+      %h2 Ogłoszenie
       %ul.rounded
-        %input#finder
+        %li Przykładowy tekst. rozkład.czest.pl
 
-   
-
+    %form#Finder{:class => 'form', :method => 'post', :action => "home/schedule_find"}
+      %div.toolbar
+        %li= link_to "Wstecz", "#home", :class => 'back'
+      %ul.rounded
+        %li
+          %input{:id => "find_from", :name => 'find_from', :value => "Z"}
+        %li
+          %input{:id => "find_to", :name => 'find_to', :value => "Do"}
+      = link_to "Wyszukaj", "#", :class => "submit whiteButton"      
+      
     %div#Favourites
+      %div.toolbar
+        %li= link_to "Wstecz", "#home", :class => 'back'
+        %h1 Ulubione
+        %li= link_to "Dodaj", "#addToFavourites", :class => "button slideup"
+      %ul.rounded
+        
+    %div#addToFavourites
+        
+          
+          
+
+    / $("#finder1").attr('value')
       
       
     / %div#Dom
