@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     @favourites = Favourite.test
   end
   
-  def schedule_find
+  def schedule_finder
     station_from = Station.find_by_name(params[:find_from])
     station_to = Station.find_by_name(params[:find_to])
     lines = Line.find_all_by_stations([station_from.id, station_to.id])

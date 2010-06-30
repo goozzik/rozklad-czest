@@ -1,87 +1,70 @@
-%html
-  %head
-    / jquery
-    %script{:src => "javascripts/jquery-1.4.2.js"}
-    %script{:src => "javascripts/jquery-ui.js"}
-    = stylesheet_link_tag 'jquery-ui/jquery-ui.css'
-    / jqtouch
-    %script{:src => "stylesheets/jqtouch/jqtouch.js"}
-    %script{:src => "javascripts/home.js"}
-    = stylesheet_link_tag 'jqtouch/jqtouch.css'
-    = stylesheet_link_tag 'themes/apple/theme.css'
-    / jquery counter
-    %script{:src => "javascripts/jquery.countdown.js"}
-    %script{:src => "javascripts/counter.js"}
-    / %script{:src => "javascripts/refresh_counter.js"}
-    / jquery autocomplete
-    %script{:src => "javascripts/autocomplete_data.js"}
-    %script{:src => "http://www.google.com/jsapi"}
-    
-  %body
-    %div#Home
-      %div.toolbar
-        %h1 Rozkład
-      %ul.rounded
-        %li= link_to "Wyszukaj połączenie", "#Finder"
-        %li= link_to "Ulubione", "#Favourites"
-      %h2 Ogłoszenie
-      %ul.rounded
-        %li Przykładowy tekst. rozkład.czest.pl
+%div#home
+  %div.toolbar
+    %h1 Rozkład
+  %ul.rounded
+    %li= link_to "Wyszukaj połączenie", "#finder", :class => "slide up"
+    %li= link_to "Ulubione", "#favourites"
+  %h2 Ogłoszenie
+  %ul.rounded
+    %li Przykładowy tekst. rozkład.czest.pl
 
-    %form#Finder{:class => 'form', :method => 'post', :action => "home/schedule_find"}
-      %div.toolbar
-        %li= link_to "Wstecz", "#home", :class => 'back'
-      %ul.rounded
-        %li
-          %input{:id => "find_from", :name => 'find_from', :value => "Z"}
-        %li
-          %input{:id => "find_to", :name => 'find_to', :value => "Do"}
-      = link_to "Wyszukaj", "#", :class => "submit whiteButton"      
-      
-    %div#Favourites
-      %div.toolbar
-        %li= link_to "Wstecz", "#home", :class => 'back'
-        %h1 Ulubione
-        %li= link_to "Dodaj", "#addToFavourites", :class => "button slideup"
-      %ul.rounded
+%div#finder
+  %div.toolbar
+    %h1 Wyszukaj
+  %ul.rounded
+    = form_tag :action => 'reverse', :update => 'find_results', :url => { :action => 'schedule_finder' }
+    %li
+      = text_field_tag "find_from", "Z"
+    %li
+      = text_field_tag "find_to", "Do"
+    %li
+      = submit_tag "Wyszukaj"
+  %li{:id => 'find_results'}
         
-    %div#addToFavourites
-        
-          
-          
 
-    / $("#finder1").attr('value')
+  
+%div#favourites
+  %div.toolbar
+    %li= link_to "Wstecz", "#home", :class => 'back'
+    %h1 Ulubione
+    %li= link_to "Dodaj", "#addToFavourites", :class => "button slideup"
+  %ul.rounded
+
       
       
-    / %div#Dom
-    /   %div.toolbar
-    /     %h1 Praca - Dom
-    /     %li= link_to "back", "#home", :class => 'back'
-    /     %div{:style => "display:none;"}
-    /       #count_until_year= Time.now.year
-    /       #count_until_month= Time.now.month
-    /       #count_until_day= Time.now.mday
-    /       #count_until_hour1= @favourites[0].arrival_at.strftime("%H")
-    /       #count_until_minute1= @favourites[0].arrival_at.strftime("%M")
-    /       #count_until_hour2= @favourites[1].arrival_at.strftime("%H")
-    /       #count_until_minute2= @favourites[1].arrival_at.strftime("%M")
-    /   %ul.rounded
-    /     %li
-    /       %span= "#{@favourites.first.line.number} za" 
-    /       %span{:id => "firstCountdown"}
-    /       %span= "(#{@favourites.first.arrival_at.strftime("%H:%M")})"
-    /     %li
-    /       %span= "#{@favourites[1].line.number} za" 
-    /       %span{:id => "secondCountdown"}
-    /       %span= "(#{@favourites[1].arrival_at.strftime("%H:%M")})"
-    /     - @favourites[2..4].each do |fav|
-    /       %li= "#{fav.line.number} o #{fav.arrival_at.strftime("%H:%M")}"
-    /     
-    / %div#Praca
-    /   %div.toolbar
-    /     %li= link_to "back", "#home", :class => 'back'
-    /     %h1 Praca
-    /   %ul.rounded    
+
+/ $("#finder1").attr('value')
+  
+  
+/ %div#Dom
+/   %div.toolbar
+/     %h1 Praca - Dom
+/     %li= link_to "back", "#home", :class => 'back'
+/     %div{:style => "display:none;"}
+/       #count_until_year= Time.now.year
+/       #count_until_month= Time.now.month
+/       #count_until_day= Time.now.mday
+/       #count_until_hour1= @favourites[0].arrival_at.strftime("%H")
+/       #count_until_minute1= @favourites[0].arrival_at.strftime("%M")
+/       #count_until_hour2= @favourites[1].arrival_at.strftime("%H")
+/       #count_until_minute2= @favourites[1].arrival_at.strftime("%M")
+/   %ul.rounded
+/     %li
+/       %span= "#{@favourites.first.line.number} za" 
+/       %span{:id => "firstCountdown"}
+/       %span= "(#{@favourites.first.arrival_at.strftime("%H:%M")})"
+/     %li
+/       %span= "#{@favourites[1].line.number} za" 
+/       %span{:id => "secondCountdown"}
+/       %span= "(#{@favourites[1].arrival_at.strftime("%H:%M")})"
+/     - @favourites[2..4].each do |fav|
+/       %li= "#{fav.line.number} o #{fav.arrival_at.strftime("%H:%M")}"
+/     
+/ %div#Praca
+/   %div.toolbar
+/     %li= link_to "back", "#home", :class => 'back'
+/     %h1 Praca
+/   %ul.rounded    
 / TIP: - dodać sztywne geolokalizacje dla miejsc: praca - rynek wieluński, dom - coś?
 /      - dodać w 'Dom' dane tj: za ile najbliższy autobus [do domu]; z jakiego przystanku?; jaka linia;
 /      - niezbędne: bierząca godzina, przeszukanie bazy lini i wyszukanie rekordu z najbliższą godziną przyjazdu autobusu
