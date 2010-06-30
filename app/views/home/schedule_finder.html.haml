@@ -1,0 +1,4 @@
+- @schedules.each do |schedule|
+  %li
+    %span= "#{schedule.line.number}"
+    %span= "(#{schedule.arrival_at.strftime("%H:%M")})"
