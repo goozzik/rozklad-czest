@@ -14,7 +14,7 @@ class Favourite < ActiveRecord::Base
      schedules = Schedule.all(
             :conditions => ["line_id IN (?) AND station_id = ? AND arrival_at > ?", lines.collect(&:id), station_from.id, Time.now],
             :order => "arrival_at",
-            :limit => 15
+            :limit => 5
           )
     # find(:all,
     #          :conditions => ["stop_name = 'RYNEK WIELUŃSKI' AND arrival_at > ?", Time.now],
