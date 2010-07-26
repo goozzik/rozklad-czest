@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.connect 'find_schedule', :controller => 'search_schedule', :action => 'find_schedule'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

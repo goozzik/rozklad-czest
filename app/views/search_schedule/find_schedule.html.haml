@@ -1,0 +1,6 @@
+%div
+  %div.toolbar
+    = link_to "Cofnij", "#finder"
+  %ul.rounded
+    - @schedules.each do |f|
+      %li= "#{f.line.number} o #{f.arrival_at.strftime("%H:%M")}"

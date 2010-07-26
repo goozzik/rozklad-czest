@@ -1,44 +1,29 @@
-%div#home
-  %div.toolbar
+#home
+  .toolbar
   %ul.rounded
-    %li= link_to "Wyszukaj połączenie", "#find_schedule", :class => "slide up"
+    %li= link_to "Wyszukaj połączenie", "#finder_form" 
     %li= link_to "Ulubione", "#favourites"
   %h2 Ogłoszenie
   %ul.rounded
     %li Przykładowy tekst. rozkład.czest.pl
-
-%div#find_schedule{:action => 'find_schedule', :method => "POST"}
-  %div.toolbar
-    %li= link_to "Cofnij", "#home", :class => "button cancel"
-    %h1 Wyszukaj
-  %form{:method => "POST"}
-    %ul
-      %li
-        = text_field_tag "find_from", "Z"
-      %li
-        = text_field_tag "find_to", "Do"
-      %li
-        %input{:type => "submit", :class => "submit", :name => "search", :value => "Wyszukaj"}
-  
-/ %div
-/   %div.toolbar
-/   %ul.rounded
-/     -@schedules.each do |f|
-/       %li= "#{f.arrival_at.strftime("%H:%M")}"
-
     
-        
-
-  
-%div#favourites
-  %div.toolbar
+%form#finder_form{:action => "find_schedule"}
+  .toolbar
+    %li= link_to "Cofnij", "#home", :class => 'back'
+  %ul.rounded
+    %li= text_field_tag "finder_from", "Z"
+    %li= text_field_tag "finder_to", "Do"
+  = link_to "Wyszukaj", "#", :class => "submit whiteButton"
+    
+#favourites
+  .toolbar
     %li= link_to "Cofnij", "#home", :class => 'back'
     %h1 Ulubione
     %li= link_to "Dodaj", "#add_to_favourites", :class => "button slideup"
   %ul.rounded
 
-%form#add_to_favourites{:method => "POST", :action => ""}
-  %div.toolbar
+%form#add_to_favourites
+  .toolbar
     %li= link_to "Cofnij", "%favourites", :class => "back"
   %ul.rounded
     %li
@@ -49,10 +34,8 @@
       = text_field_tag "favourite_to", "Do"
   = link_to "Dodaj", "#favourites", :class => "submit whiteButton"
       
-
-/ $("#finder1").attr('value')
-  
-  
+      
+      
 / %div#Dom
 /   %div.toolbar
 /     %h1 Praca - Dom

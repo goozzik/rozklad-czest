@@ -1,7 +1,6 @@
 class CreateFavourites < ActiveRecord::Migration
   def self.up
     create_table :favourites do |t|
-
       t.timestamps
     end
   end
