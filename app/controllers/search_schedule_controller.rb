@@ -1,10 +1,3 @@
-require 'rubygems'
-require 'config/environment'
-require 'nokogiri'
-require 'open-uri'
-require 'iconv'
-require 'tools/initial_html_data_extractor'
-
 class SearchScheduleController < ApplicationController
   def find_schedule
     station_from = Station.find_by_name("#{params[:finder_from]}")

@@ -22,9 +22,9 @@
     %li= link_to "Dodaj", "#add_to_favourites", :class => "button slideup"
   %ul.rounded
 
-%form#add_to_favourites
+%form#add_to_favourites{:action => "add_to_favourites"}
   .toolbar
-    %li= link_to "Cofnij", "%favourites", :class => "back"
+    %li= link_to "Cofnij", "#favourites", :class => "back"
   %ul.rounded
     %li
       = text_field_tag "name", "Nazwa"
