@@ -1,71 +1,13 @@
-#home
-  .toolbar
-  %ul.rounded
-    %li= link_to "Wyszukaj połączenie", "#finder_form" 
-    %li= link_to "Ulubione", "#favourites"
-  %h2 Ogłoszenie
-  %ul.rounded
-    %li Przykładowy tekst. rozkład.czest.pl
-    
-%form#finder_form{:action => "find_schedule"}
-  .toolbar
-    %li= link_to "Cofnij", "#home", :class => 'back'
-  %ul.rounded
-    %li= text_field_tag "finder_from", "Z"
-    %li= text_field_tag "finder_to", "Do"
-  = link_to "Wyszukaj", "#", :class => "submit whiteButton"
-    
-#favourites
-  .toolbar
-    %li= link_to "Cofnij", "#home", :class => 'back'
-    %h1 Ulubione
-    %li= link_to "Dodaj", "#add_to_favourites", :class => "button slideup"
-  %ul.rounded
-
-%form#add_to_favourites{:action => "add_to_favourites"}
-  .toolbar
-    %li= link_to "Cofnij", "#favourites", :class => "back"
-  %ul.rounded
-    %li
-      = text_field_tag "name", "Nazwa"
-    %li
-      = text_field_tag "favourite_from", "Z"
-    %li
-      = text_field_tag "favourite_to", "Do"
-  = link_to "Dodaj", "#favourites", :class => "submit whiteButton"
-      
-      
-      
-/ %div#Dom
-/   %div.toolbar
-/     %h1 Praca - Dom
-/     %li= link_to "back", "#home", :class => 'back'
-/     %div{:style => "display:none;"}
-/       #count_until_year= Time.now.year
-/       #count_until_month= Time.now.month
-/       #count_until_day= Time.now.mday
-/       #count_until_hour1= @favourites[0].arrival_at.strftime("%H")
-/       #count_until_minute1= @favourites[0].arrival_at.strftime("%M")
-/       #count_until_hour2= @favourites[1].arrival_at.strftime("%H")
-/       #count_until_minute2= @favourites[1].arrival_at.strftime("%M")
-/   %ul.rounded
-/     %li
-/       %span= "#{@favourites.first.line.number} za" 
-/       %span{:id => "firstCountdown"}
-/       %span= "(#{@favourites.first.arrival_at.strftime("%H:%M")})"
-/     %li
-/       %span= "#{@favourites[1].line.number} za" 
-/       %span{:id => "secondCountdown"}
-/       %span= "(#{@favourites[1].arrival_at.strftime("%H:%M")})"
-/     - @favourites[2..4].each do |fav|
-/       %li= "#{fav.line.number} o #{fav.arrival_at.strftime("%H:%M")}"
-/     
-/ %div#Praca
-/   %div.toolbar
-/     %li= link_to "back", "#home", :class => 'back'
-/     %h1 Praca
-/   %ul.rounded    
-/ TIP: - dodać sztywne geolokalizacje dla miejsc: praca - rynek wieluński, dom - coś?
-/      - dodać w 'Dom' dane tj: za ile najbliższy autobus [do domu]; z jakiego przystanku?; jaka linia;
-/      - niezbędne: bierząca godzina, przeszukanie bazy lini i wyszukanie rekordu z najbliższą godziną przyjazdu autobusu
-/      - opcja: mapka z oflagowaną lokalizacją: JESTEM TUTAJ!
+%html
+  %head 
+    =stylesheet_link_tag 'jquery-ui/jquery-ui.css' 
+    =stylesheet_link_tag 'ext-touch.css' 
+    =javascript_include_tag "jquery-1.4.2.js" 
+    =javascript_include_tag "ext-touch-debug.js"  
+    =javascript_include_tag "jquery-ui.js" 
+    =javascript_include_tag "home.js" 
+    =javascript_include_tag "jquery.countdown.js" 
+    =javascript_include_tag "counter.js" 
+    =javascript_include_tag "autocomplete_data.js" 
+    =javascript_include_tag "jsapi.js" 
+  %body
