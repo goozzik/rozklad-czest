@@ -1,7 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
   
-  map.connect 'find_schedule', :controller => 'search_schedule', :action => 'find_schedule'
-  map.connect 'add_to_favourites', :controller => 'favourites', :action => 'add_to_favourites'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
