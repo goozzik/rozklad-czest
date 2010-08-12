@@ -48,11 +48,11 @@ $(function(){
 	 															"WYGODA", "WYPOCZYNKU", "WYSZYŃSKIEGO", "ZANA", "ZAWODZIE", "ZAWODZIE - CMENTARNA", "ZAWODZIE - CMENTARZ", "ZAWODZIE - DŁUGA I",
 	 															"ZAWODZIE - DŁUGA II", "ZAWODZIE - SZPITAL", "ZBYSZKA", "ZDROWA", "ZEGAROWA", "ZIELNA", "ZIMOWA", "ZŁOTA", "ŻABINIEC", "ŻARECKA",
 	 															"ŻEROMSKIEGO", "ŻONKILOWA", "ŻYZNA", "TEATR IM. A. MICKIEWICZA"];
-	$("#finder_from").autocomplete({
+	$("#from_search").autocomplete({
 		source: availableStations,
 		minLength: 2
 	});
-	$("#finder_to").autocomplete({
+	$("#to_search").autocomplete({
 		source: availableStations,
 		minLength: 2
 	});
