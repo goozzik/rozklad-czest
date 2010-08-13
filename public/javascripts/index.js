@@ -1,29 +1,42 @@
 Ext.setup({
   glossOnIcon: false,
-  onReady: function() {
-    var timeline = new Ext.Component({
-        title: 'Timeline',  // Name that appears on this tab
-        cls: 'timeline',    // The CSS class. Lets you style elements on the timeline.
-        scroll: 'vertical', // Make it vertically scrollable
-    });
-    
+  tabletStartupScreen: 'tablet_startup.png',
+  phoneStartupScreen: 'phone_startup.png',
+  icon: 'icon.png',
+  onReady: function(){
+
     var schedule = new Ext.form.FormPanel({
-      title: 'Polaczenie',
       scroll: 'vertical',
-      xtype: 'fieldset',
+      title: 'Połączenie',
+      standardSubmit: true,
+      url: 'search_schedule',
       items: [{
-        xtype: 'textfield',
-        name: 'from', 
-        label: 'Z',
-        id: 'from_search'
-      },
-      {
-        xtype: 'textfield',
-        name: 'to',
-        id: 'to_search',
-        label: 'Do'
-      }
-      ]
+        xtype: 'fieldset',
+        title: 'Wyszukaj połączenie',
+        items: [{
+            xtype: 'select',
+            name: 'from',
+            label: 'Z',
+            options: availableStations 
+          },
+          {
+            xtype: 'select',
+            name: 'from',
+            label: 'Do',
+            options: availableStations
+          }
+        ]
+      }],
+      dockedItems: [{
+        xtype: 'toolbar',
+        dock: 'top',
+        items: {
+          text: 'Szukaj',
+          handler: function() {
+            schedule.submit();
+          } 
+        }  
+      }]
     });
 
     var panel = new Ext.TabPanel({
@@ -37,7 +50,7 @@ Ext.setup({
       fullscreen: true,
       animation: 'slide',
       cardAnimation: 'slide',
-      items: [timeline, schedule]  
-    });
+      items: [schedule]  
+    })
   }
 });
