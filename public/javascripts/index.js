@@ -4,9 +4,14 @@ Ext.setup({
   phoneStartupScreen: 'phone_startup.png',
   icon: 'icon.png',
   onReady: function(){
+     
+ 
+    var contact = new Ext.Component({
+      title: 'Kontakt',
+      cls: 'contact',
+    });
 
     var schedule = new Ext.form.FormPanel({
-      scroll: 'vertical',
       title: 'Połączenie',
       standardSubmit: true,
       url: 'search_schedule',
@@ -48,9 +53,14 @@ Ext.setup({
         }
       },
       fullscreen: true,
+      scroll: 'vertical',
       animation: 'slide',
       cardAnimation: 'slide',
-      items: [schedule]  
+      items: [schedule, contact],
+      dockedItems: [{
+        xtype: 'toolbar',
+        dock: 'top'
+      }]
     })
   }
 });
