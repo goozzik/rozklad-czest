@@ -5,7 +5,7 @@ gem 'pg', '0.9.0'
 
 # IMPORTANT Keep gems in alphabetical order.
 
-gem 'haml', '2.2.20'
+gem 'haml', '3.0.17'
 gem 'nokogiri', '1.4.1'
 gem 'rubyzip', '0.9.4'
 

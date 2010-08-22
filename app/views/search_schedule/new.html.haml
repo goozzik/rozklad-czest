@@ -1,0 +1,17 @@
+#search
+  #content
+    #search_form
+      - form_tag '/search' do
+
+        .field
+          = label_tag 'from_search_schedule', 'Z'
+          = text_field_tag 'from_search_schedule'
+
+        .field
+          = label_tag 'to_search_schedule', 'Do'
+          = text_field_tag 'to_search_schedule'
+
+        .submit
+          = submit_tag "Szukaj"
+    #search_results
+// container for search results
