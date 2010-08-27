@@ -1,8 +1,7 @@
 class SearchScheduleController < ApplicationController
-  def new
+  def new_search
   end
 
-  def search
+  def search 
   end
-
 end
