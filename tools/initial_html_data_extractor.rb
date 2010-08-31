@@ -133,10 +133,10 @@ case ARGV.first
     InitialHtmlDataExtractor.import_schedule
   
   when 'test'
-    station_from = Station.find_by_name("I ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
+    station_from = Station.find_by_name("RYNEK WIELUŃSKI")
     puts "From: #{station_from.inspect}"
 
-    station_to = Station.find_by_name("RYNEK WIELUŃSKI")
+    station_to = Station.find_by_name("II ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
     puts "To: #{station_to.inspect}"
 
     puts
