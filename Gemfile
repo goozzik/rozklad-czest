@@ -5,8 +5,6 @@ gem 'pg', '0.9.0'
 
 # IMPORTANT Keep gems in alphabetical order.
 
-gem 'compass', '0.10.4'
-gem 'compass-960-plugin', '0.9.13', :require => 'ninesixty'
 gem 'haml', '3.0.17'
 gem 'nokogiri', '1.4.1'
 gem 'rubyzip', '0.9.4'
