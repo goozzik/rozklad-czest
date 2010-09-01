@@ -1,0 +1,7 @@
+%html
+%head
+%body
+#search_results
+	%ul
+	-@schedules.each do |s|
+		%li= "#{s.line.number} o #{s.arrival_at.strftime("%H:%M")}"

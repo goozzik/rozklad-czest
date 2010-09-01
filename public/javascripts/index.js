@@ -4,6 +4,20 @@ Ext.setup({
 	
 			var schedule = new Ext.form.FormPanel({
 				title: 'Połączenie',
+				dockedItems: [{
+					xtype: 'toolbar',
+					dock: 'top',
+					ui: 'light',
+					items: [{
+						text: 'Szukaj',
+						ui: 'round',
+						handler: function() {
+							schedule.submit({
+								url: 'search'
+							});
+						}
+					}]
+				}],
 				items: [{
 					xtype: 'fieldset',
 					title: 'Wyszukaj połączenie',
@@ -25,7 +39,6 @@ Ext.setup({
 			var panel = new Ext.TabPanel({
 				tabBar: {
 					dock: 'bottom',
-					ui: 'light',
 					layout: {
 						pack: 'center'
 					}
@@ -39,7 +52,7 @@ Ext.setup({
 				animation: {
 				        type: 'slide',
 				        cover: true,
-				},
+				}
 			});
 		}
 });
