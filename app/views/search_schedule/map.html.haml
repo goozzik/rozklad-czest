@@ -1,0 +1,36 @@
+.page-map{'data-role' => 'page', :style => 'width:100%; height:100%;'}
+  %div{'data-role' => 'header'}
+    %h1 Mapa
+  %div{'data-role' => 'content', :style => 'width:100%; height:100%; padding:0;'}
+    %div{:id => "map_#{@map}", :style => 'width:100%; height:100%;'}
+    :javascript
+      $('.page-map').live('pagecreate', function() {
+        var latlng = new google.maps.LatLng(#{@lat},#{@lng});
+        var myOptions = {
+          zoom: 15,
+          center: latlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById('map_#{@map}'),myOptions);
+
+        var myLatLng = new google.maps.LatLng(#{@lat},#{@lng});
+        var my = new google.maps.Marker({
+          position: myLatLng, 
+          map: map, 
+          title: 'Ja'
+        }); 
+
+        var fromLatLng = new google.maps.LatLng(#{@station_from.lat},#{@station_from.lng});
+        var from = new google.maps.Marker({
+          position: fromLatLng, 
+          map: map, 
+          title: 'Z'
+        }); 
+        
+        var toLatLng = new google.maps.LatLng(#{@station_to.lat},#{@station_to.lng});
+        var to = new google.maps.Marker({
+          position: toLatLng, 
+          map: map, 
+          title: 'Do'
+        }); 
+      });

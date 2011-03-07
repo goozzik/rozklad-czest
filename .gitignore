@@ -1,7 +1,8 @@
-log/*
-.bundle/*
-vendor/*
-.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+db/database.yml
 *.swp
-/config/database.yml
-/tmp
+*.swo
+.DS_Store

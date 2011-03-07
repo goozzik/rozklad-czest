@@ -1,5 +1,6 @@
+# coding: utf-8
 class Favourite < ActiveRecord::Base
-  
+
   def self.test
      station_from = Station.find_by_name("RYNEK WIELUŃSKI")
      station_to = Station.find_by_name("II ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
@@ -16,7 +17,4 @@ class Favourite < ActiveRecord::Base
     #     )
 
   end
-
 end
-
-

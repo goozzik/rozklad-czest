@@ -1,0 +1,20 @@
+%div{'data-role' => 'page'}
+  %div{'data-role' => 'header'}
+    %h1 Szukaj polaczenia 
+  %div{'data-role' => 'content'}
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'
+    = form_tag search_schedule_search_path do
+      %fieldset
+        = check_box_tag :from_station, 'true'
+        = label_tag :from_station, 'Z przystanku' 
+        = label_tag :station_from, 'Przystanek odjazdowy' 
+        = text_field_tag :station_from, '', :autocomplete => search_schedule_autocomplete_station_name_path 
+      %fieldset 
+        = check_box_tag :from_my_location, 'true'
+        = label_tag :from_my_location, 'Z mojego polozenia' 
+        = label_tag :within, 'W promieniu (kilometry)' 
+        = text_field_tag :within, '1'
+      = label_tag :station_to, 'Przystanek docelowy' 
+      = text_field_tag :station_to, '', :autocomplete => search_schedule_autocomplete_station_name_path
+      = submit_tag 'Szukaj'

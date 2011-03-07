@@ -1,0 +1,13 @@
+- flash.each do |name, msg|
+  = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'
+  %br
+= form_for @favourite do |f|
+  = f.label :name, 'Nazwa' 
+  = f.text_field :name
+  = f.label :station_from, 'Z' 
+  = f.text_field :station_from,
+                 :autocomplete => search_schedule_autocomplete_station_name_path
+  = f.label :station_to, 'Do' 
+  = f.text_field :station_to,
+                 :autocomplete => search_schedule_autocomplete_station_name_path
+  = f.submit 'Zapisz'

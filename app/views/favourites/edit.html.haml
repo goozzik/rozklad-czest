@@ -1,0 +1,7 @@
+%div{'data-role' => 'page'}
+  %div{'data-role' => 'header'}
+    %h1= @favourite.name 
+    = link_to 'Usun', {:controller => 'favourites', :action => 'destroy', :id => @favourite.id},
+              :method => :delete, 'data-icon' => 'delete', :class => 'ui-btn-right'
+  %div{'data-role' => 'content'}
+    = render 'form'

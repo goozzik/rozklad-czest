@@ -1,0 +1,13 @@
+%div{'data-role' => 'page'}
+  %div{'data-role' => 'header'}
+    %h1= @favourite.name 
+  %div{'data-role' => 'content'}
+    %ul{'data-role' => 'listview'}
+      %li{'data-role' => 'list-divider'}
+        = 'Przystanek: ' + @schedules.first.station.name
+        %br
+        = 'Kierunek: ' + @schedules.first.line.direction
+      - @schedules.each do |schedule|
+        %li{:style => 'background: white; margin-bottom: 4px;'}
+          %span= "#{schedule.line.number} o"
+          %span= "#{schedule.arrival_at.in_time_zone.strftime("%H:%M")}"
