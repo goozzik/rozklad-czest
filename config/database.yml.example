@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: rozklad_czest_pl_development
+  pool: 5
+  username: rozklad_czest_pl
+  password:
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: rozklad_czest_pl_test
+  pool: 5
+  username: rozklad_czest_pl
+  password:
