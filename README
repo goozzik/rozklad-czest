@@ -14,13 +14,15 @@ HOW TO RUN THIS
       export ARCHFLAGS='-arch i386'
       export ARCHFLAGS='-arch x86_64'
 
-3. Create and migrate db:
+3. Create your config/database.yml basing on database.yml.example
+
+4. Create and migrate db:
   rake db:create:all
   rake db:migrate
 
-4. Run script for downloading mpk.czest.pl html files:
+5. Run script for downloading mpk.czest.pl html files:
   mkdir tmp
   ruby vendor/pack_downloader.rb
 
-5. Run script for html parsing:
+6. Run script for html parsing (this may take some time):
   ruby vendor/initial_html_data_extractor.rb extract
