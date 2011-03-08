@@ -31,3 +31,10 @@ gem 'geokit-rails3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :test do
+  gem 'rspec', '2.5.0'
+  gem 'rspec-rails', '2.5.0'
+  gem 'autotest', '4.4.6'
+  gem 'autotest-notification', '2.3.1'
+end
