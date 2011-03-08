@@ -408,7 +408,7 @@ class InitialHtmlDataExtractor
             _station = 'TEATR IM. A. MICKIEWICZA' 
           end
           puts "Station: #{_station}"
-          _stations << Station.find_by_name(_station).id
+          _stations << Station.get_id_by_name_if_exist(_station)
         end
         Line.create!(
           :number => number,
@@ -440,7 +440,7 @@ class InitialHtmlDataExtractor
       # Remove rescue next
       # Problem : 14 has 6 directions :/
       line_id = Line.find_by_number_and_direction(number, direction).id rescue next
-      station_id = Station.find_by_name(station).id
+      station_id = Station.get_id_by_name_if_exist(station)
 
       # Robocze /html/body/table/tbody/tr[4]/td/b
       works = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |work, n|
