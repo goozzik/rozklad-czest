@@ -1,3 +1,14 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
-
+//Get location and store it in session[:lat], session[:lng]
+function getLocation() {
+  navigator.geolocation.getCurrentPosition(
+    function(position){
+      var lat = position.coords.latitude;
+      var lng = position.coords.longitude;
+      $.ajax({
+        type: 'POST',
+        url: '/pages/get_location',
+        data: 'lat=' + lat + '&lng=' + lng
+      });
+    }
+  )
+}

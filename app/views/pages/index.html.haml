@@ -9,22 +9,7 @@
       %li= link_to 'Szukaj', search_schedule_new_search_path
       %li= link_to 'Ulubione', favourites_path
       %li= link_to 'Mapa', pages_map_path
+      %li= link_to_function 'Udostepnij swoja lokalizacje', 'getLocation();'
     %br
-    = form_tag pages_get_location_path do
-      = text_field_tag :lat 
-      = text_field_tag :lng
-      = submit_tag 'Udostepnij swoja lokalizacje'
-      //Get location and store it in session[:lat], session[:lng]
-      :javascript
-        $(document).ready(function() {
-          navigator.geolocation.getCurrentPosition(
-            function(position){
-              var lat = position.coords.latitude;
-             var lng = position.coords.longitude;
-              $('#lat').val(lat);
-              $('#lng').val(lng);
-            }
-          )
-        });
     %p Jezeli chcesz kozystac z funkcji mapy, musisz najpierw udostepnic swoja lokalizacje. 
 
