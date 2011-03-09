@@ -1,5 +1,5 @@
 HOW TO RUN THIS
-======================================
+=======================================
 1. If you dont have gem bundler:
   gem install bundler
  
@@ -26,3 +26,14 @@ HOW TO RUN THIS
 
 6. Run script for html parsing (this may take some time):
   ruby vendor/initial_html_data_extractor.rb extract
+
+7. Run server
+  rails server
+
+TESTS
+=======================================
+1. Prepare your test database
+  rake environment RAILS_ENV=test db:migrate
+
+2. Run autotest
+  autotest
