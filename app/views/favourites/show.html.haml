@@ -1,5 +1,6 @@
 %div{'data-role' => 'page'}
   %div{'data-role' => 'header'}
+    = link_to 'Index', root_path, :class => 'ui-btn-right', 'data-direction' => 'reverse'
     %h1= @favourite.name 
   %div{'data-role' => 'content'}
     %ul{'data-role' => 'listview'}
@@ -9,5 +10,7 @@
         = 'Kierunek: ' + @schedules.first.line.direction
       - @schedules.each do |schedule|
         %li{:style => 'background: white; margin-bottom: 4px;'}
-          %span= "#{schedule.line.number} o"
-          %span= "#{schedule.arrival_at.in_time_zone.strftime("%H:%M")}"
+          = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
+           search_schedule_map_path(:station_from => @station_from.id,
+                                    :station_to => @station_to.id,
+                                    :map => 0)

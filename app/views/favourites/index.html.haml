@@ -1,7 +1,7 @@
 %div{'data-role' => 'page'}
   %div{'data-role' => 'header'}
+    = link_to 'Index', root_path, :class => 'ui-btn-right', 'data-direction' => 'reverse'
     %h1 Ulubione 
-    = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', :class => 'ui-btn-right'
   %div{'data-role' => 'content'}
     - flash.each do |name, msg|
       = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'
@@ -12,3 +12,5 @@
           %li
             = link_to fav.name, fav
             = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
+    %br
+    = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'
