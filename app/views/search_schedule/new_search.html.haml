@@ -1,6 +1,6 @@
 %div{'data-role' => 'page'}
   %div{'data-role' => 'header'}
-    = link_to 'Index', root_path, :class => 'ui-btn-right', 'data-direction' => 'reverse'
+    = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
     %h1 Szukaj polaczenia 
   %div{'data-role' => 'content'}
     - flash.each do |name, msg|
