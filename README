@@ -37,3 +37,8 @@ TESTS
 
 2. Run autotest
   autotest
+  
+CREATING KML FILE WITH STATIONS COORDS
+=======================================
+1. ruby vendor/stations_kml_creator
+2. Update your google static map with created kml file.
