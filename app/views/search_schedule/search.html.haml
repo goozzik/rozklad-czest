@@ -10,7 +10,7 @@
           %br
           = 'Kierunek: ' + station_schedules.first.line.direction
         - station_schedules.each do |schedule|
-          %li{:style => "background: white; margin-bottom: 4px;"}
+          %li
             = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
               search_schedule_map_path(:station_from => schedule.station.id,
                                        :station_to => @station_to.id,

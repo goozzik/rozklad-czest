@@ -3,8 +3,6 @@
     = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
     %h1 Szukaj połączenia
   %div{'data-role' => 'content'}
-    - flash.each do |name, msg|
-      = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'
     = form_tag search_schedule_search_path do
       %fieldset
         = check_box_tag :from_station, 'true'

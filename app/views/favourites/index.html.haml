@@ -3,14 +3,10 @@
     = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
     %h1 Ulubione 
   %div{'data-role' => 'content'}
-    - flash.each do |name, msg|
-      = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'
-      %br
-    - if @favourites
-      %ul{'data-role' => 'listview'}
-        - @favourites.each do |fav|
-          %li
-            = link_to fav.name, fav
-            = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
+    %ul{'data-role' => 'listview'}
+      - @favourites.each do |fav|
+        %li
+          = link_to fav.name, fav
+          = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
     %br
     = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'

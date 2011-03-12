@@ -1,0 +1,6 @@
+%div{'data-role' => 'page'}
+  %div{'data-role' => 'header'}
+    %h1 Błąd 
+  %div{'data-role' => 'content'}
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :id => "flash_#{name}", :class => 'ui-body ui-body-e'

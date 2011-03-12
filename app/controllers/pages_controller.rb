@@ -10,12 +10,14 @@ class PagesController < ApplicationController
   def get_location
     if params[:lat].nil?
       flash[:error] = "Nie udalo sie uzyskac twojej lokalizacji."
-      render root_path
+      render :action => pages_errors_path 
     else
       session[:lat] = params[:lat]
       session[:lng] = params[:lng]
-      flash[:notice] = "Twoja lokalizacja zostala udostepniona."
       redirect_to root_path
     end
+  end
+
+  def errors
   end
 end

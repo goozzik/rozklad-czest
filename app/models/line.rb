@@ -14,11 +14,6 @@ class Line < ActiveRecord::Base
 
   def self.find_first_by_stations(stations)
     find(:first, :conditions => ["stations LIKE ?", "%#{stations.join("%")}%"])
-    #lines = []
-    #all.each do |line|
-      #lines << line if line.stations.include?(stations)
-    #end
-    #lines
   end
 
 end
