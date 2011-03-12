@@ -74,32 +74,14 @@ class SearchScheduleController < ApplicationController
 
       # Schedules stations_near to station_to
       if params[:from_my_location] == 'true'
-        @within = params[:within]
-        @stations_near = Station.within(@within, :origin => [session[:lat], session[:lng]])
-        # Delete all who dont have connect to station_to
-        @stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
-        @stations_near.each do |station|
-          lines = Line.find_all_by_stations([station.id, @station_to.id])
-          _today_schedules = Schedule.all(
-            :conditions => ["line_id IN (?)
-              AND station_id = ?
-              AND arrival_at > ?
-              AND sunday = ?
-              AND saturday = ?
-              AND work = ?",
-              lines.collect(&:id),
-              station.id,
-              Time.now + 3600,
-              Time.now.wday == 0 ? true : false,
-              Time.now.wday == 6 ? true : false,
-              (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
-            ],
-            :order => 'arrival_at',
-            :limit => 10
-          )
-          if _today_schedules.count < 10
-            limit = 10 - _today_schedules.count
-            _next_day_schedules = Schedule.all(
+        unless session[:lat].nil?
+          @within = params[:within]
+          @stations_near = Station.within(@within, :origin => [session[:lat], session[:lng]])
+          # Delete all who dont have connect to station_to
+          @stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
+          @stations_near.each do |station|
+            lines = Line.find_all_by_stations([station.id, @station_to.id])
+            _today_schedules = Schedule.all(
               :conditions => ["line_id IN (?)
                 AND station_id = ?
                 AND arrival_at > ?
@@ -108,27 +90,50 @@ class SearchScheduleController < ApplicationController
                 AND work = ?",
                 lines.collect(&:id),
                 station.id,
-                (Date.today + 1).to_time + 3600,
-                ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
-                ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
-                (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
+                Time.now + 3600,
+                Time.now.wday == 0 ? true : false,
+                Time.now.wday == 6 ? true : false,
+                (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
               ],
               :order => 'arrival_at',
-              :limit => limit 
+              :limit => 10
             )
-          end
-          unless _next_day_schedules.nil?
-            _schedules = _today_schedules + _next_day_schedules
-            unless _schedules.empty?
-              @schedules << _schedules
+            if _today_schedules.count < 10
+              limit = 10 - _today_schedules.count
+              _next_day_schedules = Schedule.all(
+                :conditions => ["line_id IN (?)
+                  AND station_id = ?
+                  AND arrival_at > ?
+                  AND sunday = ?
+                  AND saturday = ?
+                  AND work = ?",
+                  lines.collect(&:id),
+                  station.id,
+                  (Date.today + 1).to_time + 3600,
+                  ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
+                  ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
+                  (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
+                ],
+                :order => 'arrival_at',
+                :limit => limit 
+              )
             end
-          else 
-            unless _today_schedules.empty?
-              @schedules << _today_schedules
+            unless _next_day_schedules.nil?
+              _schedules = _today_schedules + _next_day_schedules
+              unless _schedules.empty?
+                @schedules << _schedules
+              end
+            else 
+              unless _today_schedules.empty?
+                @schedules << _today_schedules
+              end
             end
           end
+        else 
+          flash[:error] = 'Nie udostępniono położenia.'
+          render :action => pages_errors_path
         end
-      end 
+      end
     end
   end
 
