@@ -21,7 +21,7 @@ class SearchScheduleController < ApplicationController
             render :action => pages_errors_path
           else
             lines = Line.find_all_by_stations([@station_from.id, @station_to.id])
-            _schedules = Schedule.all(
+            _today_schedules = Schedule.all(
               :conditions => ["line_id IN (?)
                 AND station_id = ?
                 AND arrival_at > ?
@@ -33,14 +33,40 @@ class SearchScheduleController < ApplicationController
                 Time.now + 3600,
                 Time.now.wday == 0 ? true : false,
                 Time.now.wday == 6 ? true : false,
-                Time.now.wday != (6 or 0) ? true : false
+                (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
               ],
               :order => 'arrival_at',
               :limit => 10
             )
-            # Remove this when get know how to get schedules from next day
-            unless _schedules.empty?
-              @schedules << _schedules
+            if _today_schedules.count < 10
+              limit = 10 - _today_schedules.count
+              _next_day_schedules = Schedule.all(
+                :conditions => ["line_id IN (?)
+                  AND station_id = ?
+                  AND arrival_at > ?
+                  AND sunday = ?
+                  AND saturday = ?
+                  AND work = ?",
+                  lines.collect(&:id),
+                  @station_from.id,
+                  (Date.today + 1).to_time + 3600,
+                  ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
+                  ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
+                  (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
+                ],
+                :order => 'arrival_at',
+                :limit => limit 
+              )
+            end
+            unless _next_day_schedules.nil?
+              _schedules = _today_schedules + _next_day_schedules
+              unless _schedules.empty?
+                @schedules << _schedules
+              end
+            else 
+              unless _today_schedules.empty?
+                @schedules << _today_schedules
+              end
             end
           end
         end
@@ -54,7 +80,7 @@ class SearchScheduleController < ApplicationController
         @stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
         @stations_near.each do |station|
           lines = Line.find_all_by_stations([station.id, @station_to.id])
-          _schedules = Schedule.all(
+          _today_schedules = Schedule.all(
             :conditions => ["line_id IN (?)
               AND station_id = ?
               AND arrival_at > ?
@@ -66,20 +92,45 @@ class SearchScheduleController < ApplicationController
               Time.now + 3600,
               Time.now.wday == 0 ? true : false,
               Time.now.wday == 6 ? true : false,
-              Time.now.wday != (6 or 0) ? true: false
+              (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
             ],
             :order => 'arrival_at',
             :limit => 10
           )
-          # Remove this when get know how to get schedules from next day
-          unless _schedules.empty?
-            @schedules << _schedules
+          if _today_schedules.count < 10
+            limit = 10 - _today_schedules.count
+            _next_day_schedules = Schedule.all(
+              :conditions => ["line_id IN (?)
+                AND station_id = ?
+                AND arrival_at > ?
+                AND sunday = ?
+                AND saturday = ?
+                AND work = ?",
+                lines.collect(&:id),
+                station.id,
+                (Date.today + 1).to_time + 3600,
+                ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
+                ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
+                (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
+              ],
+              :order => 'arrival_at',
+              :limit => limit 
+            )
+          end
+          unless _next_day_schedules.nil?
+            _schedules = _today_schedules + _next_day_schedules
+            unless _schedules.empty?
+              @schedules << _schedules
+            end
+          else 
+            unless _today_schedules.empty?
+              @schedules << _today_schedules
+            end
           end
         end
-      end
+      end 
     end
   end
-
 
   def map
     @lat = session[:lat]

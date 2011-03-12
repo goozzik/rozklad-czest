@@ -9,7 +9,7 @@ class FavouritesController < ApplicationController
     @station_from = Station.find_by_name(@favourite.station_from)
     @station_to = Station.find_by_name(@favourite.station_to)
     lines = Line.find_all_by_stations([@station_from.id, @station_to.id])
-    @schedules = Schedule.all(
+    _today_schedules = Schedule.all(
       :conditions => ["line_id IN (?)
         AND station_id = ?
         AND arrival_at > ?
@@ -21,11 +21,41 @@ class FavouritesController < ApplicationController
         Time.now + 3600,
         Time.now.wday == 0 ? true : false,
         Time.now.wday == 6 ? true : false,
-        Time.now.wday != (6 or 0) ? true : false
+        (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
       ],
       :order => 'arrival_at',
       :limit => 10
     )
+    if _today_schedules.count < 10
+      limit = 10 - _today_schedules.count
+      _next_day_schedules = Schedule.all(
+        :conditions => ["line_id IN (?)
+          AND station_id = ?
+          AND arrival_at > ?
+          AND sunday = ?
+          AND saturday = ?
+          AND work = ?",
+          lines.collect(&:id),
+          @station_from.id,
+          (Date.today + 1).to_time + 3600,
+          ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
+          ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
+          (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
+        ],
+        :order => 'arrival_at',
+        :limit => limit 
+      )
+    end
+    unless _next_day_schedules.nil?
+      _schedules = _today_schedules + _next_day_schedules
+      unless _schedules.empty?
+        @schedules = _schedules
+      end
+    else 
+      unless _today_schedules.empty?
+        @schedules = _today_schedules
+      end
+    end
   end
 
   def new
@@ -47,6 +77,7 @@ class FavouritesController < ApplicationController
         @favourite.station_from.upcase! 
         @favourite.station_to.upcase! 
         @favourite.save
+        redirect_to favourites_url
       end
     end
   end
