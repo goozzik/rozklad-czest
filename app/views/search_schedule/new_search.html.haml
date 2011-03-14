@@ -1,21 +1,17 @@
-%div{'data-role' => 'page'}
-  %div{'data-role' => 'header'}
-    = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
-    %h1 Szukaj połączenia
-  %div{'data-role' => 'content'}
-    = form_tag search_schedule_search_path do
-      %fieldset
-        = check_box_tag :from_station, 'true'
-        = label_tag :from_station, 'Z przystanku' 
-        = label_tag :station_from, 'Przystanek odjazdowy' 
-        = text_field_tag :station_from, '', :autocomplete => search_schedule_autocomplete_station_name_path 
-      %br
-      %fieldset 
-        = check_box_tag :from_my_location, 'true'
-        = label_tag :from_my_location, 'Z mojego położenia' 
-        = label_tag :within, 'W promieniu (w kilometrach)' 
-        = text_field_tag :within, '1'
-      %br
-      = label_tag :station_to, 'Przystanek docelowy' 
-      = text_field_tag :station_to, '', :autocomplete => search_schedule_autocomplete_station_name_path
-      = submit_tag 'Szukaj'
+%div{'data-role' => 'content'}
+  = form_tag search_schedule_search_path do
+    %fieldset
+      = check_box_tag :from_station, 'true'
+      = label_tag :from_station, 'Z przystanku' 
+      = label_tag :station_from, 'Przystanek odjazdowy' 
+      = text_field_tag :station_from, '', :autocomplete => search_schedule_autocomplete_station_name_path 
+    %br
+    %fieldset 
+      = check_box_tag :from_my_location, 'true'
+      = label_tag :from_my_location, 'Z mojego położenia' 
+      = label_tag :within, 'W promieniu (w kilometrach)' 
+      = text_field_tag :within, '1'
+    %br
+    = label_tag :station_to, 'Przystanek docelowy' 
+    = text_field_tag :station_to, '', :autocomplete => search_schedule_autocomplete_station_name_path
+    = submit_tag 'Szukaj'

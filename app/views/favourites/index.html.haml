@@ -1,12 +1,8 @@
-%div{'data-role' => 'page'}
-  %div{'data-role' => 'header'}
-    = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
-    %h1 Ulubione 
-  %div{'data-role' => 'content'}
-    %ul{'data-role' => 'listview'}
-      - @favourites.each do |fav|
-        %li
-          = link_to fav.name, fav
-          = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
-    %br
-    = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'
+%div{'data-role' => 'content'}
+  %ul{'data-role' => 'listview'}
+    - @favourites.each do |fav|
+      %li
+        = link_to fav.name, fav
+        = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
+  %br
+  = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'

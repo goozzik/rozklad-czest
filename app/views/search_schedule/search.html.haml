@@ -1,17 +1,13 @@
-%div{'data-role' => 'page'}
-  %div{'data-role' => 'header'}
-    = link_to 'Index', root_path, :class => 'ui-btn-right', :rel => 'external'
-    %h1 Znalezione 
-  %div{'data-role' => 'content'}
-    %ul{'data-role' => 'listview'}
-      - @schedules.each_with_index do |station_schedules,i|
-        %li{'data-role' => 'list-divider'}
-          = 'Przystanek: ' + station_schedules.first.station.name
-          %br
-          = 'Kierunek: ' + station_schedules.first.line.direction
-        - station_schedules.each do |schedule|
-          %li
-            = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
-              search_schedule_map_path(:station_from => schedule.station.id,
-                                       :station_to => @station_to.id,
-                                       :map => i)
+%div{'data-role' => 'content'}
+  %ul{'data-role' => 'listview'}
+    - @schedules.each_with_index do |station_schedules,i|
+      %li{'data-role' => 'list-divider'}
+        = 'Przystanek: ' + station_schedules.first.station.name
+        %br
+        = 'Kierunek: ' + station_schedules.first.line.direction
+      - station_schedules.each do |schedule|
+        %li
+          = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
+            search_schedule_map_path(:station_from => schedule.station.id,
+                                     :station_to => @station_to.id,
+                                     :map => i)
