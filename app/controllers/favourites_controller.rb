@@ -88,9 +88,9 @@ class FavouritesController < ApplicationController
 
   def update
     @favourite = Favourite.find(params[:id])
-    @edited_fav = Favourite.new(params[:favourite])
-    station_from = Station.find_by_name(@edited_fav.station_from.upcase)
-    station_to = Station.find_by_name(@edited_fav.station_to.upcase)
+    edited_fav = Favourite.new(params[:favourite])
+    station_from = Station.find_by_name(edited_fav.station_from.upcase)
+    station_to = Station.find_by_name(edited_fav.station_to.upcase)
     if station_from.nil? or station_to.nil?
       flash[:error] = 'Jeden z przystanków nie istnieje.'
       render :action => pages_errors_path 
@@ -99,8 +99,8 @@ class FavouritesController < ApplicationController
         flash[:error] = 'Brak połączen między przystankiem odjazdowym a docelowym.'
         render :action => pages_errors_path 
       else
-        @edited_fav.station_from.upcase!
-        @edited_fav.station_to.upcase!
+        edited_fav.station_from.upcase!
+        edited_fav.station_to.upcase!
         @favourite.update_attributes(@edited_fav)
         redirect_to favourites_url 
       end
