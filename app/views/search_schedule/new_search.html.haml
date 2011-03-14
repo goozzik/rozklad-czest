@@ -1,5 +1,5 @@
 %div{'data-role' => 'content'}
-  = form_tag search_schedule_search_path do
+  = form_tag search_schedule_search_path, :method => :get do
     %fieldset
       = check_box_tag :from_station, 'true'
       = label_tag :from_station, 'Z przystanku' 

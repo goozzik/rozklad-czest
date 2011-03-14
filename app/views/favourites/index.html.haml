@@ -1,8 +1,8 @@
 %div{'data-role' => 'content'}
   %ul{'data-role' => 'listview'}
-    - @favourites.each do |fav|
+    - @favourites.each do |favourite|
       %li
-        = link_to fav.name, fav
-        = link_to 'Edytuj', edit_favourite_path(fav), 'data-icon' => 'gear'
+        = link_to favourite.name, favourite
+        = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear'
   %br
   = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'

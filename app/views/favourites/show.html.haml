@@ -1,12 +1,12 @@
 %div{'data-role' => 'content'}
   %ul{'data-role' => 'listview'}
-    %li{'data-role' => 'list-divider'}
-      = 'Przystanek: ' + @schedules.first.station.name
-      %br
-      = 'Kierunek: ' + @schedules.first.line.direction
-    - @schedules.each do |schedule|
-      %li
-        = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
-         search_schedule_map_path(:station_from => @station_from.id,
-                                  :station_to => @station_to.id,
-                                  :map => 0)
+    %li
+      = link_to "z #{@favourite.station_from} do #{@favourite.station_to}",
+        search_schedule_search_path(:station_from => @favourite.station_from,
+                                    :station_to => @favourite.station_to,
+                                    :from_station => 'true') 
+    %li
+      = link_to "z #{@favourite.station_to} do #{@favourite.station_from}",
+        search_schedule_search_path(:station_from => @favourite.station_to,
+                                    :station_to => @favourite.station_from,
+                                    :from_station => 'true') 
