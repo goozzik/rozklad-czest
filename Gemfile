@@ -32,6 +32,11 @@ gem 'geokit-rails3'
 #   gem 'webrat'
 # end
 
+group :development do
+  gem 'heroku', '1.18.3'
+  gem 'taps', '0.3.19'
+end
+
 group :test do
   gem 'rspec', '2.5.0'
   gem 'rspec-rails', '2.5.0'

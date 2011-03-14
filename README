@@ -42,3 +42,18 @@ CREATING KML FILE WITH STATIONS COORDS
 =======================================
 1. ruby vendor/stations_kml_creator
 2. Update your google static map with created kml file.
+
+RUNNING YOUR OWN BETA ON HEROKU
+================================
+
+1. Run heroku create:
+  heroku create
+2. Fill in credentials (email and password used to login on heroku)
+3. Watch heroku make things work:
+  Creating fancy-name-69.... done
+  http://fancy-name-69.heroku.com/ | git@heroku.com:fancy-name-69.git
+  Git remote heroku added
+4. Deploy:
+  git push heroku master
+5. Push local database to heroku:
+  heroku db:push --confirm fancy-name-69
