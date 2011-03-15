@@ -23,4 +23,49 @@ describe Station::Import do
     end
   end
 
+  describe ".create_if_needed!" do
+    let(:attributes) { mock }
+    let(:created_record) { mock }
+    before do
+      the_class.stub!(:find).with(:first, :conditions => attributes).and_return(record_found)
+      the_class.stub!(:create!).with(attributes).and_return(created_record)
+    end
+
+    describe "behavior" do
+      after { the_class.create_if_needed!(attributes) }
+
+      context "when record not found" do
+        let(:record_found) { nil }
+
+        it "should create new one" do
+          the_class.should_receive(:create!).with(attributes)
+        end
+      end
+
+      context "when record found" do
+        let(:record_found) { mock }
+
+        it "should not create new one" do
+          the_class.should_not_receive(:create!)
+        end
+      end
+    end
+
+    describe "returns" do
+      subject { the_class.create_if_needed!(attributes) }
+
+      context "when record not found" do
+        let(:record_found) { nil }
+
+        it { should == created_record }
+      end
+
+      context "when record found" do
+        let(:record_found) { mock }
+
+        it { should be_nil }
+      end
+    end
+  end
+
 end

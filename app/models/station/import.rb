@@ -5,4 +5,8 @@ class Station::Import < Station
     station.id if station
   end
 
+  def self.create_if_needed!(attributes)
+    create!(attributes) unless find(:first, :conditions => attributes)
+  end
+
 end

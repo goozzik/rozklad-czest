@@ -19,7 +19,7 @@ STATIONS_LOCATION = {
   'BACZYŃSKIEGO' => {:lat => 50.837817, :lng => 19.124622},
   'BARGŁY' => {:lat => 50.7082, :lng => 19.121704},
   'BARGŁY - OSP' => {:lat => 50.709504, :lng => 19.116898},
-  'BARGŁY - SZYMCZYKI' => {:lat => 50.708634, :lng => 19.112778},
+  'BARGŁY - SZYMCZYKI' => {:lat => 50.708934, :lng => 19.112778},
   'BATALIONÓW CHŁOPSKICH' => {:lat => 50.708634, :lng => 19.112778},
   'BATALIONÓW CHŁOPSKICH I' => {:lat => 50.837926, :lng => 19.188652},
   'BERGER' => {:lat => 50.801216, :lng => 19.159641},
@@ -380,7 +380,7 @@ class InitialHtmlDataExtractor
       if _station == 'TEATR im. A. MICKIEWICZA'
         _station = 'TEATR IM. A. MICKIEWICZA' 
       end
-      Station.create!(
+      Station::Import.create_if_needed!(
         :name => _station,
         :lat => STATIONS_LOCATION[_station][:lat],
         :lng => STATIONS_LOCATION[_station][:lng]
@@ -440,7 +440,7 @@ class InitialHtmlDataExtractor
       # Remove rescue next
       # Problem : 14 has 6 directions :/
       line_id = Line.find_by_number_and_direction(number, direction).id rescue next
-      station_id = Station.get_id_by_name_if_exist(station)
+      station_id = Station::Import.get_id_by_name_if_exist(station)
 
       # Robocze /html/body/table/tbody/tr[4]/td/b
       works = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |work, n|
