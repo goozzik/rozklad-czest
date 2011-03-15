@@ -42,4 +42,5 @@ group :test do
   gem 'rspec-rails', '2.5.0'
   gem 'autotest', '4.4.6'
   gem 'autotest-notification', '2.3.1'
+  gem 'remarkable_activerecord', '4.0.0.alpha4'
 end
