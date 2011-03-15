@@ -2,9 +2,15 @@ require 'spec_helper'
 
 describe Schedule do
 
+  let(:valid_station_attributes) { {
+    :name => "value for name",
+    :lat => 1,
+    :lng => 1,
+  } }
+
   let(:valid_attributes) { {
     :line => Line.create,
-    :station => Station.create,
+    :station => Station.create(valid_station_attributes),
     :arrival_at => '',
     :work => false,
     :saturday => false,

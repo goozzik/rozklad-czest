@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110114162554) do
+ActiveRecord::Schema.define(:version => 20110315173128) do
 
   create_table "favourites", :force => true do |t|
     t.datetime "created_at"
@@ -54,11 +54,14 @@ ActiveRecord::Schema.define(:version => 20110114162554) do
   end
 
   create_table "stations", :force => true do |t|
-    t.string   "name"
+    t.string   "name",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.float    "lat"
-    t.float    "lng"
+    t.float    "lat",        :null => false
+    t.float    "lng",        :null => false
   end
+
+  add_index "stations", ["lat", "lng"], :name => "index_stations_on_lat_and_lng", :unique => true
+  add_index "stations", ["name"], :name => "index_stations_on_name", :unique => true
 
 end
