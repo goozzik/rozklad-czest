@@ -1,6 +1,6 @@
 %div{'data-role' => 'content'}
   %ul{'data-role' => 'listview'}
-    - @schedules.each_with_index do |station_schedules,i|
+    - @schedules.each_with_index do |station_schedules|
       %li{'data-role' => 'list-divider'}
         = 'Przystanek: ' + station_schedules.first.station.name
         %br
@@ -8,6 +8,5 @@
       - station_schedules.each do |schedule|
         %li
           = link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}", 
-            search_schedule_map_path(:station_from => schedule.station.id,
-                                     :station_to => @station_to.id,
-                                     :map => i)
+            search_schedule_map_path(:station_from => schedule.station.id, :station_to => @station_to.id),
+            :rel => 'external'

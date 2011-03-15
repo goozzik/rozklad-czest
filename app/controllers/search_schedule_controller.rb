@@ -142,6 +142,5 @@ class SearchScheduleController < ApplicationController
     @lng = session[:lng]
     @station_from = Station.find(params[:station_from])
     @station_to = Station.find(params[:station_to])
-    @map = params[:map]
   end
 end
