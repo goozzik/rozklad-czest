@@ -21,7 +21,7 @@ class SearchScheduleController < ApplicationController
             render :action => pages_errors_path
           else
             lines = Line.find_all_by_stations([@station_from.id, @station_to.id])
-            _today_schedules = Schedule.today(lines, @station_from.id)
+            _today_schedules = Schedule.today(lines.collect(&:id), @station_from.id)
             if _today_schedules.count < 10
               limit = 10 - _today_schedules.count
               _next_day_schedules = Schedule.all(
