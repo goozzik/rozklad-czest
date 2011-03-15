@@ -2,6 +2,9 @@ require 'spec_helper'
 
 describe Schedule do
 
+  should_belong_to :line
+  should_belong_to :station
+
   let(:valid_station_attributes) { {
     :name => "value for name",
     :lat => 1,
