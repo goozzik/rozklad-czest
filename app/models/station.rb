@@ -7,11 +7,6 @@ class Station < ActiveRecord::Base
 
   validate :validate_uniqueness_of_lat_lng_pair
 
-  def self.get_id_by_name_if_exist(name)
-    station = find_by_name(name)
-    station.id if station
-  end
-
   private
 
     def validate_uniqueness_of_lat_lng_pair

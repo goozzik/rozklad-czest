@@ -408,7 +408,7 @@ class InitialHtmlDataExtractor
             _station = 'TEATR IM. A. MICKIEWICZA' 
           end
           puts "Station: #{_station}"
-          _stations << Station.get_id_by_name_if_exist(_station)
+          _stations << Station::Import.get_id_by_name_if_exist(_station)
         end
         Line.create!(
           :number => number,
