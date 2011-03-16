@@ -24,7 +24,7 @@ describe Schedule do
   } }
 
   it "should create a new instance given valid attributes" do
-    Schedule.create!(valid_attributes)
+    the_class.create!(valid_attributes)
   end
 
   describe ".today" do

@@ -11,7 +11,7 @@ describe Line do
   } }
 
   it "should create a new instance given valid attributes" do
-    Line.create!(valid_attributes)
+    the_class.create!(valid_attributes)
   end
 
   describe ".ids_by_stations" do

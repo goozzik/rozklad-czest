@@ -3,6 +3,8 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe LineSchedule do
 
+  let(:the_class) { LineSchedule }
+
   let(:valid_attributes) { {
     :line_number => 19,
     :direction => 'krematorium',
@@ -12,7 +14,7 @@ describe LineSchedule do
   } }
 
   it "should create a new instance given valid attributes" do
-    LineSchedule.create!(valid_attributes)
+    the_class.create!(valid_attributes)
   end
 
   it 'should be invalid when ' do
