@@ -106,4 +106,141 @@ describe Schedule do
     end
   end
 
+  describe ".get" do
+    let(:station_from_id) { mock }
+    let(:station_to_id) { mock }
+    let(:today_schedules) { [] }
+    let(:next_day_schedules) { [] }
+    let(:left) { 10 }
+    before do
+      Line.stub!(:ids_by_stations).with(station_from_id, station_to_id).and_return(lines_id)
+      the_class.stub!(:today).with(lines_id, station_from_id).and_return(today_schedules)
+      the_class.stub!(:tomorrow).with(lines_id, station_from_id, left).and_return(next_day_schedules)
+    end
+
+    context "when no connection between stations" do
+      let(:lines_id) { [] }
+
+      describe "returns" do
+        subject { the_class.get(station_from_id, station_to_id) }
+
+        it { should == [] }
+      end
+    end
+
+    context "when there are connections between stations" do
+      let(:lines_id) { [ mock ] }
+
+      context "and today schedules contain 10 records" do
+        let(:today_schedules) { [ mock, mock, mock, mock, mock, mock, mock, mock, mock, mock ] }
+        let(:left) { 0 }
+
+        describe "behavior" do
+          after { the_class.get(station_from_id, station_to_id) }
+
+          it "should call Line.ids_by_stations proper way" do
+            Line.should_receive(:ids_by_stations).with(station_from_id, station_to_id).and_return(lines_id)
+          end
+
+          it "should call .today proper way" do
+            the_class.should_receive(:today).with(lines_id, station_from_id).and_return(today_schedules)
+          end
+
+          it "should not call .tomorrow" do
+            the_class.should_not_receive(:tomorrow)
+          end
+        end
+
+        describe "returns" do
+          subject { the_class.get(station_from_id, station_to_id) }
+
+          it { should == today_schedules }
+        end
+      end
+
+      context "and today schedules contain 5 records" do
+        let(:today_schedules) { [ mock, mock, mock, mock, mock ] }
+        let(:left) { 5 }
+
+        describe "behavior" do
+          after { the_class.get(station_from_id, station_to_id) }
+
+          it "should call Line.ids_by_stations proper way" do
+            Line.should_receive(:ids_by_stations).with(station_from_id, station_to_id).and_return(lines_id)
+          end
+
+          it "should call .today proper way" do
+            the_class.should_receive(:today).with(lines_id, station_from_id).and_return(today_schedules)
+          end
+
+          it "should call .tomorrow proper way" do
+            the_class.should_receive(:tomorrow).with(lines_id, station_from_id, left).and_return(next_day_schedules)
+          end
+        end
+
+
+        context "and next day schedules contain 5 records" do
+          let(:next_day_schedules) { [ mock, mock, mock, mock, mock ] }
+
+          describe "returns" do
+            subject { the_class.get(station_from_id, station_to_id) }
+
+            it { should == today_schedules + next_day_schedules }
+          end
+        end
+
+        context "and next day schedules contain no records" do
+          let(:next_day_schedules) { [] }
+
+          describe "returns" do
+            subject { the_class.get(station_from_id, station_to_id) }
+
+            it { should == today_schedules }
+          end
+        end
+      end
+
+      context "and today schedules contain no records" do
+        let(:today_schedules) { [] }
+        let(:left) { 10 }
+
+        describe "behavior" do
+          after { the_class.get(station_from_id, station_to_id) }
+
+          it "should call Line.ids_by_stations proper way" do
+            Line.should_receive(:ids_by_stations).with(station_from_id, station_to_id).and_return(lines_id)
+          end
+
+          it "should call .today proper way" do
+            the_class.should_receive(:today).with(lines_id, station_from_id).and_return(today_schedules)
+          end
+
+          it "should call .tomorrow proper way" do
+            the_class.should_receive(:tomorrow).with(lines_id, station_from_id, left).and_return(next_day_schedules)
+          end
+        end
+
+        context "and next day schedules contain 10 records" do
+          let(:next_day_schedules) { [ mock, mock, mock, mock, mock, mock, mock, mock, mock, mock ] }
+
+          describe "returns" do
+            subject { the_class.get(station_from_id, station_to_id) }
+
+            it { should == next_day_schedules }
+          end
+        end
+
+        context "and next day schedules contain no records" do
+          let(:next_day_schedules) { [] }
+
+          describe "returns" do
+            subject { the_class.get(station_from_id, station_to_id) }
+
+            it { should == [] }
+          end
+        end
+      end
+    end
+  end
+
 end
