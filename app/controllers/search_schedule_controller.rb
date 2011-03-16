@@ -24,23 +24,7 @@ class SearchScheduleController < ApplicationController
             _today_schedules = Schedule.today(lines.collect(&:id), @station_from.id)
             if _today_schedules.count < 10
               limit = 10 - _today_schedules.count
-              _next_day_schedules = Schedule.all(
-                :conditions => ["line_id IN (?)
-                  AND station_id = ?
-                  AND arrival_at > ?
-                  AND sunday = ?
-                  AND saturday = ?
-                  AND work = ?",
-                  lines.collect(&:id),
-                  @station_from.id,
-                  (Date.today + 1).to_time + 3600,
-                  ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
-                  ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
-                  (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
-                ],
-                :order => 'arrival_at',
-                :limit => limit 
-              )
+              _next_day_schedules = Schedule.tomorrow(lines.collect(&:id), @station_from.id, limit)
             end
             unless _next_day_schedules.nil?
               _schedules = _today_schedules + _next_day_schedules
@@ -65,42 +49,10 @@ class SearchScheduleController < ApplicationController
           @stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
           @stations_near.each do |station|
             lines = Line.find_all_by_stations([station.id, @station_to.id])
-            _today_schedules = Schedule.all(
-              :conditions => ["line_id IN (?)
-                AND station_id = ?
-                AND arrival_at > ?
-                AND sunday = ?
-                AND saturday = ?
-                AND work = ?",
-                lines.collect(&:id),
-                station.id,
-                Time.now + 3600,
-                Time.now.wday == 0 ? true : false,
-                Time.now.wday == 6 ? true : false,
-                (Time.now.wday != 6 and Time.now.wday != 0) ? true : false
-              ],
-              :order => 'arrival_at',
-              :limit => 10
-            )
+            _today_schedules = Schedule.today(lines.collect(&:id), station)
             if _today_schedules.count < 10
               limit = 10 - _today_schedules.count
-              _next_day_schedules = Schedule.all(
-                :conditions => ["line_id IN (?)
-                  AND station_id = ?
-                  AND arrival_at > ?
-                  AND sunday = ?
-                  AND saturday = ?
-                  AND work = ?",
-                  lines.collect(&:id),
-                  station.id,
-                  (Date.today + 1).to_time + 3600,
-                  ((Date.today + 1).to_time + 3600).wday == 0 ? true : false,
-                  ((Date.today + 1).to_time + 3600).wday == 6 ? true : false,
-                  (((Date.today + 1).to_time + 3600).wday != 6 and ((Date.today + 1).to_time + 3600).wday != 0) ? true : false
-                ],
-                :order => 'arrival_at',
-                :limit => limit 
-              )
+              _next_day_schedules = Schedule.tomorrow(lines.collect(&:id), station, limit)
             end
             unless _next_day_schedules.nil?
               _schedules = _today_schedules + _next_day_schedules

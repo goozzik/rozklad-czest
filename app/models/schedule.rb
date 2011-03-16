@@ -26,4 +26,25 @@ class Schedule < ActiveRecord::Base
     )
   end
 
+  def self.tomorrow(lines_id, station_from_id, limit)
+    find(:all,
+      :conditions => [
+        "line_id IN (?)
+          AND station_id = ?
+          AND arrival_at > ?
+          AND sunday = ?
+          AND saturday = ?
+          AND work = ?",
+        lines_id,
+        station_from_id,
+        Time.now.tomorrow.advance(:hours => 1),
+        Time.now.tomorrow.at_beginning_of_day.wday == 0,
+        Time.now.tomorrow.at_beginning_of_day.wday == 6,
+        (Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0)
+      ],
+      :order => 'arrival_at',
+      :limit => limit 
+    )
+  end
+
 end

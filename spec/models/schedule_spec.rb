@@ -65,4 +65,45 @@ describe Schedule do
     end
   end
 
+  describe ".tomorrow" do
+    let(:tomorrow) { Date.new(2011, 3, 16).to_time.at_beginning_of_day }
+    let(:now) { Date.new(2011, 3, 15).to_time.at_beginning_of_day }
+    let(:lines_id) { mock }
+    let(:station_from_id) { mock }
+    let(:limit) { mock }
+    let(:one_hour_from_tomorrow) { tomorrow.advance(:hours => 1) }
+    before do
+      Time.stub!(:now => now)
+      tomorrow.stub!(:andvance).with(:hours => 1).and_return(one_hour_from_tomorrow)
+      the_class.stub!(
+        :lines_id => lines_id,
+        :station_from_id => station_from_id,
+        :limit => limit
+      )
+    end
+    after { the_class.tomorrow(lines_id, station_from_id, limit) }
+
+    it "should call find proper way" do
+      the_class.should_receive(:find).with(
+        :all,
+        :conditions => [
+        "line_id IN (?)
+          AND station_id = ?
+          AND arrival_at > ?
+          AND sunday = ?
+          AND saturday = ?
+          AND work = ?",
+          lines_id,
+          station_from_id,
+          one_hour_from_tomorrow,
+          false,
+          false,
+          true
+        ],
+        :order => 'arrival_at',
+        :limit => limit 
+      )
+    end
+  end
+
 end
