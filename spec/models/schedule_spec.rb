@@ -101,7 +101,7 @@ describe Schedule do
           true
         ],
         :order => 'arrival_at',
-        :limit => limit 
+        :limit => limit
       )
     end
   end

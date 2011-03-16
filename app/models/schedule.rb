@@ -43,7 +43,7 @@ class Schedule < ActiveRecord::Base
         (Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0)
       ],
       :order => 'arrival_at',
-      :limit => limit 
+      :limit => limit
     )
   end
 
