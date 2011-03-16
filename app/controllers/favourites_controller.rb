@@ -4,9 +4,6 @@ class FavouritesController < ApplicationController
     @favourites = Favourite.all
   end
 
-  def pre_show
-  end
-
   def show
     @favourite = Favourite.find(params[:id])
   end
