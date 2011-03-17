@@ -1,20 +1,40 @@
 # coding: utf-8
 class Favourite < ActiveRecord::Base
+  
+  before_validation :set_on_start_page_value, :upcase_stations
+  validate :validate_station_from_exist,
+           :validate_station_to_exist,
+           :validate_line_exist
 
-  def self.test
-     station_from = Station.find_by_name("RYNEK WIELUŃSKI")
-     station_to = Station.find_by_name("II ALEJA NAJŚWIĘTSZEJ MARYI PANNY")
-     lines = Line.find_all_by_stations([station_from.id, station_to.id])
-     schedules = Schedule.all(
-            :conditions => ["line_id IN (?) AND station_id = ? AND arrival_at > ?", lines.collect(&:id), station_from.id, Time.now],
-            :order => "arrival_at",
-            :limit => 5
-          )
-    # find(:all,
-    #          :conditions => ["stop_name = 'RYNEK WIELUŃSKI' AND arrival_at > ?", Time.now],
-    #          :order => "arrival_at",
-    #          :limit => 5
-    #     )
+  private
 
-  end
+    def upcase_stations
+      self.station_from = station_from.upcase
+      self.station_to = station_to.upcase
+    end
+
+    def set_on_start_page_value
+      self.on_start_page = true if on_start_page == '1'
+    end
+
+    def validate_station_from_exist
+      errors.add :station_from, 'Przystanek odjazdowy nie istnieje.' unless station_from_object
+    end
+
+    def validate_station_to_exist
+      errors.add :station_to, 'Przystanek docelowy nie istnieje.' unless station_to_object
+    end
+
+    def validate_line_exist
+      errors.add :station_from, 'Brak połączeń.' unless Line.find_first_by_stations([station_from_object.id, station_to_object.id])
+    end
+
+    def station_from_object
+      @station_from_object ||= Station.find_by_name(self.station_from)
+    end
+
+    def station_to_object
+      @station_to_object ||= Station.find_by_name(self.station_to)
+    end
+
 end
