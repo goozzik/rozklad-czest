@@ -1,6 +1,7 @@
 %div{'data-role' => 'content'}
   %ul{'data-role' => 'listview'}
     - @schedules.each_with_index do |station_schedules|
+      - next if station_schedules.empty?
       %li{'data-role' => 'list-divider'}
         = 'Przystanek: ' + station_schedules.first.station.name
         %br
