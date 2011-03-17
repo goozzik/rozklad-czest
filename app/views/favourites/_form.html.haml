@@ -10,7 +10,10 @@
   = f.text_field :station_to,
                  :autocomplete => search_schedule_autocomplete_station_name_path
 
+  / Do not use check_box helper! It add hidden_field after check_box - this gives always '0' value.
+  %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
   = f.label :on_start_page, 'Pokaż na stronie startowej'
-  = check_box_tag 'favourite[on_start_page]'
+  = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page
+  // %input{:id => 'favourite_on_start_page', :name => 'favourite[on_start_page]', :type => 'checkbox', :value => '1'}
 
   = f.submit 'Zapisz'

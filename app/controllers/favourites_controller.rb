@@ -27,7 +27,8 @@ class FavouritesController < ApplicationController
   end
 
   def update
-    if @favourite.update_attributes(@edited_fav)
+    @favourite = Favourite.find(params[:id])
+    if @favourite.update_attributes(params[:favourite])
       redirect_to favourites_url 
     else  
       flash[:errors] = @favourite.errors

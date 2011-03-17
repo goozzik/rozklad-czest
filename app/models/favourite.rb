@@ -1,7 +1,7 @@
 # coding: utf-8
 class Favourite < ActiveRecord::Base
   
-  before_validation :set_on_start_page_value, :upcase_stations
+  before_validation :upcase_stations
   validate :validate_station_from_exist,
            :validate_station_to_exist,
            :validate_line_exist
@@ -11,10 +11,6 @@ class Favourite < ActiveRecord::Base
     def upcase_stations
       self.station_from = station_from.upcase
       self.station_to = station_to.upcase
-    end
-
-    def set_on_start_page_value
-      self.on_start_page = true if on_start_page == '1'
     end
 
     def validate_station_from_exist

@@ -18,16 +18,6 @@ describe Favourite do
     its(:station_to) { should == "STATION TO" }
   end
 
-  describe "#set_on_start_page_value" do
-    before do
-      the_object.on_start_page = "1"
-    end
-    after { the_object.send(:set_on_start_page_value) }
-    subject { the_object }
-
-    its(:on_start_page) { should == true }
-  end
-
   describe "#validate_station_from_exist" do
     let(:errors) { mock(:add => nil) }
     let(:station_from) { mock }
