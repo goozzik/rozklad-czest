@@ -17,7 +17,7 @@ class Schedule < ActiveRecord::Base
           AND work = ?",
         lines_id,
         station_from_id,
-        Time.now.advance(:hours => 1),
+        Time.now,
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
         (Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0)

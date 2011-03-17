@@ -31,7 +31,6 @@ describe Schedule do
     let(:now) { Date.new(2011, 3, 15).to_time.at_beginning_of_day }
     let(:lines_id) { mock }
     let(:station_from_id) { mock }
-    let(:one_hour_from_now) { now.advance(:hours => 1) }
     before do
       Time.stub!(:now => now)
       the_class.stub!(
@@ -53,7 +52,7 @@ describe Schedule do
           AND work = ?",
           lines_id,
           station_from_id,
-          one_hour_from_now,
+          now,
           false,
           false,
           true
