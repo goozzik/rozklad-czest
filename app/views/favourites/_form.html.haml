@@ -1,10 +1,16 @@
 = form_for @favourite do |f|
   = f.label :name, 'Nazwa' 
   = f.text_field :name
+
   = f.label :station_from, 'Z' 
   = f.text_field :station_from,
                  :autocomplete => search_schedule_autocomplete_station_name_path
+
   = f.label :station_to, 'Do' 
   = f.text_field :station_to,
                  :autocomplete => search_schedule_autocomplete_station_name_path
+
+  = f.label :on_start_page, 'Pokaż na stronie startowej'
+  = check_box_tag 'favourite[on_start_page]'
+
   = f.submit 'Zapisz'

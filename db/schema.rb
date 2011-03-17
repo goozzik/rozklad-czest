@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110315173128) do
+ActiveRecord::Schema.define(:version => 20110317073217) do
 
   create_table "favourites", :force => true do |t|
     t.datetime "created_at"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110315173128) do
     t.string   "station_from"
     t.string   "station_to"
     t.string   "name"
+    t.boolean  "on_start_page"
   end
 
   create_table "line_schedules", :force => true do |t|

@@ -14,6 +14,9 @@ class FavouritesController < ApplicationController
 
   def create
     @favourite = Favourite.new(params[:favourite])
+    if params[:favourite][:on_start_page] == '1'
+      @favourite.on_start_page = true
+    end
     station_from = Station.find_by_name(@favourite.station_from.upcase)
     station_to = Station.find_by_name(@favourite.station_to.upcase)
     if station_from.nil? or station_to.nil?
