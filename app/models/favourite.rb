@@ -30,11 +30,11 @@ class Favourite < ActiveRecord::Base
     end
 
     def station_from_object
-      @station_from_object ||= Station.find_by_name(self.station_from)
+      @station_from_object ||= Station.find_by_name(station_from)
     end
 
     def station_to_object
-      @station_to_object ||= Station.find_by_name(self.station_to)
+      @station_to_object ||= Station.find_by_name(station_to)
     end
 
 end

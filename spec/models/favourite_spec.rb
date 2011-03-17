@@ -119,4 +119,28 @@ describe Favourite do
     end
   end
 
+  describe "#station_from_object" do
+    before do
+      the_object.station_from = "station from"
+      the_object.send(:station_from_object)
+    end
+    after { the_object.send(:station_from_object) }
+
+    it "should find station with given name" do
+      Station.should_receive(:find_by_name).with(the_object.station_from)
+    end
+  end
+
+  describe "#station_to_object" do
+    before do
+      the_object.station_to = "station to"
+      the_object.send(:station_to_object)
+    end
+    after { the_object.send(:station_to_object) }
+
+    it "should find station with given name" do
+      Station.should_receive(:find_by_name).with(the_object.station_to)
+    end
+  end
+
 end
