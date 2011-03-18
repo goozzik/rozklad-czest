@@ -1,5 +1,6 @@
 # coding: utf-8
 class FavouritesController < ApplicationController
+
   def index
     @favourites = Favourite.all
   end
@@ -41,4 +42,5 @@ class FavouritesController < ApplicationController
     @favourite.destroy
     redirect_to favourites_url
   end
+
 end
