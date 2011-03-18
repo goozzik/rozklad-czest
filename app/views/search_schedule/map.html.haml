@@ -1,36 +1,37 @@
 %div{'data-role' => 'content', :style => 'width:100%; height:100%; padding:0;'}
   %div{:id => "map", :style => 'width:100%; height:100%;'}
-    :javascript
-      $('.page-map').live('pagecreate', function() {
-        var latlng = new google.maps.LatLng(#{@lat},#{@lng});
-        var myOptions = {
-          zoom: 13,
-          center: latlng,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById('map'),myOptions);
 
-        var myLatLng = new google.maps.LatLng(#{@lat},#{@lng});
-        var my = new google.maps.Marker({
-          position: myLatLng, 
-          map: map, 
-          //icon: '/public/images/markerT.png',
-          title: 'Ty'
-        }); 
+:javascript
+  $('.page-map').live('pagecreate', function() {
+    var latlng = new google.maps.LatLng(#{@lat},#{@lng});
+    var myOptions = {
+      zoom: 13,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('map'),myOptions);
 
-        var fromLatLng = new google.maps.LatLng(#{@station_from.lat},#{@station_from.lng});
-        var from = new google.maps.Marker({
-          position: fromLatLng, 
-          map: map, 
-          //icon: '/public/images/markerZ.png',
-          title: 'Z'
-        }); 
-        
-        var toLatLng = new google.maps.LatLng(#{@station_to.lat},#{@station_to.lng});
-        var to = new google.maps.Marker({
-          position: toLatLng, 
-          map: map, 
-          //icon: '/public/images/markerD.png',
-          title: 'Do'
-        }); 
-      });
+    var myLatLng = new google.maps.LatLng(#{@lat},#{@lng});
+    var my = new google.maps.Marker({
+      position: myLatLng, 
+      map: map, 
+      //icon: '/public/images/markerT.png',
+      title: 'Ty'
+    }); 
+
+    var fromLatLng = new google.maps.LatLng(#{@station_from.lat},#{@station_from.lng});
+    var from = new google.maps.Marker({
+      position: fromLatLng, 
+      map: map, 
+      //icon: '/public/images/markerZ.png',
+      title: 'Z'
+    }); 
+    
+    var toLatLng = new google.maps.LatLng(#{@station_to.lat},#{@station_to.lng});
+    var to = new google.maps.Marker({
+      position: toLatLng, 
+      map: map, 
+      //icon: '/public/images/markerD.png',
+      title: 'Do'
+    }); 
+  });
