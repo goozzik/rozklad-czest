@@ -2,3 +2,5 @@
   - if flash[:errors]
     - flash[:errors].each do |error, msg|
       = content_tag :div, msg, :id => "flash_#{error}", :class => 'ui-body ui-body-e'
+  - if flash[:error]
+    = content_tag :div, flash[:error], :class => 'ui-body ui-body-e'

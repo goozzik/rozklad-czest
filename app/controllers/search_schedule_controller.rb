@@ -1,5 +1,6 @@
 # coding: utf-8
 class SearchScheduleController < ApplicationController
+
   autocomplete :station, :name, :full => true
 
   def search
@@ -9,7 +10,6 @@ class SearchScheduleController < ApplicationController
       flash[:error] = 'Przystanek docelowy nie istnieje.'
       render :action => pages_errors_path
     else
-      # Schedules station_from to staton_to 
       if params[:from_station] == 'true'
         @station_from = Station.find_by_name(params[:station_from].upcase)
         if @station_from.nil?
@@ -17,22 +17,18 @@ class SearchScheduleController < ApplicationController
           render :action => pages_errors_path
         else
           if Line.find_first_by_stations([@station_from.id, @station_to.id]).nil?
-            flash[:error] = 'Brak połączen między przystankiem odjazdowym a docelowym.'
+            flash[:error] = 'Brak połączeń.'
             render :action => pages_errors_path
           else
             @schedules << Schedule.get(@station_from.id, @station_to.id)
           end
         end
       end
-
-      # Schedules stations_near to station_to
       if params[:from_my_location] == 'true'
         unless session[:lat].nil?
-          @within = params[:within]
-          @stations_near = Station.within(@within, :origin => [session[:lat], session[:lng]])
-          # Delete all who dont have connect to station_to
-          @stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
-          @stations_near.each do |station|
+          stations_near = Station.within(params[:within], :origin => [session[:lat], session[:lng]])
+          stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
+          stations_near.each do |station|
             @schedules << Schedule.get(station.id, @station_to.id)
           end
         else 
@@ -49,4 +45,5 @@ class SearchScheduleController < ApplicationController
     @station_from = Station.find(params[:station_from])
     @station_to = Station.find(params[:station_to])
   end
+
 end

@@ -60,5 +60,5 @@ class Schedule < ActiveRecord::Base
       today_schedules
     end
   end
-
+  
 end
