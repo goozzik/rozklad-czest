@@ -20,12 +20,8 @@ HOW TO RUN THIS
   rake db:create:all
   rake db:migrate
 
-5. Run script for downloading mpk.czest.pl html files:
-  mkdir tmp
-  ruby vendor/pack_downloader.rb
-
-6. Run script for html parsing (this may take some time):
-  ruby vendor/initial_html_data_extractor.rb extract
+6. Run rake task for downloading and extracting mpk.czest.pl html files:
+  rake pack:extract
 
 7. Run server
   rails server
