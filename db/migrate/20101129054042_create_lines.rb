@@ -1,4 +1,5 @@
 class CreateLines < ActiveRecord::Migration
+
   def self.up
     create_table :lines do |t|
       t.string :number
@@ -12,4 +13,5 @@ class CreateLines < ActiveRecord::Migration
   def self.down
     drop_table :lines
   end
+
 end

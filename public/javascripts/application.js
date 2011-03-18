@@ -1,4 +1,3 @@
-//Get location and store it in session[:lat], session[:lng]
 function getLocation() {
   navigator.geolocation.getCurrentPosition(
     function(position){

@@ -20,10 +20,10 @@ HOW TO RUN THIS
   rake db:create:all
   rake db:migrate
 
-6. Run rake task for downloading and extracting mpk.czest.pl html files:
+5. Run rake task for downloading and extracting mpk.czest.pl html files:
   rake pack:extract
 
-7. Run server
+6. Run server
   rails server
 
 TESTS

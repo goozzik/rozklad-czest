@@ -1,4 +1,5 @@
 class CreateLineSchedules < ActiveRecord::Migration
+
   def self.up
     create_table :line_schedules do |t|
       t.timestamps
@@ -16,4 +17,5 @@ class CreateLineSchedules < ActiveRecord::Migration
   def self.down
     drop_table :line_schedules
   end
+
 end

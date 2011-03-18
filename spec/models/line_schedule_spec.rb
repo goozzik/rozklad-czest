@@ -21,4 +21,3 @@ describe LineSchedule do
   end
 
 end
- 
