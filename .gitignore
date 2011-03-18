@@ -6,3 +6,4 @@ db/database.yml
 *.swp
 *.swo
 .DS_Store
+tmp/
