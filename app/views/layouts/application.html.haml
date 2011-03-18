@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 %html
   %head
-    = stylesheet_link_tag 'jquery.mobile.css',
-                          'jquery.ui.css'
-    = javascript_include_tag :defaults,
-                             'jquery.ui.js',
-                             'jquery.mobile.js',
-                             'autocomplete-rails.js',
-                             'http://maps.google.com/maps/api/js?sensor=true'
+    - if session[:mobile]
+      = stylesheet_link_tag 'jquery.mobile.css', 'jquery.ui.css'
+      = javascript_include_tag :defaults,
+                               'jquery.ui.js',
+                               'jquery.mobile.js',
+                               'autocomplete-rails.js',
+                               'http://maps.google.com/maps/api/js?sensor=true'
     = csrf_meta_tag
   %body
     %div{'data-role' => 'page', 
