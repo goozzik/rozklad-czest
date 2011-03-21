@@ -18,4 +18,4 @@
     = f.label :on_start_page, 'Pokaż na stronie startowej'
     = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page
 
-  = f.submit 'Zapisz', :class => 'button'
+  = f.submit 'Zapisz', 'data-role' => 'button'

@@ -12,14 +12,14 @@ li {
 }
 
 .spacer_desktop {
-  height: 15px;
+  height: 1em;
 }
 
 a {
   text-decoration: none;
 }
 
-#navbar li {
+.navbar li {
   display: inline;
   margin-right: 1em;
 }
@@ -43,12 +43,10 @@ a {
   float: right;
 }
 
-.button {
-  border-radius: 8px;
-  border: solid 1px #006699;
-  background: #0099CC;
-  padding: 5px;
-  color: white;
+[data-role="button"] {
+  margin-top: 5px;
+  float:right;
+
 }
 
 .item_box {

@@ -1,7 +1,8 @@
 %div{'data-role' => 'content'}
   %p.content_box rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie.
-  %p.content_box Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.
-  = link_to_function 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh', 'data-role' => 'button', :class => 'button'
+  %p.content_box 
+    Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.
+    = button_to_function 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh', 'data-role' => 'button'
   .spacer_mobile
   - unless @favourites.empty?
     %ul.content_box{'data-role' => 'listview'}
