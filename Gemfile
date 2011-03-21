@@ -43,4 +43,6 @@ group :test do
   gem 'autotest', '4.4.6'
   gem 'autotest-notification', '2.3.1'
   gem 'remarkable_activerecord', '4.0.0.alpha4'
+  gem 'cucumber-rails', '0.3.2'
+  gem 'capybara', '0.4.1.2'
 end
