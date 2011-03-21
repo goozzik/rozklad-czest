@@ -1,17 +1,16 @@
 %div{'data-role' => 'content'}
-  %p rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie.
-  %p Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.
-  = button_to_function 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh'
-  %br
-  %ul{'data-role' => 'listview'}
-    - @favourites.each do |favourite|
-      %li
-        = link_to favourite.name,
-          search_schedule_search_path(:station_from => favourite.station_from,
-                                      :station_to => favourite.station_to,
-                                      :from_station => 'true') 
-
-
+  %p.content_box rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie.
+  %p.content_box Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.
+  = link_to_function 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh', 'data-role' => 'button', :class => 'button'
+  .spacer_mobile
+  - unless @favourites.empty?
+    %ul.content_box{'data-role' => 'listview'}
+      - @favourites.each do |favourite|
+        %li
+          = link_to favourite.name,
+            search_schedule_search_path(:station_from => favourite.station_from,
+                                        :station_to => favourite.station_to,
+                                        :from_station => 'true') 
 - if session[:lat].nil?
   :javascript
     $(

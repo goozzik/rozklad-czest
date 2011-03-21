@@ -1,13 +1,12 @@
-%div{'data-role' => 'content'}
+%div.content_box{'data-role' => 'content'}
   %ul{'data-role' => 'listview'}
     - @schedules.each_with_index do |station_schedules|
       - next if station_schedules.empty?
-      %li{'data-role' => 'list-divider'}
+      %li.item_box{'data-role' => 'list-divider'}
         = 'Przystanek: ' + station_schedules.first.station.name
         %br
         = 'Kierunek: ' + station_schedules.first.line.direction
       - station_schedules.each do |schedule|
-        %li
-          = link_to "#{schedule.line.number} o #{schedule.arrival_at.in_time_zone.strftime("%H:%M")}", 
+        %li= link_to "#{schedule.line.number} o #{schedule.arrival_at.in_time_zone.strftime("%H:%M")}", 
             search_schedule_map_path(:station_from => schedule.station.id, :station_to => @station_to.id),
             :rel => 'external'

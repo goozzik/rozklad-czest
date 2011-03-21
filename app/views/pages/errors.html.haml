@@ -1,4 +1,4 @@
-%div{'data-role' => 'content'}
+%div.content_box{'data-role' => 'content'}
   - if flash[:errors]
     - flash[:errors].each do |error, msg|
       = content_tag :div, msg, :class => 'ui-body ui-body-e'

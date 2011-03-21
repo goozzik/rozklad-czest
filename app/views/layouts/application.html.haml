@@ -2,10 +2,16 @@
 %html
   %head
     - if session[:mobile]
-      = stylesheet_link_tag 'jquery.mobile.css', 'jquery.ui.css'
+      = stylesheet_link_tag 'mobile', 'jquery.mobile.css', 'jquery.ui.css'
+      = javascript_include_tag :defaults,
+                               'jquery.mobile.js',
+                               'jquery.ui.js',
+                               'autocomplete-rails.js',
+                               'http://maps.google.com/maps/api/js?sensor=true'
+    - else
+      = stylesheet_link_tag 'desktop', 'jquery.ui.css'
       = javascript_include_tag :defaults,
                                'jquery.ui.js',
-                               'jquery.mobile.js',
                                'autocomplete-rails.js',
                                'http://maps.google.com/maps/api/js?sensor=true'
     = csrf_meta_tag
@@ -14,7 +20,7 @@
       :style => current_action?('map') ? 'width: 100%; height: 100%' : nil ,
       :class => current_action?('map') ? 'page-map' : nil}
       %div{'data-role' => 'header'}
-        %div{"data-role" => "navbar"}
+        %div#navbar{'data-role' => 'navbar'}
           %ul
             %li= link_to 'Index', root_path, :rel => 'external'
             %li= link_to 'Szukaj', search_schedule_new_search_path, :rel => 'external'

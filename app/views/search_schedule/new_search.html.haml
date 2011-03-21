@@ -1,20 +1,22 @@
-%div{'data-role' => 'content'}
-  = form_tag search_schedule_search_path, :method => :get do
-    = label_tag :from_station, 'Z przystanku' 
-    = check_box_tag :from_station, 'true', false, :onchange => "$('#station_from_container').toggle('slow');"
+%div.content_box{'data-role' => 'content'}
+  = form_tag search_schedule_search_path, :method => :get, :class => 'form' do
 
-    #station_from_container{:style => 'display:none;'}
-      = label_tag :station_from, 'Przystanek odjazdowy' 
-      = text_field_tag :station_from, '', :autocomplete => search_schedule_autocomplete_station_name_path 
+    .item_box
+      = label_tag :from_station, 'Z przystanku' 
+      = check_box_tag :from_station, 'true', false, :onchange => "$('#station_from_container').toggle('slow');"
+      #station_from_container{:style => 'display:none;'}
+        = label_tag :station_from, 'Przystanek odjazdowy' 
+        = text_field_tag :station_from, '', :autocomplete => search_schedule_autocomplete_station_name_path 
 
-    = label_tag :from_my_location, 'Z mojego położenia' 
-    = check_box_tag :from_my_location, 'true', false, :onchange => "$('#within_container').toggle('slow');"
+    .item_box
+      = label_tag :from_my_location, 'Z mojego położenia' 
+      = check_box_tag :from_my_location, 'true', false, :onchange => "$('#within_container').toggle('slow');"
+      #within_container{:style => 'display:none;'}
+        = label_tag :within, 'W promieniu (w kilometrach)' 
+        = text_field_tag :within, '1'
 
-    #within_container{:style => 'display:none;'}
-      = label_tag :within, 'W promieniu (w kilometrach)' 
-      = text_field_tag :within, '1'
+    .item_box
+      = label_tag :station_to, 'Przystanek docelowy' 
+      = text_field_tag :station_to, '', :autocomplete => search_schedule_autocomplete_station_name_path
 
-    = label_tag :station_to, 'Przystanek docelowy' 
-    = text_field_tag :station_to, '', :autocomplete => search_schedule_autocomplete_station_name_path
-
-    = submit_tag 'Szukaj', 'data-icon' => 'forward'
+    = submit_tag 'Szukaj', 'data-icon' => 'forward', :class => 'button'

@@ -1,0 +1,58 @@
+body {
+  margin: 0 300px 0 300px;
+  font-family: 'Lucida Grande';
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.spacer_desktop {
+  height: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.content_box {
+  width: 400px;
+  background: #0099CC;
+  padding: 1em;
+  color: white;
+}
+
+.content_box ul {
+  margin: 0;
+}
+
+.content_box a {
+  color: white;
+} 
+
+.content_box .edit_link {
+  float: right;
+}
+
+.button {
+  border-radius: 8px;
+  border: solid 1px #006699;
+  background: #0099CC;
+  padding: 5px;
+  color: white;
+}
+
+.item_box {
+  border: dashed 1px #006699;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+}

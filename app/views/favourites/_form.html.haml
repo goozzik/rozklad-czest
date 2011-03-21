@@ -1,19 +1,21 @@
 = form_for @favourite do |f|
-  = f.label :name, 'Nazwa' 
-  = f.text_field :name
 
-  = f.label :station_from, 'Z' 
-  = f.text_field :station_from,
-                 :autocomplete => search_schedule_autocomplete_station_name_path
+  .item_box
+    = f.label :name, 'Nazwa' 
+    = f.text_field :name
 
-  = f.label :station_to, 'Do' 
-  = f.text_field :station_to,
-                 :autocomplete => search_schedule_autocomplete_station_name_path
+  .item_box
+    = f.label :station_from, 'Przystanek odjazdowy' 
+    = f.text_field :station_from,
+                   :autocomplete => search_schedule_autocomplete_station_name_path
 
-  / Do not use check_box helper! It add hidden_field after check_box - this gives always '0' value.
-  %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
+    = f.label :station_to, 'Przystanek docelowy' 
+    = f.text_field :station_to,
+                   :autocomplete => search_schedule_autocomplete_station_name_path
 
-  = f.label :on_start_page, 'Pokaż na stronie startowej'
-  = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page
+  .item_box
+    %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
+    = f.label :on_start_page, 'Pokaż na stronie startowej'
+    = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page
 
-  = f.submit 'Zapisz'
+  = f.submit 'Zapisz', :class => 'button'

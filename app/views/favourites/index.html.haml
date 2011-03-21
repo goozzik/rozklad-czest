@@ -1,11 +1,14 @@
 %div{'data-role' => 'content'}
-  %ul{'data-role' => 'listview'}
-    - @favourites.each do |favourite|
-      %li
-        = link_to favourite.name,
-          search_schedule_search_path(:station_from => favourite.station_from,
-                                      :station_to => favourite.station_to,
-                                      :from_station => 'true') 
-        = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear'
-  %br
-  = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button'
+  - unless @favourites.empty?
+    %ul.content_box{'data-role' => 'listview'}
+      - @favourites.each do |favourite|
+        %li.item_box
+          = link_to favourite.name,
+            search_schedule_search_path(:station_from => favourite.station_from,
+                                        :station_to => favourite.station_to,
+                                        :from_station => 'true') 
+          = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'edit_link'
+  - else
+    %p.content_box W tej chwili nie masz żadnych ulubionych.
+  .spacer_mobile
+  = link_to 'Dodaj', new_favourite_path, 'data-icon' => 'plus', 'data-role' => 'button', :class => 'button'
