@@ -23,7 +23,10 @@ HOW TO RUN THIS
 5. Run rake task for downloading and extracting mpk.czest.pl html files:
   rake pack:extract
 
-6. Run server
+6. Run rake task for import stations
+  rake db:import:stations
+
+7. Run server
   rails server
 
 TESTS
