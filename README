@@ -16,16 +16,10 @@ HOW TO RUN THIS
 
 3. Create your config/database.yml basing on database.yml.example
 
-4. Bootstrap development and test databases (postgresql server working):
-  rake db:bootstrap
+4. Bootstrap development environment with data (postgresql server working):
+  rake bootstrap
 
-5. Run rake task for downloading and extracting mpk.czest.pl html files:
-  rake pack:extract
-
-6. Run rake task for import stations
-  rake db:import:stations
-
-7. Run server
+5. Run server
   rails server
 
 TESTS
