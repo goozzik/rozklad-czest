@@ -7,7 +7,7 @@
   - unless @favourites.empty?
     %ul.content_box{'data-role' => 'listview'}
       - @favourites.each do |favourite|
-        %li
+        %li.item_box
           = link_to favourite.name,
             search_schedule_search_path(:station_from => favourite.station_from,
                                         :station_to => favourite.station_to,

@@ -45,4 +45,7 @@ group :test do
   gem 'remarkable_activerecord', '4.0.0.alpha4'
   gem 'cucumber-rails', '0.3.2'
   gem 'capybara', '0.4.1.2'
+  gem 'database_cleaner'
+  gem 'machinist'
+  gem 'pickle'
 end

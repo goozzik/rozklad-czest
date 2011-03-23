@@ -25,6 +25,14 @@ Then /^I should see text field "([^"]*)" with label "([^"]*)"$/ do |name, label|
   page.should have_xpath( "//input[@type='text'][@name='#{name}']/../label[contains(text(), \"#{label}\")]" )
 end
 
-Then /^I should see forward button "([^"]*)"$/ do |text|
-  page.should have_xpath( "//input[@type='submit'][@value='#{text}'][@data-icon='forward']" )
+Then /^I should see button "([^"]*)" with icon "([^"]*)"$/ do |text, icon|
+  page.should have_xpath( "//input[@type='submit'][@value='#{text}'][@data-icon='#{icon}']" )
+end
+
+Then /^I should see link "([^"]*)" within list item$/ do |link|
+  page.should have_xpath( "//li[@class='item_box']/a[contains(text(), \"#{link}\")]" )
+end
+
+Then /^I should not see link "([^"]*)" within list item$/ do |link|
+  page.should_not have_xpath( "//li[@class='item_box']/a[contains(text(), \"#{link}\")]" )
 end
