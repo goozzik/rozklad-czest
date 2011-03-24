@@ -51,3 +51,9 @@ Feature: Home Page
     Then I should see upper menu
     And I should see "W tej chwili nie masz żadnych ulubionych." within div
     And I should see button "Dodaj" with icon "plus"
+
+  Scenario: Navigate to map page
+    When I go to the home page
+    And I follow "Mapa"
+    Then I should see upper menu
+    And I should see static map

@@ -40,3 +40,7 @@ end
 Then /^I should see "([^"]*)" within div$/ do |text|
   page.should have_xpath ( "//div[contains(text(), \"#{text}\")]" )
 end
+
+Then /^I should see static map$/ do
+  page.should have_xpath ( '//iframe' )
+end
