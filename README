@@ -16,25 +16,15 @@ HOW TO RUN THIS
 
 3. Create your config/database.yml basing on database.yml.example
 
-4. Create and migrate db:
-  rake db:create:all
-  rake db:migrate
+4. Bootstrap development environment with data (postgresql server working):
+  rake bootstrap
 
-5. Run rake task for downloading and extracting mpk.czest.pl html files:
-  rake pack:extract
-
-6. Run rake task for import stations
-  rake db:import:stations
-
-7. Run server
+5. Run server
   rails server
 
 TESTS
 =======================================
-1. Prepare your test database
-  rake environment RAILS_ENV=test db:migrate
-
-2. Run autotest
+1. Run autotest
   autotest
   
 CREATING KML FILE WITH STATIONS COORDS
