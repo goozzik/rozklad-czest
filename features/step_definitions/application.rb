@@ -36,3 +36,7 @@ end
 Then /^I should not see link "([^"]*)" within list item$/ do |link|
   page.should_not have_xpath( "//li[@class='item_box']/a[contains(text(), \"#{link}\")]" )
 end
+
+Then /^I should see "([^"]*)" within div$/ do |text|
+  page.should have_xpath ( "//div[contains(text(), \"#{text}\")]" )
+end

@@ -32,3 +32,22 @@ Feature: Home Page
     And I should see checkbox "from_my_location" with label "Z mojego położenia"
     And I should see text field "station_to" with label "Przystanek docelowy"
     And I should see button "Szukaj" with icon "forward"
+
+  Scenario: Navigate to favourite page when i have favourite
+    Given a station from station exists
+    And a station to station exists
+    And a line exists
+    And a favourite exists
+    When I go to the home page
+    And I follow "Ulubione"
+    Then I should see upper menu
+    And I should see link "Dom" within list item
+    And I should see link "Edytuj" within list item
+    And I should see button "Dodaj" with icon "plus"
+
+  Scenario: Navigate to favourite page when i don't have favourite
+    When I go to the home page
+    And I follow "Ulubione"
+    Then I should see upper menu
+    And I should see "W tej chwili nie masz żadnych ulubionych." within div
+    And I should see button "Dodaj" with icon "plus"

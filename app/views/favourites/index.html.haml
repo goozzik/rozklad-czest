@@ -1,6 +1,6 @@
-%div{'data-role' => 'content'}
+%div.content_box{'data-role' => 'content'}
   - unless @favourites.empty?
-    %ul.content_box{'data-role' => 'listview'}
+    %ul{'data-role' => 'listview'}
       - @favourites.each do |favourite|
         %li.item_box
           = link_to favourite.name,
@@ -10,6 +10,6 @@
           = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'edit_link'
       = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
   - else
-    .content_box
+    .ui-body.ui-body-e
       W tej chwili nie masz żadnych ulubionych.
       = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
