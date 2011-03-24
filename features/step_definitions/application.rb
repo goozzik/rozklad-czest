@@ -1,4 +1,3 @@
-
 Then /^I should see "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, link|
   Then "I should see \"#{text}\" within \"div[@data-role='navbar']/ul/li/a[@rel='external'][@href='#{link}']\""
 end
