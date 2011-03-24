@@ -1,10 +1,7 @@
 Feature: Home Page
 
   Scenario: Entering home page when i have favourite with on_start_page set to true
-    Given a station from station exists
-    And a station to station exists
-    And a line exists
-    And a favourite exists with on_start_page: true
+    Given a favourite exists with on_start_page: true
     When I go to the home page
     Then I should see upper menu
     And I should see "rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie" within paragraph
@@ -13,10 +10,7 @@ Feature: Home Page
     And I should see link "Dom" within list item
 
   Scenario: Entering home page when i have favourite with on_start_page set to false 
-    Given a station from station exists
-    And a station to station exists
-    And a line exists
-    And a favourite exists
+    Given a favourite exists
     When I go to the home page
     Then I should see upper menu
     And I should see "rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie" within paragraph
@@ -34,10 +28,7 @@ Feature: Home Page
     And I should see button "Szukaj" with icon "forward"
 
   Scenario: Navigate to favourite page when i have favourite
-    Given a station from station exists
-    And a station to station exists
-    And a line exists
-    And a favourite exists
+    Given a favourite exists
     When I go to the home page
     And I follow "Ulubione"
     Then I should see upper menu
