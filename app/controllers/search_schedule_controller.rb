@@ -8,17 +8,17 @@ class SearchScheduleController < ApplicationController
     @station_to = Station.find_by_name(params[:station_to].upcase)
     if @station_to.nil?
       flash[:error] = 'Przystanek docelowy nie istnieje.'
-      render :action => pages_errors_path
+      render :template => pages_errors_path
     else
       if params[:from_station] == 'true'
         @station_from = Station.find_by_name(params[:station_from].upcase)
         if @station_from.nil?
           flash[:error] = 'Przystanek odjazdowy nie istnieje.'
-          render :action => pages_errors_path
+          render :template => pages_errors_path
         else
           if Line.find_first_by_stations([@station_from.id, @station_to.id]).nil?
             flash[:error] = 'Brak połączeń.'
-            render :action => pages_errors_path
+            render :template => pages_errors_path
           else
             @schedules << Schedule.get(@station_from.id, @station_to.id)
           end
@@ -33,7 +33,7 @@ class SearchScheduleController < ApplicationController
           end
         else 
           flash[:error] = 'Nie udostępniono położenia.'
-          render :action => pages_errors_path
+          render :template => pages_errors_path
         end
       end
     end

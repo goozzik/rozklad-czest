@@ -19,7 +19,7 @@ class FavouritesController < ApplicationController
       redirect_to favourites_url
     else 
       flash[:errors] = @favourite.errors
-      render :action => pages_errors_path
+      render :template => pages_errors_path
     end
   end
 
@@ -33,7 +33,7 @@ class FavouritesController < ApplicationController
       redirect_to favourites_url 
     else  
       flash[:errors] = @favourite.errors
-      render :action => pages_errors_path
+      render :template => pages_errors_path
     end
   end
 
