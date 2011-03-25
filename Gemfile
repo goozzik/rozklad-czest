@@ -34,7 +34,7 @@ gem 'geokit-rails3'
 
 group :development do
   gem 'heroku', '1.18.3'
-  gem 'taps', '0.3.19'
+  gem 'taps', '0.3.20'
 end
 
 group :test do
