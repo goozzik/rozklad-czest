@@ -8,7 +8,8 @@
                                         :station_to => favourite.station_to,
                                         :from_station => 'true') 
           = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'edit_link'
-      = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
+    .spacer_mobile
+    = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
   - else
     .ui-body.ui-body-e
       W tej chwili nie masz żadnych ulubionych.
