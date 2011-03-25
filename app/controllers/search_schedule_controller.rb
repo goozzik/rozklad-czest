@@ -44,6 +44,10 @@ class SearchScheduleController < ApplicationController
     @lng = session[:lng]
     @station_from = Station.find(params[:station_from])
     @station_to = Station.find(params[:station_to])
+    unless @lat
+      flash[:error] = 'Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.'
+      render :template => pages_errors_path
+    end
   end
 
 end
