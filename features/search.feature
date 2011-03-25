@@ -36,7 +36,8 @@ Feature: Search
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
-    Then I should see "Przystanek: ZANA" within div
+    Then I should see upper menu
+    And I should see "Przystanek: ZANA" within div
     And I should see "Kierunek: NIERADA" within div
     And I should see link "1 o 22:40" within list item
     When I follow "1 o 22:40" 
