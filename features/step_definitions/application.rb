@@ -29,6 +29,10 @@ Then /^I should see button "([^"]*)" with icon "([^"]*)"$/ do |text, icon|
   page.should have_xpath( "//input[@type='submit'][@value='#{text}'][@data-icon='#{icon}']" )
 end
 
+Then /^I should see button "([^"]*)"$/ do |text|
+  page.should have_xpath( "//input[@type='submit'][@value='#{text}']" )
+end
+
 Then /^I should see link "([^"]*)" within list item$/ do |link|
   page.should have_xpath( "//li/a[contains(text(), \"#{link}\")]" )
 end

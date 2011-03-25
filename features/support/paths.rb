@@ -11,14 +11,23 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
+    when /the search page/
+      '/search_schedule/new_search'
+
+    when /the favourite page/
+      '/favourites'
+
+    when /the new favourite page/
+      '/favourites/new'
+
+    when /the edit favourite page/
+      '/favourites/1/edit'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
-
-    when /the search page/
-      '/search_schedule/new_search'
 
     else
       begin

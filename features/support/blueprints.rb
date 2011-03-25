@@ -12,10 +12,16 @@ Station.blueprint(:station_to) do
   lng  { 3 }
 end
 
+Station.blueprint(:station_kopernika) do
+  name { "KOPERNIKA" }
+  lat  { 4 }
+  lng  { 4 }
+end
+
 Line.blueprint do
   number { "1" }
   direction { "NIERADA" }
-  stations { [Station.make!(:station_from).id, Station.make!(:station_to).id] }
+  stations { [Station.make!(:station_from).id, Station.make!(:station_to).id, Station.make!(:station_kopernika).id] }
 end
 
 Schedule.blueprint do
