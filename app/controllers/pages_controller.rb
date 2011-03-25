@@ -4,7 +4,7 @@ class PagesController < ApplicationController
     @favourites = Favourite.all(:conditions => ['on_start_page = ?', true])
   end
   
-  def map
+  def static_map
     @lat = session[:lat]
     @lng = session[:lng]
   end
