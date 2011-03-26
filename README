@@ -42,7 +42,6 @@ RUNNING YOUR OWN BETA ON HEROKU
   Creating fancy-name-69.... done
   http://fancy-name-69.heroku.com/ | git@heroku.com:fancy-name-69.git
   Git remote heroku added
-4. Deploy:
-  git push heroku master
-5. Push local database to heroku:
-  heroku db:push --confirm fancy-name-69
+4. Insert "--confirm fancy-name-69" into ".db_push_params"
+5. Deploy:
+  rake heroku:install

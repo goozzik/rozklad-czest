@@ -7,3 +7,4 @@ db/database.yml
 *.swo
 .DS_Store
 tmp/
+.db_push_params
