@@ -54,3 +54,7 @@ a {
   margin: 5px 0 5px 0;
   padding: 5px;
 }
+
+input[type="text"] {
+  width: 175px;
+}

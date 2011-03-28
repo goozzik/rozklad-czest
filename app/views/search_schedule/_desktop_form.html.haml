@@ -1,8 +1,8 @@
 = form_tag search_schedule_search_path, :method => :get, :class => 'form' do
   %table
     %tr
-      %td= label_tag :from_station, 'Z przystanku' 
-      %td= check_box_tag :from_station, 'true', false, :onchange => "$('#station_from_container').toggle('slow');"
+      %td{:style => 'width: 200px;'}= label_tag :from_station, 'Z przystanku' 
+      %td{:style => 'width: 180px;'}= check_box_tag :from_station, 'true', false, :onchange => "$('#station_from_container').toggle('slow');"
 
     %tr#station_from_container{:style => 'display:none;'}
       %td= label_tag :station_from, 'Przystanek odjazdowy' 
