@@ -1,0 +1,23 @@
+= form_for @favourite do |f|
+  %table
+
+    %tr
+      %td= f.label :name, 'Nazwa' 
+      %td= f.text_field :name
+
+    %tr
+      %td= f.label :station_from, 'Przystanek odjazdowy' 
+      %td= f.text_field :station_from,
+                        :autocomplete => search_schedule_autocomplete_station_name_path
+
+    %tr
+      %td= f.label :station_to, 'Przystanek docelowy' 
+      %td= f.text_field :station_to,
+                        :autocomplete => search_schedule_autocomplete_station_name_path
+
+    %tr
+      %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
+      %td= f.label :on_start_page, 'Pokaż na stronie startowej'
+      %td= check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page
+
+  = f.submit 'Zapisz', 'data-role' => 'button'
