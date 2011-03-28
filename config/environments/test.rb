@@ -35,4 +35,5 @@ RozkladCzestPl::Application.configure do
   Machinist.configure do |config|
     config.cache_objects = false
   end
+
 end
