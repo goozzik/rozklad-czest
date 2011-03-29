@@ -35,6 +35,9 @@ gem 'geokit-rails3'
 group :development do
   gem 'heroku', '1.18.3'
   gem 'taps', '0.3.20'
+  gem 'wirble'
+  gem 'hirb'
+  gem 'awesome_print'
 end
 
 group :test do
