@@ -1,2 +1,2 @@
 %div.content_box{'data-role' => 'content'}
-  = render 'form'
+  = render session[:mobile] ? 'mobile_form' : 'desktop_form'

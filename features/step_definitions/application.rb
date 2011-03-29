@@ -18,11 +18,13 @@ Then /^I should see function button "([^"]*)"$/ do |text|
 end
 
 Then /^I should see checkbox "([^"]*)" with label "([^"]*)"$/ do |name, label|
-  page.should have_xpath( "//input[@type='checkbox'][@name='#{name}']/../label[contains(text(), \"#{label}\")]" )
+  page.should have_xpath( "//input[@type='checkbox'][@name='#{name}']" )
+  page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
 end
 
 Then /^I should see text field "([^"]*)" with label "([^"]*)"$/ do |name, label|
-  page.should have_xpath( "//input[@type='text'][@name='#{name}']/../label[contains(text(), \"#{label}\")]" )
+  page.should have_xpath( "//input[@type='text'][@name='#{name}']" )
+  page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
 end
 
 Then /^I should see button "([^"]*)" with icon "([^"]*)"$/ do |text, icon|
