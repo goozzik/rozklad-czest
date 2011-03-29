@@ -69,7 +69,6 @@ describe Schedule do
     let(:lines_id) { mock }
     let(:station_from_id) { mock }
     let(:limit) { mock }
-    let(:one_hour_from_tomorrow) { tomorrow.advance(:hours => 1) }
     before do
       Time.stub!(:now => now)
       the_class.stub!(
@@ -92,7 +91,7 @@ describe Schedule do
           AND work = ?",
           lines_id,
           station_from_id,
-          one_hour_from_tomorrow,
+          tomorrow,
           false,
           false,
           true
