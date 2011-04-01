@@ -15,6 +15,9 @@ li {
   list-style: none;
 }
 
+a:link, a:visited { color: #00ced1; }
+a:hover { color: red; }
+
 a {
   text-decoration: none;
 }
