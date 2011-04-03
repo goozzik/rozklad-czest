@@ -10,7 +10,8 @@
 
 body {
   font-family: 'Lucida Grande';
-  font-size: 18px;
+  font-size: 12px;
+  background: #ebecec;
 }
 
 .container_12 {
@@ -40,7 +41,7 @@ h2 {
 }
 
 .grid_6 li, .grid_6 a {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #form {
