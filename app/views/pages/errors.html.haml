@@ -1,6 +1,9 @@
-%div.content_box{'data-role' => 'content'}
-  - if flash[:errors]
-    - flash[:errors].each do |error, msg|
-      = content_tag :div, msg, :class => 'ui-body ui-body-e'
-  - if flash[:error]
-    = content_tag :div, flash[:error], :class => 'ui-body ui-body-e'
+.prefix_1
+  .grid_6.alpha.box{'data-role' => 'content'}
+    %h2 Błąd
+    %ul
+      - if flash[:errors]
+        - flash[:errors].each do |error, msg|
+          %li= msg
+      - if flash[:error]
+        %li= flash[:error]

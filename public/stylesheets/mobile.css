@@ -1,3 +1,13 @@
-.spacer_mobile {
+.mobile_spacer {
   height: 1em;
+}
+
+.container_12[data-role="page"] {
+  width: 100%;
+  height: 80%;
+}
+
+#map, iframe {
+  width: 100%;
+  height: 80%;
 }

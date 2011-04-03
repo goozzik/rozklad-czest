@@ -1,16 +1,22 @@
-%div.content_box{'data-role' => 'content'}
-  - unless @favourites.empty?
+.prefix_1
+  .grid_6.alpha.box{'data-role' => 'content'}
+    %h2 Ulubione
     %ul{'data-role' => 'listview'}
-      - @favourites.each do |favourite|
-        %li.item_box
-          = link_to favourite.name,
-            search_schedule_search_path(:station_from => favourite.station_from,
-                                        :station_to => favourite.station_to,
-                                        :from_station => 'true') 
-          = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'edit_link'
-    .spacer_mobile
-    = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
-  - else
-    .ui-body.ui-body-e
-      W tej chwili nie masz żadnych ulubionych.
+      - unless @favourites.empty?
+        - @favourites.each do |favourite|
+          %li
+            = link_to favourite.name,
+              search_schedule_search_path(:station_from => favourite.station_from,
+                                          :station_to => favourite.station_to,
+                                          :from_station => 'true'), :class => 'grid_3 alpha'
+
+            = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'grid_1 omega'
+      - else
+        %li 
+          W tej chwili nie masz żadnych ulubionych.
+
+    .vertical_spacer
+    .mobile_spacer
+
+    .grid_2.alpha.prefix_4
       = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'

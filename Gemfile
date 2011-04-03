@@ -7,7 +7,7 @@ gem 'pg'
 gem 'haml', '3.0.24'
 gem 'nokogiri', '1.4.1'
 gem 'jquery-rails'
-gem 'rails3-jquery-autocomplete'
+gem 'rails3-jquery-autocomplete', '0.6.3'
 gem 'geokit-rails3'
 # Use unicorn as the web server
 # gem 'unicorn'

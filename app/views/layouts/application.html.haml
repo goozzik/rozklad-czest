@@ -13,20 +13,18 @@
       = stylesheet_link_tag '960', 'reset', 'text', 'desktop', 'jquery.ui.css'
       = javascript_include_tag :defaults,
                                'jquery.ui.js',
-#                               'autocomplete-rails.js',
+                               'autocomplete-rails.js',
                                'http://maps.google.com/maps/api/js?sensor=true'
     = csrf_meta_tag
   %body{:onload => current_action?('map') ? 'getMap();' : nil}
-    %div.container_12{'data-role' => 'page', 
-      :style => current_action?('map') ? 'width: 100%; height: 100%;' : nil,
-      :class => current_action?('map') ? 'page-map' : nil}
+    %div.container_12{'data-role' => 'page'}
       %div{'data-role' => 'header'}
         - unless session[:mobile]
-          = image_tag 'logo.png', :class => 'grid_6 alpha'
-          .grid_6.omega
-            %h2 rozklad.czest.pl
-            %h3 Najlepszy serwis wyszukujący połączenia między przystankowe.
-        %div.grid_12.alpha{'data-role' => 'navbar'}
+          #logo.grid_12.alpha
+            .grid_6.alpha.prefix_5
+              %h1{:style => 'margin-bottom:0;'} Rozklad.czest.pl
+              #desc Najlepszy serwis wyszukujący połączenia między przystankowe.
+        %div{'data-role' => 'navbar'}
           %ul
             %li= link_to 'INDEX', root_path, :rel => 'external'
             %li= link_to 'SZUKAJ', search_schedule_new_search_path, :rel => 'external'

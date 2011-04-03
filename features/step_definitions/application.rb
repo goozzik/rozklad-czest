@@ -3,10 +3,10 @@ Then /^I should see "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, li
 end
 
 Then /^I should see upper menu$/ do
-  Then "I should see \"Index\" within upper menu link to \"/\""
-  Then "I should see \"Szukaj\" within upper menu link to \"/search_schedule/new_search\""
-  Then "I should see \"Ulubione\" within upper menu link to \"/favourites\""
-  Then "I should see \"Mapa\" within upper menu link to \"/pages/static_map\""
+  Then "I should see \"INDEX\" within upper menu link to \"/\""
+  Then "I should see \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
+  Then "I should see \"ULUBIONE\" within upper menu link to \"/favourites\""
+  Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
 end
 
 Then /^I should see "([^"]*)" within paragraph$/ do |text|

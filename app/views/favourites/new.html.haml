@@ -1,2 +1,3 @@
-%div.content_box{'data-role' => 'content'}
-  = render session[:mobile] ? 'mobile_form' : 'desktop_form'
+%div.prefix_1{'data-role' => 'content'}
+  .grid_6.alpha.box
+    = render 'form'

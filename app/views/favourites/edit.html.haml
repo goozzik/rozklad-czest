@@ -1,3 +1,5 @@
-%div.content_box{'data-role' => 'content'}
-  = render session[:mobile] ? 'mobile_form' : 'desktop_form'
-  = button_to 'Usuń', @favourite, :method => 'delete', 'data-role' => 'button'
+%div.prefix_1{'data-role' => 'content'}
+  .grid_6.alpha.box
+    = render 'form'
+    .grid_2.alpha.prefix_4
+      = button_to 'Usuń', @favourite, :method => 'delete', 'data-role' => 'button'

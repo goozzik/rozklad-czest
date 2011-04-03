@@ -1,9 +1,15 @@
-- @schedules.each_with_index do |station_schedules|
-  - next if station_schedules.empty?
-  %ul.content_box{'data-role' => 'listview'}
-    %li.item_box{'data-role' => 'list-divider'}
-      %div= 'Przystanek: ' + station_schedules.first.station.name
-      %div= 'Kierunek: ' + station_schedules.first.line.direction
-    - station_schedules.each do |schedule|
-      %li= link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}",
-        search_schedule_map_path(:station_from => schedule.station.id, :station_to => @station_to.id), :rel => 'external'
+%div{'data-role' => 'content'}
+  - k = 1
+  - @schedules.each do |station_schedules|
+    - if station_schedules.empty?
+      - next
+    - else
+      - k += 1
+    %ul.grid_6.box{'data-role' => 'listview', :class => k % 2 == 0 ? 'alpha' : 'omega' }
+      %li.title{'data-role' => 'list-divider'}
+        %div= 'Przystanek: ' + station_schedules.first.station.name
+        %div= 'Kierunek: ' + station_schedules.first.line.direction
+      - station_schedules.each do |schedule|
+        %li= link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}",
+          search_schedule_map_path(:station_from => schedule.station.id,
+                                   :station_to => @station_to.id), :rel => 'external'
