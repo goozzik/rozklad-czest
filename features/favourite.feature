@@ -29,7 +29,7 @@ Feature: Favourites
     And I fill in "favourite_station_from" with "zana"
     And I fill in "favourite_station_to" with "malownicza"
     And I click button "Zapisz"
-    Then I should see "Brak połączeń." within div 
+    Then I should see "Brak połączeń." within list item 
 
   Scenario: Create favourite when station from and station to not exists
     When I go to the favourite page
@@ -38,8 +38,8 @@ Feature: Favourites
     And I fill in "favourite_station_from" with "zana"
     And I fill in "favourite_station_to" with "malownicza"
     And I click button "Zapisz"
-    Then I should see "Przystanek odjazdowy nie istnieje." within div 
-    And I should see "Przystanek docelowy nie istnieje." within div 
+    Then I should see "Przystanek odjazdowy nie istnieje." within list item 
+    And I should see "Przystanek docelowy nie istnieje." within list item 
 
   Scenario: Create favourite
     Given a line exists
@@ -60,7 +60,7 @@ Feature: Favourites
     And I fill in "favourite_station_from" with "malownicza"
     And I fill in "favourite_station_to" with "zana"
     And I click button "Zapisz"
-    Then I should see "Brak połączeń." within div 
+    Then I should see "Brak połączeń." within list item 
 
   Scenario: Edit favourite when station from and station to not exists
     Given a favourite exists
@@ -70,8 +70,8 @@ Feature: Favourites
     And I fill in "favourite_station_from" with "rynek wieluński"
     And I fill in "favourite_station_to" with "ii aleja najświętszej maryi panny"
     And I click button "Zapisz"
-    Then I should see "Przystanek odjazdowy nie istnieje." within div 
-    And I should see "Przystanek docelowy nie istnieje." within div 
+    Then I should see "Przystanek odjazdowy nie istnieje." within list item 
+    And I should see "Przystanek docelowy nie istnieje." within list item 
 
   Scenario: Edit favourite
     Given a favourite exists

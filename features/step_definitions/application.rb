@@ -9,12 +9,24 @@ Then /^I should see upper menu$/ do
   Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
 end
 
-Then /^I should see "([^"]*)" within paragraph$/ do |text|
-  page.should have_xpath( "//p[contains(text(), \"#{text}\")]" )
+Then /^I should see "([^"]*)" within second header$/ do |text|
+  page.should have_xpath( "//h2[contains(text(), \"#{text}\")]" )
+end
+
+Then /^I should see "([^"]*)" within third header$/ do |text|
+  page.should have_xpath( "//h3[contains(text(), \"#{text}\")]" )
 end
 
 Then /^I should see function button "([^"]*)"$/ do |text|
   page.should have_xpath( "//input[@type='button'][@value='#{text}'][@data-icon='refresh']" )
+end
+
+Then /^I should see button "([^"]*)" with icon "([^"]*)"$/ do |text, icon|
+  page.should have_xpath( "//input[@type='submit'][@value='#{text}'][@data-icon='#{icon}']" )
+end
+
+Then /^I should see button "([^"]*)"$/ do |text|
+  page.should have_xpath( "//input[@type='submit'][@value='#{text}']" )
 end
 
 Then /^I should see checkbox "([^"]*)" with label "([^"]*)"$/ do |name, label|
@@ -27,14 +39,6 @@ Then /^I should see text field "([^"]*)" with label "([^"]*)"$/ do |name, label|
   page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
 end
 
-Then /^I should see button "([^"]*)" with icon "([^"]*)"$/ do |text, icon|
-  page.should have_xpath( "//input[@type='submit'][@value='#{text}'][@data-icon='#{icon}']" )
-end
-
-Then /^I should see button "([^"]*)"$/ do |text|
-  page.should have_xpath( "//input[@type='submit'][@value='#{text}']" )
-end
-
 Then /^I should see link "([^"]*)" within list item$/ do |link|
   page.should have_xpath( "//li/a[contains(text(), \"#{link}\")]" )
 end
@@ -43,8 +47,8 @@ Then /^I should not see link "([^"]*)" within list item$/ do |link|
   page.should_not have_xpath( "//li/a[contains(text(), \"#{link}\")]" )
 end
 
-Then /^I should see "([^"]*)" within div$/ do |text|
-  page.should have_xpath ( "//div[contains(text(), \"#{text}\")]" )
+Then /^I should see "([^"]*)" within list item$/ do |text|
+  page.should have_xpath( "//li[contains(text(), \"#{text}\")]" )
 end
 
 Then /^I should see static map$/ do
@@ -64,7 +68,7 @@ When /^I click button "([^"]*)"$/ do |button|
 end
 
 Then /^I should see "([^"]*)" within list divider$/ do |text|
-  page.should have_xpath ( "//li[@class='item_box'][@data-role='list-divider'][contains(text(), \"#{text}\")]" )
+  page.should have_xpath ( "//li[@data-role='list-divider']/div[contains(text(), \"#{text}\")]" )
 end
 
 Then /^I should see generated map$/ do
