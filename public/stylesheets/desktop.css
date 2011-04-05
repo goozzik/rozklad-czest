@@ -72,3 +72,7 @@ h2, .title {
 input[type="button"], input[type="submit"], input[type="text"] {
   width: 140px;
 }
+
+label {
+  text-align: right;
+}
