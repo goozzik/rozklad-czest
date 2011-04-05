@@ -9,7 +9,7 @@
 ----------------------------------------------------------------------------------------------------*/
 
 body {
-  font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+  font: 14px/1.5 Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 hr {
@@ -21,10 +21,6 @@ hr {
 
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
-
-h1 {
-  font-size: 25px;
-}
 
 h2 {
   font-size: 23px;
