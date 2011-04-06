@@ -1,34 +1,30 @@
 %h2 Ulubione
 = form_for @favourite do |f|
 
-  .grid_6.alpha
-    = f.label :name, 'Nazwa', :class => 'grid_2 alpha prefix_1' 
-    = f.text_field :name, :class => 'grid_2 omega'
+  = f.label :name, 'Nazwa', :class => 'grid_2 alpha prefix_1' 
+  = f.text_field :name, :class => 'grid_2 omega'
 
-  .vertical_spacer
+  .clear.vertical_spacer
 
-  .grid_6.alpha
-    = f.label :station_from, 'Przystanek odjazdowy', :class => 'grid_2 alpha prefix_1' 
-    = f.autocomplete_field :station_from,
-                   search_schedule_autocomplete_station_name_path,
-                   :class => 'grid_2 omega'
+  = f.label :station_from, 'Przystanek odjazdowy', :class => 'grid_2 alpha prefix_1' 
+  = f.autocomplete_field :station_from,
+                 search_schedule_autocomplete_station_name_path,
+                 :class => 'grid_2 omega'
 
-  .vertical_spacer
+  .clear.vertical_spacer
 
-  .grid_6.alpha
-    = f.label :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
-    = f.autocomplete_field :station_to,
-                   search_schedule_autocomplete_station_name_path,
-                   :class => 'grid_2 omega'
+  = f.label :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
+  = f.autocomplete_field :station_to,
+                 search_schedule_autocomplete_station_name_path,
+                 :class => 'grid_2 omega'
 
-  .vertical_spacer
+  .clear.vertical_spacer
 
-  .grid_6.alpha
-    %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
-    = f.label :on_start_page, 'Pokaż na stronie startowej', :class => 'grid_2 alpha prefix_1'
-    = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page, :class => 'grid_2 omega'
+  %input{:name => 'favourite[on_start_page]', :type => 'hidden', :value => '0'}
+  = f.label :on_start_page, 'Pokaż na stronie startowej', :class => 'grid_2 alpha prefix_1'
+  = check_box_tag 'favourite[on_start_page]', '1', @favourite.on_start_page, :class => 'grid_2 omega'
 
-  .vertical_spacer
+  .clear.vertical_spacer
 
   .grid_2.alpha.prefix_4
     = f.submit 'Zapisz', 'data-role' => 'button'

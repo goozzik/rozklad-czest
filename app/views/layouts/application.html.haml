@@ -17,11 +17,11 @@
                                'http://maps.google.com/maps/api/js?sensor=true'
     = csrf_meta_tag
   %body{:onload => current_action?('map') ? 'getMap();' : nil}
-    %div.container_12{'data-role' => 'page'}
-      %div{'data-role' => 'header'}
+    %div{'data-role' => 'page'}
+      .container_12{'data-role' => 'header'}
         - unless session[:mobile]
-          #logo.grid_12.alpha
-            .grid_6.alpha.prefix_4{:style => 'margin-top: 4em;'} 
+          #logo
+            .grid_6.prefix_4{:style => 'margin-top: 4em;'} 
               %h1{:style => 'margin-bottom:0;'} Rozklad.czest.pl
               #desc Najlepszy serwis wyszukujący połączenia między przystankowe.
         %div{'data-role' => 'navbar'}
@@ -30,4 +30,5 @@
             %li= link_to 'SZUKAJ', search_schedule_new_search_path, :rel => 'external'
             %li= link_to 'ULUBIONE', favourites_path, :rel => 'external'
             %li= link_to 'MAPA', pages_static_map_path, :rel => 'external'
-      = yield
+      .container_12{'data-role' => 'content'}
+        = yield

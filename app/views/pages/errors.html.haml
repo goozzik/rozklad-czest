@@ -1,9 +1,10 @@
-.prefix_1
-  .grid_6.alpha.box{'data-role' => 'content'}
+.prefix_3
+  .grid_6.box
     %h2 Błąd
     %ul
       - if flash[:errors]
         - flash[:errors].each do |error, msg|
           %li= msg
+
       - if flash[:error]
         %li= flash[:error]

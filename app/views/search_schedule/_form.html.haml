@@ -1,60 +1,34 @@
-.grid_6.alpha.box
-  %h2 Szukaj połączenia
-  = form_tag search_schedule_search_path, :method => :get do
+.prefix_3
+  .grid_6.box
+    %h2 Szukaj połączenia
+    = form_tag search_schedule_search_path, :method => :get do
 
-    .grid_6.alpha
-      = label_tag :from_station,
-        'Z przystanku',
-        :class => 'grid_2 alpha prefix_1'
-      = check_box_tag :from_station,
-        'true',
-        false,
-        :onchange => "$('#station_from_container').toggle('slow');",
-        :class => 'grid_2 omega'
+      = label_tag :from_station, 'Z przystanku', :class => 'grid_2 alpha prefix_1'
+      = check_box_tag :from_station, 'true', false, :onchange => "$('#station_from_container').toggle('slow');", :class => 'grid_2 omega'
 
-    .grid_6.alpha#station_from_container{:style => 'display:none;'}
-      = label_tag :station_from,
-        'Przystanek odjazdowy',
-        :class => 'grid_2 alpha prefix_1'
-      = autocomplete_field_tag :station_from,
-        '',
-        search_schedule_autocomplete_station_name_path,
-        :class => 'grid_2 omega'
+      .clear
 
-    .vertical_spacer
+      #station_from_container{:style => 'display:none;'}
+        = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_2 alpha prefix_1'
+        = autocomplete_field_tag :station_from, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
 
-    .grid_6.alpha
-      = label_tag :from_my_location,
-        'Z mojego położenia',
-        :class => 'grid_2 alpha prefix_1'
-      = check_box_tag :from_my_location,
-        'true',
-        false,
-        :onchange => "$('#within_container').toggle('slow');",
-        :class => 'grid_2 omega'
+      .clear.vertical_spacer
 
-    .grid_6.alpha#within_container{:style => 'display:none;'}
-      = label_tag :within,
-        'W promieniu (w kilometrach)',
-        :class => 'grid_2 alpha prefix_1'
-      = text_field_tag :within,
-        '1',
-        :class => 'grid_2 omega'
+      = label_tag :from_my_location, 'Z mojego położenia', :class => 'grid_2 alpha prefix_1'
+      = check_box_tag :from_my_location, 'true', false, :onchange => "$('#within_container').toggle('slow');", :class => 'grid_2 omega'
 
-    .vertical_spacer
+      .clear
 
-    .grid_6.alpha
-      = label_tag :station_to,
-        'Przystanek docelowy',
-        :class => 'grid_2 alpha prefix_1'
-      = autocomplete_field_tag :station_to,
-        '',
-        search_schedule_autocomplete_station_name_path,
-        :class => 'grid_2 omega'
+      #within_container{:style => 'display:none;'}
+        = label_tag :within, 'W promieniu (w kilometrach)', :class => 'grid_2 alpha prefix_1'
+        = text_field_tag :within, '1', :class => 'grid_2 omega'
 
-    .vertical_spacer
+      .clear.vertical_spacer
 
-    .grid_2.alpha.prefix_4
-      = submit_tag 'Szukaj',
-       'data-icon' => 'forward',
-       'data-role' => 'button'
+      = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
+      = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+
+      .clear.vertical_spacer
+
+      .grid_2.alpha.prefix_4
+        = submit_tag 'Szukaj', 'data-icon' => 'forward', 'data-role' => 'button'

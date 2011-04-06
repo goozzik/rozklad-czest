@@ -1,5 +1,5 @@
-.prefix_1
-  .grid_6.alpha.box{'data-role' => 'content'}
+.prefix_3
+  .grid_6.box
     %h2 Ulubione
     %ul{'data-role' => 'listview'}
       - unless @favourites.empty?
@@ -8,9 +8,9 @@
             = link_to favourite.name,
               search_schedule_search_path(:station_from => favourite.station_from,
                                           :station_to => favourite.station_to,
-                                          :from_station => 'true'), :class => 'grid_3 alpha'
-
-            = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'grid_1 omega'
+                                          :from_station => 'true'), :class => 'grid_2 alpha prefix_1'
+            = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'grid_2'
+          .clear
       - else
         %li W tej chwili nie masz żadnych ulubionych.
 
