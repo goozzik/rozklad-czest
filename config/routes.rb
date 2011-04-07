@@ -1,5 +1,9 @@
 RozkladCzestPl::Application.routes.draw do
 
+  get "sessions/new"
+
+  get "users/new"
+
   root :to => 'pages#index'
   resources :favourites
   post 'pages/get_location'
