@@ -38,3 +38,9 @@ Favourite.blueprint do
   station_to { Station.find(line.stations.last).name }
   on_start_page { false }
 end
+
+User.blueprint do
+  user_name { "user" }
+  password { "password" }
+  password_confirmation { "password" }
+end

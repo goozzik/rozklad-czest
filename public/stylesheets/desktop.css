@@ -44,7 +44,7 @@ a {
 }
 
 [data-role="navbar"] a:link, [data-role="navbar"] a:visited { color: #00ced1; }
-[data-role="navbar"] a:hover { color: red; }
+[data-role="navbar"] a:hover, .special_link a:hover { color: red; }
 
 a:link, a:visited { color: black; }
 a:hover { color: red; }

@@ -1,0 +1,15 @@
+%h2 Logowanie
+= form_tag sessions_path do
+
+  = label_tag :user_name, "Login", :class => 'grid_1 alpha'
+  = text_field_tag :user_name, nil, :class => 'grid_2 omega'
+
+  .clear.vertical_spacer
+
+  = label_tag :password, "Hasło", :class => 'grid_1 alpha'
+  = password_field_tag :password, nil, :class => 'grid_2 omega'
+
+  .clear.vertical_spacer
+
+  .grid_2.alpha.prefix_2
+    = submit_tag "Zaloguj"

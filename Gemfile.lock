@@ -35,6 +35,7 @@ GEM
     autotest-notification (2.3.1)
       autotest (~> 4.3)
     awesome_print (0.3.2)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
     capybara (0.4.1.2)
       celerity (>= 0.7.9)
@@ -177,6 +178,7 @@ DEPENDENCIES
   autotest (= 4.4.6)
   autotest-notification (= 2.3.1)
   awesome_print (= 0.3.2)
+  bcrypt-ruby
   capybara (= 0.4.1.2)
   cucumber-rails (= 0.3.2)
   database_cleaner

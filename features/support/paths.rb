@@ -23,6 +23,9 @@ module NavigationHelpers
     when /the edit favourite page/
       '/favourites/1/edit'
 
+    when /the register page/
+      '/users/new'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

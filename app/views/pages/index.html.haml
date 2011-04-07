@@ -1,6 +1,29 @@
 .grid_4.prefix_4
   %h2#loading{:style => 'display: none;'} Loading...
 
+.prefix_1
+  .grid_4.box
+    - if current_user
+      %h2= current_user.user_name
+      %ul
+        %li= "Zalogowany jako " + current_user.user_name 
+        %li= link_to "Wyloguj", log_out_path
+    - else
+      = render :template => 'sessions/new'
+
+- unless @favourites.empty?
+  .grid_4.box
+    %h2 Ulubione
+    %ul{'data-role' => 'listview'}
+      - @favourites.each do |favourite|
+        %li
+          = link_to favourite.name,
+            search_schedule_search_path(:station_from => favourite.station_from,
+                                        :station_to => favourite.station_to,
+                                        :from_station => 'true')
+
+  .clear
+
 .grid_5.prefix_1 
   %h2 Łatwo i szybko
   %h3 rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie.
@@ -15,18 +38,8 @@
                        'data-icon' => 'refresh',
                        'data-role' => 'button'
 
-.clear
-
-- unless @favourites.empty?
-  .grid_4.box
-    %h2 Ulubione
-    %ul{'data-role' => 'listview'}
-      - @favourites.each do |favourite|
-        %li
-          = link_to favourite.name,
-            search_schedule_search_path(:station_from => favourite.station_from,
-                                        :station_to => favourite.station_to,
-                                        :from_station => 'true')
+- unless current_user
+  = render :template => 'users/new'
 
 - if session[:lat].nil?
   :javascript
@@ -38,7 +51,7 @@
           $.ajax({
             type: 'POST',
             url: '/pages/get_location',
-            data: 'lat=' + lat +r '&lng=' + lng
+            data: 'lat=' + lat + '&lng=' + lng
           });
         }
       )

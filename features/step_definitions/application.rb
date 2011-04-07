@@ -74,3 +74,7 @@ end
 Then /^I should see generated map$/ do
   page.should have_xpath ( "//div[@id='map']" )
 end
+
+Then /^I should see "([^"]*)" within h(\d+)$/ do |text, i|
+  page.should have_xpath ( "//h#{i}[contains(text(), \"#{text}\")]" )
+end

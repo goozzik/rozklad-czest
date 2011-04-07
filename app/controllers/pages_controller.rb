@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
   def index
+    @user = User.new
     @favourites = Favourite.all(:conditions => ['on_start_page = ?', true])
   end
   
@@ -12,7 +13,7 @@ class PagesController < ApplicationController
   def get_location
     if params[:lat].nil?
       flash[:error] = "Nie udalo sie uzyskac twojej lokalizacji."
-      render :template => pages_errors_path 
+      render :template => pages_info_path 
     else
       session[:lat] = params[:lat]
       session[:lng] = params[:lng]

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110317073217) do
+ActiveRecord::Schema.define(:version => 20110407120908) do
 
   create_table "favourites", :force => true do |t|
     t.datetime "created_at"
@@ -64,5 +64,13 @@ ActiveRecord::Schema.define(:version => 20110317073217) do
 
   add_index "stations", ["lat", "lng"], :name => "index_stations_on_lat_and_lng", :unique => true
   add_index "stations", ["name"], :name => "index_stations_on_name", :unique => true
+
+  create_table "users", :force => true do |t|
+    t.string   "user_name"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
