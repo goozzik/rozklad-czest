@@ -1,6 +1,7 @@
 # coding: utf-8
 class User < ActiveRecord::Base
 
+  has_many :favourites
   attr_accessible :user_name, :password, :password_confirmation
   attr_accessor :password
   before_save :encrypt_password

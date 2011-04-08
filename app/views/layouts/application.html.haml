@@ -28,7 +28,8 @@
           %ul
             %li= link_to 'INDEX', root_path, :rel => 'external'
             %li= link_to 'SZUKAJ', search_schedule_new_search_path, :rel => 'external'
-            %li= link_to 'ULUBIONE', favourites_path, :rel => 'external'
+            - if current_user
+              %li= link_to 'ULUBIONE', user_favourites_path(current_user.id), :rel => 'external'
             %li= link_to 'MAPA', pages_static_map_path, :rel => 'external'
       .container_12{'data-role' => 'content'}
         = yield

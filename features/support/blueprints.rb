@@ -31,16 +31,17 @@ Schedule.blueprint do
   work { true }
 end
 
+User.blueprint do
+  user_name { "user" }
+  password { "password" }
+  password_confirmation { "password" }
+end
+
 Favourite.blueprint do
   name { "Dom" }
   line = Line.make!
   station_from { Station.find(line.stations.first).name }
   station_to { Station.find(line.stations.last).name }
   on_start_page { false }
-end
-
-User.blueprint do
-  user_name { "user" }
-  password { "password" }
-  password_confirmation { "password" }
+  user { User.make! } 
 end

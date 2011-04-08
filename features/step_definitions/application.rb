@@ -1,3 +1,4 @@
+# coding: utf-8
 Then /^I should see "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, link|
   Then "I should see \"#{text}\" within \"div[@data-role='navbar']/ul/li/a[@rel='external'][@href='#{link}']\""
 end
@@ -5,8 +6,48 @@ end
 Then /^I should see upper menu$/ do
   Then "I should see \"INDEX\" within upper menu link to \"/\""
   Then "I should see \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
-  Then "I should see \"ULUBIONE\" within upper menu link to \"/favourites\""
   Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
+end
+
+Then /^I should see login form$/ do
+  Then "I should see text field \"user_name\" with label \"Login\""
+  Then "I should see password field \"password\" with label \"Hasło\""
+  Then "I should see button \"Zaloguj\""
+end
+
+Then /^I should see registration form$/ do
+  Then "I should see text field \"user[user_name]\" with label \"Login\""
+  Then "I should see password field \"user[password]\" with label \"Hasło\""
+  Then "I should see password field \"user[password_confirmation]\" with label \"Hasło\""
+  Then "I should see button \"Wyślij\""
+end
+
+Then /^I should see service info box$/ do
+  Then "I should see \"Łatwo i szybko\" within second header"
+  Then "I should see \"rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie\" within third header" 
+end
+
+Then /^I should see location info box$/ do
+  Then "I should see \"Udostępnij położenie\" within second header" 
+  Then "I should see \"Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.\" within third header"
+  Then "I should see function button \"Odśwież położenie\""
+end
+
+Then /^I should see new favourite form$/ do
+  Then "I should see text field \"favourite[name]\" with label \"Nazwa\""
+  Then "I should see text field \"favourite[station_from]\" with label \"Przystanek odjazdowy\""
+  Then "I should see text field \"favourite[station_to]\" with label \"Przystanek docelowy\""
+  Then "I should see checkbox \"favourite[on_start_page]\" with label \"Pokaż na stronie startowej\""
+  Then "I should see button \"Zapisz\""
+end
+
+Then /^I should see edit favourite form$/ do
+  Then "I should see new favourite form"
+  Then "I should see button \"Usuń\""
+end
+
+Then /^I should see post location info box$/ do
+  Then "I should see new favourite form"
 end
 
 Then /^I should see "([^"]*)" within second header$/ do |text|
@@ -36,6 +77,11 @@ end
 
 Then /^I should see text field "([^"]*)" with label "([^"]*)"$/ do |name, label|
   page.should have_xpath( "//input[@type='text'][@name='#{name}']" )
+  page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
+end
+
+Then /^I should see password field "([^"]*)" with label "([^"]*)"$/ do |name, label|
+  page.should have_xpath( "//input[@type='password'][@name='#{name}']" )
   page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
 end
 
@@ -77,4 +123,11 @@ end
 
 Then /^I should see "([^"]*)" within h(\d+)$/ do |text, i|
   page.should have_xpath ( "//h#{i}[contains(text(), \"#{text}\")]" )
+end
+
+Given /^I am logged in$/ do
+  When "I go to the home page"
+  And "I fill in \"user_name\" with \"user\""
+  And "I fill in \"password\" with \"password\""
+  And "I click button \"Zaloguj\""
 end

@@ -2,4 +2,4 @@
   .grid_6.box
     = render 'form'
     .grid_2.alpha.prefix_4
-      = button_to 'Usuń', @favourite, :method => 'delete', 'data-role' => 'button'
+      = button_to 'Usuń', "/users/#{@user.id}/favourites/#{@favourite.id}", :method => 'delete', 'data-role' => 'button'

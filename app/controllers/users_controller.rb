@@ -10,6 +10,5 @@ class UsersController < ApplicationController
       render :template => pages_info_path
     end
   end
-  
 
 end

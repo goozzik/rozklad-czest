@@ -1,6 +1,7 @@
 # coding: utf-8
 class Favourite < ActiveRecord::Base
   
+  belongs_to :user
   before_validation :upcase_stations
   validate :validate_station_from_exist,
            :validate_station_to_exist,

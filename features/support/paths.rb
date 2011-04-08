@@ -15,13 +15,13 @@ module NavigationHelpers
       '/search_schedule/new_search'
 
     when /the favourite page/
-      '/favourites'
+      '/users/1/favourites'
 
     when /the new favourite page/
-      '/favourites/new'
+      '/users/1/favourites/new'
 
     when /the edit favourite page/
-      '/favourites/1/edit'
+      '/users/1/favourites/1/edit'
 
     when /the register page/
       '/users/new'

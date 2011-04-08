@@ -1,5 +1,5 @@
 %h2 Ulubione
-= form_for @favourite do |f|
+= form_for [@user, @favourite] do |f|
 
   = f.label :name, 'Nazwa', :class => 'grid_2 alpha prefix_1' 
   = f.text_field :name, :class => 'grid_2 omega'

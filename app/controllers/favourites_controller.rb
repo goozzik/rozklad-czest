@@ -2,21 +2,25 @@
 class FavouritesController < ApplicationController
 
   def index
-    @favourites = Favourite.all
+    @user = User.find(params[:user_id])
+    @favourites = @user.favourites
   end
 
   def show
-    @favourite = Favourite.find(params[:id])
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourites.find(params[:id])
   end
 
   def new
-    @favourite = Favourite.new
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourites.new
   end
 
   def create
-    @favourite = Favourite.new(params[:favourite])
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourites.build(params[:favourite])
     if @favourite.save
-      redirect_to favourites_url
+      redirect_to user_favourites_path(@user)
     else 
       flash[:errors] = @favourite.errors
       render :template => pages_info_path
@@ -24,13 +28,15 @@ class FavouritesController < ApplicationController
   end
 
   def edit
-    @favourite = Favourite.find(params[:id])
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourites.find(params[:id])
   end
 
   def update
-    @favourite = Favourite.find(params[:id])
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourites.find(params[:id])
     if @favourite.update_attributes(params[:favourite])
-      redirect_to favourites_url 
+      redirect_to user_favourites_path(@user) 
     else  
       flash[:errors] = @favourite.errors
       render :template => pages_info_path
@@ -38,9 +44,10 @@ class FavouritesController < ApplicationController
   end
 
   def destroy
-    @favourite = Favourite.find(params[:id])
+    @user = User.find(params[:user_id])
+    @favourite = @user.favourite.find(params[:id])
     @favourite.destroy
-    redirect_to favourites_url
+    redirect_to user_favourites_path(@user)
   end
 
 end

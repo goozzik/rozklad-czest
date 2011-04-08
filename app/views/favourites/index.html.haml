@@ -9,7 +9,7 @@
               search_schedule_search_path(:station_from => favourite.station_from,
                                           :station_to => favourite.station_to,
                                           :from_station => 'true'), :class => 'grid_2 alpha prefix_1'
-            = link_to 'Edytuj', edit_favourite_path(favourite), 'data-icon' => 'gear', :class => 'grid_2'
+            = link_to 'Edytuj', edit_user_favourite_path(current_user.id,favourite.id), 'data-icon' => 'gear', :class => 'grid_2'
           .clear
       - else
         %li W tej chwili nie masz żadnych ulubionych.
@@ -18,4 +18,4 @@
     .mobile_spacer
 
     .grid_2.alpha.prefix_4
-      = button_to 'Dodaj', new_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'
+      = button_to 'Dodaj', new_user_favourite_path, :method => :get, 'data-icon' => 'plus', 'data-role' => 'button'

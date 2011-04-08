@@ -1,14 +1,11 @@
 #coding: utf-8
 class SessionsController < ApplicationController
 
-  def new
-  end
-
   def create
     user = User.authenticate(params[:user_name], params[:password])
     if user
       session[:user_id] = user.id
-      redirect_to root_url, :notice => "Zalogowano!"
+      redirect_to root_url
     else
       flash[:error] = "Nie prawidłowe hasło lub login."
       render :template => pages_info_path

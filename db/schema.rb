@@ -10,25 +10,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110407120908) do
+ActiveRecord::Schema.define(:version => 20110408040246) do
 
   create_table "favourites", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "station_from"
     t.string   "station_to"
+    t.string   "line_number"
+    t.string   "line_direction"
+    t.string   "station"
     t.string   "name"
     t.boolean  "on_start_page"
+    t.integer  "user_id"
   end
 
   create_table "line_schedules", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "line_number",                        :null => false
-    t.string   "direction",                          :null => false
-    t.string   "stop_name",                          :null => false
-    t.time     "arrival_time",                       :null => false
-    t.text     "shedule_type",                       :null => false
+    t.integer  "line_number",     :null => false
+    t.string   "direction",       :null => false
+    t.string   "stop_name",       :null => false
+    t.time     "arrival_time",    :null => false
+    t.text     "shedule_type",    :null => false
     t.boolean  "low_floor",       :default => false
     t.boolean  "final_course",    :default => false
     t.boolean  "additional_stop", :default => false

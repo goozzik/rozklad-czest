@@ -1,11 +1,14 @@
 RozkladCzestPl::Application.routes.draw do
 
   get "log_out" => "sessions#destroy", :as => "log_out"
-  resources :users
+
+  resources :users do
+    resources :favourites
+  end
+
   resources :sessions
 
   root :to => 'pages#index'
-  resources :favourites
   post 'pages/get_location'
   get 'pages/static_map'
   get 'pages/info'
