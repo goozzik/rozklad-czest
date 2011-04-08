@@ -49,7 +49,8 @@ Feature: Home Page
     And I should see button "Dodaj" with icon "plus"
 
   Scenario: Navigate to favourite page when i am logged in and i do not have favourite
-    Given I am logged in
+    Given a user exists
+    And I am logged in
     When I go to the home page
     And I follow "ULUBIONE"
     Then I should see upper menu
