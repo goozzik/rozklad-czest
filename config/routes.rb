@@ -1,5 +1,13 @@
 RozkladCzestPl::Application.routes.draw do
 
+  get "schedules/stations"
+
+  get "schedules/station"
+
+  get "schedules/road"
+
+  get "schedules/schedule"
+
   get "log_out" => "sessions#destroy", :as => "log_out"
 
   resources :users do

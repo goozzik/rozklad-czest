@@ -7,6 +7,21 @@ class Station < ActiveRecord::Base
 
   validate :validate_uniqueness_of_lat_lng_pair
 
+  def self.paginate_by_letter
+    ordered_stations = []
+    get_ordered_letters.each do |letter|
+      stations = where('name LIKE ?', "#{letter}%")
+      ordered_stations << stations
+    end
+    return ordered_stations
+  end
+
+  def self.get_ordered_letters
+    letters = []
+    all.each { |station| letters << station.name.first if letters.last != station.name.first }
+    return letters
+  end
+
   private
 
     def validate_uniqueness_of_lat_lng_pair

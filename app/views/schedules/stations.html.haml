@@ -1,0 +1,10 @@
+.prefix_3
+  - @stations_ordered.each do |stations|
+    %ul.grid_6.box{'data-role' => 'listview'}
+      %li.title{'data-role' => 'list-divider'}= stations.first.name.first
+      - stations.each do |station|
+        %li
+          = link_to station.name,
+            schedules_station_path(station), :class => 'grid_4 alpha'
+
+      .mobile_spacer

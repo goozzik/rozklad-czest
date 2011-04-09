@@ -63,3 +63,15 @@ Feature: Home Page
     And I follow "MAPA"
     Then I should see upper menu
     And I should see static map
+
+  Scenario: Navigate to stations page
+    Given a station from station exists
+    And a station to station exists
+    When I go to the home page
+    And I follow "PRZYSTANKI"
+    Then I should see upper menu
+    And I should see "PRZYSTANKI" within h2
+    And I should see "Z" within list divider
+    And I should see "ZANA" within list item
+    And I should see "M" within list divider
+    And I should see "MALOWNICZA" within list item

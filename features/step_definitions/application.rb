@@ -6,6 +6,8 @@ end
 Then /^I should see upper menu$/ do
   Then "I should see \"INDEX\" within upper menu link to \"/\""
   Then "I should see \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
+  Then "I should see \"LINIE\" within upper menu link to \"/schedules/lines\""
+  Then "I should see \"PRZYSTANKI\" within upper menu link to \"/schedules/stations\""
   Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
 end
 
