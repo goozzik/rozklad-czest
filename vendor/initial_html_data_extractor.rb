@@ -35,7 +35,8 @@ class InitialHtmlDataExtractor
             _station = 'TEATR IM. A. MICKIEWICZA' 
           end
           puts "Station: #{_station}"
-          _stations << Station::Import.get_id_by_name_if_exist(_station)
+          station = Station.find_by_name(_station)
+          _stations << station unless station.nil?
         end
         Line.create!(
           :number => number,
@@ -45,7 +46,7 @@ class InitialHtmlDataExtractor
       end
     end
   end
-
+  
   def self.import_schedules
     htmfiles = File.join("**", "rozklady", "**", "00**t***.htm")
     files = Dir.glob(htmfiles)

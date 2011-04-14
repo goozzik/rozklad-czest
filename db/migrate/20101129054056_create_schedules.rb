@@ -9,8 +9,6 @@ class CreateSchedules < ActiveRecord::Migration
       t.boolean :saturday, :default => false
       t.boolean :sunday, :default => false
       t.boolean :holiday, :default => false
-
-      t.timestamps
     end
   end
 

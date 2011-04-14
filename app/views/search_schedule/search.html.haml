@@ -1,5 +1,4 @@
 - @schedules.each do |station_schedules|
-  - next if station_schedules.empty?
   %ul.grid_6.box{'data-role' => 'listview'}
     %li.title{'data-role' => 'list-divider'}
       %div= 'Przystanek: ' + station_schedules.first.station.name

@@ -10,60 +10,58 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110408040246) do
+ActiveRecord::Schema.define(:version => 20110413044254) do
 
   create_table "favourites", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "station_from"
-    t.string   "station_to"
-    t.string   "line_number"
-    t.string   "line_direction"
-    t.string   "station"
+    t.string   "station_from",   :null => false
+    t.string   "station_to",     :null => false
+    t.string   "line_number",    :null => false
+    t.string   "line_direction", :null => false
+    t.string   "station_id",     :null => false
     t.string   "name"
     t.boolean  "on_start_page"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "line_schedules", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "line_number",     :null => false
-    t.string   "direction",       :null => false
-    t.string   "stop_name",       :null => false
-    t.time     "arrival_time",    :null => false
-    t.text     "shedule_type",    :null => false
+    t.integer  "line_number",                        :null => false
+    t.string   "direction",                          :null => false
+    t.string   "stop_name",                          :null => false
+    t.time     "arrival_time",                       :null => false
+    t.text     "shedule_type",                       :null => false
     t.boolean  "low_floor",       :default => false
     t.boolean  "final_course",    :default => false
     t.boolean  "additional_stop", :default => false
   end
 
   create_table "lines", :force => true do |t|
-    t.string   "number"
-    t.string   "direction"
-    t.text     "stations"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "number"
+    t.string "direction"
+  end
+
+  create_table "lines_stations", :id => false, :force => true do |t|
+    t.integer "line_id"
+    t.integer "station_id"
   end
 
   create_table "schedules", :force => true do |t|
-    t.integer  "line_id"
-    t.integer  "station_id"
-    t.time     "arrival_at"
-    t.boolean  "work",       :default => false
-    t.boolean  "saturday",   :default => false
-    t.boolean  "sunday",     :default => false
-    t.boolean  "holiday",    :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "line_id"
+    t.integer "station_id"
+    t.time    "arrival_at"
+    t.boolean "work",       :default => false
+    t.boolean "saturday",   :default => false
+    t.boolean "sunday",     :default => false
+    t.boolean "holiday",    :default => false
   end
 
   create_table "stations", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.float    "lat",        :null => false
-    t.float    "lng",        :null => false
+    t.string "name", :null => false
+    t.float  "lat",  :null => false
+    t.float  "lng",  :null => false
   end
 
   add_index "stations", ["lat", "lng"], :name => "index_stations_on_lat_and_lng", :unique => true

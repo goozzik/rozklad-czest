@@ -4,9 +4,6 @@ class CreateLines < ActiveRecord::Migration
     create_table :lines do |t|
       t.string :number
       t.string :direction
-      t.text :stations
-
-      t.timestamps
     end
   end
 
