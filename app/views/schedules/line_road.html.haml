@@ -1,0 +1,6 @@
+.prefix_3
+  %ul.grid_6.box{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'}= "#{@line.number} - kierunek: #{@line.direction}"
+    - @stations.each do |station|
+      %li
+        = station.name

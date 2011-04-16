@@ -137,3 +137,9 @@ Given /^I am logged in$/ do
   And "I fill in \"password\" with \"password\""
   And "I click button \"Zaloguj\""
 end
+
+Then /^I should see road$/ do
+  Then "I should see \"1 - kierunek: NIERADA\" within list divider"
+  Then "I should see link \"ZANA\" within list item"
+  Then "I should see link \"MALOWNICZA\" within list item"
+end
