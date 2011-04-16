@@ -13,29 +13,16 @@
 ActiveRecord::Schema.define(:version => 20110413044254) do
 
   create_table "favourites", :force => true do |t|
-    t.string   "station_from",   :null => false
-    t.string   "station_to",     :null => false
-    t.string   "line_number",    :null => false
-    t.string   "line_direction", :null => false
-    t.string   "station_id",     :null => false
+    t.string   "station_from"
+    t.string   "station_to"
+    t.string   "line_number"
+    t.string   "line_direction"
+    t.string   "station_id"
     t.string   "name"
     t.boolean  "on_start_page"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "line_schedules", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "line_number",                        :null => false
-    t.string   "direction",                          :null => false
-    t.string   "stop_name",                          :null => false
-    t.time     "arrival_time",                       :null => false
-    t.text     "shedule_type",                       :null => false
-    t.boolean  "low_floor",       :default => false
-    t.boolean  "final_course",    :default => false
-    t.boolean  "additional_stop", :default => false
   end
 
   create_table "lines", :force => true do |t|

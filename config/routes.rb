@@ -1,19 +1,16 @@
 RozkladCzestPl::Application.routes.draw do
 
-  get "schedules/stations"
-
-  get "schedules/stations/:id", :controller => 'schedules', :action => 'station', :as => 'schedules_station'
-
+  get "stations", :controller => 'schedules', :action => 'stations', :as => 'schedules_stations'
+  get "stations/:id", :controller => 'schedules', :action => 'station', :as => 'schedules_station'
+  get "lines", :controller => 'schedules', :action => 'lines', :as => 'schedules_lines'
+  get "lines/:id", :controller => 'schedules', :action => 'line', :as => 'schedules_line'
   get "schedules/road"
-
   get "schedules/schedule"
 
   get "log_out" => "sessions#destroy", :as => 'log_out'
-
   resources :users do
     resources :favourites
   end
-
   resources :sessions
 
   root :to => 'pages#index'

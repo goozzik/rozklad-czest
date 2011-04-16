@@ -70,8 +70,7 @@ Feature: Home Page
     When I go to the home page
     And I follow "PRZYSTANKI"
     Then I should see upper menu
-    And I should see "PRZYSTANKI" within h2
     And I should see "Z" within list divider
-    And I should see "ZANA" within list item
+    And I should see link "ZANA" within list item
     And I should see "M" within list divider
-    And I should see "MALOWNICZA" within list item
+    And I should see link "MALOWNICZA" within list item

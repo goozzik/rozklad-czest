@@ -26,6 +26,9 @@ module NavigationHelpers
     when /the register page/
       '/users/new'
 
+    when /the stations page/
+      '/stations'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

@@ -32,5 +32,6 @@
               %li= link_to 'ULUBIONE', user_favourites_path(current_user.id), :rel => 'external'
             %li= link_to 'MAPA', pages_static_map_path, :rel => 'external'
             %li= link_to 'PRZYSTANKI', schedules_stations_path, :rel => 'external'
+            %li= link_to 'LINIE', schedules_lines_path, :rel => 'external'
       .container_12{'data-role' => 'content'}
         = yield

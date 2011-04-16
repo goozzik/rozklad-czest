@@ -18,15 +18,23 @@ Station.blueprint(:station_kopernika) do
   lng  { 4 }
 end
 
+Station.blueprint(:noline) do
+  name { "NOLINE" }
+  lat  { 5 }
+  lng  { 5 }
+end
+
 Line.blueprint do
+  object.stations << Station.make!(:station_from)
+  object.stations << Station.make!(:station_to)
+  object.stations << Station.make!(:station_kopernika)
   number { "1" }
   direction { "NIERADA" }
-  stations { [Station.make!(:station_from).id, Station.make!(:station_to).id, Station.make!(:station_kopernika).id] }
 end
 
 Schedule.blueprint do
   line { Line.make! }
-  station { Station.find(object.line.stations.first) } 
+  station { Station.find(object.line.stations.first) }
   arrival_at { Time.new(2011, 3, 24, 22, 40) }
   work { true }
 end
@@ -39,9 +47,9 @@ end
 
 Favourite.blueprint do
   name { "Dom" }
-  line = Line.make!
-  station_from { Station.find(line.stations.first).name }
-  station_to { Station.find(line.stations.last).name }
+  Line.make!
+  station_from { Line.first.stations.first.name }
+  station_to { Line.first.stations.last.name }
   on_start_page { false }
-  user { User.make! } 
+  user { User.make! }
 end

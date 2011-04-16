@@ -54,12 +54,13 @@ Feature: Favourites
 
   Scenario: Edit favourite when line not exists
     Given a favourite exists
+    And a noline station exists
     And I am logged in
     When I go to the favourite page
     And I follow "Edytuj"
     And I fill in "favourite_name" with "Dom"
     And I fill in "favourite_station_from" with "malownicza"
-    And I fill in "favourite_station_to" with "zana"
+    And I fill in "favourite_station_to" with "noline"
     And I click button "Zapisz"
     Then I should see "Brak połączeń." within list item 
 

@@ -6,6 +6,7 @@ class SchedulesController < ApplicationController
 
   def station
     @station = Station.find(params[:id])
+    @lines = @station.lines
   end
 
   def road

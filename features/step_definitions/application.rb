@@ -6,8 +6,8 @@ end
 Then /^I should see upper menu$/ do
   Then "I should see \"INDEX\" within upper menu link to \"/\""
   Then "I should see \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
-  Then "I should see \"LINIE\" within upper menu link to \"/schedules/lines\""
-  Then "I should see \"PRZYSTANKI\" within upper menu link to \"/schedules/stations\""
+  Then "I should see \"LINIE\" within upper menu link to \"/lines\""
+  Then "I should see \"PRZYSTANKI\" within upper menu link to \"/stations\""
   Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
 end
 
@@ -116,6 +116,10 @@ When /^I click button "([^"]*)"$/ do |button|
 end
 
 Then /^I should see "([^"]*)" within list divider$/ do |text|
+  page.should have_xpath ( "//li[@data-role='list-divider'][contains(text(), \"#{text}\")]" )
+end
+
+Then /^I should see div "([^"]*)" within list divider$/ do |text|
   page.should have_xpath ( "//li[@data-role='list-divider']/div[contains(text(), \"#{text}\")]" )
 end
 
