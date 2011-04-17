@@ -17,7 +17,7 @@
                                'http://maps.google.com/maps/api/js?sensor=true'
     = csrf_meta_tag
   %body{:onload => current_action?('map') ? 'getMap();' : nil}
-    %div{'data-role' => 'page'}
+    %div{'data-role' => 'page', :style => (current_action?('map') and session[:mobile]) ? 'width:100%; height:100%;' : nil}
       .container_12{'data-role' => 'header'}
         - unless session[:mobile]
           #logo
@@ -33,5 +33,6 @@
             %li= link_to 'MAPA', pages_static_map_path, :rel => 'external'
             %li= link_to 'PRZYSTANKI', schedules_stations_path, :rel => 'external'
             %li= link_to 'LINIE', schedules_lines_path, :rel => 'external'
-      .container_12{'data-role' => 'content'}
+      .container_12{'data-role' => 'content',
+        :style => (current_action?('map') or current_action?('static_map') and session[:mobile]) ? 'width:100%; height:100%; padding:0;' : nil}
         = yield
