@@ -9,6 +9,10 @@ class SchedulesController < ApplicationController
     @lines = @station.lines
   end
 
+  def lines
+    @lines = Line.get_numbers
+  end
+
   def line_road 
     @line = Line.find(params[:id])
     @stations = @line.stations

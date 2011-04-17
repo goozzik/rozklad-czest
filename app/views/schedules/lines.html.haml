@@ -1,0 +1,6 @@
+.prefix_4
+  %ul.grid_4.box{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'} LINIE
+    - @lines.each do |line|
+      %li
+        %b= link_to line, schedules_line_path(:number => line)

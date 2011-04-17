@@ -25,5 +25,13 @@ class Line < ActiveRecord::Base
     end
     return nil
   end
+  
+  def self.get_numbers
+    lines = []
+    Line.all.each do |line|
+      lines << line.number unless lines.include?(line.number)
+    end
+    return lines
+  end
 
 end

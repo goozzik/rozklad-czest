@@ -74,3 +74,10 @@ Feature: Home Page
     And I should see link "ZANA" within list item
     And I should see "M" within list divider
     And I should see link "MALOWNICZA" within list item
+
+  Scenario: Navigate to lines page
+    Given a line exists
+    When I go to the home page
+    And I follow "LINIE"
+    Then I should see upper menu
+    And I should see link "1" within list item

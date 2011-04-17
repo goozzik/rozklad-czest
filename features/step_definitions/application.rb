@@ -25,13 +25,13 @@ Then /^I should see registration form$/ do
 end
 
 Then /^I should see service info box$/ do
-  Then "I should see \"Łatwo i szybko\" within second header"
-  Then "I should see \"rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie\" within third header" 
+  Then "I should see \"Łatwo i szybko\" within h2"
+  Then "I should see \"rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie\" within h3"
 end
 
 Then /^I should see location info box$/ do
-  Then "I should see \"Udostępnij położenie\" within second header" 
-  Then "I should see \"Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.\" within third header"
+  Then "I should see \"Udostępnij położenie\" within h2"
+  Then "I should see \"Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.\" within h3"
   Then "I should see function button \"Odśwież położenie\""
 end
 
@@ -50,14 +50,6 @@ end
 
 Then /^I should see post location info box$/ do
   Then "I should see new favourite form"
-end
-
-Then /^I should see "([^"]*)" within second header$/ do |text|
-  page.should have_xpath( "//h2[contains(text(), \"#{text}\")]" )
-end
-
-Then /^I should see "([^"]*)" within third header$/ do |text|
-  page.should have_xpath( "//h3[contains(text(), \"#{text}\")]" )
 end
 
 Then /^I should see function button "([^"]*)"$/ do |text|
