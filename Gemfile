@@ -11,7 +11,7 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 
 group :development do
   gem 'heroku', '1.18.3'
-  gem 'taps', '0.3.20'
+  gem 'taps', '0.3.23'
   gem 'wirble', '0.1.3'
   gem 'hirb', '0.4.3'
   gem 'awesome_print', '0.3.2'
