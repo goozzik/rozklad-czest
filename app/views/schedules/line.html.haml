@@ -1,0 +1,6 @@
+.prefix_3
+  %ul.grid_6.box{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'}= @number 
+    - @lines.each do |line|
+      %li
+        = link_to "#{line.number} - kierunek: #{line.direction}", schedules_line_road_path(line)
