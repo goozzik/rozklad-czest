@@ -83,6 +83,10 @@ Then /^I should see link "([^"]*)" within list item$/ do |link|
   page.should have_xpath( "//li/a[contains(text(), \"#{link}\")]" )
 end
 
+Then /^I should see border link "([^"]*)" within list item$/ do |link|
+  page.should have_xpath( "//li/b/a[contains(text(), \"#{link}\")]" )
+end
+
 Then /^I should not see link "([^"]*)" within list item$/ do |link|
   page.should_not have_xpath( "//li/a[contains(text(), \"#{link}\")]" )
 end

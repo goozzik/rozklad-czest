@@ -37,6 +37,9 @@ Schedule.blueprint do
   station { Station.find(object.line.stations.first) }
   arrival_at { Time.new(2011, 3, 24, 22, 40) }
   work { true }
+  sunday { false }
+  saturday { false }
+  holiday { false }
 end
 
 User.blueprint do
