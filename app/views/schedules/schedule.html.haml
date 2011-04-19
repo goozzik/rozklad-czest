@@ -1,4 +1,4 @@
-%ul.grid_6.box{'data-role' => 'listview'}
+%ul.grid_6.box.cell{'data-role' => 'listview'}
   %li.title{'data-role' => 'list-divider'} Robocze
   - @schedules_work.each do |hour|
     %li
@@ -7,7 +7,7 @@
         = minute.arrival_at.minute
   .mobile_spacer
 
-%ul.grid_6.box{'data-role' => 'listview'}
+%ul.grid_6.box.cell{'data-role' => 'listview'}
   %li.title{'data-role' => 'list-divider'} Soboty
   - @schedules_saturday.each do |hour|
     %li
@@ -18,7 +18,7 @@
 
 .clear
 
-%ul.grid_6.box{'data-role' => 'listview'}
+%ul.grid_6.box.cell{'data-role' => 'listview'}
   %li.title{'data-role' => 'list-divider'} Niedziele i święta
   - @schedules_sunday.each do |hour|
     %li
@@ -27,7 +27,7 @@
         = minute.arrival_at.minute
   .mobile_spacer
 
-%ul.grid_6.box{'data-role' => 'listview'}
+%ul.grid_6.box.cell{'data-role' => 'listview'}
   %li.title{'data-role' => 'list-divider'} Wakacyjne
   - @schedules_holiday.each do |hour|
     %li

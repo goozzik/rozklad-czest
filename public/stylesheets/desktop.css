@@ -74,3 +74,7 @@ input[type="button"], input[type="submit"] {
 label {
   text-align: right;
 }
+
+.cell {
+  min-height:420px;
+}
