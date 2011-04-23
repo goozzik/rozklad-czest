@@ -4,7 +4,7 @@
     %li
       %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
       - hour.each do |minute|
-        = minute.arrival_at.minute
+        = minute.arrival_at.min
   .mobile_spacer
 
 %ul.grid_6.box.cell{'data-role' => 'listview'}
@@ -13,7 +13,7 @@
     %li
       %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
       - hour.each do |minute|
-        = minute.arrival_at.minute
+        = minute.arrival_at.min
   .mobile_spacer
 
 .clear
@@ -24,7 +24,7 @@
     %li
       %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
       - hour.each do |minute|
-        = minute.arrival_at.minute
+        = minute.arrival_at.min
   .mobile_spacer
 
 %ul.grid_6.box.cell{'data-role' => 'listview'}
@@ -33,4 +33,4 @@
     %li
       %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
       - hour.each do |minute|
-        = minute.arrival_at.minute
+        = minute.arrival_at.min
