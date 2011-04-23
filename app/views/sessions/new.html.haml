@@ -1,15 +1,17 @@
-%h2 Logowanie
-= form_tag sessions_path do
+.prefix_1
+  .grid_5.box
+    %h2 Logowanie
+    = form_tag sessions_path do
 
-  = label_tag :user_name, "Login", :class => 'grid_1 alpha'
-  = text_field_tag :user_name, nil, :class => 'grid_2 omega'
+      = label_tag :user_name, "Login", :class => 'grid_2 alpha'
+      = text_field_tag :user_name, nil, :class => 'grid_2 omega'
 
-  .vertical_spacer
+      .vertical_spacer
 
-  = label_tag :password, "Hasło", :class => 'grid_1 alpha'
-  = password_field_tag :password, nil, :class => 'grid_2 omega'
+      = label_tag :password, "Hasło", :class => 'grid_2 alpha'
+      = password_field_tag :password, nil, :class => 'grid_2 omega'
 
-  .vertical_spacer
+      .vertical_spacer
 
-  .grid_2.alpha.prefix_2
-    = submit_tag "Zaloguj"
+      .grid_2.alpha.prefix_3
+        = submit_tag "Zaloguj"
