@@ -26,13 +26,13 @@
               #desc Najlepszy serwis wyszukujący połączenia między przystankowe.
         %div{'data-role' => 'navbar'}
           %ul
-            %li= link_to 'INDEX', root_path, :rel => 'external'
-            %li= link_to 'SZUKAJ', search_schedule_new_search_path, :rel => 'external'
+            %li= link_to 'Index', root_path, :rel => 'external'
+            %li= link_to 'Szukaj', search_schedule_new_search_path, :rel => 'external'
             - if current_user
-              %li= link_to 'ULUBIONE', user_favourites_path(current_user.id), :rel => 'external'
-            %li= link_to 'MAPA', pages_static_map_path, :rel => 'external'
-            %li= link_to 'PRZYSTANKI', schedules_stations_path, :rel => 'external'
-            %li= link_to 'LINIE', schedules_lines_path, :rel => 'external'
+              %li= link_to 'Ulubione', user_favourites_path(current_user.id), :rel => 'external'
+            %li= link_to 'Mapa', pages_static_map_path, :rel => 'external'
+            %li= link_to 'Stacje', schedules_stations_path, :rel => 'external'
+            %li= link_to 'Linie', schedules_lines_path, :rel => 'external'
       .container_12{'data-role' => 'content',
         :style => (current_action?('map') or current_action?('static_map') and session[:mobile]) ? 'width:100%; height:100%; padding:0;' : nil}
         = yield
