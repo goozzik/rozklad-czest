@@ -15,9 +15,6 @@ ActiveRecord::Schema.define(:version => 20110413044254) do
   create_table "favourites", :force => true do |t|
     t.string   "station_from"
     t.string   "station_to"
-    t.string   "line_number"
-    t.string   "line_direction"
-    t.string   "station_id"
     t.string   "name"
     t.boolean  "on_start_page"
     t.integer  "user_id"

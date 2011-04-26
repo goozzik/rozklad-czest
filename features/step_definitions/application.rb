@@ -4,11 +4,11 @@ Then /^I should see "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, li
 end
 
 Then /^I should see upper menu$/ do
-  Then "I should see \"INDEX\" within upper menu link to \"/\""
-  Then "I should see \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
-  Then "I should see \"LINIE\" within upper menu link to \"/lines\""
-  Then "I should see \"PRZYSTANKI\" within upper menu link to \"/stations\""
-  Then "I should see \"MAPA\" within upper menu link to \"/pages/static_map\""
+  Then "I should see \"Index\" within upper menu link to \"/\""
+  Then "I should see \"Szukaj\" within upper menu link to \"/search_schedule/new_search\""
+  Then "I should see \"Linie\" within upper menu link to \"/lines\""
+  Then "I should see \"Stacje\" within upper menu link to \"/stations\""
+  Then "I should see \"Mapa\" within upper menu link to \"/pages/static_map\""
 end
 
 Then /^I should see login form$/ do
@@ -22,11 +22,6 @@ Then /^I should see registration form$/ do
   Then "I should see password field \"user[password]\" with label \"Hasło\""
   Then "I should see password field \"user[password_confirmation]\" with label \"Hasło\""
   Then "I should see button \"Wyślij\""
-end
-
-Then /^I should see service info box$/ do
-  Then "I should see \"Łatwo i szybko\" within h2"
-  Then "I should see \"rozkład.czest.pl w łatwy sposób pomoże ci odnaleźć połączenie między przystankami MPK w Częstochowie\" within h3"
 end
 
 Then /^I should see location info box$/ do

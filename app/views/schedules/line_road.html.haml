@@ -2,5 +2,4 @@
   %ul.grid_6.box{'data-role' => 'listview'}
     %li.title{'data-role' => 'list-divider'}= "#{@line.number} - kierunek: #{@line.direction}"
     - @stations.each do |station|
-      %li
-        = link_to station.name, schedules_schedule_path(:line_id => @line.id, :station_id => station.id)
+      %li= link_to station.name, schedules_schedule_path(:line_id => @line.id, :station_id => station.id)
