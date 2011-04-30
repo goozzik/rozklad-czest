@@ -1,6 +1,18 @@
 # coding: utf-8
 class FavouritesController < ApplicationController
 
+  before_filter do
+    logged_in? && authorize?
+  end
+
+  def logged_in?
+    defined?(session[:user_id])
+  end
+
+  def authorize?
+    redirect_to root_path unless params[:user_id].to_i == session[:user_id]
+  end
+
   def index
     @user = User.find(params[:user_id])
     @favourites = @user.favourites

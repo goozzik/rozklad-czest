@@ -19,6 +19,8 @@
       - @favourites.each do |favourite|
         %li= link_to favourite.name, search_schedule_search_path(:station_from => favourite.station_from, :station_to => favourite.station_to, :from_station => 'true')
 
+.vertical_spacer
+
 .grid_5.suffix_1
   %h2 Udostępnij położenie
   %h3
