@@ -11,6 +11,11 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
+    when /the iphone force page/
+      '/?mobile=true'
+    when /the computer force page/
+      '/?mobile=false'
+
     when /the search page/
       '/search_schedule/new_search'
 
