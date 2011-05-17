@@ -18,15 +18,14 @@ class InitialHtmlDataExtractor
   def self.import_lines
     htmfiles = File.join("**", "rozklady", "**", "w.htm")
     files = Dir.glob(htmfiles)
+    puts "Processing files: "
     files.each do |file|
-      puts "File: #{file}"
+      system("echo -n .")
       doc = Nokogiri::HTML(open(file))
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.gsub("Linia ", "")
-      puts "Number: #{number}"
       directions = doc.xpath("//html/body/table/tr[2]/td[*]")
       directions.each_with_index do |direction, n|
         _direction = direction.content.gsub("kierunek:", "").strip
-        puts "Direction: #{_direction}"
         _stations = []
         stations = doc.xpath("//html/body/table/tr[3]/td[#{n+1}]/ul/li[*]")
         stations.each do |station|
@@ -34,7 +33,6 @@ class InitialHtmlDataExtractor
           if _station == 'TEATR im. A. MICKIEWICZA'
             _station = 'TEATR IM. A. MICKIEWICZA' 
           end
-          puts "Station: #{_station}"
           station = Station.find_by_name(_station)
           _stations << station unless station.nil?
         end
@@ -51,7 +49,6 @@ class InitialHtmlDataExtractor
     htmfiles = File.join("**", "rozklady", "**", "00**t***.htm")
     files = Dir.glob(htmfiles)
     files.each do |file|
-      pd "#{file}"
       doc = Nokogiri::HTML(open(file))
 
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.strip
@@ -60,9 +57,6 @@ class InitialHtmlDataExtractor
       if station == 'TEATR im. A. MICKIEWICZA'
         station = 'TEATR IM. A. MICKIEWICZA' 
       end
-
-      pd "Number: #{number}"
-      pd "Direction: #{direction}"
 
       # TODO
       # Remove rescue next
@@ -76,11 +70,7 @@ class InitialHtmlDataExtractor
         minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
         # TODO legend letters
         
-        pd "Hour: #{work.content}"
-        pd "Minutes: #{minutes.inspect}"
-
         minutes.each do |minute|
-          pd "Arrive at: #{work.content}:#{minute.to_i}:00"
           Schedule.create!(
             :line_id => line_id,
             :station_id => station_id,
@@ -95,11 +85,7 @@ class InitialHtmlDataExtractor
         next if n == 0
         minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[4]").first.content.gsub('-', '').split(" ")
 
-        pd "Hour: #{holiday.content}"
-        pd "Minutes: #{minutes.inspect}"
-
         minutes.each do |minute|
-          pd "Arrive at: #{holiday.content}:#{minute.to_i}:00"
           Schedule.create!(
             :line_id => line_id,
             :station_id => station_id,
@@ -114,11 +100,7 @@ class InitialHtmlDataExtractor
         next if n == 0
         minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[6]").first.content.gsub('-', '').split(" ")
 
-        pd "Hour: #{saturday.content}"
-        pd "Minutes: #{minutes.inspect}"
-
         minutes.each do |minute|
-          pd "Arrive at: #{saturday.content}:#{minute.to_i}:00"
           Schedule.create!(
             :line_id => line_id,
             :station_id => station_id,
@@ -133,11 +115,7 @@ class InitialHtmlDataExtractor
         next if n == 0
         minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[8]").first.content.gsub('-', '').split(" ")
 
-        pd "Hour: #{sunday.content}"
-        pd "Minutes: #{minutes.inspect}"
-
         minutes.each do |minute|
-          pd "Arrive at: #{sunday.content}:#{minute.to_i}:00"
           Schedule.create!(
             :line_id => line_id,
             :station_id => station_id,
@@ -160,12 +138,6 @@ class InitialHtmlDataExtractor
                 #:summer => false
               #)
   end
-
-  private
-
-    def self.pd(msg)
-      puts "DEBUG: #{msg}" if DEBUG == true
-    end
 
 end
 

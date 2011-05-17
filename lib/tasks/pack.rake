@@ -18,7 +18,8 @@ namespace :pack do
   desc 'Extract downloaded data pack'
   task :extract => [ :ensure_tmp ] do
     Rake::Task['pack:download'].invoke unless File.exist?(ARCHIVE)
-    system("unzip #{ARCHIVE} -d #{UNPACK}")
+    puts "Unzipping data pack..."
+    system("unzip -q #{ARCHIVE} -d #{UNPACK}")
   end
 
   desc 'Remove data pack'
