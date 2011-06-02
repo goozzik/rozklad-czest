@@ -22,19 +22,6 @@ ActiveRecord::Schema.define(:version => 20110413044254) do
     t.datetime "updated_at"
   end
 
-  create_table "line_schedules", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "line_number",                        :null => false
-    t.string   "direction",                          :null => false
-    t.string   "stop_name",                          :null => false
-    t.time     "arrival_time",                       :null => false
-    t.text     "shedule_type",                       :null => false
-    t.boolean  "low_floor",       :default => false
-    t.boolean  "final_course",    :default => false
-    t.boolean  "additional_stop", :default => false
-  end
-
   create_table "lines", :force => true do |t|
     t.string "number"
     t.string "direction"
