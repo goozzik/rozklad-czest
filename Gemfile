@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.8'
 gem 'pg'
-gem 'haml', '3.0.24'
+gem 'haml', '3.1.2'
 gem 'nokogiri', '1.4.1'
 gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete', '0.6.3'
