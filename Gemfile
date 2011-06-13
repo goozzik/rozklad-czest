@@ -18,8 +18,8 @@ group :development do
 end
 
 group :test do
-  gem 'rspec', '2.5.0'
-  gem 'rspec-rails', '2.5.0'
+  gem 'rspec', '2.6.0'
+  gem 'rspec-rails', '2.6.1'
   gem 'autotest', '4.4.6'
   gem 'autotest-notification', '2.3.1'
   gem 'remarkable_activerecord', '4.0.0.alpha4'
