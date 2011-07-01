@@ -70,7 +70,7 @@ class Station::Import < Station
       'CMENTARZ RAKÓW' => {:lat => 50.776201, :lng => 19.148698},
       'CMENTARZ ŚW. ROCHA' => {:lat => 50.819222, :lng => 19.086996},
       'CMENTARZ ZACISZE' => {:lat => 50.794041, :lng => 19.074948},
-      'D. H. CENTRUM' => {:lat => 1, :lng => 1},
+      'D. H. CENTRUM' => {:lat => 50.811163, :lng => 19.11808},
       'DĄBIE' => {:lat => 50.791613, :lng => 19.160414},
       'DĄBROWSKIEGO - SĄDY' => {:lat => 50.817134, :lng => 19.1118763},
       'DICKENSA' => {:lat => 50.833698, :lng => 19.150929},
