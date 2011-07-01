@@ -245,7 +245,7 @@ class Station::Import < Station
       'OLSZTYN MSTOWSKA' => {:lat => 50.756848, :lng => 19.268346},
       'OLSZTYN NAPOLEONA' => {:lat => 50.747508, :lng => 19.267831},
       'OLSZTYN RYNEK' => {:lat => 50.750441, :lng => 19.268432},
-      'OLSZTYN SOKOLE GÓRY' => {:lat => 1, :lng => 2},
+      'OLSZTYN SOKOLE GÓRY' => {:lat => 50.732517, :lng => 19.264827},
       'OLSZTYN ŚW. PUSZCZY' => {:lat => 50.743734, :lng => 19.266758},
       'OLSZTYN ŻWIRKI I WIGURY' => {:lat => 50.7534, :lng => 19.258089},
       'ORLIK-RUCKEMANNA' => {:lat => 50.806287, :lng => 19.144707},
