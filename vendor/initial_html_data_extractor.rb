@@ -16,12 +16,16 @@ class InitialHtmlDataExtractor
   end
 
   def self.import_lines
-    htmfiles = File.join("**", "rozklady", "**", "w.htm")
-    files = Dir.glob(htmfiles)
+    doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/linie.htm'))
+    htmfiles = []
+    doc.xpath("//html/body/center/table/tr[*]/td[*]/font/a/@href").map(&:content).each do |line|
+      next if line =~ /new|mapa|przystan/
+      htmfiles.push line
+    end
     puts "Processing files: "
-    files.each do |file|
+    htmfiles.each do |file|
       system("echo -n .")
-      doc = Nokogiri::HTML(open(file))
+      doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/' + file))
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.gsub("Linia ", "")
       directions = doc.xpath("//html/body/table/tr[2]/td[*]")
       directions.each_with_index do |direction, n|
@@ -147,7 +151,7 @@ case ARGV.first
   when 'extract'
     InitialHtmlDataExtractor.import_stations
     InitialHtmlDataExtractor.import_lines
-    InitialHtmlDataExtractor.import_schedules
+    #InitialHtmlDataExtractor.import_schedules
   
   when 'test'
     station_from = Station.find_by_name("RYNEK WIELUŃSKI")
