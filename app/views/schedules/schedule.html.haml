@@ -1,36 +1,40 @@
-%ul.grid_6.box.cell{'data-role' => 'listview'}
-  %li.title{'data-role' => 'list-divider'} Robocze
-  - @schedules_work.each do |hour|
-    %li
-      %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
-      - hour.each do |minute|
-        = minute.arrival_at.min
-  .mobile_spacer
+- unless @schedules_work.nil?
+  %ul.grid_6.box.cell{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'} Robocze
+    - @schedules_work.each do |hour|
+      %li
+        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
+        - hour.each do |minute|
+          = minute.arrival_at.min
+    .mobile_spacer
 
-%ul.grid_6.box.cell{'data-role' => 'listview'}
-  %li.title{'data-role' => 'list-divider'} Soboty
-  - @schedules_saturday.each do |hour|
-    %li
-      %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
-      - hour.each do |minute|
-        = minute.arrival_at.min
-  .mobile_spacer
+- unless @schedules_saturday.nil?
+  %ul.grid_6.box.cell{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'} Soboty
+    - @schedules_saturday.each do |hour|
+      %li
+        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
+        - hour.each do |minute|
+          = minute.arrival_at.min
+    .mobile_spacer
 
 .clear
 
-%ul.grid_6.box.cell{'data-role' => 'listview'}
-  %li.title{'data-role' => 'list-divider'} Niedziele i święta
-  - @schedules_sunday.each do |hour|
-    %li
-      %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
-      - hour.each do |minute|
-        = minute.arrival_at.min
-  .mobile_spacer
+- unless @schedules_sunday.nil?
+  %ul.grid_6.box.cell{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'} Niedziele i święta
+    - @schedules_sunday.each do |hour|
+      %li
+        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
+        - hour.each do |minute|
+          = minute.arrival_at.min
+    .mobile_spacer
 
-%ul.grid_6.box.cell{'data-role' => 'listview'}
-  %li.title{'data-role' => 'list-divider'} Wakacyjne
-  - @schedules_holiday.each do |hour|
-    %li
-      %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
-      - hour.each do |minute|
-        = minute.arrival_at.min
+- unless @schedules_holiday.nil?
+  %ul.grid_6.box.cell{'data-role' => 'listview'}
+    %li.title{'data-role' => 'list-divider'} Wakacyjne
+    - @schedules_holiday.each do |hour|
+      %li
+        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.arrival_at.hour
+        - hour.each do |minute|
+          = minute.arrival_at.min

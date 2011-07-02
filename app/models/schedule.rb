@@ -65,16 +65,18 @@ class Schedule < ActiveRecord::Base
     paginated_schedules = []
     _schedules = []
     schedules = Schedule.where(:line_id => line_id, :station_id => station_id, time_type => true)
-    last_hour = schedules.first.arrival_at.hour
-    schedules.each do |schedule|
-      if schedule.arrival_at.hour != last_hour
-        last_hour = schedule.arrival_at.hour
-        paginated_schedules << _schedules
-        _schedules = []
+    unless schedules.empty?
+      last_hour = schedules.first.arrival_at.hour
+      schedules.each do |schedule|
+        if schedule.arrival_at.hour != last_hour
+          last_hour = schedule.arrival_at.hour
+          paginated_schedules << _schedules
+          _schedules = []
+        end
+        _schedules << schedule
       end
-      _schedules << schedule
+      paginated_schedules << _schedules
     end
-    paginated_schedules << _schedules
   end
 
 end
