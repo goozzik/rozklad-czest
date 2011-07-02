@@ -74,7 +74,7 @@ class Schedule < ActiveRecord::Base
       end
       _schedules << schedule
     end
-    paginated_schedules
+    paginated_schedules << _schedules
   end
 
 end
