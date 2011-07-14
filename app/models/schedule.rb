@@ -6,6 +6,8 @@ class Schedule < ActiveRecord::Base
   belongs_to :line
   belongs_to :station
 
+  HOLIDAY_CHECK = ((Time.now.month == 7 or Time.now.month == 8) and (Time.now.at_beginning_of_day.wday == 1 or Time.now.at_beginning_of_day.wday == 2 or Time.now.at_beginning_of_day.wday == 3 or Time.now.at_beginning_of_day.wday == 4 or Time.now.at_beginning_of_day.wday == 5))
+
   def self.today(lines_id, station_from_id)
     find(:all,
       :conditions => [
@@ -14,13 +16,15 @@ class Schedule < ActiveRecord::Base
           AND arrival_at > ?
           AND sunday = ?
           AND saturday = ?
-          AND work = ?",
+          AND work = ?
+          AND holiday = ?",
         lines_id,
         station_from_id,
         Time.now,
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
-        (Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0)
+        ((Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0) and not HOLIDAY_CHECK),
+        HOLIDAY_CHECK
       ],
       :order => 'arrival_at',
       :limit => TODAY_LIMIT
@@ -35,14 +39,16 @@ class Schedule < ActiveRecord::Base
           AND arrival_at > ?
           AND sunday = ?
           AND saturday = ?
-          AND work = ?",
+          AND work = ?
+          AND holiday = ?",
         lines_id,
         station_from_id,
         Time.now.tomorrow.at_beginning_of_day,
         Time.now.tomorrow.at_beginning_of_day.wday == 0,
         Time.now.tomorrow.at_beginning_of_day.wday == 6,
-        (Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0)
-      ],
+        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0) and not HOLIDAY_CHECK),
+        HOLIDAY_CHECK
+    ],
       :order => 'arrival_at',
       :limit => limit
     )

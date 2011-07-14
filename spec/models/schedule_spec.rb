@@ -49,13 +49,15 @@ describe Schedule do
           AND arrival_at > ?
           AND sunday = ?
           AND saturday = ?
-          AND work = ?",
+          AND work = ?
+          AND holiday = ?",
           lines_id,
           station_from_id,
           now,
           false,
           false,
-          true
+          true,
+          false
         ],
         :order => 'arrival_at',
         :limit => 10
@@ -88,13 +90,15 @@ describe Schedule do
           AND arrival_at > ?
           AND sunday = ?
           AND saturday = ?
-          AND work = ?",
+          AND work = ?
+          AND holiday = ?",
           lines_id,
           station_from_id,
           tomorrow,
           false,
           false,
-          true
+          true,
+          false
         ],
         :order => 'arrival_at',
         :limit => limit
