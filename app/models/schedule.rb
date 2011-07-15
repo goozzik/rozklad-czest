@@ -6,9 +6,10 @@ class Schedule < ActiveRecord::Base
   belongs_to :line
   belongs_to :station
 
-  HOLIDAY_CHECK = ((Time.now.month == 7 or Time.now.month == 8) and (Time.now.at_beginning_of_day.wday == 1 or Time.now.at_beginning_of_day.wday == 2 or Time.now.at_beginning_of_day.wday == 3 or Time.now.at_beginning_of_day.wday == 4 or Time.now.at_beginning_of_day.wday == 5))
+
 
   def self.today(lines_id, station_from_id)
+    holiday_check = ((Time.now.month == 7 or Time.now.month == 8) and (Time.now.at_beginning_of_day.wday == 1 or Time.now.at_beginning_of_day.wday == 2 or Time.now.at_beginning_of_day.wday == 3 or Time.now.at_beginning_of_day.wday == 4 or Time.now.at_beginning_of_day.wday == 5))
     find(:all,
       :conditions => [
         "line_id IN (?)
@@ -23,8 +24,8 @@ class Schedule < ActiveRecord::Base
         Time.now,
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
-        ((Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0) and not HOLIDAY_CHECK),
-        HOLIDAY_CHECK
+        ((Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0) and not holiday_check),
+       holiday_check 
       ],
       :order => 'arrival_at',
       :limit => TODAY_LIMIT
@@ -32,6 +33,7 @@ class Schedule < ActiveRecord::Base
   end
 
   def self.tomorrow(lines_id, station_from_id, limit)
+    holiday_check = ((Time.now.tomorrow.month == 7 or Time.now.tomorrow.month == 8) and (Time.now.tomorrow.at_beginning_of_day.wday == 1 or Time.now.tomorrow.at_beginning_of_day.wday == 2 or Time.now.tomorrow.at_beginning_of_day.wday == 3 or Time.now.tomorrow.at_beginning_of_day.wday == 4 or Time.now.tomorrow.at_beginning_of_day.wday == 5))
     find(:all,
       :conditions => [
         "line_id IN (?)
@@ -46,8 +48,8 @@ class Schedule < ActiveRecord::Base
         Time.now.tomorrow.at_beginning_of_day,
         Time.now.tomorrow.at_beginning_of_day.wday == 0,
         Time.now.tomorrow.at_beginning_of_day.wday == 6,
-        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0) and not HOLIDAY_CHECK),
-        HOLIDAY_CHECK
+        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0) and not holiday_check),
+        holiday_check 
     ],
       :order => 'arrival_at',
       :limit => limit
