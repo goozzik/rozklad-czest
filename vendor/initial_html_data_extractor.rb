@@ -31,7 +31,7 @@ class InitialHtmlDataExtractor
       directions.each_with_index do |direction, n|
         _direction = direction.content.gsub("kierunek:", "").strip
         _stations = []
-        stations = doc.xpath("//html/body/table/tr[3]/td[#{n+1}]/ul/li[*]")
+        stations = doc.xpath("//html/body/table/tr[3]/td[#{n+1}]/ul/li")
         stations.each do |station|
           _station = station.content
           if _station == 'TEATR im. A. MICKIEWICZA'
@@ -96,8 +96,7 @@ class InitialHtmlDataExtractor
 
       # Wakacyjne /html/body/table/tbody/tr[4]/td[3]/b
       holidays = doc.xpath("//html/body/table/tr/td[3]/b").each_with_index do |holiday, n|
-        next if n == 0
-        minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[4]").first.content.gsub('-', '').split(" ")
+        minutes = doc.xpath("//html/body/table/tr[#{4+n}]/td[4]").first.content.gsub('-', '').split(" ")
 
         minutes.each do |minute|
           Schedule.create!(
@@ -111,8 +110,7 @@ class InitialHtmlDataExtractor
 
       # Soboty    /html/body/table/tbody/tr[4]/td[5]/b
       saturdays = doc.xpath("//html/body/table/tr/td[5]/b").each_with_index do |saturday, n|
-        next if n == 0
-        minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[6]").first.content.gsub('-', '').split(" ")
+        minutes = doc.xpath("//html/body/table/tr[#{4+n}]/td[6]").first.content.gsub('-', '').split(" ")
 
         minutes.each do |minute|
           Schedule.create!(
@@ -126,8 +124,7 @@ class InitialHtmlDataExtractor
 
       # Niedziele /html/body/table/tbody/tr[4]/td[7]/b
       sundays = doc.xpath("//html/body/table/tr/td[7]/b").each_with_index do |sunday, n|
-        next if n == 0
-        minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[8]").first.content.gsub('-', '').split(" ")
+        minutes = doc.xpath("//html/body/table/tr[#{4+n}]/td[8]").first.content.gsub('-', '').split(" ")
 
         minutes.each do |minute|
           Schedule.create!(
