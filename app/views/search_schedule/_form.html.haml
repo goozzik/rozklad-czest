@@ -18,10 +18,12 @@
       = check_box_tag :from_my_location, 'true', false, :onchange => "$('#within_container').toggle('slow');", :class => 'grid_2 omega'
 
       .clear
-
       #within_container{:style => 'display:none;'}
-        = label_tag :within, 'W promieniu (w kilometrach)', :class => 'grid_2 alpha prefix_1'
-        = text_field_tag :within, '1', :class => 'grid_2 omega'
+        = label_tag :within, 'W promieniu (w metrach)', :class => 'grid_2 alpha prefix_1'
+        - if session[:mobile] 
+          = range_field_tag :within, 500, :min => 100, :max => 2000, :step => 100
+        - else 
+          = text_field_tag :within, '500', :class => 'grid_2 omega'
 
       .clear.vertical_spacer
 
