@@ -31,15 +31,15 @@ class SearchScheduleController < ApplicationController
           stations_near.each do |station|
             @schedules << Schedule.get(station.id, @station_to.id)
           end
+          if @schedules.empty?
+            flash[:error] = 'Nie znaleziono przystanku w pobliżu.'
+            render :template => pages_info_path
+          end
         else 
           flash[:error] = 'Nie udostępniono położenia.'
           render :template => pages_info_path
         end
       end
-    end
-    if @schedules.empty?
-      flash[:error] = 'Nie znaleziono połączeń.'
-      render :template => pages_info_path
     end
   end
 
