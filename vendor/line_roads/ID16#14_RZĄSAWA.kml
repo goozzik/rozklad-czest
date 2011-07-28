@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>14_RZĄSAWA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>14 RZĄSAWA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.109559,50.763662,0
+          19.107971,50.761728,1
+          19.107563,50.761172,2
+          19.086857,50.733793,3
+          19.093723,50.751282,4
+          19.094024,50.758749,5
+          19.093852,50.757894,6
+          19.095054,50.766865,7
+          19.097114,50.771534,8
+          19.094238,50.77403,9
+          19.098873,50.781981,10
+          19.099903,50.785644,11
+          19.101276,50.789388,12
+          19.103336,50.795845,13
+          19.1085723,50.795709,14
+          19.115632,50.799344,15
+          19.11804,50.801226,16
+          19.118993,50.806267,17
+          19.118571,50.811772,18
+          19.128098,50.81224,19
+          19.13003,50.818205,20
+          19.133677,50.823668,21
+          19.136639,50.827192,22
+          19.150929,50.833698,23
+          19.15525,50.836904,24
+          19.147561,50.831502,25
+          19.159899,50.842181,26
+          19.160929,50.843834,27
+          19.166336,50.852775,28
+          19.167881,50.857408,29
+          19.168053,50.857164,30
+          19.158161,50.871682,31
+          19.169254,50.871764,32
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA (1)</name>
+      <Point>
+        <coordinates>19.109559,50.763662</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA II (2)</name>
+      <Point>
+        <coordinates>19.107971,50.761728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA I (3)</name>
+      <Point>
+        <coordinates>19.107563,50.761172</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLONIA BRZEZINY (4)</name>
+      <Point>
+        <coordinates>19.086857,50.733793</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRZEZINY (5)</name>
+      <Point>
+        <coordinates>19.093723,50.751282</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻYZNA (6)</name>
+      <Point>
+        <coordinates>19.094024,50.758749</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISIA (7)</name>
+      <Point>
+        <coordinates>19.093852,50.757894</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRONOWA (8)</name>
+      <Point>
+        <coordinates>19.095054,50.766865</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POSELSKA (9)</name>
+      <Point>
+        <coordinates>19.097114,50.771534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (10)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (11)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (12)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (13)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (14)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (15)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (16)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (17)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (18)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (19)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RYNEK (20)</name>
+      <Point>
+        <coordinates>19.128098,50.81224</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (21)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (22)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (23)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (24)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (25)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (26)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KARŁOWICZA (27)</name>
+      <Point>
+        <coordinates>19.159899,50.842181</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZĄSAWSKA - UCZELNIA (28)</name>
+      <Point>
+        <coordinates>19.160929,50.843834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYPOCZYNKU (29)</name>
+      <Point>
+        <coordinates>19.166336,50.852775</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>UGODY (30)</name>
+      <Point>
+        <coordinates>19.167881,50.857408</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZIELNA (31)</name>
+      <Point>
+        <coordinates>19.168053,50.857164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MELIORANTÓW (32)</name>
+      <Point>
+        <coordinates>19.158161,50.871682</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZĄSAWA (33)</name>
+      <Point>
+        <coordinates>19.169254,50.871764</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>12_RAKÓW - DWORZEC PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>12 RAKÓW - DWORZEC PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.051666,50.796821,0
+          19.057975,50.805826,1
+          19.058522,50.80662,2
+          19.05673,50.813094,3
+          19.052181,50.82703,4
+          19.06482,50.820577,5
+          19.069605,50.826704,6
+          19.081278,50.82215,7
+          19.086996,50.819222,8
+          19.096577,50.816497,9
+          19.103894,50.81711,10
+          19.104302,50.81216,11
+          19.103937,50.808159,12
+          19.105418,50.805321,13
+          19.112295,50.805263,14
+          19.113816,50.806004,15
+          19.118993,50.806267,16
+          19.118571,50.811772,17
+          19.124824,50.811945,18
+          19.127734,50.807562,19
+          19.129139,50.802687,20
+          19.132948,50.794,21
+          19.132991,50.789741,22
+          19.142025,50.783962,23
+          19.143248,50.783745,24
+          19.145908,50.78053,25
+          19.14784,50.778318,26
+          19.156401,50.772809,27
+          19.156895,50.778128,28
+          19.155865,50.784451,29
+          19.153891,50.784423,30
+          19.150908,50.787394,31
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (1)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WICHROWA (2)</name>
+      <Point>
+        <coordinates>19.057975,50.805826</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LWOWSKA (3)</name>
+      <Point>
+        <coordinates>19.058522,50.80662</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOBRZYŃSKA (4)</name>
+      <Point>
+        <coordinates>19.05673,50.813094</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIAŁOSTOCKA (5)</name>
+      <Point>
+        <coordinates>19.052181,50.82703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁĘCZYCKA (6)</name>
+      <Point>
+        <coordinates>19.06482,50.820577</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASZUBSKA (7)</name>
+      <Point>
+        <coordinates>19.069605,50.826704</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (8)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (9)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (10)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (11)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (12)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (13)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (14)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (15)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (16)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (17)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (18)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (19)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (20)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (21)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (22)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (23)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (24)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (25)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (26)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (27)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (28)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (29)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (30)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (31)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKÓW - DWORZEC PKP (32)</name>
+      <Point>
+        <coordinates>19.150908,50.787394</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

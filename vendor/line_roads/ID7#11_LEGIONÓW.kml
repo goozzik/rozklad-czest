@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>11_LEGIONÓW</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>11 LEGIONÓW</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.086996,50.819222,0
+          19.084454,50.814151,1
+          19.08263,50.808945,2
+          19.081071,50.804006,3
+          19.087672,50.803331,4
+          19.09544,50.806667,5
+          19.096888,50.810514,6
+          19.103937,50.808159,7
+          19.105418,50.805321,8
+          19.112295,50.805263,9
+          19.113816,50.806004,10
+          19.118993,50.806267,11
+          19.118571,50.811772,12
+          19.127047,50.811623,13
+          19.132175,50.811711,14
+          19.13887,50.812728,15
+          19.142132,50.808809,16
+          19.143763,50.807128,17
+          19.149063,50.807752,18
+          19.154663,50.806884,19
+          19.16419,50.807236,20
+          19.167323,50.807481,21
+          19.176228,50.80683,22
+          19.159641,50.801216,23
+          19.196548,50.798151,24
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (1)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYSZYŃSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.084454,50.814151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORDECKIEGO (3)</name>
+      <Point>
+        <coordinates>19.08263,50.808945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUCULSKA (4)</name>
+      <Point>
+        <coordinates>19.081071,50.804006</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (5)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY - SZPITAL (6)</name>
+      <Point>
+        <coordinates>19.09544,50.806667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JASNA GÓRA (7)</name>
+      <Point>
+        <coordinates>19.096888,50.810514</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (8)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (9)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (10)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (11)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (12)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (13)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (14)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (15)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (16)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (17)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (18)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WSPÓLNA (19)</name>
+      <Point>
+        <coordinates>19.149063,50.807752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZŁOTA (20)</name>
+      <Point>
+        <coordinates>19.154663,50.806884</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>URZĄD CELNY (21)</name>
+      <Point>
+        <coordinates>19.16419,50.807236</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALLERA (22)</name>
+      <Point>
+        <coordinates>19.167323,50.807481</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOKSOWNIA (23)</name>
+      <Point>
+        <coordinates>19.176228,50.80683</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BERGER (24)</name>
+      <Point>
+        <coordinates>19.159641,50.801216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LEGIONÓW (25)</name>
+      <Point>
+        <coordinates>19.196548,50.798151</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

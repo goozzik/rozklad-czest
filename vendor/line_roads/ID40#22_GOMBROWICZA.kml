@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>22_GOMBROWICZA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>22 GOMBROWICZA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.011583,50.78852,0
+          19.019008,50.792345,1
+          19.028814,50.791952,2
+          19.038792,50.794163,3
+          19.051666,50.796821,4
+          19.061537,50.798015,5
+          19.071107,50.800131,6
+          19.087672,50.803331,7
+          19.095011,50.804769,8
+          19.102349,50.804253,9
+          19.105418,50.805321,10
+          19.112295,50.805263,11
+          19.113816,50.806004,12
+          19.112145,50.807914,13
+          19.113078,50.811874,14
+          19.114172,50.815053,15
+          19.114108,50.819357,16
+          19.110546,50.824156,17
+          19.116898,50.825593,18
+          19.122906,50.826718,19
+          19.119709,50.830703,20
+          19.11664,50.833671,21
+          19.120857,50.837092,22
+          19.119623,50.842601,23
+          19.126339,50.844877,24
+          19.126854,50.843888,25
+          19.129772,50.840284,26
+          19.115889,50.831312,27
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>ŁOJKI (1)</name>
+      <Point>
+        <coordinates>19.011583,50.78852</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DRZEWNA (2)</name>
+      <Point>
+        <coordinates>19.019008,50.792345</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN - DWORZEC PKP (3)</name>
+      <Point>
+        <coordinates>19.028814,50.791952</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ENERGETYKÓW (4)</name>
+      <Point>
+        <coordinates>19.038792,50.794163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (5)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA DOLNA (6)</name>
+      <Point>
+        <coordinates>19.061537,50.798015</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRZESTRZENNA (7)</name>
+      <Point>
+        <coordinates>19.071107,50.800131</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (8)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY (9)</name>
+      <Point>
+        <coordinates>19.095011,50.804769</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. AUGUSTYNA (10)</name>
+      <Point>
+        <coordinates>19.102349,50.804253</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (11)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (12)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (13)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPERNIKA (14)</name>
+      <Point>
+        <coordinates>19.112145,50.807914</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC BIEGAŃSKIEGO (15)</name>
+      <Point>
+        <coordinates>19.113078,50.811874</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TEATR IM. A. MICKIEWICZA (16)</name>
+      <Point>
+        <coordinates>19.114172,50.815053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKRZYNECKIEGO (17)</name>
+      <Point>
+        <coordinates>19.114108,50.819357</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (18)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (19)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYŃSKA (20)</name>
+      <Point>
+        <coordinates>19.122906,50.826718</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KURPIŃSKIEGO (21)</name>
+      <Point>
+        <coordinates>19.119709,50.830703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (22)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (23)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCHILLERA (24)</name>
+      <Point>
+        <coordinates>19.119623,50.842601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (25)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACEWICZ (26)</name>
+      <Point>
+        <coordinates>19.126854,50.843888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (27)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GOMBROWICZA (28)</name>
+      <Point>
+        <coordinates>19.115889,50.831312</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

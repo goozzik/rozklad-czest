@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>1_FIELDORFA-NILA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>1 FIELDORFA-NILA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.173417,50.790582,0
+          19.160414,50.791613,1
+          19.155006,50.78909,2
+          19.148333,50.786377,3
+          19.142025,50.783962,4
+          19.137454,50.78673,5
+          19.132819,50.789714,6
+          19.127283,50.793322,7
+          19.11804,50.801226,8
+          19.118993,50.806267,9
+          19.118325,50.808714,10
+          19.118571,50.811772,11
+          19.1184,50.815426,12
+          19.117842,50.821147,13
+          19.116898,50.825593,14
+          19.115868,50.83077,15
+          19.11664,50.833671,16
+          19.124622,50.837817,17
+          19.129772,50.840284,18
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (1)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBIE (2)</name>
+      <Point>
+        <coordinates>19.160414,50.791613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA (3)</name>
+      <Point>
+        <coordinates>19.155006,50.78909</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (4)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (5)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW ŚLĄSKICH (6)</name>
+      <Point>
+        <coordinates>19.137454,50.78673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RÓWNOLEGŁA (7)</name>
+      <Point>
+        <coordinates>19.132819,50.789714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OSTATNI GROSZ (8)</name>
+      <Point>
+        <coordinates>19.127283,50.793322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (9)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (10)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (11)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (12)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JASNOGÓRSKA (13)</name>
+      <Point>
+        <coordinates>19.1184,50.815426</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLITECHNIKA (14)</name>
+      <Point>
+        <coordinates>19.117842,50.821147</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (15)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLSKIEGO CZERWONEGO KRZYŻA  (16)</name>
+      <Point>
+        <coordinates>19.115868,50.83077</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (17)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACZYŃSKIEGO (18)</name>
+      <Point>
+        <coordinates>19.124622,50.837817</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (19)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

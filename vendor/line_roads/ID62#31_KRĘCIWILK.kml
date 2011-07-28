@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>31_KRĘCIWILK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>31 KRĘCIWILK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.0456583,50.830933,0
+          19.054595,50.830377,1
+          19.056559,50.837546,2
+          19.072909,50.828792,3
+          19.081278,50.82215,4
+          19.086996,50.819222,5
+          19.096577,50.816497,6
+          19.103894,50.81711,7
+          19.1118763,50.817134,8
+          19.118571,50.811772,9
+          19.127047,50.811623,10
+          19.132175,50.811711,11
+          19.13887,50.812728,12
+          19.142132,50.808809,13
+          19.143763,50.807128,14
+          19.1381783,50.805074,15
+          19.132948,50.794,16
+          19.132991,50.789741,17
+          19.142025,50.783962,18
+          19.148333,50.786377,19
+          19.153891,50.784423,20
+          19.155865,50.784451,21
+          19.156895,50.778128,22
+          19.157238,50.775143,23
+          19.165821,50.766974,24
+          19.176207,50.765834,25
+          19.182944,50.76335,26
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ KOMUNALNY (1)</name>
+      <Point>
+        <coordinates>19.0456583,50.830933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LEDNICKA (2)</name>
+      <Point>
+        <coordinates>19.054595,50.830377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GMINNA (3)</name>
+      <Point>
+        <coordinates>19.056559,50.837546</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRODZENIA (4)</name>
+      <Point>
+        <coordinates>19.072909,50.828792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (5)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (6)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (7)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (8)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (9)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (10)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (11)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (12)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (13)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (14)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (15)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II URZĄD SKARBOWY (16)</name>
+      <Point>
+        <coordinates>19.1381783,50.805074</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (17)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (18)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (19)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (20)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (21)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (22)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (23)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻARECKA (24)</name>
+      <Point>
+        <coordinates>19.157238,50.775143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (25)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WEYSSENHOFF (26)</name>
+      <Point>
+        <coordinates>19.176207,50.765834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRĘCIWILK (27)</name>
+      <Point>
+        <coordinates>19.182944,50.76335</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

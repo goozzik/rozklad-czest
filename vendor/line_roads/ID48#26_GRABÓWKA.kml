@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>26_GRABÓWKA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>26 GRABÓWKA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.135866,50.776473,0
+          19.143505,50.779892,1
+          19.14784,50.778318,2
+          19.156401,50.772809,3
+          19.145908,50.78053,4
+          19.142025,50.783962,5
+          19.132991,50.789741,6
+          19.132948,50.794,7
+          19.130073,50.800971,8
+          19.131038,50.802829,9
+          19.12783,50.807026,10
+          19.124824,50.811945,11
+          19.118571,50.811772,12
+          19.118099,50.817649,13
+          19.1118763,50.817134,14
+          19.103894,50.81711,15
+          19.096577,50.816497,16
+          19.086996,50.819222,17
+          19.081278,50.82215,18
+          19.072909,50.828792,19
+          19.075377,50.826908,20
+          19.059863,50.837113,21
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWIAK (1)</name>
+      <Point>
+        <coordinates>19.135866,50.776473</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRZOZOWA (2)</name>
+      <Point>
+        <coordinates>19.143505,50.779892</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (3)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (4)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (5)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (6)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (7)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (8)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (9)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (10)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (11)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (12)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (13)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (14)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (15)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (16)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (17)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (18)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (19)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRODZENIA (20)</name>
+      <Point>
+        <coordinates>19.072909,50.828792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. ROCHA - SZKOŁA (21)</name>
+      <Point>
+        <coordinates>19.075377,50.826908</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRABÓWKA (22)</name>
+      <Point>
+        <coordinates>19.059863,50.837113</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>32_STARA GORZELNIA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>32 STARA GORZELNIA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.150908,50.787394,0
+          19.153891,50.784423,1
+          19.155865,50.784451,2
+          19.156895,50.778128,3
+          19.157238,50.775143,4
+          19.156401,50.772809,5
+          19.14784,50.778318,6
+          19.145908,50.78053,7
+          19.142025,50.783962,8
+          19.132991,50.789741,9
+          19.132948,50.794,10
+          19.130073,50.800971,11
+          19.131038,50.802829,12
+          19.12783,50.807026,13
+          19.124824,50.811945,14
+          19.118571,50.811772,15
+          19.118099,50.817649,16
+          19.1118763,50.817134,17
+          19.103894,50.81711,18
+          19.104538,50.820849,19
+          19.104559,50.823939,20
+          19.100461,50.823831,21
+          19.093573,50.824102,22
+          19.088316,50.822638,23
+          19.086996,50.819222,24
+          19.081278,50.82215,25
+          19.069605,50.826704,26
+          19.06482,50.820577,27
+          19.052181,50.82703,28
+          19.054413,50.81933,29
+          19.044178,50.817934,30
+          19.044113,50.817866,31
+          19.004974,50.825403,32
+          18.998623,50.826162,33
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>RAKÓW - DWORZEC PKP (1)</name>
+      <Point>
+        <coordinates>19.150908,50.787394</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (2)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (3)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (4)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻARECKA (5)</name>
+      <Point>
+        <coordinates>19.157238,50.775143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (6)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (7)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (8)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (9)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (10)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (11)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (12)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (13)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (14)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (15)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (16)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (17)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (18)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (19)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁONIMSKIEGO (20)</name>
+      <Point>
+        <coordinates>19.104538,50.820849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (21)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁÓDZKA (22)</name>
+      <Point>
+        <coordinates>19.100461,50.823831</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - OSIEDLE (23)</name>
+      <Point>
+        <coordinates>19.093573,50.824102</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KRZYSZTOFA (24)</name>
+      <Point>
+        <coordinates>19.088316,50.822638</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (25)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (26)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASZUBSKA (27)</name>
+      <Point>
+        <coordinates>19.069605,50.826704</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁĘCZYCKA (28)</name>
+      <Point>
+        <coordinates>19.06482,50.820577</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIAŁOSTOCKA (29)</name>
+      <Point>
+        <coordinates>19.052181,50.82703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONIECPOLSKA (30)</name>
+      <Point>
+        <coordinates>19.054413,50.81933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TATRZAŃSKA (31)</name>
+      <Point>
+        <coordinates>19.044178,50.817934</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WIELKOBORSKA (32)</name>
+      <Point>
+        <coordinates>19.044113,50.817866</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARA GORZELNIA I (33)</name>
+      <Point>
+        <coordinates>19.004974,50.825403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARA GORZELNIA (34)</name>
+      <Point>
+        <coordinates>18.998623,50.826162</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

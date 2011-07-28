@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>30_WĄSOSZ</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>30 WĄSOSZ</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.112778,50.708634,0
+          19.188652,50.837926,1
+          19.182386,50.839565,2
+          19.16904,50.840365,3
+          19.147561,50.831502,4
+          19.15525,50.836904,5
+          19.150929,50.833698,6
+          19.136639,50.827192,7
+          19.133677,50.823668,8
+          19.13003,50.818205,9
+          19.127047,50.811623,10
+          19.118571,50.811772,11
+          19.11808,50.811163,12
+          19.118993,50.806267,13
+          19.11804,50.801226,14
+          19.115632,50.799344,15
+          19.1085723,50.795709,16
+          19.109302,50.788873,17
+          19.101276,50.789388,18
+          19.099903,50.785644,19
+          19.098873,50.781981,20
+          19.094238,50.77403,21
+          19.093251,50.773623,22
+          19.085526,50.771479,23
+          19.07542,50.766933,24
+          19.071965,50.765047,25
+          19.0618593,50.760744,26
+          19.05555,50.757385,27
+          19.050937,50.753631,28
+          19.045916,50.748024,29
+          19.025531,50.735314,30
+          19.045594,50.735369,31
+          19.05055,50.736034,32
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH (1)</name>
+      <Point>
+        <coordinates>19.112778,50.708634</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH I (2)</name>
+      <Point>
+        <coordinates>19.188652,50.837926</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SĄSIEDZKA (3)</name>
+      <Point>
+        <coordinates>19.182386,50.839565</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY GÓRNE (4)</name>
+      <Point>
+        <coordinates>19.16904,50.840365</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (5)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (6)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (7)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (8)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (9)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (10)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (11)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (12)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>D. H. CENTRUM (13)</name>
+      <Point>
+        <coordinates>19.11808,50.811163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (14)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (15)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (16)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (17)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (18)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (19)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (20)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (21)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (22)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMICICA (23)</name>
+      <Point>
+        <coordinates>19.093251,50.773623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZBYSZKA (24)</name>
+      <Point>
+        <coordinates>19.085526,50.771479</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZECZNA (25)</name>
+      <Point>
+        <coordinates>19.07542,50.766933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW WARSZAWY (26)</name>
+      <Point>
+        <coordinates>19.071965,50.765047</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DŹBÓW (27)</name>
+      <Point>
+        <coordinates>19.0618593,50.760744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KARPACKA (28)</name>
+      <Point>
+        <coordinates>19.05555,50.757385</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LOTOSU (29)</name>
+      <Point>
+        <coordinates>19.050937,50.753631</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRZYJEMNA (30)</name>
+      <Point>
+        <coordinates>19.045916,50.748024</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYGODA (31)</name>
+      <Point>
+        <coordinates>19.025531,50.735314</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WĄSOSZ - SKRZYŻOWANIE (32)</name>
+      <Point>
+        <coordinates>19.045594,50.735369</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WĄSOSZ (33)</name>
+      <Point>
+        <coordinates>19.05055,50.736034</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

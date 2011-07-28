@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>17_LISZKA DOLNA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>17 LISZKA DOLNA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.164448,50.833427,0
+          19.163353,50.838115,1
+          19.147561,50.831502,2
+          19.15525,50.836904,3
+          19.150929,50.833698,4
+          19.136639,50.827192,5
+          19.133677,50.823668,6
+          19.13003,50.818205,7
+          19.127047,50.811623,8
+          19.118571,50.811772,9
+          19.11808,50.811163,10
+          19.118993,50.806267,11
+          19.11804,50.801226,12
+          19.115632,50.799344,13
+          19.1085723,50.795709,14
+          19.103336,50.795845,15
+          19.096727,50.795438,16
+          19.097757,50.795601,17
+          19.087672,50.790921,18
+          19.086084,50.78597,19
+          19.079647,50.786051,20
+          19.069219,50.785699,21
+          19.063082,50.785183,22
+          19.053597,50.784586,23
+          19.044521,50.783989,24
+          19.040594,50.78304,25
+          19.04068,50.778155,26
+          19.03995,50.771561,27
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY - OSIEDLE (1)</name>
+      <Point>
+        <coordinates>19.164448,50.833427</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NORWIDA (2)</name>
+      <Point>
+        <coordinates>19.163353,50.838115</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (3)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (4)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (5)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (6)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (7)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (8)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (9)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (10)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>D. H. CENTRUM (11)</name>
+      <Point>
+        <coordinates>19.11808,50.811163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (12)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (13)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (14)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (15)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (16)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOŚCIELNA (17)</name>
+      <Point>
+        <coordinates>19.096727,50.795438</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MATEJKI (18)</name>
+      <Point>
+        <coordinates>19.097757,50.795601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MONIUSZKI (19)</name>
+      <Point>
+        <coordinates>19.087672,50.790921</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ARTYLERYJSKA (20)</name>
+      <Point>
+        <coordinates>19.086084,50.78597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZAŃSKA (21)</name>
+      <Point>
+        <coordinates>19.079647,50.786051</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA I (22)</name>
+      <Point>
+        <coordinates>19.069219,50.785699</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA II (23)</name>
+      <Point>
+        <coordinates>19.063082,50.785183</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA III (24)</name>
+      <Point>
+        <coordinates>19.053597,50.784586</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA GÓRNA (25)</name>
+      <Point>
+        <coordinates>19.044521,50.783989</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA I (26)</name>
+      <Point>
+        <coordinates>19.040594,50.78304</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA II (27)</name>
+      <Point>
+        <coordinates>19.04068,50.778155</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISZKA DOLNA (28)</name>
+      <Point>
+        <coordinates>19.03995,50.771561</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

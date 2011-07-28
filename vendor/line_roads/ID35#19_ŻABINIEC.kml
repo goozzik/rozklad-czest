@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>19_ŻABINIEC</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>19 ŻABINIEC</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.191999,50.776174,0
+          19.187365,50.784478,1
+          19.189811,50.783419,2
+          19.185047,50.785739,3
+          19.173417,50.790582,4
+          19.160414,50.791613,5
+          19.155006,50.78909,6
+          19.153891,50.784423,7
+          19.155865,50.784451,8
+          19.156895,50.778128,9
+          19.157238,50.775143,10
+          19.156401,50.772809,11
+          19.14784,50.778318,12
+          19.145908,50.78053,13
+          19.140415,50.783745,14
+          19.13475,50.78247,15
+          19.127305,50.784342,16
+          19.117243,50.787164,17
+          19.109302,50.788873,18
+          19.101276,50.789388,19
+          19.103336,50.795845,20
+          19.1085723,50.795709,21
+          19.111034,50.799066,22
+          19.111179,50.802619,23
+          19.113816,50.806004,24
+          19.112145,50.807914,25
+          19.113078,50.811874,26
+          19.1118763,50.817134,27
+          19.103894,50.81711,28
+          19.096577,50.816497,29
+          19.086996,50.819222,30
+          19.081278,50.82215,31
+          19.072909,50.828792,32
+          19.075377,50.826908,33
+          19.059863,50.837113,34
+          19.060008,50.837621,35
+          19.060426,50.839098,36
+          19.062266,50.845134,37
+          19.066386,50.857706,38
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>WALCOWNIA (1)</name>
+      <Point>
+        <coordinates>19.191999,50.776174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GUARDIAN (2)</name>
+      <Point>
+        <coordinates>19.187365,50.784478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORFANTEGO I (3)</name>
+      <Point>
+        <coordinates>19.189811,50.783419</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORFANTEGO (4)</name>
+      <Point>
+        <coordinates>19.185047,50.785739</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (5)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBIE (6)</name>
+      <Point>
+        <coordinates>19.160414,50.791613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA (7)</name>
+      <Point>
+        <coordinates>19.155006,50.78909</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (8)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (9)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (10)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻARECKA (11)</name>
+      <Point>
+        <coordinates>19.157238,50.775143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (12)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (13)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (14)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PZU (15)</name>
+      <Point>
+        <coordinates>19.140415,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASZTANOWA (16)</name>
+      <Point>
+        <coordinates>19.13475,50.78247</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAKRO (17)</name>
+      <Point>
+        <coordinates>19.127305,50.784342</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOJAZDOWA (18)</name>
+      <Point>
+        <coordinates>19.117243,50.787164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (19)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (20)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (21)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (22)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HOENE - WROŃSKIEGO (23)</name>
+      <Point>
+        <coordinates>19.111034,50.799066</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWACKIEGO (24)</name>
+      <Point>
+        <coordinates>19.111179,50.802619</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (25)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPERNIKA (26)</name>
+      <Point>
+        <coordinates>19.112145,50.807914</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC BIEGAŃSKIEGO (27)</name>
+      <Point>
+        <coordinates>19.113078,50.811874</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (28)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (29)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (30)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (31)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (32)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRODZENIA (33)</name>
+      <Point>
+        <coordinates>19.072909,50.828792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. ROCHA - SZKOŁA (34)</name>
+      <Point>
+        <coordinates>19.075377,50.826908</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRABÓWKA (35)</name>
+      <Point>
+        <coordinates>19.059863,50.837113</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IKARA I (36)</name>
+      <Point>
+        <coordinates>19.060008,50.837621</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IKARA II (37)</name>
+      <Point>
+        <coordinates>19.060426,50.839098</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IKARA III (38)</name>
+      <Point>
+        <coordinates>19.062266,50.845134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻABINIEC (39)</name>
+      <Point>
+        <coordinates>19.066386,50.857706</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

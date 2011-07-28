@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>69_NIERADA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>69 NIERADA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118325,50.808714,0
+          19.118993,50.806267,1
+          19.112295,50.805263,2
+          19.105418,50.805321,3
+          19.102373,50.802899,4
+          19.107456,50.798056,5
+          19.1085723,50.795709,6
+          19.103336,50.795845,7
+          19.101276,50.789388,8
+          19.099903,50.785644,9
+          19.098873,50.781981,10
+          19.094238,50.77403,11
+          19.097114,50.771534,12
+          19.095054,50.766865,13
+          19.093466,50.762604,14
+          19.081793,50.75902,15
+          19.077287,50.755667,16
+          19.076815,50.7474,17
+          19.077845,50.741289,18
+          19.07939,50.734174,19
+          19.083681,50.733467,20
+          19.083853,50.724503,21
+          19.087157,50.722411,22
+          19.086685,50.720373,23
+          19.090934,50.710265,24
+          19.083681,50.708961,25
+          19.071665,50.708689,26
+          19.057074,50.708906,27
+          19.050808,50.708961,28
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (1)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (2)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (3)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (4)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZANA (5)</name>
+      <Point>
+        <coordinates>19.102373,50.802899</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STRADOM - DWORZEC PKP (6)</name>
+      <Point>
+        <coordinates>19.107456,50.798056</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (7)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (8)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (9)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (10)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (11)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (12)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POSELSKA (13)</name>
+      <Point>
+        <coordinates>19.097114,50.771534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRONOWA (14)</name>
+      <Point>
+        <coordinates>19.095054,50.766865</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZDROWA (15)</name>
+      <Point>
+        <coordinates>19.093466,50.762604</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZEGAROWA (16)</name>
+      <Point>
+        <coordinates>19.081793,50.75902</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA I (17)</name>
+      <Point>
+        <coordinates>19.077287,50.755667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA II (18)</name>
+      <Point>
+        <coordinates>19.076815,50.7474</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA III (19)</name>
+      <Point>
+        <coordinates>19.077845,50.741289</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA (20)</name>
+      <Point>
+        <coordinates>19.07939,50.734174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SOBUCZYNA (21)</name>
+      <Point>
+        <coordinates>19.083681,50.733467</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MŁYNEK (22)</name>
+      <Point>
+        <coordinates>19.083853,50.724503</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAZURY I (23)</name>
+      <Point>
+        <coordinates>19.087157,50.722411</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAZURY (24)</name>
+      <Point>
+        <coordinates>19.086685,50.720373</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NIERADA - SZKOŁA (25)</name>
+      <Point>
+        <coordinates>19.090934,50.710265</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NIERADA - KOŚCIÓŁ (26)</name>
+      <Point>
+        <coordinates>19.083681,50.708961</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NIERADA - SKRZYŻOWANIE (27)</name>
+      <Point>
+        <coordinates>19.071665,50.708689</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NIERADA - TARGOWA II (28)</name>
+      <Point>
+        <coordinates>19.057074,50.708906</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NIERADA (29)</name>
+      <Point>
+        <coordinates>19.050808,50.708961</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

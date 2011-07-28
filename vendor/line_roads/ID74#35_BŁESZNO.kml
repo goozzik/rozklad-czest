@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>35_BŁESZNO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>35 BŁESZNO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.196548,50.798151,0
+          19.159641,50.801216,1
+          19.176228,50.80683,2
+          19.167323,50.807481,3
+          19.154663,50.806884,4
+          19.149063,50.807752,5
+          19.143763,50.807128,6
+          19.1381783,50.805074,7
+          19.132948,50.794,8
+          19.132991,50.789741,9
+          19.142025,50.783962,10
+          19.148333,50.786377,11
+          19.153891,50.784423,12
+          19.155865,50.784451,13
+          19.156895,50.778128,14
+          19.157238,50.775143,15
+          19.151058,50.768942,16
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>LEGIONÓW (1)</name>
+      <Point>
+        <coordinates>19.196548,50.798151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BERGER (2)</name>
+      <Point>
+        <coordinates>19.159641,50.801216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOKSOWNIA (3)</name>
+      <Point>
+        <coordinates>19.176228,50.80683</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALLERA (4)</name>
+      <Point>
+        <coordinates>19.167323,50.807481</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZŁOTA (5)</name>
+      <Point>
+        <coordinates>19.154663,50.806884</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WSPÓLNA (6)</name>
+      <Point>
+        <coordinates>19.149063,50.807752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (7)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II URZĄD SKARBOWY (8)</name>
+      <Point>
+        <coordinates>19.1381783,50.805074</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (9)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (10)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (11)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (12)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (13)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (14)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (15)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻARECKA (16)</name>
+      <Point>
+        <coordinates>19.157238,50.775143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BŁESZNO (17)</name>
+      <Point>
+        <coordinates>19.151058,50.768942</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>38_RAKÓW - DWORZEC PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>38 RAKÓW - DWORZEC PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.0618593,50.760744,0
+          19.071965,50.765047,1
+          19.07542,50.766933,2
+          19.077287,50.755667,3
+          19.076815,50.7474,4
+          19.077845,50.741289,5
+          19.07939,50.734174,6
+          19.081793,50.75902,7
+          19.093466,50.762604,8
+          19.095054,50.766865,9
+          19.097114,50.771534,10
+          19.094238,50.77403,11
+          19.098873,50.781981,12
+          19.099903,50.785644,13
+          19.101276,50.789388,14
+          19.109302,50.788873,15
+          19.117243,50.787164,16
+          19.127305,50.784342,17
+          19.132819,50.789714,18
+          19.142025,50.783962,19
+          19.148333,50.786377,20
+          19.150908,50.787394,21
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DŹBÓW (1)</name>
+      <Point>
+        <coordinates>19.0618593,50.760744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW WARSZAWY (2)</name>
+      <Point>
+        <coordinates>19.071965,50.765047</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZECZNA (3)</name>
+      <Point>
+        <coordinates>19.07542,50.766933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA I (4)</name>
+      <Point>
+        <coordinates>19.077287,50.755667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA II (5)</name>
+      <Point>
+        <coordinates>19.076815,50.7474</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA III (6)</name>
+      <Point>
+        <coordinates>19.077845,50.741289</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA (7)</name>
+      <Point>
+        <coordinates>19.07939,50.734174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZEGAROWA (8)</name>
+      <Point>
+        <coordinates>19.081793,50.75902</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZDROWA (9)</name>
+      <Point>
+        <coordinates>19.093466,50.762604</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRONOWA (10)</name>
+      <Point>
+        <coordinates>19.095054,50.766865</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POSELSKA (11)</name>
+      <Point>
+        <coordinates>19.097114,50.771534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (12)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (13)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (14)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (15)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (16)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOJAZDOWA (17)</name>
+      <Point>
+        <coordinates>19.117243,50.787164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAKRO (18)</name>
+      <Point>
+        <coordinates>19.127305,50.784342</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RÓWNOLEGŁA (19)</name>
+      <Point>
+        <coordinates>19.132819,50.789714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (20)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (21)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKÓW - DWORZEC PKP (22)</name>
+      <Point>
+        <coordinates>19.150908,50.787394</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

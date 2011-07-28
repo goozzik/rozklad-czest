@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>11_CMENTARZ ŚW. ROCHA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>11 CMENTARZ ŚW. ROCHA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.167323,50.807481,0
+          19.154663,50.806884,1
+          19.149063,50.807752,2
+          19.143763,50.807128,3
+          19.142132,50.808809,4
+          19.13887,50.812728,5
+          19.132175,50.811711,6
+          19.127047,50.811623,7
+          19.118571,50.811772,8
+          19.11808,50.811163,9
+          19.118993,50.806267,10
+          19.112295,50.805263,11
+          19.105418,50.805321,12
+          19.103937,50.808159,13
+          19.096888,50.810514,14
+          19.09544,50.806667,15
+          19.087672,50.803331,16
+          19.081071,50.804006,17
+          19.08263,50.808945,18
+          19.084454,50.814151,19
+          19.086996,50.819222,20
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>HALLERA (1)</name>
+      <Point>
+        <coordinates>19.167323,50.807481</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZŁOTA (2)</name>
+      <Point>
+        <coordinates>19.154663,50.806884</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WSPÓLNA (3)</name>
+      <Point>
+        <coordinates>19.149063,50.807752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (4)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (5)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (6)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (7)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (8)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (9)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>D. H. CENTRUM (10)</name>
+      <Point>
+        <coordinates>19.11808,50.811163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (11)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (12)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (13)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (14)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JASNA GÓRA (15)</name>
+      <Point>
+        <coordinates>19.096888,50.810514</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY - SZPITAL (16)</name>
+      <Point>
+        <coordinates>19.09544,50.806667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (17)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUCULSKA (18)</name>
+      <Point>
+        <coordinates>19.081071,50.804006</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORDECKIEGO (19)</name>
+      <Point>
+        <coordinates>19.08263,50.808945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYSZYŃSKIEGO (20)</name>
+      <Point>
+        <coordinates>19.084454,50.814151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (21)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

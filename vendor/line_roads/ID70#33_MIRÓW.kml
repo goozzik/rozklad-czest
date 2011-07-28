@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>33_MIRÓW</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>33 MIRÓW</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.022784,50.761545,0
+          19.033556,50.762916,1
+          19.041924,50.764585,2
+          19.053726,50.762332,3
+          19.055443,50.768792,4
+          19.046474,50.771316,5
+          19.03995,50.771561,6
+          19.04068,50.778155,7
+          19.040594,50.78304,8
+          19.038877,50.789524,9
+          19.03221,50.788642,10
+          19.026775,50.787937,11
+          19.028814,50.791952,12
+          19.038792,50.794163,13
+          19.051666,50.796821,14
+          19.061537,50.798015,15
+          19.071107,50.800131,16
+          19.087672,50.803331,17
+          19.095011,50.804769,18
+          19.102349,50.804253,19
+          19.105418,50.805321,20
+          19.112295,50.805263,21
+          19.113816,50.806004,22
+          19.118993,50.806267,23
+          19.118571,50.811772,24
+          19.127047,50.811623,25
+          19.132175,50.811711,26
+          19.13887,50.812728,27
+          19.143714,50.819054,28
+          19.154298,50.820537,29
+          19.162474,50.822069,30
+          19.171486,50.819981,31
+          19.173803,50.816294,32
+          19.180541,50.816673,33
+          19.19157,50.817378,34
+          19.195261,50.818164,35
+          19.2029,50.818896,36
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>LEŚNA (1)</name>
+      <Point>
+        <coordinates>19.022784,50.761545</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKORKI (2)</name>
+      <Point>
+        <coordinates>19.033556,50.762916</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CHŁOPSKA (3)</name>
+      <Point>
+        <coordinates>19.041924,50.764585</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPALNIANA II (4)</name>
+      <Point>
+        <coordinates>19.053726,50.762332</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPALNIANA I (5)</name>
+      <Point>
+        <coordinates>19.055443,50.768792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LAKOWA (6)</name>
+      <Point>
+        <coordinates>19.046474,50.771316</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISZKA DOLNA (7)</name>
+      <Point>
+        <coordinates>19.03995,50.771561</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA II (8)</name>
+      <Point>
+        <coordinates>19.04068,50.778155</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA I (9)</name>
+      <Point>
+        <coordinates>19.040594,50.78304</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRAFIKÓW (10)</name>
+      <Point>
+        <coordinates>19.038877,50.789524</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JEŻYNOWA (11)</name>
+      <Point>
+        <coordinates>19.03221,50.788642</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARYNARSKA (12)</name>
+      <Point>
+        <coordinates>19.026775,50.787937</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN - DWORZEC PKP (13)</name>
+      <Point>
+        <coordinates>19.028814,50.791952</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ENERGETYKÓW (14)</name>
+      <Point>
+        <coordinates>19.038792,50.794163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (15)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA DOLNA (16)</name>
+      <Point>
+        <coordinates>19.061537,50.798015</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRZESTRZENNA (17)</name>
+      <Point>
+        <coordinates>19.071107,50.800131</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (18)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY (19)</name>
+      <Point>
+        <coordinates>19.095011,50.804769</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. AUGUSTYNA (20)</name>
+      <Point>
+        <coordinates>19.102349,50.804253</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (21)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (22)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (23)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (24)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (25)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (26)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (27)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (28)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JURAJSKA (29)</name>
+      <Point>
+        <coordinates>19.143714,50.819054</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANGANOWA (30)</name>
+      <Point>
+        <coordinates>19.154298,50.820537</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OCZYSZCZALNIA WARTA (31)</name>
+      <Point>
+        <coordinates>19.162474,50.822069</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMORNICKA (32)</name>
+      <Point>
+        <coordinates>19.171486,50.819981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MORENOWA (33)</name>
+      <Point>
+        <coordinates>19.173803,50.816294</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FILTROWA (34)</name>
+      <Point>
+        <coordinates>19.180541,50.816673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKARPOWA (35)</name>
+      <Point>
+        <coordinates>19.19157,50.817378</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIROWSKA (36)</name>
+      <Point>
+        <coordinates>19.195261,50.818164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRÓW (37)</name>
+      <Point>
+        <coordinates>19.2029,50.818896</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

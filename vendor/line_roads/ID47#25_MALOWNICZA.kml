@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>25_MALOWNICZA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>25 MALOWNICZA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.139707,50.83695,0
+          19.138677,50.841544,1
+          19.138098,50.84447,2
+          19.13018,50.846381,3
+          19.126339,50.844877,4
+          19.126854,50.843888,5
+          19.124622,50.837817,6
+          19.120857,50.837092,7
+          19.115889,50.834633,8
+          19.110053,50.833061,9
+          19.105439,50.83096,10
+          19.105096,50.827219,11
+          19.104559,50.823939,12
+          19.104538,50.820849,13
+          19.103894,50.81711,14
+          19.104302,50.81216,15
+          19.103937,50.808159,16
+          19.105418,50.805321,17
+          19.112295,50.805263,18
+          19.111179,50.802619,19
+          19.111034,50.799066,20
+          19.1085723,50.795709,21
+          19.109302,50.788873,22
+          19.101276,50.789388,23
+          19.099903,50.785644,24
+          19.098873,50.781981,25
+          19.094238,50.77403,26
+          19.097114,50.771534,27
+          19.095054,50.766865,28
+          19.093852,50.757894,29
+          19.094024,50.758749,30
+          19.093723,50.751282,31
+          19.093852,50.745282,32
+          19.093165,50.744005,33
+          19.087436,50.737623,34
+          19.083681,50.733467,35
+          19.07939,50.734174,36
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KUKUCZKI (1)</name>
+      <Point>
+        <coordinates>19.139707,50.83695</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITOSA (2)</name>
+      <Point>
+        <coordinates>19.138677,50.841544</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSMOWSKIEJ (3)</name>
+      <Point>
+        <coordinates>19.138098,50.84447</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARZYŃSKIEGO (4)</name>
+      <Point>
+        <coordinates>19.13018,50.846381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (5)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACEWICZ (6)</name>
+      <Point>
+        <coordinates>19.126854,50.843888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACZYŃSKIEGO (7)</name>
+      <Point>
+        <coordinates>19.124622,50.837817</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (8)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OBROŃCÓW WESTERPLATTE (9)</name>
+      <Point>
+        <coordinates>19.115889,50.834633</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOŁAKOWSKIEGO (10)</name>
+      <Point>
+        <coordinates>19.110053,50.833061</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OBROŃCÓW POCZTY GDAŃSKIEJ (11)</name>
+      <Point>
+        <coordinates>19.105439,50.83096</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WAWRZYNOWICZA (12)</name>
+      <Point>
+        <coordinates>19.105096,50.827219</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (13)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁONIMSKIEGO (14)</name>
+      <Point>
+        <coordinates>19.104538,50.820849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (15)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (16)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (17)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (18)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (19)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWACKIEGO (20)</name>
+      <Point>
+        <coordinates>19.111179,50.802619</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HOENE - WROŃSKIEGO (21)</name>
+      <Point>
+        <coordinates>19.111034,50.799066</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (22)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (23)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (24)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (25)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (26)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (27)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POSELSKA (28)</name>
+      <Point>
+        <coordinates>19.097114,50.771534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRONOWA (29)</name>
+      <Point>
+        <coordinates>19.095054,50.766865</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISIA (30)</name>
+      <Point>
+        <coordinates>19.093852,50.757894</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻYZNA (31)</name>
+      <Point>
+        <coordinates>19.094024,50.758749</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRZEZINY (32)</name>
+      <Point>
+        <coordinates>19.093723,50.751282</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWE BRZEZINY I (33)</name>
+      <Point>
+        <coordinates>19.093852,50.745282</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWE BRZEZINY II (34)</name>
+      <Point>
+        <coordinates>19.093165,50.744005</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SOBUCZYNA-SZAFIROWA (35)</name>
+      <Point>
+        <coordinates>19.087436,50.737623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SOBUCZYNA (36)</name>
+      <Point>
+        <coordinates>19.083681,50.733467</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MALOWNICZA (37)</name>
+      <Point>
+        <coordinates>19.07939,50.734174</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
