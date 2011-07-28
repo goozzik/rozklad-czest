@@ -114,6 +114,10 @@ Then /^I should see div "([^"]*)" within list divider$/ do |text|
   page.should have_xpath ( "//li[@data-role='list-divider']/div[contains(text(), \"#{text}\")]" )
 end
 
+Then /^I should not see div "([^"]*)" within list divider$/ do |text|
+  page.should_not have_xpath ( "//li[@data-role='list-divider']/div[contains(text(), \"#{text}\")]" )
+end
+
 Then /^I should see generated map$/ do
   page.should have_xpath ( "//div[@id='map']" )
 end

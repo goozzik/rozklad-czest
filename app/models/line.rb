@@ -16,7 +16,15 @@ class Line < ActiveRecord::Base
   def self.find_all_by_stations(stations)
     if _lines = joins(:stations).all(:conditions => ["stations.id = ?", stations[0]])
       lines = []
-      _lines.each { |line| lines << line if line.stations.include?(Station.find(stations[1])) }
+      _lines.each do |line| 
+        if line.stations.include?(Station.find(stations[1]))
+          station_from = Station.find(stations[0])
+          station_to = Station.find(stations[1])
+          station_from_index = line.stations.index(station_from)
+          station_to_index = line.stations.index(station_to)
+          lines << line if station_from_index < station_to_index
+        end
+      end
     end
     return lines == 0 ? nil : lines
   end
@@ -24,14 +32,30 @@ class Line < ActiveRecord::Base
   def self.ids_by_stations(*stations)
     if _lines = joins(:stations).all(:conditions => ["stations.id = ?", stations[0]])
       lines = []
-      _lines.each { |line| lines << line.id if line.stations.include?(Station.find(stations[1])) }
+      _lines.each do |line| 
+        if line.stations.include?(Station.find(stations[1]))
+          station_from = Station.find(stations[0])
+          station_to = Station.find(stations[1])
+          station_from_index = line.stations.index(station_from)
+          station_to_index = line.stations.index(station_to)
+          lines << line.id if station_from_index < station_to_index
+        end
+      end
     end
     return lines == 0 ? nil : lines
   end
 
   def self.find_first_by_stations(stations)
     if _lines = joins(:stations).all(:conditions => ["stations.id = ?", stations[0]])
-      _lines.each { |line| return line if line.stations.include?(Station.find(stations[1])) }
+      _lines.each do |line| 
+        if line.stations.include?(Station.find(stations[1]))
+          station_from = Station.find(stations[0])
+          station_to = Station.find(stations[1])
+          station_from_index = line.stations.index(station_from)
+          station_to_index = line.stations.index(station_to)
+          return line if station_from_index < station_to_index
+        end
+      end
     end
     return nil
   end

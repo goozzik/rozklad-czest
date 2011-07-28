@@ -26,7 +26,7 @@ describe Line do
     end
 
     describe "behavior" do
-      after { the_class.ids_by_stations("station1", "station2") }
+      after { the_class.ids_by_stations(the_object1, the_object2) }
 
       it "should call .find proper way" do
         the_class.should_receive(:find).with(

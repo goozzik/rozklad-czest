@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'machinist/active_record'
 
 Station.blueprint(:station_from) do
@@ -25,17 +26,31 @@ Station.blueprint(:noline) do
 end
 
 Line.blueprint do
-  object.stations << Station.make!(:station_from)
-  object.stations << Station.make!(:station_to)
-  object.stations << Station.make!(:station_kopernika)
+  stations { [Station.make!(:station_from), Station.make!(:station_to), Station.make!(:station_kopernika)] }
   number { "1" }
-  direction { "NIERADA" }
+  direction { "MALOWNICZA" }
 end
 
 Schedule.blueprint do
   line { Line.make! }
-  station { Station.find(object.line.stations.first) }
+  station { Station.find_by_name("ZANA") }
   arrival_at { Time.new(2011, 3, 24, 22, 40) }
+  work { true }
+  sunday { false }
+  saturday { false }
+  holiday { false }
+end
+
+Line.blueprint(:inversely) do
+  stations { [Station.find_by_name('MALOWNICZA'), Station.find_by_name('ZANA')] }
+  number { "1" }
+  direction { "ZANA" }
+end
+
+Schedule.blueprint(:inversely) do
+  line { Line.make!(:inversely) }
+  station { Station.find_by_name('MALOWNICZA') }
+  arrival_at { Time.new(2011, 3, 24, 22, 45) }
   work { true }
   sunday { false }
   saturday { false }
