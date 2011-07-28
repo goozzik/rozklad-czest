@@ -4,6 +4,7 @@ class CreateLines < ActiveRecord::Migration
     create_table :lines do |t|
       t.string :number
       t.string :direction
+      t.string :map_url
     end
   end
 

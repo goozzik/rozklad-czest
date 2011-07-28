@@ -27,7 +27,6 @@ class Station::Import < Station
       self.lng = STATIONS_LOCATION[name.upcase][:lng] if name
     end
 
-    #TODO find coords for stations 'OLSZTYN SOKOLE GÓRY' and 'D. H. CENTRUM'
     STATIONS_LOCATION = {
       '1 MAJA - UCZELNIA' => {:lat => 50.799344, :lng => 19.115632},
       'AL. BOHATERÓW MONTE CASSINO' => {:lat => 50.795709, :lng => 19.1085723},

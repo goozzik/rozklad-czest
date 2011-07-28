@@ -23,6 +23,10 @@ class SchedulesController < ApplicationController
     @stations = @line.stations
   end
 
+  def line_road_map
+    @line_map_url = Line.find(params[:id]).map_url
+  end
+
   def schedule
     @schedules_work = Schedule.paginate_by_hour(params[:line_id], params[:station_id], :work)
     @schedules_sunday = Schedule.paginate_by_hour(params[:line_id], params[:station_id], :sunday)

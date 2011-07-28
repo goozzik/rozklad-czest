@@ -1,5 +1,7 @@
 .prefix_3
   %ul.grid_6.box{'data-role' => 'listview'}
-    %li.title{'data-role' => 'list-divider'}= "#{@line.number} - kierunek: #{@line.direction}"
+    %li.title{'data-role' => 'list-divider'}
+      = "#{@line.number} - kierunek: #{@line.direction}"
+      = link_to '(MAPA)', schedules_line_road_map_path(@line)
     - @stations.each do |station|
       %li= link_to station.name, schedules_schedule_path(:line_id => @line.id, :station_id => station.id)

@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20110413044254) do
   create_table "lines", :force => true do |t|
     t.string "number"
     t.string "direction"
+    t.string "map_url"
   end
 
   create_table "lines_stations", :id => false, :force => true do |t|
