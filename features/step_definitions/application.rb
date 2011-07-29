@@ -134,7 +134,13 @@ Given /^I am logged in$/ do
 end
 
 Then /^I should see road$/ do
-  Then "I should see \"1 - kierunek: NIERADA\" within list divider"
+  Then "I should see \"1 - kierunek: MALOWNICZA\" within list divider"
   Then "I should see link \"ZANA\" within list item"
   Then "I should see link \"MALOWNICZA\" within list item"
+end
+
+Then /^I should see full schedules$/ do
+  Then "I should see \"Robocze\" within list divider"
+  Then "I should see \"22\""
+  Then "I should see \"40\""
 end
