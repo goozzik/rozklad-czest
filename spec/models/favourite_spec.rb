@@ -88,7 +88,7 @@ describe Favourite do
         :station_to_object => station_to_object,
         :station_from_object => station_from_object
       )
-      Line.stub!(:find_first_by_stations).with([station_from_object.id, station_to_object.id]).and_return(validate_line_exist)
+      Line.stub!(:find_first_by_stations).with(station_from_object.id, station_to_object.id).and_return(validate_line_exist)
     end
     after { the_object.send(:validate_line_exist) }
 
