@@ -39,7 +39,7 @@ class Line < ActiveRecord::Base
   end
 
   def self.with_station(station_id)
-    joins(:stations).all(:conditions => ["stations.id = ?", station])
+    joins(:stations).all(:conditions => ["stations.id = ?", station_id])
   end
 
   def station_index(station_id)
