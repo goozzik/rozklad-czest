@@ -169,7 +169,7 @@ case ARGV.first
 
     puts
 
-    lines = Line.find_all_by_stations([station_from.id, station_to.id])
+    lines = Line.find_all_by_stations(station_from.id, station_to.id)
     puts "Lines #{lines.inspect}"
 
     puts

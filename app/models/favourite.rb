@@ -24,7 +24,7 @@ class Favourite < ActiveRecord::Base
 
     def validate_line_exist
       if station_from_object and station_to_object
-        errors.add :station_from, 'Brak połączeń.' unless Line.find_first_by_stations([station_from_object.id, station_to_object.id])
+        errors.add :station_from, 'Brak połączeń.' unless Line.find_first_by_stations(station_from_object.id, station_to_object.id)
       end
     end
 
