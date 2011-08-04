@@ -16,6 +16,8 @@ group :development do
   gem 'wirble', '0.1.3'
   gem 'hirb', '0.4.3'
   gem 'awesome_print', '0.3.2'
+  gem 'rspec', '2.6.0'
+  gem 'rspec-rails', '2.6.1'
 end
 
 group :test do
