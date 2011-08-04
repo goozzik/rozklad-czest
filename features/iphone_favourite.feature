@@ -94,4 +94,4 @@ Feature: Favourites
     When I go to the iphone edit favourite page
     And I click button "Usuń"
     Then I should not see link "Dom" within list item on iphone
-    And I should not see icon "gear" within list item on iponhe
+    And I should not see icon "gear" within list item on iphone

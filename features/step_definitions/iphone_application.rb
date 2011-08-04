@@ -20,7 +20,7 @@ Then /^I should see icon "([^"]*)" within list item on iphone$/ do |icon|
   page.should have_xpath( "//a[@data-icon='#{icon}']" )
 end
 
-Then /^I should not see icon "([^"]*)" within list item on iponhe$/ do |icon|
+Then /^I should not see icon "([^"]*)" within list item on iphone$/ do |icon|
   page.should_not have_xpath( "//a[@data-icon='#{icon}']" )
 end
 
@@ -40,4 +40,10 @@ end
 Then /^I should see edit favourite form on iphone$/ do
   Then "I should see new favourite form on iphone"
   Then "I should see button \"Usuń\""
+end
+
+Then /^I should see road on iphone$/ do
+  Then "I should see \"1 - kierunek: MALOWNICZA\" within list divider"
+  Then "I should see link \"ZANA\" within list item on iphone"
+  Then "I should see link \"MALOWNICZA\" within list item on iphone"
 end

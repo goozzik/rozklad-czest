@@ -17,6 +17,9 @@ module NavigationHelpers
     when /the search page/
       '/search_schedule/new_search'
 
+    when /the iphone search page/
+      '/search_schedule/new_search/?mobile=true'
+
     when /the favourite page/
       '/users/1/favourites'
 
@@ -41,8 +44,14 @@ module NavigationHelpers
     when /the stations page/
       '/stations'
 
+    when /the iphone stations page/
+      '/stations/?mobile=true'
+
     when /the lines page/
       '/lines'
+
+    when /the iphone lines page/
+      '/lines/?mobile=true'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
