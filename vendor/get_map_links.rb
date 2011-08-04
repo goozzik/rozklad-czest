@@ -22,8 +22,10 @@ begin
   @selenium.click "//*[@id='m_launch']"
   @selenium.wait_for_page_to_load "30000"
   @selenium.click "//a[@jsaction='mp.showMore'][@mpt='2011-07-27']"
-  @selenium.click "//a[@jsaction='mp.showMore'][@mpt='2011-07-26']"
-  @selenium.click "//*[@id='m_launch']"
+
+  1.upto(103) do |i|
+    puts @selenium.content "//div[@class='mp-item'][@jsinstance='#{i}]/div[@class='mp-title']/a[@jsaction='mp.loadMap']/@href"
+  end
 
 end
 
