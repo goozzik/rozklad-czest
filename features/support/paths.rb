@@ -14,23 +14,26 @@ module NavigationHelpers
     when /the iphone home\s?page/
       '/?mobile=true'
 
-    when /the iphone force page/
-      '/?mobile=true'
-
-    when /the computer force page/
-      '/?mobile=false'
-
     when /the search page/
       '/search_schedule/new_search'
 
     when /the favourite page/
       '/users/1/favourites'
 
+    when /the iphone favourite page/
+      '/users/1/favourites/?mobile=true'
+
     when /the new favourite page/
       '/users/1/favourites/new'
 
+    when /the iphone new favourite page/
+      '/users/1/favourites/new/?mobile=true'
+
     when /the edit favourite page/
       '/users/1/favourites/1/edit'
+
+    when /the iphone edit favourite page/
+      '/users/1/favourites/1/edit/?mobile=true'
 
     when /the register page/
       '/users/new'
