@@ -2,7 +2,7 @@ HOW TO RUN THIS
 =======================================
 1. If you dont have gem bundler:
   gem install bundler
- 
+
 2. Install gems:
   bundle install
 
