@@ -2,17 +2,17 @@
   %h2 Rejestracja
   = form_for @user do |f|
 
-    = f.label :user_name, 'Login', :class => 'grid_2 alpha' 
+    = f.label :user_name, 'Login', :class => 'grid_2 alpha'
     = f.text_field :user_name, :class => 'grid_2 omega'
 
     .vertical_spacer
 
-    = f.label :password, 'Hasło', :class => 'grid_2 alpha' 
+    = f.label :password, 'Hasło', :class => 'grid_2 alpha'
     = f.password_field :password, :class => 'grid_2 omega'
 
     .vertical_spacer
 
-    = f.label :password_confirmation, 'Potwierdź hasło', :class => 'grid_2 alpha' 
+    = f.label :password_confirmation, 'Potwierdź hasło', :class => 'grid_2 alpha'
     = f.password_field :password_confirmation, :class => 'grid_2 omega'
 
     .vertical_spacer

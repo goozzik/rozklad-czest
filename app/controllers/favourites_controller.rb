@@ -33,7 +33,7 @@ class FavouritesController < ApplicationController
     @favourite = @user.favourites.build(params[:favourite])
     if @favourite.save
       redirect_to user_favourites_path(@user)
-    else 
+    else
       flash[:errors] = @favourite.errors
       render :template => pages_info_path
     end
@@ -48,8 +48,8 @@ class FavouritesController < ApplicationController
     @user = User.find(params[:user_id])
     @favourite = @user.favourites.find(params[:id])
     if @favourite.update_attributes(params[:favourite])
-      redirect_to user_favourites_path(@user) 
-    else  
+      redirect_to user_favourites_path(@user)
+    else
       flash[:errors] = @favourite.errors
       render :template => pages_info_path
     end

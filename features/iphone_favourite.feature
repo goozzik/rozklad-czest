@@ -5,7 +5,7 @@ Feature: Favourites
     And I am logged in
     When I go to the iphone new favourite page
     Then I should see upper menu
-    And I should see new favourite form on iphone 
+    And I should see new favourite form on iphone
 
   Scenario: Enter edit favourite page
     Given a favourite exists
@@ -25,7 +25,7 @@ Feature: Favourites
     And I fill in "favourite_station_from" with "zana"
     And I fill in "favourite_station_to" with "malownicza"
     And I click button "Zapisz"
-    Then I should see "Brak połączeń." within list item 
+    Then I should see "Brak połączeń." within list item
 
   Scenario: Create favourite when station from and station to not exists
     Given a user exists

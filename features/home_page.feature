@@ -16,7 +16,7 @@ Feature: Home Page
     And I should see location info box
     And I should see link "Dom" within list item
 
-  Scenario: Entering home page when i am logged in and i have favourite with on_start_page set to false 
+  Scenario: Entering home page when i am logged in and i have favourite with on_start_page set to false
     Given a favourite exists
     And I am logged in
     When I go to the home page
@@ -52,7 +52,7 @@ Feature: Home Page
     And I follow "Ulubione"
     Then I should see upper menu
     And I should see "Ulubione" within upper menu link to "/users/1/favourites"
-    And I should see "W tej chwili nie masz żadnych ulubionych." within list item 
+    And I should see "W tej chwili nie masz żadnych ulubionych." within list item
     And I should see button "Dodaj" with icon "plus"
 
   Scenario: Navigate to map page

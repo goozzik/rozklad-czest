@@ -25,7 +25,7 @@ class Schedule < ActiveRecord::Base
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
         ((Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0) and not holiday_check),
-       holiday_check 
+       holiday_check
       ],
       :order => 'arrival_at',
       :limit => TODAY_LIMIT
