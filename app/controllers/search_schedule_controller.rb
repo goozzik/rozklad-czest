@@ -16,7 +16,7 @@ class SearchScheduleController < ApplicationController
           flash[:error] = 'Przystanek odjazdowy nie istnieje.'
           render :template => pages_info_path
         else
-          if Line.find_first_by_stations([@station_from.id, @station_to.id]).nil?
+          if Line.find_first_by_stations(@station_from.id, @station_to.id).nil?
             flash[:error] = 'Brak połączeń.'
             render :template => pages_info_path
           else
@@ -27,7 +27,7 @@ class SearchScheduleController < ApplicationController
       if params[:from_my_location] == 'true'
         unless session[:lat].nil?
           stations_near = Station.within(params[:within].to_i / 1000, :origin => [session[:lat], session[:lng]])
-          stations_near.delete_if { |station| Line.find_first_by_stations([station.id, @station_to.id]).nil? } 
+          stations_near.delete_if { |station| Line.find_first_by_stations(station.id, @station_to.id).nil? }
           stations_near.each do |station|
             @schedules << Schedule.get(station.id, @station_to.id)
           end

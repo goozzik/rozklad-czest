@@ -2,7 +2,7 @@ Feature: Search
 
   Scenario: Search from station when station from not exist
     Given a station to station exists
-    When I go to the search page
+    When I go to the iphone search page
     And I check checkbox "Z przystanku"
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
@@ -11,7 +11,7 @@ Feature: Search
 
   Scenario: Search from station when station to not exist
     Given a station from station exists
-    When I go to the search page
+    When I go to the iphone search page
     And I check checkbox "Z przystanku"
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
@@ -21,7 +21,7 @@ Feature: Search
   Scenario: Search from station when line not exist
     Given a station to station exists
     And a station from station exists
-    When I go to the search page
+    When I go to the iphone search page
     And I check checkbox "Z przystanku"
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
@@ -31,14 +31,14 @@ Feature: Search
   Scenario: Search from station and check map when i haven't passed my location
     Given a schedule exists
     And I have time 22:30
-    When I go to the search page
+    When I go to the iphone search page
     And I check checkbox "Z przystanku"
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see div "Przystanek: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
-    And I should see link "1 o 22:40" within list item
+    And I should see link "1 o 22:40" within list item on iphone
     When I follow "1 o 22:40"
     Then I should see "Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie." within list item
 
@@ -46,14 +46,14 @@ Feature: Search
     Given a schedule exists
     And an inversely schedule exists
     And I have time 22:30
-    When I go to the search page
+    When I go to the iphone search page
     And I check checkbox "Z przystanku"
     And I fill in "station_from" with "zana"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see div "Przystanek: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
-    And I should see link "1 o 22:40" within list item
+    And I should see link "1 o 22:40" within list item on iphone
  
 #  TODO: Get know how to get access to session variables
 #  Scenario: Search from station and check map when i have passed my location

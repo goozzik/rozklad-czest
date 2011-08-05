@@ -12,25 +12,25 @@
 
     var myLatLng = new google.maps.LatLng(#{@lat},#{@lng});
     var my = new google.maps.Marker({
-      position: myLatLng, 
+      position: myLatLng,
       map: map, 
       icon: 'http://www.google.com/intl/en_ALL/mapfiles/markerT.png',
       title: 'Ty'
-    }); 
+    });
 
     var fromLatLng = new google.maps.LatLng(#{@station_from.lat},#{@station_from.lng});
     var from = new google.maps.Marker({
-      position: fromLatLng, 
-      map: map, 
+      position: fromLatLng,
+      map: map,
       icon: 'http://www.google.com/intl/en_ALL/mapfiles/markerZ.png',
       title: 'Z'
-    }); 
-    
+    });
+
     var toLatLng = new google.maps.LatLng(#{@station_to.lat},#{@station_to.lng});
     var to = new google.maps.Marker({
-      position: toLatLng, 
-      map: map, 
+      position: toLatLng,
+      map: map,
       icon: 'http://www.google.com/intl/en_ALL/mapfiles/markerD.png',
       title: 'Do'
-    }); 
+    });
   }

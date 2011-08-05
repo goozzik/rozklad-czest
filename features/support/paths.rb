@@ -11,22 +11,32 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
-    when /the iphone force page/
+    when /the iphone home\s?page/
       '/?mobile=true'
-    when /the computer force page/
-      '/?mobile=false'
 
     when /the search page/
       '/search_schedule/new_search'
 
+    when /the iphone search page/
+      '/search_schedule/new_search/?mobile=true'
+
     when /the favourite page/
       '/users/1/favourites'
+
+    when /the iphone favourite page/
+      '/users/1/favourites/?mobile=true'
 
     when /the new favourite page/
       '/users/1/favourites/new'
 
+    when /the iphone new favourite page/
+      '/users/1/favourites/new/?mobile=true'
+
     when /the edit favourite page/
       '/users/1/favourites/1/edit'
+
+    when /the iphone edit favourite page/
+      '/users/1/favourites/1/edit/?mobile=true'
 
     when /the register page/
       '/users/new'
@@ -34,8 +44,14 @@ module NavigationHelpers
     when /the stations page/
       '/stations'
 
+    when /the iphone stations page/
+      '/stations/?mobile=true'
+
     when /the lines page/
       '/lines'
+
+    when /the iphone lines page/
+      '/lines/?mobile=true'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
