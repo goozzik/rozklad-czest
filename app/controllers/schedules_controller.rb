@@ -1,5 +1,8 @@
 class SchedulesController < ApplicationController
 
+  def index
+  end
+
   def stations
     @stations_ordered = Station.paginate_by_letter
   end
