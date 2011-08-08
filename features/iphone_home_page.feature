@@ -6,7 +6,7 @@ Feature: Home Page
   Scenario: Entering home page when i am not logged in
     When I go to the iphone home page
     Then I should see upper menu
-    And I should see login form
+    And I should see login form on iphone
     And I should see registration form
     And I should see location info box
 

@@ -53,3 +53,10 @@ When /^I follow "([^"]*)" on iphone$/ do |link|
     click_link(link)
   end
 end
+
+Then /^I should see login form on iphone$/ do
+  Then "I should see text field \"user_name\" with label \"Login\""
+  Then "I should see password field \"password\" with label \"Hasło\""
+  Then "I should see checkbox \"remember_me\" with label \"Zapamiętaj mnie\" on iphone"
+  Then "I should see button \"Zaloguj\""
+end

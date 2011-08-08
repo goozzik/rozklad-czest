@@ -14,6 +14,7 @@ end
 Then /^I should see login form$/ do
   Then "I should see text field \"user_name\" with label \"Login\""
   Then "I should see password field \"password\" with label \"Hasło\""
+  Then "I should see checkbox \"remember_me\" with label \"Zapamiętaj mnie\""
   Then "I should see button \"Zaloguj\""
 end
 

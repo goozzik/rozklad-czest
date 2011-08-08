@@ -20,9 +20,9 @@ class User < ActiveRecord::Base
     end
   end
 
-  def self.authenticated_with_token(user_id, password_salt)
-    user = find(id)
-    user && user.password_salt == password_salt ? user : nil
+  def self.authenticated_with_token(user_id, stored_password_salt)
+    user = find(user_id)
+    user && user.password_salt == stored_password_salt ? user : nil
   end
 
   def encrypt_password
