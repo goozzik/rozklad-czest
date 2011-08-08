@@ -1,3 +1,4 @@
+@iphone
 Feature: User
 
   Scenario: Register with valid attributes

@@ -1,4 +1,6 @@
 # coding: utf-8
+
+@iphone
 Feature: Home Page
 
   Scenario: Entering home page when i am not logged in

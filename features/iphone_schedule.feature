@@ -1,3 +1,4 @@
+@iphone
 Feature: Schedule
 
   Scenario: Go to station - line road - schedule

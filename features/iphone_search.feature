@@ -1,3 +1,4 @@
+@iphone
 Feature: Search
 
   Scenario: Search from station when station from not exist

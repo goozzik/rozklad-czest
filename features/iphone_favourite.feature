@@ -1,3 +1,4 @@
+@iphone
 Feature: Favourites
 
   Scenario: Enter new favourite page
