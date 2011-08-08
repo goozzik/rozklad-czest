@@ -10,7 +10,7 @@ class FavouritesController < ApplicationController
   end
 
   def authorize?
-    redirect_to root_path unless params[:user_id].to_i == session[:user_id]
+    redirect_to root_path unless params[:user_id] == session[:user_id]
   end
 
   def index

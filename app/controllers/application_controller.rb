@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   before_filter :mobile_device?
 
+
   private
 
     def mobile_device?
@@ -19,6 +20,7 @@ class ApplicationController < ActionController::Base
     end
 
     def current_user
+      session[:user_id] = User.authenticated_with_token(*cookies.signed[:remember_me]).id if cookies.signed[:remember_me]
       @current_user ||= User.find(session[:user_id]) if session[:user_id]
     end
 
