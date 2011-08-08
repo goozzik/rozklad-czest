@@ -57,7 +57,7 @@ Feature: Favourites
     And a noline station exists
     And I am logged in
     When I go to the iphone favourite page
-    And I follow "Edytuj"
+    And I follow "Edytuj" on iphone
     And I fill in "favourite_name" with "Dom"
     And I fill in "favourite_station_from" with "malownicza"
     And I fill in "favourite_station_to" with "noline"
@@ -68,7 +68,7 @@ Feature: Favourites
     Given a favourite exists
     And I am logged in
     When I go to the iphone favourite page
-    And I follow "Edytuj"
+    And I follow "Edytuj" on iphone
     And I fill in "favourite_name" with "Dom"
     And I fill in "favourite_station_from" with "rynek wieluński"
     And I fill in "favourite_station_to" with "ii aleja najświętszej maryi panny"
@@ -80,7 +80,7 @@ Feature: Favourites
     Given a favourite exists
     And I am logged in
     When I go to the iphone favourite page
-    And I follow "Edytuj"
+    And I follow "Edytuj" on iphone
     And I fill in "favourite_name" with "Dom"
     And I fill in "favourite_station_from" with "zana"
     And I fill in "favourite_station_to" with "kopernika"

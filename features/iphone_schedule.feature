@@ -14,7 +14,7 @@ Feature: Schedule
   Scenario: Go to line - line directions - line road - schedule
     Given a schedule exists
     When I am on the iphone lines page
-    And I follow "1"
+    And I follow "1" on iphone
     And I should see link "1 - kierunek: MALOWNICZA" within list item on iphone
     When I follow "1 - kierunek: MALOWNICZA" on iphone
     Then I should see road on iphone
