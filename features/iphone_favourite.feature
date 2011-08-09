@@ -94,5 +94,4 @@ Feature: Favourites
     And I am logged in
     When I go to the iphone edit favourite page
     And I click button "Usuń"
-    Then I should not see link "Dom" within list item on iphone
-    And I should not see icon "gear" within list item on iphone
+    Then I should see "W tej chwili nie masz żadnych ulubionych." within list item
