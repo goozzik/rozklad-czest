@@ -4,6 +4,8 @@ class SearchScheduleController < ApplicationController
   autocomplete :station, :name, :full => true
 
   def search
+    @user = User.find(session[:user_id])
+    @favourite = @user.favourites.new
     @schedules = []
     @station_to = Station.find_by_name(params[:station_to].upcase)
     if @station_to.nil?
@@ -26,7 +28,8 @@ class SearchScheduleController < ApplicationController
       end
       if params[:from_my_location] == 'true'
         unless session[:lat].nil?
-          stations_near = Station.within(params[:within].to_i / 1000, :origin => [session[:lat], session[:lng]])
+          within = params[:within].gsub(',', '').to_f / 1000
+          stations_near = Station.within(within, :origin => [session[:lat], session[:lng]])
           stations_near.delete_if { |station| Line.find_first_by_stations(station.id, @station_to.id).nil? }
           stations_near.each do |station|
             @schedules << Schedule.get(station.id, @station_to.id)
