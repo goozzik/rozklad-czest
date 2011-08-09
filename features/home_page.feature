@@ -61,11 +61,18 @@ Feature: Home Page
     Then I should see upper menu
     And I should see static map
 
+  Scenario: Navigate to schedules page
+    When I go to the home page
+    And I follow "Rozkłady"
+    Then I should see "dla stacji"
+    Then I should see "dla lini"
+
   Scenario: Navigate to stations page
     Given a station from station exists
     And a station to station exists
     When I go to the home page
-    And I follow "Stacje"
+    And I follow "Rozkłady"
+    And I follow "dla stacji"
     Then I should see upper menu
     And I should see "Z" within list divider
     And I should see link "ZANA" within list item
@@ -75,6 +82,7 @@ Feature: Home Page
   Scenario: Navigate to lines page
     Given a line exists
     When I go to the home page
-    And I follow "Linie"
+    And I follow "Rozkłady"
+    And I follow "dla lini"
     Then I should see upper menu
     And I should see border link "1" within list item

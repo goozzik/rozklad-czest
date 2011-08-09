@@ -47,3 +47,16 @@ Then /^I should see road on iphone$/ do
   Then "I should see link \"ZANA\" within list item on iphone"
   Then "I should see link \"MALOWNICZA\" within list item on iphone"
 end
+
+When /^I follow "([^"]*)" on iphone$/ do |link|
+  with_scope("div.ui-page-active") do
+    click_link(link)
+  end
+end
+
+Then /^I should see login form on iphone$/ do
+  Then "I should see text field \"user_name\" with label \"Login\""
+  Then "I should see password field \"password\" with label \"Hasło\""
+  Then "I should see checkbox \"remember_me\" with label \"Zapamiętaj mnie\" on iphone"
+  Then "I should see button \"Zaloguj\""
+end

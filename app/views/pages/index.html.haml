@@ -3,11 +3,17 @@
 - if current_user
   .prefix_1
     .grid_5.box
-      %h2= current_user.user_name
-      %ul
-        %li= "Zalogowany jako #{current_user.user_name}"
-        %li
-          %b= link_to "Wyloguj", log_out_path
+      - if session[:mobile]
+        %ul
+          %li
+            = "Zalogowany jako #{current_user.user_name}, "
+            = link_to "Wyloguj", log_out_path
+      - else
+        %h2= current_user.user_name
+        %ul
+          %li= "Zalogowany jako #{current_user.user_name}"
+          %li
+            %b= link_to "Wyloguj", log_out_path
 - else
   = render :template => 'sessions/new'
   = render :template => 'users/new'

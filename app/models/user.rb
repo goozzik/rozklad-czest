@@ -20,6 +20,11 @@ class User < ActiveRecord::Base
     end
   end
 
+  def self.authenticated_with_token(user_id, stored_password_salt)
+    user = find(user_id)
+    user && user.password_salt == stored_password_salt ? user : nil
+  end
+
   def encrypt_password
     if password.present?
       self.password_salt = BCrypt::Engine.generate_salt

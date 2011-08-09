@@ -52,7 +52,7 @@ Feature: User
   Scenario: Log in with invalid attributes
     Given a user exist
     When I go to the home page
-    And I fill in "user_name" with "user"
-    And I fill in "password" with "password"
+    And I fill in "user_name" with "bad_user"
+    And I fill in "password" with "bad_password"
     And I click button "Zaloguj"
-    Then I should see "user" within h2
+    Then I should not see "user"

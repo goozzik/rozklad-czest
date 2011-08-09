@@ -24,6 +24,7 @@ require 'cucumber/rails/capybara_javascript_emulation' # Lets you click links wi
 Capybara.default_selector = :css
 
 Capybara.default_driver = :selenium
+Capybara.default_wait_time = 5
 
 # If you set this to false, any error raised from within your app will bubble 
 # up to your step definition and out to cucumber unless you catch it somewhere

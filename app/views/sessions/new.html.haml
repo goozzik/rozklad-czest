@@ -13,5 +13,8 @@
 
       .vertical_spacer
 
+      = label_tag :remember_me, "Zapamiętaj mnie", :class => 'grid_2 alpha'
+      = check_box_tag :remember_me, true, false, :class => 'grid_2 omega'
+
       .grid_2.alpha.prefix_3
         = submit_tag "Zaloguj"

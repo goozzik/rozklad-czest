@@ -1,3 +1,4 @@
+@iphone
 Feature: Search
 
   Scenario: Search from station when station from not exist
@@ -39,7 +40,7 @@ Feature: Search
     Then I should see div "Przystanek: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item on iphone
-    When I follow "1 o 22:40"
+    When I follow "1 o 22:40" on iphone
     Then I should see "Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie." within list item
 
   Scenario: Search from station and do not show inversely line
@@ -68,7 +69,7 @@ Feature: Search
 #    And I should see "Przystanek: ZANA" within div
 #    And I should see "Kierunek: NIERADA" within div
 #    And I should see link "1 o 22:40" within list item
-#    When I follow "1 o 22:40"
+#    When I follow "1 o 22:40" on iphone
 #    Then I should see generated map
 #
 #  Scenario: Search from location 
@@ -83,5 +84,5 @@ Feature: Search
 #    Then I should see "Przystanek: ZANA" within div
 #    And I should see "Kierunek: NIERADA" within div
 #    And I should see link "1 o 22:40" within list item
-#    When I follow "1 o 22:40"
+#    When I follow "1 o 22:40" on iphone
 #    Then I should see generated map

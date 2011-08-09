@@ -1,10 +1,12 @@
 # coding: utf-8
+
+@iphone
 Feature: Home Page
 
   Scenario: Entering home page when i am not logged in
     When I go to the iphone home page
     Then I should see upper menu
-    And I should see login form
+    And I should see login form on iphone
     And I should see registration form
     And I should see location info box
 
@@ -28,7 +30,7 @@ Feature: Home Page
 
   Scenario: Navigate to search page
     When I go to the iphone home page
-    And I follow "Szukaj"
+    And I follow "Szukaj" on iphone
     Then I should see upper menu
     And I should see checkbox "from_station" with label "Z przystanku" on iphone
     And I should see checkbox "from_my_location" with label "Z mojego położenia" on iphone
@@ -39,7 +41,7 @@ Feature: Home Page
     Given a favourite exists
     And I am logged in
     When I go to the iphone home page
-    And I follow "Ulubione"
+    And I follow "Ulubione" on iphone
     Then I should see upper menu
     And I should see "Ulubione" within upper menu link to "/users/1/favourites"
     And I should see link "Dom" within list item on iphone
@@ -50,7 +52,7 @@ Feature: Home Page
     Given a user exists
     And I am logged in
     When I go to the iphone home page
-    And I follow "Ulubione"
+    And I follow "Ulubione" on iphone
     Then I should see upper menu
     And I should see "Ulubione" within upper menu link to "/users/1/favourites"
     And I should see "W tej chwili nie masz żadnych ulubionych." within list item
@@ -58,15 +60,22 @@ Feature: Home Page
 
   Scenario: Navigate to map page
     When I go to the iphone home page
-    And I follow "Mapa"
+    And I follow "Mapa" on iphone
     Then I should see upper menu
     And I should see static map
+
+  Scenario: Navigate to schedules page
+    When I go to the home page
+    And I follow "Rozkłady"
+    Then I should see "dla stacji"
+    Then I should see "dla lini"
 
   Scenario: Navigate to stations page
     Given a station from station exists
     And a station to station exists
     When I go to the iphone home page
-    And I follow "Stacje"
+    And I follow "Rozkłady" on iphone
+    And I follow "dla stacji" on iphone
     Then I should see upper menu
     And I should see "Z" within list divider
     And I should see link "ZANA" within list item on iphone
@@ -76,6 +85,7 @@ Feature: Home Page
   Scenario: Navigate to lines page
     Given a line exists
     When I go to the iphone home page
-    And I follow "Linie"
+    And I follow "Rozkłady" on iphone
+    And I follow "dla lini" on iphone
     Then I should see upper menu
     And I should see border link "1" within list item on iphone
