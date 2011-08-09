@@ -8,15 +8,14 @@ Feature: Home Page
     Then I should see upper menu
     And I should see login form on iphone
     And I should see registration form
-    And I should see location info box
 
   Scenario: Entering home page when i am logged in and i have favourite with on_start_page set to true
     Given a favourite exists with on_start_page: true
     And I am logged in
     When I go to the iphone home page
     Then I should see upper menu
+    And I should see login information box
     And I should see "Ulubione" within upper menu link to "/users/1/favourites"
-    And I should see location info box
     And I should see link "Dom" within list item on iphone
 
   Scenario: Entering home page when i am logged in and i have favourite with on_start_page set to false
@@ -24,8 +23,8 @@ Feature: Home Page
     And I am logged in
     When I go to the iphone home page
     Then I should see upper menu
+    And I should see login information box
     And I should see "Ulubione" within upper menu link to "/users/1/favourites"
-    And I should see location info box
     And I should not see link "Dom" within list item on iphone
 
   Scenario: Navigate to search page
