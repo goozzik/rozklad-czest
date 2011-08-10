@@ -24,16 +24,20 @@ HOW TO RUN THIS
 
 TESTS
 =======================================
-1. Run autotest
-  autotest
+1. Run cucumber
+  cucumber
+2. Run specs
+  rspec specs/
   
+Some cucumbers may not pass. It mostly happens on slower computers.
+
 CREATING KML FILE WITH STATIONS COORDS
 =======================================
 1. ruby vendor/stations_kml_creator
 2. Update your google static map with created kml file.
 
 RUNNING YOUR OWN BETA ON HEROKU
-================================
+=======================================
 
 1. Run heroku create:
   heroku create
