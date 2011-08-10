@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       cookies.permanent.signed[:remember_me] = [user.id, user.password_salt] if params[:remember_me] == "true"
       redirect_to root_url
     else
-      flash[:error] = "Nie prawidłowe hasło lub login."
+      flash[:error] = "Nieprawidłowe hasło lub login."
       render :template => pages_info_path
     end
   end
