@@ -55,4 +55,4 @@ Feature: User
     And I fill in "user_name" with "bad_user"
     And I fill in "password" with "bad_password"
     And I click button "Zaloguj"
-    Then I should not see "Zalogowany jako user"
+    Then I should see "Nieprawidłowe hasło lub login."

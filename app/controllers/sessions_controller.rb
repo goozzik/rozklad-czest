@@ -3,11 +3,9 @@ class SessionsController < ApplicationController
 
   def create
     user = User.authenticate(params[:user_name], params[:password])
-    if params[:remember_me] = "true"
-      cookies.permanent.signed[:remember_me] = [user.id, user.password_salt]
-    end
     if user
       session[:user_id] = user.id
+      cookies.permanent.signed[:remember_me] = [user.id, user.password_salt] if params[:remember_me] == "true"
       redirect_to root_url
     else
       flash[:error] = "Nie prawidłowe hasło lub login."
