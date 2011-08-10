@@ -8,7 +8,7 @@
         %li
           %b= link_to "Wyloguj", log_out_path
         %li
-          %b= link_to 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh'
+          %b= link_to_function 'Odśwież położenie', 'getLocation();'
 - else
   = render :template => 'sessions/new'
   = render :template => 'users/new'

@@ -1,10 +1,21 @@
 - @schedules.each do |station_schedules|
-  %ul.grid_6.box{'data-role' => 'listview'}
+  %ul.grid_6.box{'data-role' => 'listview', :style => 'min-height: 273px;'}
     %li.title{'data-role' => 'list-divider'}
       %div= 'Przystanek: ' + station_schedules.first.station.name
       %div= 'Kierunek: ' + station_schedules.first.line.direction
+
     - station_schedules.each do |schedule|
       %li= link_to "#{schedule.line.number} o #{schedule.arrival_at.strftime("%H:%M")}",
         search_schedule_map_path(:station_from => schedule.station.id,
                                  :station_to => @station_to.id), :rel => 'external'
+
+    - if current_user && current_user.favourites.where(:station_from => station_schedules.first.station.name, :station_to => @station_to.name).empty?
+      %li
+        %b= link_to 'Dodaj do ulubionych',
+        { :controller => 'favourites',
+          :action => 'create',
+          :user_id => current_user.id,
+          :favourite => { :name => "#{station_schedules.first.station.name} -> #{@station_to.name}",
+                          :station_from => station_schedules.first.station.name,
+                          :station_to => @station_to.name } }, :method => :post
     .mobile_spacer

@@ -4,8 +4,6 @@ class SearchScheduleController < ApplicationController
   autocomplete :station, :name, :full => true
 
   def search
-    @user = User.find(session[:user_id])
-    @favourite = @user.favourites.new
     @schedules = []
     @station_to = Station.find_by_name(params[:station_to].upcase)
     if @station_to.nil?
