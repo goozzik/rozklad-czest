@@ -1,5 +1,3 @@
-%h2.grid_12#loading{:style => 'display: none;'} Loading...
-
 - if current_user
   .prefix_1
     .grid_5.box
@@ -19,11 +17,6 @@
     %ul{'data-role' => 'listview'}
       - @favourites.each do |favourite|
         %li= link_to favourite.name, search_schedule_search_path(:station_from => favourite.station_from, :station_to => favourite.station_to, :from_station => 'true')
-
-.vertical_spacer
-
-.grid_5.suffix_1
-  .grid_2.alpha.prefix_3
 
 - if session[:lat].nil?
   :javascript

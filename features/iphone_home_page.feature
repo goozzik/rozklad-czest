@@ -34,6 +34,7 @@ Feature: Home Page
     And I should see checkbox "from_station" with label "Z przystanku" on iphone
     And I should see checkbox "from_my_location" with label "Z mojego położenia" on iphone
     And I should see text field "station_to" with label "Przystanek docelowy"
+    And I should see location refresh button
     And I should see button "Szukaj" with icon "forward"
 
   Scenario: Navigate to favourite page when i am logged in and i have favourite

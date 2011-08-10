@@ -143,3 +143,8 @@ Then /^I should see login information box$/ do
   page.should have_xpath( "//li/b/a[contains(text(), \"Wyloguj\")]" )
   page.should have_xpath( "//li/b/a[contains(text(), \"Odśwież położenie\")]" )
 end
+
+Then /^I should see location refresh button$/ do
+  page.should have_xpath( "//input[@onclick='getLocation();;']" )
+end
+
