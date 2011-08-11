@@ -10,17 +10,12 @@ class Station < ActiveRecord::Base
 
   def self.paginate_by_letter
     ordered_stations = []
-    get_ordered_letters.each do |letter|
-      stations = where('name LIKE ?', "#{letter}%")
-      ordered_stations << stations
-    end
-    return ordered_stations
+    get_ordered_letters.each { |letter| ordered_stations << where('name LIKE ?', "#{letter}%") }
+    ordered_stations
   end
 
   def self.get_ordered_letters
-    letters = []
-    all.each { |station| letters << station.name.first if letters.last != station.name.first }
-    return letters
+    all.collect(&:name).collect(&:first).uniq
   end
 
   private
