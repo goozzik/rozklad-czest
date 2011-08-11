@@ -39,5 +39,6 @@ module RozkladCzestPl
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    GeoKit::default_units = :kms
   end
 end
