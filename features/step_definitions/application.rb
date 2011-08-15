@@ -24,12 +24,6 @@ Then /^I should see registration form$/ do
   Then "I should see button \"Wyślij\""
 end
 
-Then /^I should see location info box$/ do
-  Then "I should see \"Udostępnij położenie\" within h2"
-  Then "I should see \"Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.\" within h3"
-  Then "I should see function button \"Odśwież położenie\""
-end
-
 Then /^I should see new favourite form$/ do
   Then "I should see text field \"favourite[name]\" with label \"Nazwa\""
   Then "I should see text field \"favourite[station_from]\" with label \"Przystanek odjazdowy\""
@@ -144,3 +138,13 @@ Then /^I should see full schedules$/ do
   Then "I should see \"22\""
   Then "I should see \"40\""
 end
+
+Then /^I should see login information box$/ do
+  page.should have_xpath( "//li/b/a[contains(text(), \"Wyloguj\")]" )
+  page.should have_xpath( "//li/b/a[contains(text(), \"Odśwież położenie\")]" )
+end
+
+Then /^I should see location refresh button$/ do
+  page.should have_xpath( "//input[@onclick='getLocation();;']" )
+end
+

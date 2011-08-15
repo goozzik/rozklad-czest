@@ -1,19 +1,12 @@
-%h2.grid_12#loading{:style => 'display: none;'} Loading...
-
 - if current_user
   .prefix_1
     .grid_5.box
-      - if session[:mobile]
-        %ul
-          %li
-            = "Zalogowany jako #{current_user.user_name}, "
-            = link_to "Wyloguj", log_out_path
-      - else
-        %h2= current_user.user_name
-        %ul
-          %li= "Zalogowany jako #{current_user.user_name}"
-          %li
-            %b= link_to "Wyloguj", log_out_path
+      %h2= "Zalogowany jako #{current_user.user_name}"
+      %ul
+        %li
+          %b= link_to "Wyloguj", log_out_path
+        %li
+          %b= link_to_function 'Odśwież położenie', 'getLocation();'
 - else
   = render :template => 'sessions/new'
   = render :template => 'users/new'
@@ -24,15 +17,6 @@
     %ul{'data-role' => 'listview'}
       - @favourites.each do |favourite|
         %li= link_to favourite.name, search_schedule_search_path(:station_from => favourite.station_from, :station_to => favourite.station_to, :from_station => 'true')
-
-.vertical_spacer
-
-.grid_5.suffix_1
-  %h2 Udostępnij położenie
-  %h3
-    Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie.
-  .grid_2.alpha.prefix_3
-    = button_to_function 'Odśwież położenie', 'getLocation();', 'data-icon' => 'refresh', 'data-role' => 'button'
 
 - if session[:lat].nil?
   :javascript

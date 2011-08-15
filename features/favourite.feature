@@ -93,5 +93,4 @@ Feature: Favourites
     And I am logged in
     When I go to the edit favourite page
     And I click button "Usuń"
-    Then I should not see link "Dom" within list item
-    And I should not see link "Edytuj" within list item
+    Then I should see "W tej chwili nie masz żadnych ulubionych." within list item

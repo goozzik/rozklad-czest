@@ -39,6 +39,7 @@ Feature: Search
     Then I should see div "Przystanek: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
+    And I should not see "Dodaj do ulubionych"
     When I follow "1 o 22:40"
     Then I should see "Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie." within list item
 
@@ -54,7 +55,25 @@ Feature: Search
     Then I should see div "Przystanek: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
- 
+    And I should not see "Dodaj do ulubionych"
+
+  Scenario: Search for schedule and add found schedule to favourites when im logged in
+    Given a user exists
+    And I am logged in
+    And a schedule exists
+    And I have time 22:30
+    When I go to the search page
+    And I check checkbox "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I fill in "station_to" with "malownicza"
+    And I click button "Szukaj"
+    Then I should see div "Przystanek: ZANA" within list divider
+    And I should see div "Kierunek: MALOWNICZA" within list divider
+    And I should see link "1 o 22:40" within list item
+    And I should see border link "Dodaj do ulubionych" within list item
+    When I follow "Dodaj do ulubionych"
+    Then I should see link "ZANA -> MALOWNICZA" within list item
+
 #  TODO: Get know how to get access to session variables
 #  Scenario: Search from station and check map when i have passed my location
 #    Given a schedule exists

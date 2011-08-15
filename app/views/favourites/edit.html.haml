@@ -1,5 +1,5 @@
 .prefix_3
   .grid_6.box
     = render 'form'
-    .grid_2.alpha.prefix_4
+    .grid_2.omega
       = button_to 'Usuń', "/users/#{@user.id}/favourites/#{@favourite.id}", :method => 'delete', 'data-role' => 'button'

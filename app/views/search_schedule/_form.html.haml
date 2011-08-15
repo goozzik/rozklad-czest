@@ -32,5 +32,6 @@
 
       .clear.vertical_spacer
 
-      .grid_2.alpha.prefix_4
+      %div{:class => 'grid_2 alpha prefix_2'}= button_to_function 'Odśwież położenie', 'getLocation();'
+      .grid_2.omega
         = submit_tag 'Szukaj', 'data-icon' => 'forward', 'data-role' => 'button'

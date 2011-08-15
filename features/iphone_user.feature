@@ -48,7 +48,7 @@ Feature: User
     And I fill in "user_name" with "user"
     And I fill in "password" with "password"
     And I click button "Zaloguj"
-    Then I should see "user" within list item
+    Then I should see "Zalogowany jako user" within h2
 
   Scenario: Log in with invalid attributes
     Given a user exist
@@ -56,4 +56,4 @@ Feature: User
     And I fill in "user_name" with "bad_user"
     And I fill in "password" with "bad_password"
     And I click button "Zaloguj"
-    Then I should not see "user"
+    Then I should see "Nieprawidłowe hasło lub login."

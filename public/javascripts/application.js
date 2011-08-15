@@ -1,5 +1,4 @@
 function getLocation() {
-  $('#loading').show();
   navigator.geolocation.getCurrentPosition(
     function(position){
       var lat = position.coords.latitude;
