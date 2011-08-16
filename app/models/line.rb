@@ -54,7 +54,7 @@ class Line < ActiveRecord::Base
   private
 
     def get_map_url
-      self.map_url = LINES_ROAD_MAP_LINKS[(Line.try(:last).try(:id) or 0)]
+      self.map_url = LINES_ROAD_MAP_LINKS[(Line.try(:last).try(:id) || 0)]
     end
 
 end
