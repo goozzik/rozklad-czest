@@ -141,4 +141,5 @@ describe Line do
 
     it { should == "http://maps.google.com/maps/ms?msa=0&msid=214247094233741962570.0004a8f32cfdbad18e1f9&ie=UTF8&ll=50.812123,19.144642&spn=0.056322,0.057549&output=embed" }
   end
+
 end

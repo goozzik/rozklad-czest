@@ -9,7 +9,6 @@ class Schedule < ActiveRecord::Base
 
 
   def self.today(lines_id, station_from_id)
-    holiday_check = ((Time.now.month == 7 or Time.now.month == 8) and (Time.now.at_beginning_of_day.wday == 1 or Time.now.at_beginning_of_day.wday == 2 or Time.now.at_beginning_of_day.wday == 3 or Time.now.at_beginning_of_day.wday == 4 or Time.now.at_beginning_of_day.wday == 5))
     find(:all,
       :conditions => [
         "line_id IN (?)
@@ -24,16 +23,16 @@ class Schedule < ActiveRecord::Base
         Time.now,
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
-        ((Time.now.at_beginning_of_day.wday != 6 and Time.now.at_beginning_of_day.wday != 0) and not holiday_check),
-       holiday_check
+        ((Time.now.at_beginning_of_day.wday != 6 && Time.now.at_beginning_of_day.wday != 0) && !holiday?),
+       holiday?
       ],
       :order => 'arrival_at',
       :limit => TODAY_LIMIT
     )
   end
 
+
   def self.tomorrow(lines_id, station_from_id, limit)
-    holiday_check = ((Time.now.tomorrow.month == 7 or Time.now.tomorrow.month == 8) and (Time.now.tomorrow.at_beginning_of_day.wday == 1 or Time.now.tomorrow.at_beginning_of_day.wday == 2 or Time.now.tomorrow.at_beginning_of_day.wday == 3 or Time.now.tomorrow.at_beginning_of_day.wday == 4 or Time.now.tomorrow.at_beginning_of_day.wday == 5))
     find(:all,
       :conditions => [
         "line_id IN (?)
@@ -48,8 +47,8 @@ class Schedule < ActiveRecord::Base
         Time.now.tomorrow.at_beginning_of_day,
         Time.now.tomorrow.at_beginning_of_day.wday == 0,
         Time.now.tomorrow.at_beginning_of_day.wday == 6,
-        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 and Time.now.tomorrow.at_beginning_of_day.wday != 0) and not holiday_check),
-        holiday_check 
+        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday != 0) && !holiday?),
+        holiday? 
     ],
       :order => 'arrival_at',
       :limit => limit
@@ -85,6 +84,12 @@ class Schedule < ActiveRecord::Base
       end
       paginated_schedules << _schedules
     end
+  end
+
+  def self.holiday?
+    holiday_months = Time.now.month == 7 || Time.now.month == 8
+    working_days = Time.now.at_beginning_of_day.wday == 1 || Time.now.at_beginning_of_day.wday == 2 || Time.now.at_beginning_of_day.wday == 3 || Time.now.at_beginning_of_day.wday == 4 || Time.now.at_beginning_of_day.wday == 5 
+    holiday_months && working_days
   end
 
 end
