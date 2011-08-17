@@ -37,6 +37,16 @@
 
       .clear.vertical_spacer
 
+      = label_tag :to_location, 'Adres docelowy', :class => 'grid_2 alpha prefix_1'
+      = check_box_tag :to_location, 'true', false, :onchange => "$('#location_to_container').toggle('slow');", :class => 'grid_2 omega'
+
+      .clear
+      #location_to_container{:style => 'display:none;'}
+        = label_tag :location_to, 'Adres', :class => 'grid_2 alpha prefix_1'
+        = text_field_tag :location_to, '', :class => 'grid_2 omega'
+
+      .clear.vertical_spacer
+
       %div{:class => 'grid_2 alpha prefix_2'}= button_to_function 'Odśwież położenie', 'getLocation();'
       .grid_2.omega
         = submit_tag 'Szukaj', 'data-icon' => 'forward', 'data-role' => 'button'
