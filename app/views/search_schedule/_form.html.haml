@@ -9,7 +9,7 @@
       .clear
 
       #station_from_container{:style => 'display:none;'}
-        = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_2 alpha prefix_1'
+        = label_tag :station_from, 'Przystanek', :class => 'grid_2 alpha prefix_1'
         = autocomplete_field_tag :station_from, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
 
       .clear.vertical_spacer
@@ -19,7 +19,7 @@
 
       .clear
       #within_container{:style => 'display:none;'}
-        = label_tag :within, 'W promieniu (w metrach)', :class => 'grid_2 alpha prefix_1'
+        = label_tag :within, 'W promieniu', :class => 'grid_2 alpha prefix_1'
         - if session[:mobile] 
           = range_field_tag :within, 500, :min => 100, :max => 2000, :step => 100
         - else 
@@ -27,8 +27,13 @@
 
       .clear.vertical_spacer
 
-      = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
-      = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+      = label_tag :to_station, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
+      = check_box_tag :to_station, 'true', false, :onchange => "$('#station_to_container').toggle('slow');", :class => 'grid_2 omega'
+
+      .clear
+      #station_to_container{:style => 'display:none;'}
+        = label_tag :station_to, 'Przystanek', :class => 'grid_2 alpha prefix_1'
+        = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
 
       .clear.vertical_spacer
 
