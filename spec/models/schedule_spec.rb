@@ -243,4 +243,80 @@ describe Schedule do
     end
   end
 
+  describe ".holiday?" do
+    before do
+      Time.stub!(:now => now)
+    end
+
+    context "when its 1 January 2011" do
+      let(:now) { Date.new(2011, 1, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 2 January 2011" do
+      let(:now) { Date.new(2011, 1, 2).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 3 January 2011" do
+      let(:now) { Date.new(2011, 1, 3).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 2 July 2011" do
+      let(:now) { Date.new(2011, 7, 2).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 7 August 2011" do
+      let(:now) { Date.new(2011, 8, 7).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 1 July 2011" do
+      let(:now) { Date.new(2011, 7, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == true }
+      end
+    end
+
+    context "when its 1 August 2011" do
+      let(:now) { Date.new(2011, 8, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.holiday? }
+
+        it { should == true }
+      end
+    end
+  end
+
 end
