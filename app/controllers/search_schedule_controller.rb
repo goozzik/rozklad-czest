@@ -92,7 +92,7 @@ class SearchScheduleController < ApplicationController
             end
           end
         else
-          flash[:error] = 'Nie znaleziono przystanku w promieniu pięciuset metrów od danego adresu.'
+          flash[:error] = 'Nie znaleziono przystanku w pobliżu danego adresu.'
           render :template => pages_info_path
         end
       else

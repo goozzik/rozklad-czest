@@ -60,7 +60,7 @@ Feature: Search
     And I click button "Szukaj"
     Then I should see div "Z: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
-    Then I should see div "Do: MALOWNICZA" within list divider
+    And I should see div "Do: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
     And I should not see "Dodaj do ulubionych"
 
@@ -77,12 +77,70 @@ Feature: Search
     And I click button "Szukaj"
     Then I should see div "Z: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
-    Then I should see div "Do: MALOWNICZA" within list divider
+    And I should see div "Do: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
     And I should see border link "Dodaj do ulubionych" within list item
     When I follow "Dodaj do ulubionych"
     Then I should see link "ZANA -> MALOWNICZA" within list item
 
+  Scenario: Search from station to address when address not exist
+    Given a schedule exists
+    And I have time 22:30
+    When I go to the search page
+    And I choose "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I choose "Na adres"
+    And I fill in "location_to" with "xxxasd"
+    And I click button "Szukaj"
+    Then I should see "Nie znaleziono adresu." within list item
+
+  Scenario: Search from station to address when address is too far
+    Given a schedule exists
+    And I have time 22:30
+    When I go to the search page
+    And I choose "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I choose "Na adres"
+    And I fill in "location_to" with "warszawa"
+    And I click button "Szukaj"
+    Then I should see "Nie znaleziono przystanku w pobliżu danego adresu." within list item
+
+  Scenario: Search from station to address when station from not exist
+    Given a station to station exists
+    When I go to the search page
+    And I choose "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I choose "Na adres"
+    And I fill in "location_to" with "malownicza"
+    And I click button "Szukaj"
+    Then I should see "Przystanek odjazdowy nie istnieje." within list item
+
+  Scenario: Search from station to address when line not exist
+    Given a station to station exists
+    And a station from station exists
+    When I go to the search page
+    And I choose "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I choose "Na adres"
+    And I fill in "location_to" with "malownicza"
+    And I click button "Szukaj"
+    Then I should see "Brak połączeń." within list item
+
+  Scenario: Search from station to address
+    Given a schedule exists
+    And I have time 22:30
+    When I go to the search page
+    And I choose "Z przystanku"
+    And I fill in "station_from" with "zana"
+    And I choose "Na adres"
+    And I fill in "location_to" with "malownicza"
+    And I click button "Szukaj"
+    Then I should see div "Z: ZANA" within list divider
+    And I should see div "Kierunek: MALOWNICZA" within list divider
+    And I should see div "Do: MALOWNICZA" within list divider
+    And I should see link "1 o 22:40" within list item
+
+#  TODO: Scenario: Search from location to address
 #  TODO: Get know how to get access to session variables
 #  Scenario: Search from station and check map when i have passed my location
 #    Given a schedule exists

@@ -3,14 +3,14 @@ require 'machinist/active_record'
 
 Station.blueprint(:station_from) do
   name { "ZANA" }
-  lat  { 2 }
-  lng  { 2 }
+  lat  { 50.802899 }
+  lng  { 19.102373 }
 end
 
 Station.blueprint(:station_to) do
   name { "MALOWNICZA" }
-  lat  { 3 }
-  lng  { 3 }
+  lat  { 50.7510687 }
+  lng  { 19.0769522 }
 end
 
 Station.blueprint(:station_kopernika) do
