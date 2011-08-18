@@ -34,5 +34,5 @@
             %li= link_to 'Mapa', pages_static_map_path, :rel => 'external'
             %li= link_to 'Rozkłady', schedules_index_path, :rel => 'external'
       .container_12{'data-role' => 'content',
-        :style => (current_action?('map') || current_action?('static_map') && session[:mobile]) ? 'width:100%; height:100%; padding:0;' : nil}
+        :style => (current_action?('map') || current_action?('static_map') and session[:mobile]) ? 'width:100%; height:100%; padding:0;' : nil}
         = yield
