@@ -54,9 +54,9 @@ Then /^I should see road on iphone$/ do
 end
 
 When /^I follow "([^"]*)" on iphone$/ do |link|
-  #with_scope("div.ui-page-active") do
-  click_link(link)
-  #end
+  with_scope("div.ui-page-active") do
+    click_link(link)
+  end
 end
 
 Then /^I should see login form on iphone$/ do

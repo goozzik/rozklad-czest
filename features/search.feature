@@ -3,8 +3,9 @@ Feature: Search
   Scenario: Search from station when station from not exist
     Given a station to station exists
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Przystanek odjazdowy nie istnieje." within list item
@@ -12,8 +13,9 @@ Feature: Search
   Scenario: Search from station when station to not exist
     Given a station from station exists
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Przystanek docelowy nie istnieje." within list item
@@ -22,8 +24,9 @@ Feature: Search
     Given a station to station exists
     And a station from station exists
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Brak połączeń." within list item
@@ -32,12 +35,14 @@ Feature: Search
     Given a schedule exists
     And I have time 22:30
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
-    Then I should see div "Przystanek: ZANA" within list divider
+    Then I should see div "Z: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
+    And I should see div "Do: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
     And I should not see "Dodaj do ulubionych"
     When I follow "1 o 22:40"
@@ -48,12 +53,14 @@ Feature: Search
     And an inversely schedule exists
     And I have time 22:30
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
-    Then I should see div "Przystanek: ZANA" within list divider
+    Then I should see div "Z: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
+    Then I should see div "Do: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
     And I should not see "Dodaj do ulubionych"
 
@@ -63,12 +70,14 @@ Feature: Search
     And a schedule exists
     And I have time 22:30
     When I go to the search page
-    And I check checkbox "Z przystanku"
+    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
+    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
-    Then I should see div "Przystanek: ZANA" within list divider
+    Then I should see div "Z: ZANA" within list divider
     And I should see div "Kierunek: MALOWNICZA" within list divider
+    Then I should see div "Do: MALOWNICZA" within list divider
     And I should see link "1 o 22:40" within list item
     And I should see border link "Dodaj do ulubionych" within list item
     When I follow "Dodaj do ulubionych"
