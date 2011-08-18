@@ -31,9 +31,10 @@ Feature: Home Page
     When I go to the iphone home page
     And I follow "Szukaj" on iphone
     Then I should see upper menu
-    And I should see checkbox "from_station" with label "Z przystanku" on iphone
-    And I should see checkbox "from_my_location" with label "Z mojego położenia" on iphone
-    And I should see text field "station_to" with label "Przystanek docelowy"
+    And I should see radio button "from_station" with label "Z przystanku" on iphone
+    And I should see radio button "from_location" with label "Z mojego położenia" on iphone
+    And I should see radio button "to_station" with label "Do przystanku" on iphone
+    And I should see radio button "to_location" with label "Na adres" on iphone
     And I should see location refresh button
     And I should see button "Szukaj" with icon "forward"
 

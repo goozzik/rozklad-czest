@@ -53,6 +53,11 @@ Then /^I should see button "([^"]*)"$/ do |text|
   page.should have_xpath( "//input[@type='submit'][@value='#{text}']" )
 end
 
+Then /^I should see radio button "([^"]*)" with label "([^"]*)"$/ do |name, label|
+  page.should have_xpath( "//input[@type='radio'][@id='#{name}']" )
+  page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
+end
+
 Then /^I should see checkbox "([^"]*)" with label "([^"]*)"$/ do |name, label|
   page.should have_xpath( "//input[@type='checkbox'][@name='#{name}']" )
   page.should have_xpath( "//label[contains(text(), \"#{label}\")]" )
