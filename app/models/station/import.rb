@@ -248,6 +248,7 @@ class Station::Import < Station
       'OLSZTYN SOKOLE GÓRY' => {:lat => 50.732517, :lng => 19.264827},
       'OLSZTYN ŚW. PUSZCZY' => {:lat => 50.743734, :lng => 19.266758},
       'OLSZTYN ŻWIRKI I WIGURY' => {:lat => 50.7534, :lng => 19.258089},
+      'ORKANA - SZKOŁA' => {:lat => 2, :lng =>2},
       'ORLIK-RUCKEMANNA' => {:lat => 50.806287, :lng => 19.144707},
       'ORKANA - SZKOŁA' => {:lat => 2, :lng => 2},
       'OS. POD WILCZĄ GÓRĄ' => {:lat => 50.762359, :lng => 19.230709},
