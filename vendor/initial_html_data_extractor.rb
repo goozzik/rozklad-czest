@@ -23,8 +23,8 @@ class InitialHtmlDataExtractor
       htmfiles.push line
     end
     puts "Processing files: "
-    htmfiles.each do |file|
-      system("echo -n .")
+    htmfiles.each_with_index do |file,i|
+      puts "#{file} - #{i+1} of #{htmfiles.count}"
       doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/' + file))
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.gsub("Linia ", "")
       directions = doc.xpath("//html/body/table/tr[2]/td[*]")
@@ -63,7 +63,8 @@ class InitialHtmlDataExtractor
         htmfiles.push file.gsub('r', 't')
       end
     end
-    htmfiles.each do |file|
+    htmfiles.each_with_index do |file, i|
+      puts "#{file} - #{i+1} of #{htmfiles.count}"
       doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/rozklady/' + file[0..3] + '/' + file))
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.strip
       direction = doc.xpath("//html/body/table/tr/td/b").first.content.strip
