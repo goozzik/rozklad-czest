@@ -6,10 +6,10 @@
         %fieldset{"data-role" => "controlgroup"}
           %legend{:class => 'grid_2 alpha prefix_1'} Odjazd
           .grid_2.omega
-            = radio_button_tag :from, :station, true, :onchange => 'toggleFromStation();'
+            = radio_button_tag :from, :station, true
             = label_tag :from_station, 'Z przystanku'
           .grid_3.alpha.prefix_3
-            = radio_button_tag :from, :location, false, :onchange => 'toggleFromLocation();'
+            = radio_button_tag :from, :location, false
             = label_tag :from_location, 'Z mojego położenia'
         #station_from_container
           = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_3 alpha'
@@ -27,10 +27,10 @@
         %fieldset{"data-role" => "controlgroup"}
           %legend{:class => 'grid_2 alpha prefix_1'} Przyjazd
           .grid_2.omega
-            = radio_button_tag :to, :station, true, :onchange => 'toggleToStation();'
+            = radio_button_tag :to, :station, true
             = label_tag :to_station, 'Do przystanku'
           .grid_3.alpha.prefix_3
-            = radio_button_tag :to, :location, false, :onchange => 'toggleToLocation();'
+            = radio_button_tag :to, :location, false
             = label_tag :to_location, 'Na adres'
         #station_to_container
           = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
@@ -45,3 +45,14 @@
 
       .grid_2.omega
         = submit_tag 'Szukaj', 'data-icon' => 'forward', 'data-role' => 'button'
+
+:javascript
+  $("input[name='from']").bind("change", function() {
+    $('#within_container').toggle('fast');
+    $('#station_from_container').toggle('fast');
+  });
+
+  $("input[name='to']").bind("change", function() {
+    $('#location_to_container').toggle('fast');
+    $('#station_to_container').toggle('fast');
+  });
