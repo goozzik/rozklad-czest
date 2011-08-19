@@ -6,7 +6,7 @@
         %fieldset{"data-role" => "controlgroup"}
           %legend{:class => 'grid_2 alpha prefix_1'} Odjazd
           .grid_2.omega
-            = radio_button_tag :from, :station, false, :onchange => 'toggleFromStation();'
+            = radio_button_tag :from, :station, true, :onchange => 'toggleFromStation();'
             = label_tag :from_station, 'Z przystanku'
           .grid_3.alpha.prefix_3
             = radio_button_tag :from, :location, false, :onchange => 'toggleFromLocation();'
@@ -27,7 +27,7 @@
         %fieldset{"data-role" => "controlgroup"}
           %legend{:class => 'grid_2 alpha prefix_1'} Przyjazd
           .grid_2.omega
-            = radio_button_tag :to, :station, false, :onchange => 'toggleToStation();'
+            = radio_button_tag :to, :station, true, :onchange => 'toggleToStation();'
             = label_tag :to_station, 'Do przystanku'
           .grid_3.alpha.prefix_3
             = radio_button_tag :to, :location, false, :onchange => 'toggleToLocation();'

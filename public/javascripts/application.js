@@ -13,21 +13,29 @@ function getLocation() {
 }
 
 function toggleFromStation() {
-  $('#within_container').hide('slow');
-  $('#station_from_container').show('slow');
+  if ($('#within_container').css('display') == 'block') {
+    $('#within_container').hide('fast')
+  }
+  $('#station_from_container').show('fast');
 }
 
 function toggleFromLocation() {
-  $('#station_from_container').hide('slow');
-  $('#within_container').show('slow');
+  if ($('#station_from_container').css('display') == 'block') {
+    $('#station_from_container').hide('fast');
+  }
+  $('#within_container').show('fast');
 }
 
 function toggleToStation() {
-  $('#location_to_container').hide('slow');
-  $('#station_to_container').show('slow');
+  if ($('#location_to_container').css('display') == 'block') {
+    $('#location_to_container').hide('fast');
+  }
+  $('#station_to_container').show('fast');
 }
 
 function toggleToLocation() {
-  $('#station_to_container').hide('slow');
-  $('#location_to_container').show('slow');
+  if ($('#station_to_container').css('display') == 'block') {
+    $('#station_to_container').hide('fast');
+  }
+  $('#location_to_container').show('fast');
 }

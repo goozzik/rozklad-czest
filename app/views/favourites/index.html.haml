@@ -8,7 +8,7 @@
             = link_to favourite.name,
               search_schedule_search_path(:station_from => favourite.station_from,
                                           :station_to => favourite.station_to,
-                                          :from_station => 'true'), :class => 'grid_2 alpha prefix_1'
+                                          :from => 'true'), :class => 'grid_2 alpha prefix_1'
             = link_to 'Edytuj', edit_user_favourite_path(current_user.id,favourite.id), 'data-icon' => 'gear', :class => 'grid_2'
           .clear
       - else
