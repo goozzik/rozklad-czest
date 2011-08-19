@@ -18,7 +18,7 @@ Then /^I should see checkbox "([^"]*)" with label "([^"]*)" on iphone$/ do |name
 end
 
 Then /^I should see border link "([^"]*)" within list item on iphone$/ do |link|
-  page.should have_xpath( "//li/b/a[contains(text(), \"#{link}\")]" )
+  page.should have_xpath( "//li/div/div/b/a[contains(text(), \"#{link}\")]" )
 end
 
 Then /^I should see icon "([^"]*)" within list item on iphone$/ do |icon|
