@@ -31,7 +31,6 @@ class Schedule < ActiveRecord::Base
     )
   end
 
-
   def self.tomorrow(lines_id, station_from_id, limit)
     find(:all,
       :conditions => [
@@ -47,8 +46,8 @@ class Schedule < ActiveRecord::Base
         Time.now.tomorrow.at_beginning_of_day,
         Time.now.tomorrow.at_beginning_of_day.wday == 0,
         Time.now.tomorrow.at_beginning_of_day.wday == 6,
-        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday != 0) && !holiday?),
-        holiday? 
+        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday != 0) && !tomorrow_holiday?),
+        tomorrow_holiday?
     ],
       :order => 'arrival_at',
       :limit => limit
@@ -88,7 +87,13 @@ class Schedule < ActiveRecord::Base
 
   def self.holiday?
     holiday_months = Time.now.month == 7 || Time.now.month == 8
-    working_days = Time.now.at_beginning_of_day.wday == 1 || Time.now.at_beginning_of_day.wday == 2 || Time.now.at_beginning_of_day.wday == 3 || Time.now.at_beginning_of_day.wday == 4 || Time.now.at_beginning_of_day.wday == 5 
+    working_days = Time.now.at_beginning_of_day.wday == 1 || Time.now.at_beginning_of_day.wday == 2 || Time.now.at_beginning_of_day.wday == 3 || Time.now.at_beginning_of_day.wday == 4 || Time.now.at_beginning_of_day.wday == 5
+    holiday_months && working_days
+  end
+
+  def self.tomorrow_holiday?
+    holiday_months = Time.now.tomorrow.month == 7 || Time.now.tomorrow.month == 8
+    working_days = Time.now.tomorrow.at_beginning_of_day.wday == 1 || Time.now.tomorrow.at_beginning_of_day.wday == 2 || Time.now.tomorrow.at_beginning_of_day.wday == 3 || Time.now.tomorrow.at_beginning_of_day.wday == 4 || Time.now.tomorrow.at_beginning_of_day.wday == 5
     holiday_months && working_days
   end
 
