@@ -43,7 +43,7 @@ Feature: Favourites
   Scenario: Create favourite
     Given a user exists
     And I am logged in
-    And a line exists
+    And a schedule exists
     When I go to the iphone favourite page
     And I click button "Dodaj"
     And I fill in "favourite_name" with "Dom"

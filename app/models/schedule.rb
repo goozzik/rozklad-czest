@@ -6,8 +6,6 @@ class Schedule < ActiveRecord::Base
   belongs_to :line
   belongs_to :station
 
-
-
   def self.today(lines_id, station_from_id)
     find(:all,
       :conditions => [
@@ -56,15 +54,43 @@ class Schedule < ActiveRecord::Base
 
   def self.get(station_from_id, station_to_id)
     lines_id = Line.ids_by_stations(station_from_id, station_to_id)
-    return [] if lines_id.empty?
     today_schedules = Schedule.today(lines_id, station_from_id)
     left = GET_LIMIT - today_schedules.count
     if left > 0
-      next_day_schedules = Schedule.tomorrow(lines_id, station_from_id, left)
-      today_schedules + next_day_schedules
+      tomorrow_schedules = Schedule.tomorrow(lines_id, station_from_id, left)
+      schedules = today_schedules + tomorrow_schedules
     else
-      today_schedules
+      schedules = today_schedules
     end
+    { :schedules => schedules, :station_to => Station.find(station_to_id) }
+  end
+
+  def self.get_by_near_stations_and_station_to(within, location, station_to_id)
+    schedules = []
+    Station.within(Station.to_f(within), :origin => location).order('distance asc').each { |station| schedules << get(station.id, station_to_id) if Line.find_first_by_stations(station.id, station_to_id) }
+    schedules
+  end
+
+  def self.get_by_station_from_and_location(station_from_id, location)
+    schedules = []
+    location = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc').each do |station|
+      schedules << Schedule.get(station_from_id, station.id) if Line.find_first_by_stations(station_from_id, station.id)
+    end
+    schedules
+  end
+
+  def self.get_by_near_stations_and_location(within, my_location, location)
+    schedules = []
+    location = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    stations_near = Station.within(Station.to_f(within), :origin => my_location).order('distance asc')
+    stations_to = Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc')
+    stations_near.each do |station_from|
+      stations_to.each do |station_to|
+        schedules << Schedule.get(station_from.id, station_to.id) if Line.find_first_by_stations(station_from.id, station_to.id)
+      end
+    end
+    schedules
   end
 
   def self.paginate_by_hour(line_id, station_id, time_type)

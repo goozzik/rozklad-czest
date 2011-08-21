@@ -63,17 +63,39 @@ describe Line do
   describe ".connecting_stations_with_direction" do
     let(:station_from_id) { mock("station_from_id") }
     let(:station_to_id) { mock("station_to_id") }
-    let(:lines_with_connection) { [line1, line2] }
+    let(:lines_with_connection_and_existing_schedule) { [line1, line2] }
     let(:line1) { mock("line1") }
     let(:line2) { mock("line2") }
     before do
-      the_class.stub!(:connecting_stations).with(station_from_id, station_to_id).and_return(lines_with_connection)
+      the_class.stub!(:connecting_stations_with_existing_schedule).with(station_from_id, station_to_id).and_return(lines_with_connection_and_existing_schedule)
       line1.stub!(:station_index).with(station_from_id).and_return(1)
       line1.stub!(:station_index).with(station_to_id).and_return(2)
       line2.stub!(:station_index).with(station_from_id).and_return(2)
       line2.stub!(:station_index).with(station_to_id).and_return(1)
     end
     subject { the_class.connecting_stations_with_direction(station_from_id, station_to_id) }
+
+    it { should == [line1] }
+  end
+
+  describe ".connecting_stations_with_existing_schedule" do
+    let(:station_from_id) { mock }
+    let(:station_to_id) { mock }
+    let(:lines_with_connection) { [line1, line2] }
+    let(:line1) { Line.create! }
+    let(:line2) { Line.create! }
+    let(:line1_id) { line1.id }
+    let(:line2_id) { line2.id }
+    let(:schedule_with_line1) { mock }
+    let(:schedule_with_line2) { mock }
+    before do
+      the_class.stub!(:connecting_stations).with(station_from_id, station_to_id).and_return(lines_with_connection)
+      Schedule.stub!(:first).with(:conditions => ["line_id = ? AND station_id = ?", line1_id, station_from_id]).and_return(schedule_with_line1)
+      schedule_with_line1.stub!(:nil?).and_return(false)
+      Schedule.stub!(:first).with(:conditions => ["line_id = ? AND station_id = ?", line2_id, station_from_id]).and_return(schedule_with_line2)
+      schedule_with_line2.stub!(:nil?).and_return(true)
+    end
+    subject { the_class.connecting_stations_with_existing_schedule(station_from_id, station_to_id) }
 
     it { should == [line1] }
   end

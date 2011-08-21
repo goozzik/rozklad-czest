@@ -18,6 +18,10 @@ class Station < ActiveRecord::Base
     all.collect(&:name).collect(&:first).uniq
   end
 
+  def self.to_f(within)
+    within.gsub(',', '').to_f / 1000
+  end
+
   private
 
     def validate_uniqueness_of_lat_lng_pair

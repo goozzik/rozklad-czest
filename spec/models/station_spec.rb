@@ -81,7 +81,6 @@ describe Station do
   end
 
   describe ".get_ordered_letters" do
-    let(:letters) { ['Z', 'M'] }
     before do
       Station.create!(:name => 'ZANA', :lat => 2, :lng => 2)
       Station.create!(:name => 'MALOWNICZA', :lat => 3, :lng => 3)
@@ -90,7 +89,7 @@ describe Station do
     describe "returns" do
       subject { the_class.get_ordered_letters }
 
-      it { should == letters }
+      it { should == ["Z", "M"] }
     end
   end
 
@@ -102,7 +101,16 @@ describe Station do
 
     describe "returns" do
       subject { the_class.paginate_by_letter }
+
       it { should == [[Station.first], [Station.last]] }
+    end
+  end
+
+  describe ".to_f" do
+    describe "returns" do
+      subject { the_class.to_f("1,009") }
+
+      it { should == 1.009 }
     end
   end
 

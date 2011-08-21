@@ -26,16 +26,18 @@ class Line < ActiveRecord::Base
   end
 
   def self.connecting_stations_with_direction(station_from_id, station_to_id)
-    connecting_stations(station_from_id, station_to_id).select do |line|
+    connecting_stations_with_existing_schedule(station_from_id, station_to_id).select do |line|
       line.station_index(station_from_id) < line.station_index(station_to_id)
     end
   end
 
+  def self.connecting_stations_with_existing_schedule(station_from_id, station_to_id)
+    connecting_stations(station_from_id, station_to_id).delete_if { |line| Schedule.first(:conditions => ["line_id = ? AND station_id = ?", line.id, station_from_id]).nil? }
+  end
+
   def self.connecting_stations(station_from_id, station_to_id)
     station_object = Station.find(station_to_id)
-    with_station(station_from_id).select do |line|
-      line.stations.include?(station_object)
-    end
+    with_station(station_from_id).select { |line| line.stations.include?(station_object) }
   end
 
   def self.with_station(station_id)

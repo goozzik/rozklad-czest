@@ -65,7 +65,7 @@ end
 
 Favourite.blueprint do
   name { "Dom" }
-  Line.make!
+  Schedule.make!
   station_from { Line.first.stations.first.name }
   station_to { Line.first.stations.last.name }
   on_start_page { false }

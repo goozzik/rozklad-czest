@@ -46,7 +46,7 @@ Feature: Search
     And I should see link "1 o 22:40" within list item
     And I should not see "Dodaj do ulubionych"
     When I follow "1 o 22:40"
-    Then I should see "Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnic swoje położenie." within list item
+    Then I should see "Jeżeli chcesz korzystać z funkcji mapy, musisz najpierw udostępnić swoje położenie." within list item
 
   Scenario: Search from station and do not show inversely line
     Given a schedule exists
@@ -92,7 +92,7 @@ Feature: Search
     And I choose "Na adres"
     And I fill in "location_to" with "xxxasd"
     And I click button "Szukaj"
-    Then I should see "Nie znaleziono adresu." within list item
+    Then I should see "Brak połączeń." within list item
 
   Scenario: Search from station to address when address is too far
     Given a schedule exists
@@ -103,7 +103,7 @@ Feature: Search
     And I choose "Na adres"
     And I fill in "location_to" with "warszawa"
     And I click button "Szukaj"
-    Then I should see "Nie znaleziono przystanku w pobliżu danego adresu." within list item
+    Then I should see "Brak połączeń." within list item
 
   Scenario: Search from station to address when station from not exist
     Given a station to station exists
