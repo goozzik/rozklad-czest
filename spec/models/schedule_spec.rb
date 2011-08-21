@@ -112,10 +112,12 @@ describe Schedule do
     let(:today_schedules) { [] }
     let(:next_day_schedules) { [] }
     let(:left) { 10 }
+    let(:station_to) { mock }
     before do
       Line.stub!(:ids_by_stations).with(station_from_id, station_to_id).and_return(lines_id)
       the_class.stub!(:today).with(lines_id, station_from_id).and_return(today_schedules)
       the_class.stub!(:tomorrow).with(lines_id, station_from_id, left).and_return(next_day_schedules)
+      Station.stub!(:find).with(station_to_id).and_return(station_to)
     end
 
     context "when no connection between stations" do
@@ -124,7 +126,7 @@ describe Schedule do
       describe "returns" do
         subject { the_class.get(station_from_id, station_to_id) }
 
-        it { should == [] }
+        it { should == { :schedules => [], :station_to => station_to } }
       end
     end
 
@@ -154,7 +156,7 @@ describe Schedule do
         describe "returns" do
           subject { the_class.get(station_from_id, station_to_id) }
 
-          it { should == today_schedules }
+          it { should == { :schedules => today_schedules, :station_to => station_to } }
         end
       end
 
@@ -185,7 +187,7 @@ describe Schedule do
           describe "returns" do
             subject { the_class.get(station_from_id, station_to_id) }
 
-            it { should == today_schedules + next_day_schedules }
+            it { should == { :schedules => today_schedules + next_day_schedules, :station_to => station_to } }
           end
         end
 
@@ -195,7 +197,7 @@ describe Schedule do
           describe "returns" do
             subject { the_class.get(station_from_id, station_to_id) }
 
-            it { should == today_schedules }
+            it { should == { :schedules => today_schedules, :station_to => station_to } }
           end
         end
       end
@@ -226,7 +228,7 @@ describe Schedule do
           describe "returns" do
             subject { the_class.get(station_from_id, station_to_id) }
 
-            it { should == next_day_schedules }
+            it { should == { :schedules => next_day_schedules, :station_to => station_to } }
           end
         end
 
@@ -236,7 +238,7 @@ describe Schedule do
           describe "returns" do
             subject { the_class.get(station_from_id, station_to_id) }
 
-            it { should == [] }
+            it { should == { :schedules => [], :station_to => station_to } }
           end
         end
       end
