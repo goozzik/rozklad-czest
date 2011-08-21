@@ -321,4 +321,143 @@ describe Schedule do
     end
   end
 
+  describe ".tomorrow_holiday?" do
+    before do
+      Time.stub!(:now => now)
+    end
+
+    context "when its 2 January 2011" do
+      let(:now) { Date.new(2011, 1, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 2 January 2011" do
+      let(:now) { Date.new(2011, 1, 2).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 3 January 2011" do
+      let(:now) { Date.new(2011, 1, 3).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 2 July 2011" do
+      let(:now) { Date.new(2011, 7, 2).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 7 August 2011" do
+      let(:now) { Date.new(2011, 8, 7).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == true }
+      end
+    end
+
+    context "when its 1 July 2011" do
+      let(:now) { Date.new(2011, 7, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == false }
+      end
+    end
+
+    context "when its 1 August 2011" do
+      let(:now) { Date.new(2011, 8, 1).to_time.at_beginning_of_day }
+
+      describe "returns" do
+        subject { the_class.tomorrow_holiday? }
+
+        it { should == true }
+      end
+    end
+  end
+
+  describe ".get_by_near_stations_and_station_to" do
+    let(:station1) { Station.create(:name => 'ZANA', :lat => 1, :lng => 1) }
+    let(:station2) { Station.create(:name => 'MALOWNICZA', :lat => 2, :lng => 2) }
+    let(:station_to) { Station.create(:name => 'BULOWA', :lat => 3, :lng => 3) }
+    let(:within) { mock }
+    let(:float_within) { mock }
+    let(:location) { mock }
+    let(:stations_within) { [station2, station1] }
+    let(:stations_within_ordered) { [station1, station2] }
+    let(:station1_id) { station1.id }
+    let(:station_to_id ) { station_to.id }
+    let(:line_with_connection_with_station1) { mock }
+    let(:schedules_with_station1) { mock }
+    let(:station2_id) { station2.id }
+    let(:line_with_connection_with_station2) { nil }
+    let(:schedules_with_station2) { [] }
+    before do
+      Station.stub!(:to_f).with(within).and_return(float_within)
+      Station.stub!(:within).with(float_within, :origin => location).and_return(stations_within)
+      stations_within.stub!(:order).with('distance asc').and_return(stations_within_ordered)
+      Line.stub!(:find_first_by_stations).with(station1_id, station_to_id).and_return(line_with_connection_with_station1)
+      the_class.stub!(:get).with(station1_id, station_to_id).and_return(schedules_with_station1)
+      Line.stub!(:find_first_by_stations).with(station2_id, station_to_id).and_return(line_with_connection_with_station2)
+      the_class.stub!(:get).with(station2_id, station_to_id).and_return(schedules_with_station2)
+    end
+    subject { the_class.get_by_near_stations_and_station_to(within, location, station_to_id) }
+
+    it { should == [schedules_with_station1] }
+  end
+
+  describe ".get_by_station_from_and_location" do
+    let(:station1) { Station.create(:name => 'ZANA', :lat => 1, :lng => 1) }
+    let(:station2) { Station.create(:name => 'MALOWNICZA', :lat => 2, :lng => 2) }
+    let(:station_from) { Station.create(:name => 'BULOWA', :lat => 3, :lng => 3) }
+    let(:location) { mock }
+    let(:found_location) { mock }
+    let(:lat) { mock }
+    let(:lng) { mock }
+    let(:stations_within) { [station2, station1] }
+    let(:stations_within_ordered) { [station1, station2] }
+    let(:station_from_id) { station_from.id }
+    let(:station1_id) { station1.id }
+    let(:line_with_connection_with_station1) { mock }
+    let(:schedules_with_station1) { mock }
+    let(:station2_id) { station2.id }
+    let(:line_with_connection_with_station2) { nil }
+    let(:schedules_with_station2) { [] }
+    before do
+      Geokit::Geocoders::GoogleGeocoder.stub!(:geocode).with(location).and_return(found_location)
+      found_location.stub!(:lat).and_return(lat)
+      found_location.stub!(:lng).and_return(lng)
+      Station.stub!(:within).with(0.5, :origin => [lat, lng]).and_return(stations_within)
+      stations_within.stub!(:order).with('distance asc').and_return(stations_within_ordered)
+      Line.stub!(:find_first_by_stations).with(station_from_id, station1_id).and_return(line_with_connection_with_station1)
+      the_class.stub!(:get).with(station_from_id, station1_id).and_return(schedules_with_station1)
+      Line.stub!(:find_first_by_stations).with(station_from_id, station2_id).and_return(line_with_connection_with_station2)
+      the_class.stub!(:get).with(station_from_id, station2_id).and_return(schedules_with_station2)
+    end
+    subject { the_class.get_by_station_from_and_location(station_from_id, location) }
+
+    it { should == [schedules_with_station1] }
+  end
+
 end
