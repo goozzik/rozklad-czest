@@ -1,5 +1,9 @@
 require "bundler/capistrano"
 
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+set :rvm_ruby_string, 'ruby-1.9.2'        # Or whatever env you want it to run in.
+
 set :application, "rozklad.czest.pl"
 set :repository,  "git@192.168.88.2:rozklad.czest.pl.git"
 
@@ -16,7 +20,7 @@ set :use_sudo, false
 set :deploy_to, "/var/apps/rozklad"
 
 set :rvm_type, :user  # Copy the exact line. I really mean :user here
-set :gem_path, "#{deploy_to}/.rvm/gems/ruby-1.9.2-p290@#{application}"
+set :gem_path, "#{deploy_to}/.rvm/gems/ruby-1.9.2-p290"
 set :default_environment, {
   'PATH' => "#{gem_path}/bin:#{deploy_to}/.rvm/bin:#{deploy_to}/.rvm/ruby-1.9.2-p290/bin:$PATH",
   'RUBY_VERSION' => 'ruby 1.9.2',
@@ -26,16 +30,22 @@ set :default_environment, {
 }
 
 set :rails_env, :production
-set :unicorn_binary, "unicorn_rails"
+set :unicorn_binary, "#{deploy_to}/shared/bundle/ruby/1.9.1/bin/unicorn_rails"
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
+
+#namespace :bundle do
+  #task :install do
+    #run "cd #{current_path} && bundle install --gemfile /var/apps/rozklad/releases/20110822102249/Gemfile --deployment --quiet --without development test"
+  #end
+#end
 
 namespace :deploy do
   task :start, :roles => :app, :except => { :no_release => true } do 
     run "cd #{current_path} && #{try_sudo} #{unicorn_binary} -c #{unicorn_config} -E #{rails_env} -D"
   end
-  task :stop, :roles => :app, :except => { :no_release => true } do 
-    run "#{try_sudo} kill `cat #{unicorn_pid}`"
+  task :stop, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} kill `cat #{unicorn_pid}`" if File.exist?(unicorn_pid)
   end
   task :graceful_stop, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} kill -s QUIT `cat #{unicorn_pid}`"
