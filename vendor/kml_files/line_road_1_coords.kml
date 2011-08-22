@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>1 ZAJEZDNIA MPK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>1 ZAJEZDNIA MPK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.129772,50.840284,1
+          19.124622,50.837817,2
+          19.11664,50.833671,3
+          19.115868,50.83077,4
+          19.116898,50.825593,5
+          19.117842,50.821147,6
+          19.118099,50.817649,7
+          19.118571,50.811772,8
+          19.118325,50.808714,9
+          19.118993,50.806267,10
+          19.11804,50.801226,11
+          19.127283,50.793322,12
+          19.132819,50.789714,13
+          19.136081,50.787516,14
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (1)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACZYŃSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.124622,50.837817</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (3)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLSKIEGO CZERWONEGO KRZYŻA  (4)</name>
+      <Point>
+        <coordinates>19.115868,50.83077</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (5)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLITECHNIKA (6)</name>
+      <Point>
+        <coordinates>19.117842,50.821147</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (7)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (8)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (9)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (10)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (11)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OSTATNI GROSZ (12)</name>
+      <Point>
+        <coordinates>19.127283,50.793322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RÓWNOLEGŁA (13)</name>
+      <Point>
+        <coordinates>19.132819,50.789714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAJEZDNIA MPK (14)</name>
+      <Point>
+        <coordinates>19.136081,50.787516</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>26 WRZOSOWIAK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>26 WRZOSOWIAK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.059863,50.837113,1
+          19.075377,50.826908,2
+          19.072909,50.828792,3
+          19.081278,50.82215,4
+          19.086996,50.819222,5
+          19.096577,50.816497,6
+          19.103894,50.81711,7
+          19.1118763,50.817134,8
+          19.118571,50.811772,9
+          19.124824,50.811945,10
+          19.127734,50.807562,11
+          19.129139,50.802687,12
+          19.132948,50.794,13
+          19.132991,50.789741,14
+          19.142025,50.783962,15
+          19.143248,50.783745,16
+          19.145908,50.78053,17
+          19.135866,50.776473,18
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>GRABÓWKA (1)</name>
+      <Point>
+        <coordinates>19.059863,50.837113</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. ROCHA - SZKOŁA (2)</name>
+      <Point>
+        <coordinates>19.075377,50.826908</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRODZENIA (3)</name>
+      <Point>
+        <coordinates>19.072909,50.828792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (4)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (5)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (6)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (7)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (8)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (9)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (10)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (11)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (12)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (13)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (14)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (15)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (16)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (17)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWIAK (18)</name>
+      <Point>
+        <coordinates>19.135866,50.776473</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

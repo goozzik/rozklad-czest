@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>65 ESTAKADA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>65 ESTAKADA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.177784,50.724347,1
+          19.174576,50.719531,2
+          19.167516,50.713322,3
+          19.164019,50.711529,4
+          19.156208,50.71445,5
+          19.162774,50.718879,6
+          19.167795,50.724476,7
+          19.17007,50.727491,8
+          19.174147,50.734011,9
+          19.172516,50.744766,10
+          19.167194,50.745472,11
+          19.153569,50.746517,12
+          19.15801,50.757527,13
+          19.160832,50.760948,14
+          19.165821,50.766974,15
+          19.156401,50.772809,16
+          19.14784,50.778318,17
+          19.145908,50.78053,18
+          19.142025,50.783962,19
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE (1)</name>
+      <Point>
+        <coordinates>19.177784,50.724347</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA II (2)</name>
+      <Point>
+        <coordinates>19.174576,50.719531</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA I (3)</name>
+      <Point>
+        <coordinates>19.167516,50.713322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - CMENTARZ (4)</name>
+      <Point>
+        <coordinates>19.164019,50.711529</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA BOCIANIA GÓRKA (5)</name>
+      <Point>
+        <coordinates>19.156208,50.71445</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA KOŚCIÓŁ (6)</name>
+      <Point>
+        <coordinates>19.162774,50.718879</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ II (7)</name>
+      <Point>
+        <coordinates>19.167795,50.724476</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ I (8)</name>
+      <Point>
+        <coordinates>19.17007,50.727491</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORWINÓW (9)</name>
+      <Point>
+        <coordinates>19.174147,50.734011</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK II (10)</name>
+      <Point>
+        <coordinates>19.172516,50.744766</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK I (11)</name>
+      <Point>
+        <coordinates>19.167194,50.745472</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA - KŁADKA (12)</name>
+      <Point>
+        <coordinates>19.153569,50.746517</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FABRYCZNA (13)</name>
+      <Point>
+        <coordinates>19.15801,50.757527</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLEJOWA (14)</name>
+      <Point>
+        <coordinates>19.160832,50.760948</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (15)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (16)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (17)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (18)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (19)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

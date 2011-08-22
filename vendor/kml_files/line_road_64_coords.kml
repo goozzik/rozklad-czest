@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>30A PIŁSUDSKIEGO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>30A PIŁSUDSKIEGO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.112778,50.708634,1
+          19.188652,50.837926,2
+          19.182386,50.839565,3
+          19.16904,50.840365,4
+          19.147561,50.831502,5
+          19.15525,50.836904,6
+          19.150929,50.833698,7
+          19.136639,50.827192,8
+          19.133677,50.823668,9
+          19.13003,50.818205,10
+          19.127047,50.811623,11
+          19.122562,50.810653,12
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH (1)</name>
+      <Point>
+        <coordinates>19.112778,50.708634</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH I (2)</name>
+      <Point>
+        <coordinates>19.188652,50.837926</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SĄSIEDZKA (3)</name>
+      <Point>
+        <coordinates>19.182386,50.839565</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY GÓRNE (4)</name>
+      <Point>
+        <coordinates>19.16904,50.840365</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (5)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (6)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (7)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (8)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (9)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (10)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (11)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (12)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

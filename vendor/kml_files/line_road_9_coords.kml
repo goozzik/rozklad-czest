@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>13 KUCELIN - SZPITAL</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>13 KUCELIN - SZPITAL</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.108958,50.856189,1
+          19.109302,50.852396,2
+          19.108872,50.850445,3
+          19.114301,50.837438,4
+          19.11664,50.833671,5
+          19.110342,50.82993,6
+          19.110889,50.827843,7
+          19.110546,50.824156,8
+          19.112477,50.819805,9
+          19.1118763,50.817134,10
+          19.118571,50.811772,11
+          19.127047,50.811623,12
+          19.132175,50.811711,13
+          19.13887,50.812728,14
+          19.142132,50.808809,15
+          19.143763,50.807128,16
+          19.144707,50.806287,17
+          19.150028,50.80127,18
+          19.158311,50.800131,19
+          19.16374,50.799249,20
+          19.164813,50.796306,21
+          19.173417,50.790582,22
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYN (1)</name>
+      <Point>
+        <coordinates>19.108958,50.856189</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NARCYZOWA (2)</name>
+      <Point>
+        <coordinates>19.109302,50.852396</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LUDOWA (3)</name>
+      <Point>
+        <coordinates>19.108872,50.850445</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CENTRUM HANDLOWE M1 (4)</name>
+      <Point>
+        <coordinates>19.114301,50.837438</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (5)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TYSIĄCLECIE - SZPITAL (6)</name>
+      <Point>
+        <coordinates>19.110342,50.82993</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRONIEWSKIEGO (7)</name>
+      <Point>
+        <coordinates>19.110889,50.827843</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (8)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION CKS BUDOWLANI (9)</name>
+      <Point>
+        <coordinates>19.112477,50.819805</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (10)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (11)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (12)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (13)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (14)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (15)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (16)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ORLIK-RUCKEMANNA (17)</name>
+      <Point>
+        <coordinates>19.144707,50.806287</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION MIEJSKI (18)</name>
+      <Point>
+        <coordinates>19.150028,50.80127</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CHŁODNA (19)</name>
+      <Point>
+        <coordinates>19.158311,50.800131</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁANOWA (20)</name>
+      <Point>
+        <coordinates>19.16374,50.799249</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZPITALNA (21)</name>
+      <Point>
+        <coordinates>19.164813,50.796306</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (22)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

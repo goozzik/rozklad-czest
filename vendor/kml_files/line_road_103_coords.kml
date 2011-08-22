@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>65 ZAWODZIE</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>65 ZAWODZIE</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.124824,50.811945,2
+          19.127734,50.807562,3
+          19.129139,50.802687,4
+          19.132948,50.794,5
+          19.132991,50.789741,6
+          19.142025,50.783962,7
+          19.143248,50.783745,8
+          19.145908,50.78053,9
+          19.14784,50.778318,10
+          19.156401,50.772809,11
+          19.165821,50.766974,12
+          19.160832,50.760948,13
+          19.15801,50.757527,14
+          19.160457,50.753007,15
+          19.153569,50.746517,16
+          19.167194,50.745472,17
+          19.172516,50.744766,18
+          19.174147,50.734011,19
+          19.17007,50.727491,20
+          19.167795,50.724476,21
+          19.162774,50.718879,22
+          19.154234,50.713689,23
+          19.154363,50.708553,24
+          19.152346,50.704068,25
+          19.173717,50.692298,26
+          19.162817,50.704721,27
+          19.162495,50.70964,28
+          19.164019,50.711529,29
+          19.167516,50.713322,30
+          19.174576,50.719531,31
+          19.177784,50.724347,32
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (2)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (3)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (4)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (5)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (6)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (7)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (8)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (9)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (10)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (11)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (12)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLEJOWA (13)</name>
+      <Point>
+        <coordinates>19.160832,50.760948</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FABRYCZNA (14)</name>
+      <Point>
+        <coordinates>19.15801,50.757527</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA - OGRODOWA (15)</name>
+      <Point>
+        <coordinates>19.160457,50.753007</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA - KŁADKA (16)</name>
+      <Point>
+        <coordinates>19.153569,50.746517</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK I (17)</name>
+      <Point>
+        <coordinates>19.167194,50.745472</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK II (18)</name>
+      <Point>
+        <coordinates>19.172516,50.744766</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORWINÓW (19)</name>
+      <Point>
+        <coordinates>19.174147,50.734011</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ I (20)</name>
+      <Point>
+        <coordinates>19.17007,50.727491</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ II (21)</name>
+      <Point>
+        <coordinates>19.167795,50.724476</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA KOŚCIÓŁ (22)</name>
+      <Point>
+        <coordinates>19.162774,50.718879</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA SZKOŁA (23)</name>
+      <Point>
+        <coordinates>19.154234,50.713689</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA PROSTA (24)</name>
+      <Point>
+        <coordinates>19.154363,50.708553</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA BOREK (25)</name>
+      <Point>
+        <coordinates>19.152346,50.704068</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLONIA BOREK (26)</name>
+      <Point>
+        <coordinates>19.173717,50.692298</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA GÓRNICZA (27)</name>
+      <Point>
+        <coordinates>19.162817,50.704721</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - CMENTARNA (28)</name>
+      <Point>
+        <coordinates>19.162495,50.70964</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - CMENTARZ (29)</name>
+      <Point>
+        <coordinates>19.164019,50.711529</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA I (30)</name>
+      <Point>
+        <coordinates>19.167516,50.713322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA II (31)</name>
+      <Point>
+        <coordinates>19.174576,50.719531</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE (32)</name>
+      <Point>
+        <coordinates>19.177784,50.724347</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

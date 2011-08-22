@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>23B DWORZEC GŁÓWNY PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>23B DWORZEC GŁÓWNY PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.022784,50.761545,1
+          19.033556,50.762916,2
+          19.041924,50.764585,3
+          19.053726,50.762332,4
+          19.0618593,50.760744,5
+          19.071965,50.765047,6
+          19.07542,50.766933,7
+          19.085526,50.771479,8
+          19.093251,50.773623,9
+          19.094238,50.77403,10
+          19.098873,50.781981,11
+          19.099903,50.785644,12
+          19.101276,50.789388,13
+          19.103336,50.795845,14
+          19.1085723,50.795709,15
+          19.112177,50.798001,16
+          19.107456,50.798056,17
+          19.102373,50.802899,18
+          19.105418,50.805321,19
+          19.112295,50.805263,20
+          19.113816,50.806004,21
+          19.118993,50.806267,22
+          19.118325,50.808714,23
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>LEŚNA (1)</name>
+      <Point>
+        <coordinates>19.022784,50.761545</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKORKI (2)</name>
+      <Point>
+        <coordinates>19.033556,50.762916</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CHŁOPSKA (3)</name>
+      <Point>
+        <coordinates>19.041924,50.764585</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPALNIANA II (4)</name>
+      <Point>
+        <coordinates>19.053726,50.762332</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DŹBÓW (5)</name>
+      <Point>
+        <coordinates>19.0618593,50.760744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW WARSZAWY (6)</name>
+      <Point>
+        <coordinates>19.071965,50.765047</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZECZNA (7)</name>
+      <Point>
+        <coordinates>19.07542,50.766933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZBYSZKA (8)</name>
+      <Point>
+        <coordinates>19.085526,50.771479</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMICICA (9)</name>
+      <Point>
+        <coordinates>19.093251,50.773623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (10)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (11)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (12)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (13)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (14)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (15)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STRADOM (16)</name>
+      <Point>
+        <coordinates>19.112177,50.798001</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STRADOM - DWORZEC PKP (17)</name>
+      <Point>
+        <coordinates>19.107456,50.798056</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZANA (18)</name>
+      <Point>
+        <coordinates>19.102373,50.802899</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (19)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (20)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (21)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (22)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (23)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>23A PIŁSUDSKIEGO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>23A PIŁSUDSKIEGO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.155972,50.788941,1
+          19.149685,50.791803,2
+          19.14211,50.793661,3
+          19.134665,50.795085,4
+          19.130073,50.800971,5
+          19.131038,50.802829,6
+          19.12783,50.807026,7
+          19.122562,50.810653,8
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA - SĄDY (1)</name>
+      <Point>
+        <coordinates>19.155972,50.788941</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻEROMSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.149685,50.791803</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLONTEX (3)</name>
+      <Point>
+        <coordinates>19.14211,50.793661</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ARCHIWUM PAŃSTWOWE (4)</name>
+      <Point>
+        <coordinates>19.134665,50.795085</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (5)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (6)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (7)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (8)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

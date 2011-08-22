@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>67 PIŁSUDSKIEGO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>67 PIŁSUDSKIEGO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.28641,50.705645,1
+          19.276028,50.708526,2
+          19.267015,50.711569,3
+          19.261093,50.713852,4
+          19.264827,50.732517,5
+          19.266758,50.743734,6
+          19.267831,50.747508,7
+          19.268432,50.750441,8
+          19.258089,50.7534,9
+          19.223886,50.760025,10
+          19.182944,50.76335,11
+          19.176207,50.765834,12
+          19.165821,50.766974,13
+          19.156401,50.772809,14
+          19.14784,50.778318,15
+          19.145908,50.78053,16
+          19.142025,50.783962,17
+          19.132991,50.789741,18
+          19.132948,50.794,19
+          19.130073,50.800971,20
+          19.131038,50.802829,21
+          19.12783,50.807026,22
+          19.122562,50.810653,23
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BISKUPICE (1)</name>
+      <Point>
+        <coordinates>19.28641,50.705645</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BISKUPICE III (2)</name>
+      <Point>
+        <coordinates>19.276028,50.708526</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BISKUPICE II (3)</name>
+      <Point>
+        <coordinates>19.267015,50.711569</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BISKUPICE I (4)</name>
+      <Point>
+        <coordinates>19.261093,50.713852</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN SOKOLE GÓRY (5)</name>
+      <Point>
+        <coordinates>19.264827,50.732517</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN ŚW. PUSZCZY (6)</name>
+      <Point>
+        <coordinates>19.266758,50.743734</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN NAPOLEONA (7)</name>
+      <Point>
+        <coordinates>19.267831,50.747508</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN RYNEK (8)</name>
+      <Point>
+        <coordinates>19.268432,50.750441</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN ŻWIRKI I WIGURY (9)</name>
+      <Point>
+        <coordinates>19.258089,50.7534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRZYKOŃ (10)</name>
+      <Point>
+        <coordinates>19.223886,50.760025</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRĘCIWILK (11)</name>
+      <Point>
+        <coordinates>19.182944,50.76335</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WEYSSENHOFF (12)</name>
+      <Point>
+        <coordinates>19.176207,50.765834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (13)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (14)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (15)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (16)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (17)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (18)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (19)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (20)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (21)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (22)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (23)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

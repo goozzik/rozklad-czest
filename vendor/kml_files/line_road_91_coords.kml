@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>92 ZAJEZDNIA MPK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>92 ZAJEZDNIA MPK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.173417,50.790582,1
+          19.160414,50.791613,2
+          19.155006,50.78909,3
+          19.148333,50.786377,4
+          19.143248,50.783745,5
+          19.136081,50.787516,6
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (1)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBIE (2)</name>
+      <Point>
+        <coordinates>19.160414,50.791613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA (3)</name>
+      <Point>
+        <coordinates>19.155006,50.78909</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (4)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (5)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAJEZDNIA MPK (6)</name>
+      <Point>
+        <coordinates>19.136081,50.787516</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

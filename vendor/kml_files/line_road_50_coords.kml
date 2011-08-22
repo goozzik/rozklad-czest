@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>24 BŁESZNO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>24 BŁESZNO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.139707,50.83695,1
+          19.138677,50.841544,2
+          19.138098,50.84447,3
+          19.13018,50.846381,4
+          19.126339,50.844877,5
+          19.119623,50.842601,6
+          19.120857,50.837092,7
+          19.11664,50.833671,8
+          19.119709,50.830703,9
+          19.122906,50.826718,10
+          19.116898,50.825593,11
+          19.117842,50.821147,12
+          19.118099,50.817649,13
+          19.13003,50.818205,14
+          19.127047,50.811623,15
+          19.127734,50.807562,16
+          19.129139,50.802687,17
+          19.132948,50.794,18
+          19.132991,50.789741,19
+          19.142025,50.783962,20
+          19.143248,50.783745,21
+          19.145908,50.78053,22
+          19.14784,50.778318,23
+          19.156401,50.772809,24
+          19.150887,50.770597,25
+          19.151058,50.768942,26
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KUKUCZKI (1)</name>
+      <Point>
+        <coordinates>19.139707,50.83695</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITOSA (2)</name>
+      <Point>
+        <coordinates>19.138677,50.841544</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSMOWSKIEJ (3)</name>
+      <Point>
+        <coordinates>19.138098,50.84447</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARZYŃSKIEGO (4)</name>
+      <Point>
+        <coordinates>19.13018,50.846381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (5)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCHILLERA (6)</name>
+      <Point>
+        <coordinates>19.119623,50.842601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (7)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (8)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KURPIŃSKIEGO (9)</name>
+      <Point>
+        <coordinates>19.119709,50.830703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYŃSKA (10)</name>
+      <Point>
+        <coordinates>19.122906,50.826718</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (11)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLITECHNIKA (12)</name>
+      <Point>
+        <coordinates>19.117842,50.821147</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (13)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (14)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (15)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (16)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (17)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (18)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (19)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (20)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (21)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (22)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (23)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (24)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BOHATERÓW KATYNIA (25)</name>
+      <Point>
+        <coordinates>19.150887,50.770597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BŁESZNO (26)</name>
+      <Point>
+        <coordinates>19.151058,50.768942</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

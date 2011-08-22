@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>N4 II AL. NAJŚWIĘTSZEJ MARYI PANNY</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>N4 II AL. NAJŚWIĘTSZEJ MARYI PANNY</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118571,50.811772,1
+          19.127047,50.811623,2
+          19.132175,50.811711,3
+          19.13887,50.812728,4
+          19.142132,50.808809,5
+          19.143763,50.807128,6
+          19.144707,50.806287,7
+          19.150028,50.80127,8
+          19.157624,50.793492,9
+          19.160414,50.791613,10
+          19.155006,50.78909,11
+          19.148333,50.786377,12
+          19.143248,50.783745,13
+          19.145908,50.78053,14
+          19.135866,50.776473,15
+          19.13578,50.775442,16
+          19.139978,50.771106,17
+          19.141515,50.770026,18
+          19.150887,50.770597,19
+          19.156895,50.778128,20
+          19.155865,50.784451,21
+          19.153891,50.784423,22
+          19.160542,50.792698,23
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (1)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (3)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (4)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (5)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (6)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ORLIK-RUCKEMANNA (7)</name>
+      <Point>
+        <coordinates>19.144707,50.806287</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION MIEJSKI (8)</name>
+      <Point>
+        <coordinates>19.150028,50.80127</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTNIKÓW (9)</name>
+      <Point>
+        <coordinates>19.157624,50.793492</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBIE (10)</name>
+      <Point>
+        <coordinates>19.160414,50.791613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA (11)</name>
+      <Point>
+        <coordinates>19.155006,50.78909</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (12)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (13)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (14)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWIAK (15)</name>
+      <Point>
+        <coordinates>19.135866,50.776473</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SPORTOWA (16)</name>
+      <Point>
+        <coordinates>19.13578,50.775442</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA (17)</name>
+      <Point>
+        <coordinates>19.139978,50.771106</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA - SZKOŁA (18)</name>
+      <Point>
+        <coordinates>19.141515,50.770026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BOHATERÓW KATYNIA (19)</name>
+      <Point>
+        <coordinates>19.150887,50.770597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (20)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (21)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (22)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GILOWA (23)</name>
+      <Point>
+        <coordinates>19.160542,50.792698</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

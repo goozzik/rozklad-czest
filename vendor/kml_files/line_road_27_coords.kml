@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>16 KUKUCZKI</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>16 KUKUCZKI</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118325,50.808714,1
+          19.118993,50.806267,2
+          19.112295,50.805263,3
+          19.105418,50.805321,4
+          19.103937,50.808159,5
+          19.104302,50.81216,6
+          19.103894,50.81711,7
+          19.104538,50.820849,8
+          19.104559,50.823939,9
+          19.110546,50.824156,10
+          19.116898,50.825593,11
+          19.122906,50.826718,12
+          19.128874,50.828031,13
+          19.131918,50.826189,14
+          19.136188,50.830323,15
+          19.115889,50.831312,16
+          19.129772,50.840284,17
+          19.126854,50.843888,18
+          19.126339,50.844877,19
+          19.13018,50.846381,20
+          19.138098,50.84447,21
+          19.138677,50.841544,22
+          19.139707,50.83695,23
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (1)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (2)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (3)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (4)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (5)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (6)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (7)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁONIMSKIEGO (8)</name>
+      <Point>
+        <coordinates>19.104538,50.820849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (9)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (10)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (11)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYŃSKA (12)</name>
+      <Point>
+        <coordinates>19.122906,50.826718</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I URZĄD SKARBOWY (13)</name>
+      <Point>
+        <coordinates>19.128874,50.828031</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ROLNICZA - CMENTARZ KULE (14)</name>
+      <Point>
+        <coordinates>19.131918,50.826189</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA - CMENTARZ-KULE (15)</name>
+      <Point>
+        <coordinates>19.136188,50.830323</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GOMBROWICZA (16)</name>
+      <Point>
+        <coordinates>19.115889,50.831312</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (17)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACEWICZ (18)</name>
+      <Point>
+        <coordinates>19.126854,50.843888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (19)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARZYŃSKIEGO (20)</name>
+      <Point>
+        <coordinates>19.13018,50.846381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSMOWSKIEJ (21)</name>
+      <Point>
+        <coordinates>19.138098,50.84447</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITOSA (22)</name>
+      <Point>
+        <coordinates>19.138677,50.841544</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUKUCZKI (23)</name>
+      <Point>
+        <coordinates>19.139707,50.83695</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

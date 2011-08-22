@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>37 STRADOM - DWORZEC PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>37 STRADOM - DWORZEC PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.149299,50.848223,1
+          19.1449643,50.852613,2
+          19.137862,50.858221,3
+          19.133935,50.860875,4
+          19.129257,50.853507,5
+          19.126811,50.849226,6
+          19.126339,50.844877,7
+          19.119623,50.842601,8
+          19.120857,50.837092,9
+          19.115889,50.834633,10
+          19.110053,50.833061,11
+          19.105439,50.83096,12
+          19.105096,50.827219,13
+          19.104559,50.823939,14
+          19.110546,50.824156,15
+          19.112477,50.819805,16
+          19.1118763,50.817134,17
+          19.103894,50.81711,18
+          19.104302,50.81216,19
+          19.103937,50.808159,20
+          19.105418,50.805321,21
+          19.112295,50.805263,22
+          19.111179,50.802619,23
+          19.111034,50.799066,24
+          19.107456,50.798056,25
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>MAKUSZYŃSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.149299,50.848223</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DYBOWSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.1449643,50.852613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GŁĘBOCKIEGO (3)</name>
+      <Point>
+        <coordinates>19.137862,50.858221</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BRATA ALBERTA (4)</name>
+      <Point>
+        <coordinates>19.133935,50.860875</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻONKILOWA (5)</name>
+      <Point>
+        <coordinates>19.129257,50.853507</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PILECKIEGO - RONDO (6)</name>
+      <Point>
+        <coordinates>19.126811,50.849226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (7)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCHILLERA (8)</name>
+      <Point>
+        <coordinates>19.119623,50.842601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (9)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OBROŃCÓW WESTERPLATTE (10)</name>
+      <Point>
+        <coordinates>19.115889,50.834633</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOŁAKOWSKIEGO (11)</name>
+      <Point>
+        <coordinates>19.110053,50.833061</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OBROŃCÓW POCZTY GDAŃSKIEJ (12)</name>
+      <Point>
+        <coordinates>19.105439,50.83096</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WAWRZYNOWICZA (13)</name>
+      <Point>
+        <coordinates>19.105096,50.827219</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (14)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (15)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION CKS BUDOWLANI (16)</name>
+      <Point>
+        <coordinates>19.112477,50.819805</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (17)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (18)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (19)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (20)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (21)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (22)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWACKIEGO (23)</name>
+      <Point>
+        <coordinates>19.111179,50.802619</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HOENE - WROŃSKIEGO (24)</name>
+      <Point>
+        <coordinates>19.111034,50.799066</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STRADOM - DWORZEC PKP (25)</name>
+      <Point>
+        <coordinates>19.107456,50.798056</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

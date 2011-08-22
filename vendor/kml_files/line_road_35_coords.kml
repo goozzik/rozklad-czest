@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>18 CMENTARZ ŚW. ROCHA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>18 CMENTARZ ŚW. ROCHA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.2138,50.805338,1
+          19.210367,50.806748,2
+          19.205475,50.808782,3
+          19.2029,50.818896,4
+          19.195261,50.818164,5
+          19.19157,50.817378,6
+          19.180541,50.816673,7
+          19.173803,50.816294,8
+          19.171486,50.819981,9
+          19.162474,50.822069,10
+          19.154298,50.820537,11
+          19.143714,50.819054,12
+          19.13887,50.812728,13
+          19.132175,50.811711,14
+          19.127047,50.811623,15
+          19.118571,50.811772,16
+          19.118099,50.817649,17
+          19.1118763,50.817134,18
+          19.103894,50.81711,19
+          19.104302,50.81216,20
+          19.096888,50.810514,21
+          19.092758,50.80984,22
+          19.08263,50.808945,23
+          19.084454,50.814151,24
+          19.086996,50.819222,25
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BURSZTYNOWA (1)</name>
+      <Point>
+        <coordinates>19.2138,50.805338</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BURSZTYNOWA I (2)</name>
+      <Point>
+        <coordinates>19.210367,50.806748</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TURYSTYCZNA (3)</name>
+      <Point>
+        <coordinates>19.205475,50.808782</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRÓW (4)</name>
+      <Point>
+        <coordinates>19.2029,50.818896</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIROWSKA (5)</name>
+      <Point>
+        <coordinates>19.195261,50.818164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKARPOWA (6)</name>
+      <Point>
+        <coordinates>19.19157,50.817378</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FILTROWA (7)</name>
+      <Point>
+        <coordinates>19.180541,50.816673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MORENOWA (8)</name>
+      <Point>
+        <coordinates>19.173803,50.816294</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMORNICKA (9)</name>
+      <Point>
+        <coordinates>19.171486,50.819981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OCZYSZCZALNIA WARTA (10)</name>
+      <Point>
+        <coordinates>19.162474,50.822069</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANGANOWA (11)</name>
+      <Point>
+        <coordinates>19.154298,50.820537</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JURAJSKA (12)</name>
+      <Point>
+        <coordinates>19.143714,50.819054</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (13)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (14)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (15)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (16)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (17)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (18)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (19)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (20)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JASNA GÓRA (21)</name>
+      <Point>
+        <coordinates>19.096888,50.810514</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLEŃKI (22)</name>
+      <Point>
+        <coordinates>19.092758,50.80984</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORDECKIEGO (23)</name>
+      <Point>
+        <coordinates>19.08263,50.808945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYSZYŃSKIEGO (24)</name>
+      <Point>
+        <coordinates>19.084454,50.814151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (25)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>15 KUKUCZKI</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>15 KUKUCZKI</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118958,50.773488,1
+          19.117413,50.777151,2
+          19.117799,50.783474,3
+          19.117243,50.787164,4
+          19.109302,50.788873,5
+          19.1085723,50.795709,6
+          19.115632,50.799344,7
+          19.11804,50.801226,8
+          19.118993,50.806267,9
+          19.113816,50.806004,10
+          19.112145,50.807914,11
+          19.113078,50.811874,12
+          19.114172,50.815053,13
+          19.114108,50.819357,14
+          19.110546,50.824156,15
+          19.116898,50.825593,16
+          19.122906,50.826718,17
+          19.128874,50.828031,18
+          19.131918,50.826189,19
+          19.136188,50.830323,20
+          19.115889,50.831312,21
+          19.129772,50.840284,22
+          19.126854,50.843888,23
+          19.126339,50.844877,24
+          19.13018,50.846381,25
+          19.138098,50.84447,26
+          19.138677,50.841544,27
+          19.139707,50.83695,28
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BÓR - WYPALANKI (1)</name>
+      <Point>
+        <coordinates>19.118958,50.773488</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WCZASOWA (2)</name>
+      <Point>
+        <coordinates>19.117413,50.777151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MONTEX (3)</name>
+      <Point>
+        <coordinates>19.117799,50.783474</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOJAZDOWA (4)</name>
+      <Point>
+        <coordinates>19.117243,50.787164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (5)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (6)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (7)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (8)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (9)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (10)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPERNIKA (11)</name>
+      <Point>
+        <coordinates>19.112145,50.807914</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC BIEGAŃSKIEGO (12)</name>
+      <Point>
+        <coordinates>19.113078,50.811874</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TEATR IM. A. MICKIEWICZA (13)</name>
+      <Point>
+        <coordinates>19.114172,50.815053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKRZYNECKIEGO (14)</name>
+      <Point>
+        <coordinates>19.114108,50.819357</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (15)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (16)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYŃSKA (17)</name>
+      <Point>
+        <coordinates>19.122906,50.826718</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I URZĄD SKARBOWY (18)</name>
+      <Point>
+        <coordinates>19.128874,50.828031</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ROLNICZA - CMENTARZ KULE (19)</name>
+      <Point>
+        <coordinates>19.131918,50.826189</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA - CMENTARZ-KULE (20)</name>
+      <Point>
+        <coordinates>19.136188,50.830323</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GOMBROWICZA (21)</name>
+      <Point>
+        <coordinates>19.115889,50.831312</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (22)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACEWICZ (23)</name>
+      <Point>
+        <coordinates>19.126854,50.843888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (24)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARZYŃSKIEGO (25)</name>
+      <Point>
+        <coordinates>19.13018,50.846381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSMOWSKIEJ (26)</name>
+      <Point>
+        <coordinates>19.138098,50.84447</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITOSA (27)</name>
+      <Point>
+        <coordinates>19.138677,50.841544</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUKUCZKI (28)</name>
+      <Point>
+        <coordinates>19.139707,50.83695</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

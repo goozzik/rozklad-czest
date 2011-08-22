@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>35 GAZOWNIA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>35 GAZOWNIA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.171743,50.810653,1
+          19.167323,50.807481,2
+          19.154663,50.806884,3
+          19.149063,50.807752,4
+          19.143763,50.807128,5
+          19.1381783,50.805074,6
+          19.132948,50.794,7
+          19.132991,50.789741,8
+          19.142025,50.783962,9
+          19.143248,50.783745,10
+          19.145908,50.78053,11
+          19.148698,50.776201,12
+          19.1505,50.772266,13
+          19.150887,50.770597,14
+          19.156895,50.778128,15
+          19.155865,50.784451,16
+          19.153891,50.784423,17
+          19.148333,50.786377,18
+          19.16419,50.807236,19
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>GAZOWNIA (1)</name>
+      <Point>
+        <coordinates>19.171743,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALLERA (2)</name>
+      <Point>
+        <coordinates>19.167323,50.807481</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZŁOTA (3)</name>
+      <Point>
+        <coordinates>19.154663,50.806884</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WSPÓLNA (4)</name>
+      <Point>
+        <coordinates>19.149063,50.807752</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (5)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II URZĄD SKARBOWY (6)</name>
+      <Point>
+        <coordinates>19.1381783,50.805074</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (7)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (8)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (9)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (10)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (11)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ RAKÓW (12)</name>
+      <Point>
+        <coordinates>19.148698,50.776201</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIENIA (13)</name>
+      <Point>
+        <coordinates>19.1505,50.772266</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BOHATERÓW KATYNIA (14)</name>
+      <Point>
+        <coordinates>19.150887,50.770597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (15)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (16)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (17)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (18)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>URZĄD CELNY (19)</name>
+      <Point>
+        <coordinates>19.16419,50.807236</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

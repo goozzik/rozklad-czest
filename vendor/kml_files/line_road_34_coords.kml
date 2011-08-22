@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>17B AL. BOHATERÓW MONTE CASSINO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>17B AL. BOHATERÓW MONTE CASSINO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.03995,50.771561,1
+          19.04068,50.778155,2
+          19.040594,50.78304,3
+          19.044521,50.783989,4
+          19.053597,50.784586,5
+          19.063082,50.785183,6
+          19.069219,50.785699,7
+          19.079647,50.786051,8
+          19.086084,50.78597,9
+          19.087672,50.790921,10
+          19.097757,50.795601,11
+          19.096727,50.795438,12
+          19.103336,50.795845,13
+          19.1085723,50.795709,14
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>LISZKA DOLNA (1)</name>
+      <Point>
+        <coordinates>19.03995,50.771561</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA II (2)</name>
+      <Point>
+        <coordinates>19.04068,50.778155</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA I (3)</name>
+      <Point>
+        <coordinates>19.040594,50.78304</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA GÓRNA (4)</name>
+      <Point>
+        <coordinates>19.044521,50.783989</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA III (5)</name>
+      <Point>
+        <coordinates>19.053597,50.784586</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA II (6)</name>
+      <Point>
+        <coordinates>19.063082,50.785183</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KONWALIOWA I (7)</name>
+      <Point>
+        <coordinates>19.069219,50.785699</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZAŃSKA (8)</name>
+      <Point>
+        <coordinates>19.079647,50.786051</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ARTYLERYJSKA (9)</name>
+      <Point>
+        <coordinates>19.086084,50.78597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MONIUSZKI (10)</name>
+      <Point>
+        <coordinates>19.087672,50.790921</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MATEJKI (11)</name>
+      <Point>
+        <coordinates>19.097757,50.795601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOŚCIELNA (12)</name>
+      <Point>
+        <coordinates>19.096727,50.795438</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (13)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (14)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

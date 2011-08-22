@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>17A WYCZERPY - OSIEDLE</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>17A WYCZERPY - OSIEDLE</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.128098,50.81224,2
+          19.13003,50.818205,3
+          19.133677,50.823668,4
+          19.136639,50.827192,5
+          19.150929,50.833698,6
+          19.15525,50.836904,7
+          19.147561,50.831502,8
+          19.163353,50.838115,9
+          19.164448,50.833427,10
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RYNEK (2)</name>
+      <Point>
+        <coordinates>19.128098,50.81224</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (3)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (4)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (5)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (6)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (7)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (8)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NORWIDA (9)</name>
+      <Point>
+        <coordinates>19.163353,50.838115</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY - OSIEDLE (10)</name>
+      <Point>
+        <coordinates>19.164448,50.833427</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

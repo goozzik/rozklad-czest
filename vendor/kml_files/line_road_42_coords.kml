@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>20 KORKOWA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>20 KORKOWA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.164448,50.833427,1
+          19.163353,50.838115,2
+          19.147561,50.831502,3
+          19.15525,50.836904,4
+          19.150929,50.833698,5
+          19.136639,50.827192,6
+          19.133677,50.823668,7
+          19.13003,50.818205,8
+          19.127047,50.811623,9
+          19.127734,50.807562,10
+          19.129139,50.802687,11
+          19.132948,50.794,12
+          19.132991,50.789741,13
+          19.142025,50.783962,14
+          19.143248,50.783745,15
+          19.145908,50.78053,16
+          19.148698,50.776201,17
+          19.1505,50.772266,18
+          19.150887,50.770597,19
+          19.141515,50.770026,20
+          19.139978,50.771106,21
+          19.13578,50.775442,22
+          19.128796,50.774967,23
+          19.125781,50.777775,24
+          19.122133,50.779811,25
+          19.126854,50.784396,26
+          19.127305,50.784342,27
+          19.117243,50.787164,28
+          19.117799,50.783474,29
+          19.117413,50.777151,30
+          19.118958,50.773488,31
+          19.116898,50.769376,32
+          19.111898,50.766295,33
+          19.109559,50.763662,34
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY - OSIEDLE (1)</name>
+      <Point>
+        <coordinates>19.164448,50.833427</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NORWIDA (2)</name>
+      <Point>
+        <coordinates>19.163353,50.838115</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (3)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (4)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (5)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (6)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (7)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (8)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (9)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (10)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (11)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (12)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (13)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (14)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (15)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (16)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ RAKÓW (17)</name>
+      <Point>
+        <coordinates>19.148698,50.776201</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIENIA (18)</name>
+      <Point>
+        <coordinates>19.1505,50.772266</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BOHATERÓW KATYNIA (19)</name>
+      <Point>
+        <coordinates>19.150887,50.770597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA - SZKOŁA (20)</name>
+      <Point>
+        <coordinates>19.141515,50.770026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA (21)</name>
+      <Point>
+        <coordinates>19.139978,50.771106</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SPORTOWA (22)</name>
+      <Point>
+        <coordinates>19.13578,50.775442</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARUSARZA (23)</name>
+      <Point>
+        <coordinates>19.128796,50.774967</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RUTKIEWICZ (24)</name>
+      <Point>
+        <coordinates>19.125781,50.777775</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYDZA-ŚMIGŁEGO (25)</name>
+      <Point>
+        <coordinates>19.122133,50.779811</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZIMOWA (26)</name>
+      <Point>
+        <coordinates>19.126854,50.784396</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAKRO (27)</name>
+      <Point>
+        <coordinates>19.127305,50.784342</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOJAZDOWA (28)</name>
+      <Point>
+        <coordinates>19.117243,50.787164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MONTEX (29)</name>
+      <Point>
+        <coordinates>19.117799,50.783474</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WCZASOWA (30)</name>
+      <Point>
+        <coordinates>19.117413,50.777151</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BÓR - WYPALANKI (31)</name>
+      <Point>
+        <coordinates>19.118958,50.773488</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITAMINOWA (32)</name>
+      <Point>
+        <coordinates>19.116898,50.769376</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUSOCIŃSKIEGO (33)</name>
+      <Point>
+        <coordinates>19.111898,50.766295</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA (34)</name>
+      <Point>
+        <coordinates>19.109559,50.763662</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

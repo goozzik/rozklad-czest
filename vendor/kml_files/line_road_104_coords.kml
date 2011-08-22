@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>65 PIŁSUDSKIEGO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>65 PIŁSUDSKIEGO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.177784,50.724347,1
+          19.174576,50.719531,2
+          19.167516,50.713322,3
+          19.164019,50.711529,4
+          19.162495,50.70964,5
+          19.162817,50.704721,6
+          19.173717,50.692298,7
+          19.152346,50.704068,8
+          19.154363,50.708553,9
+          19.154234,50.713689,10
+          19.162774,50.718879,11
+          19.167795,50.724476,12
+          19.17007,50.727491,13
+          19.174147,50.734011,14
+          19.172516,50.744766,15
+          19.167194,50.745472,16
+          19.153569,50.746517,17
+          19.15801,50.757527,18
+          19.160832,50.760948,19
+          19.165821,50.766974,20
+          19.156401,50.772809,21
+          19.14784,50.778318,22
+          19.145908,50.78053,23
+          19.142025,50.783962,24
+          19.132991,50.789741,25
+          19.132948,50.794,26
+          19.130073,50.800971,27
+          19.131038,50.802829,28
+          19.12783,50.807026,29
+          19.122562,50.810653,30
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE (1)</name>
+      <Point>
+        <coordinates>19.177784,50.724347</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA II (2)</name>
+      <Point>
+        <coordinates>19.174576,50.719531</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - DŁUGA I (3)</name>
+      <Point>
+        <coordinates>19.167516,50.713322</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - CMENTARZ (4)</name>
+      <Point>
+        <coordinates>19.164019,50.711529</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - CMENTARNA (5)</name>
+      <Point>
+        <coordinates>19.162495,50.70964</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA GÓRNICZA (6)</name>
+      <Point>
+        <coordinates>19.162817,50.704721</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLONIA BOREK (7)</name>
+      <Point>
+        <coordinates>19.173717,50.692298</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA BOREK (8)</name>
+      <Point>
+        <coordinates>19.152346,50.704068</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA PROSTA (9)</name>
+      <Point>
+        <coordinates>19.154363,50.708553</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA SZKOŁA (10)</name>
+      <Point>
+        <coordinates>19.154234,50.713689</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA KOŚCIÓŁ (11)</name>
+      <Point>
+        <coordinates>19.162774,50.718879</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ II (12)</name>
+      <Point>
+        <coordinates>19.167795,50.724476</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWA WIEŚ I (13)</name>
+      <Point>
+        <coordinates>19.17007,50.727491</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORWINÓW (14)</name>
+      <Point>
+        <coordinates>19.174147,50.734011</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK II (15)</name>
+      <Point>
+        <coordinates>19.172516,50.744766</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWIK I (16)</name>
+      <Point>
+        <coordinates>19.167194,50.745472</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA - KŁADKA (17)</name>
+      <Point>
+        <coordinates>19.153569,50.746517</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FABRYCZNA (18)</name>
+      <Point>
+        <coordinates>19.15801,50.757527</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLEJOWA (19)</name>
+      <Point>
+        <coordinates>19.160832,50.760948</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (20)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (21)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (22)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (23)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (24)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (25)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (26)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (27)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (28)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (29)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (30)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

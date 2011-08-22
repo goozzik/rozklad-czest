@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>12 GNASZYN</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>12 GNASZYN</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.150908,50.787394,1
+          19.153891,50.784423,2
+          19.155865,50.784451,3
+          19.156895,50.778128,4
+          19.157238,50.775143,5
+          19.156401,50.772809,6
+          19.14784,50.778318,7
+          19.145908,50.78053,8
+          19.142025,50.783962,9
+          19.132991,50.789741,10
+          19.132948,50.794,11
+          19.130073,50.800971,12
+          19.131038,50.802829,13
+          19.12783,50.807026,14
+          19.124824,50.811945,15
+          19.118571,50.811772,16
+          19.118099,50.817649,17
+          19.1118763,50.817134,18
+          19.103894,50.81711,19
+          19.096577,50.816497,20
+          19.086996,50.819222,21
+          19.081278,50.82215,22
+          19.069605,50.826704,23
+          19.06482,50.820577,24
+          19.052181,50.82703,25
+          19.05673,50.813094,26
+          19.058522,50.80662,27
+          19.057975,50.805826,28
+          19.051666,50.796821,29
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>RAKÓW - DWORZEC PKP (1)</name>
+      <Point>
+        <coordinates>19.150908,50.787394</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (2)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (3)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (4)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻARECKA (5)</name>
+      <Point>
+        <coordinates>19.157238,50.775143</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (6)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (7)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (8)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (9)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (10)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (11)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (12)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (13)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (14)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (15)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (16)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (17)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (18)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (19)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK WIELUŃSKI (20)</name>
+      <Point>
+        <coordinates>19.096577,50.816497</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (21)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (22)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASZUBSKA (23)</name>
+      <Point>
+        <coordinates>19.069605,50.826704</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁĘCZYCKA (24)</name>
+      <Point>
+        <coordinates>19.06482,50.820577</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BIAŁOSTOCKA (25)</name>
+      <Point>
+        <coordinates>19.052181,50.82703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOBRZYŃSKA (26)</name>
+      <Point>
+        <coordinates>19.05673,50.813094</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LWOWSKA (27)</name>
+      <Point>
+        <coordinates>19.058522,50.80662</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WICHROWA (28)</name>
+      <Point>
+        <coordinates>19.057975,50.805826</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (29)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

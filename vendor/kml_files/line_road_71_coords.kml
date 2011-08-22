@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>31 ESTAKADA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>31 ESTAKADA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.182944,50.76335,1
+          19.176207,50.765834,2
+          19.165821,50.766974,3
+          19.156895,50.778128,4
+          19.155865,50.784451,5
+          19.153891,50.784423,6
+          19.148333,50.786377,7
+          19.142025,50.783962,8
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KRĘCIWILK (1)</name>
+      <Point>
+        <coordinates>19.182944,50.76335</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WEYSSENHOFF (2)</name>
+      <Point>
+        <coordinates>19.176207,50.765834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (3)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION RAKÓW (4)</name>
+      <Point>
+        <coordinates>19.156895,50.778128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RAKÓW (5)</name>
+      <Point>
+        <coordinates>19.155865,50.784451</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRUSA (6)</name>
+      <Point>
+        <coordinates>19.153891,50.784423</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC ORLĄT LWOWSKICH (7)</name>
+      <Point>
+        <coordinates>19.148333,50.786377</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (8)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

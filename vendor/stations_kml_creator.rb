@@ -6,7 +6,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'iconv'
 
-File.open('vendor/stations_coords.kml', 'w') do |f|
+File.open('vendor/kml_files/stations_coords.kml', 'w') do |f|
   f.puts '<?xml version="1.0" encoding="UTF-8"?>'
   f.puts '<kml xmlns="http://earth.google.com/kml/2.2">'
   f.puts '  <Document>'

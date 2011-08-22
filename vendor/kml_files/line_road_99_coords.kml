@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>57 OLSZTYN RYNEK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>57 OLSZTYN RYNEK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.230709,50.762359,1
+          19.223886,50.760025,2
+          19.225044,50.755627,3
+          19.24103,50.743231,4
+          19.258089,50.7534,5
+          19.268432,50.750441,6
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>OS. POD WILCZĄ GÓRĄ (1)</name>
+      <Point>
+        <coordinates>19.230709,50.762359</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRZYKOŃ (2)</name>
+      <Point>
+        <coordinates>19.223886,50.760025</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRZYKOŃ - NARCYZOWA (3)</name>
+      <Point>
+        <coordinates>19.225044,50.755627</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKRAJNICA (4)</name>
+      <Point>
+        <coordinates>19.24103,50.743231</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN ŻWIRKI I WIGURY (5)</name>
+      <Point>
+        <coordinates>19.258089,50.7534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN RYNEK (6)</name>
+      <Point>
+        <coordinates>19.268432,50.750441</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

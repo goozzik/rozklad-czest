@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>30B DŹBÓW</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>30B DŹBÓW</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118325,50.808714,1
+          19.118993,50.806267,2
+          19.11804,50.801226,3
+          19.115632,50.799344,4
+          19.1085723,50.795709,5
+          19.109302,50.788873,6
+          19.101276,50.789388,7
+          19.099903,50.785644,8
+          19.098873,50.781981,9
+          19.094238,50.77403,10
+          19.093251,50.773623,11
+          19.085526,50.771479,12
+          19.07542,50.766933,13
+          19.071965,50.765047,14
+          19.0618593,50.760744,15
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (1)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (2)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (3)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (4)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (5)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JAGIELLOŃSKA (6)</name>
+      <Point>
+        <coordinates>19.109302,50.788873</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (7)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (8)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (9)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (10)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMICICA (11)</name>
+      <Point>
+        <coordinates>19.093251,50.773623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZBYSZKA (12)</name>
+      <Point>
+        <coordinates>19.085526,50.771479</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZECZNA (13)</name>
+      <Point>
+        <coordinates>19.07542,50.766933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW WARSZAWY (14)</name>
+      <Point>
+        <coordinates>19.071965,50.765047</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DŹBÓW (15)</name>
+      <Point>
+        <coordinates>19.0618593,50.760744</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

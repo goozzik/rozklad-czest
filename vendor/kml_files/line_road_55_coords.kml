@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>27 PARKITKA - SZPITAL</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>27 PARKITKA - SZPITAL</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.151058,50.768942,1
+          19.150887,50.770597,2
+          19.141515,50.770026,3
+          19.139978,50.771106,4
+          19.13578,50.775442,5
+          19.135866,50.776473,6
+          2.0,2.0,7
+          19.129171,50.782443,8
+          19.13475,50.78247,9
+          19.142025,50.783962,10
+          19.132991,50.789741,11
+          19.132948,50.794,12
+          19.130073,50.800971,13
+          19.131038,50.802829,14
+          19.12783,50.807026,15
+          19.124824,50.811945,16
+          19.118571,50.811772,17
+          19.118099,50.817649,18
+          19.1118763,50.817134,19
+          19.103894,50.81711,20
+          19.104538,50.820849,21
+          19.104559,50.823939,22
+          19.100461,50.823831,23
+          19.093423,50.82478,24
+          19.088037,50.829334,25
+          19.088616,50.82871,26
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>BŁESZNO (1)</name>
+      <Point>
+        <coordinates>19.151058,50.768942</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BOHATERÓW KATYNIA (2)</name>
+      <Point>
+        <coordinates>19.150887,50.770597</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA - SZKOŁA (3)</name>
+      <Point>
+        <coordinates>19.141515,50.770026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JESIENNA (4)</name>
+      <Point>
+        <coordinates>19.139978,50.771106</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SPORTOWA (5)</name>
+      <Point>
+        <coordinates>19.13578,50.775442</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWIAK (6)</name>
+      <Point>
+        <coordinates>19.135866,50.776473</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ORKANA - SZKOŁA (7)</name>
+      <Point>
+        <coordinates>2.0,2.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUKOWA (8)</name>
+      <Point>
+        <coordinates>19.129171,50.782443</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KASZTANOWA (9)</name>
+      <Point>
+        <coordinates>19.13475,50.78247</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (10)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (11)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (12)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRAKOWSKA (13)</name>
+      <Point>
+        <coordinates>19.130073,50.800971</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KANAŁ KOHNA (14)</name>
+      <Point>
+        <coordinates>19.131038,50.802829</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GALERIA JURAJSKA (15)</name>
+      <Point>
+        <coordinates>19.12783,50.807026</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (16)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>II AL. NAJŚWIĘTSZEJ MARYI PANNY (17)</name>
+      <Point>
+        <coordinates>19.118571,50.811772</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (18)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DĄBROWSKIEGO - SĄDY (19)</name>
+      <Point>
+        <coordinates>19.1118763,50.817134</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (20)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁONIMSKIEGO (21)</name>
+      <Point>
+        <coordinates>19.104538,50.820849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (22)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁÓDZKA (23)</name>
+      <Point>
+        <coordinates>19.100461,50.823831</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKULICKIEGO (24)</name>
+      <Point>
+        <coordinates>19.093423,50.82478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWOBIALSKA (25)</name>
+      <Point>
+        <coordinates>19.088037,50.829334</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - SZPITAL (26)</name>
+      <Point>
+        <coordinates>19.088616,50.82871</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>23A REJTANA - SĄDY</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>23A REJTANA - SĄDY</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.124824,50.811945,2
+          19.127734,50.807562,3
+          19.129139,50.802687,4
+          19.134665,50.795085,5
+          19.14211,50.793661,6
+          19.149685,50.791803,7
+          19.155972,50.788941,8
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (2)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (3)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (4)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ARCHIWUM PAŃSTWOWE (5)</name>
+      <Point>
+        <coordinates>19.134665,50.795085</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLONTEX (6)</name>
+      <Point>
+        <coordinates>19.14211,50.793661</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻEROMSKIEGO (7)</name>
+      <Point>
+        <coordinates>19.149685,50.791803</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>REJTANA - SĄDY (8)</name>
+      <Point>
+        <coordinates>19.155972,50.788941</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

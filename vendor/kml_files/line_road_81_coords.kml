@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>33B LEŚNA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>33B LEŚNA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.118325,50.808714,1
+          19.118993,50.806267,2
+          19.112295,50.805263,3
+          19.105418,50.805321,4
+          19.103937,50.808159,5
+          19.09544,50.806667,6
+          19.087672,50.803331,7
+          19.071107,50.800131,8
+          19.061537,50.798015,9
+          19.051666,50.796821,10
+          19.038792,50.794163,11
+          19.028814,50.791952,12
+          19.026775,50.787937,13
+          19.03221,50.788642,14
+          19.038877,50.789524,15
+          19.040594,50.78304,16
+          19.04068,50.778155,17
+          19.03995,50.771561,18
+          19.046474,50.771316,19
+          19.055443,50.768792,20
+          19.053726,50.762332,21
+          19.041924,50.764585,22
+          19.033556,50.762916,23
+          19.022784,50.761545,24
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (1)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (2)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORCZAKA (3)</name>
+      <Point>
+        <coordinates>19.112295,50.805263</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKWER SOKOŁÓW (4)</name>
+      <Point>
+        <coordinates>19.105418,50.805321</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (5)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY - SZPITAL (6)</name>
+      <Point>
+        <coordinates>19.09544,50.806667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (7)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRZESTRZENNA (8)</name>
+      <Point>
+        <coordinates>19.071107,50.800131</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA DOLNA (9)</name>
+      <Point>
+        <coordinates>19.061537,50.798015</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (10)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ENERGETYKÓW (11)</name>
+      <Point>
+        <coordinates>19.038792,50.794163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN - DWORZEC PKP (12)</name>
+      <Point>
+        <coordinates>19.028814,50.791952</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARYNARSKA (13)</name>
+      <Point>
+        <coordinates>19.026775,50.787937</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JEŻYNOWA (14)</name>
+      <Point>
+        <coordinates>19.03221,50.788642</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRAFIKÓW (15)</name>
+      <Point>
+        <coordinates>19.038877,50.789524</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA I (16)</name>
+      <Point>
+        <coordinates>19.040594,50.78304</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUSOLOWA II (17)</name>
+      <Point>
+        <coordinates>19.04068,50.778155</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISZKA DOLNA (18)</name>
+      <Point>
+        <coordinates>19.03995,50.771561</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LAKOWA (19)</name>
+      <Point>
+        <coordinates>19.046474,50.771316</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPALNIANA I (20)</name>
+      <Point>
+        <coordinates>19.055443,50.768792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOPALNIANA II (21)</name>
+      <Point>
+        <coordinates>19.053726,50.762332</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CHŁOPSKA (22)</name>
+      <Point>
+        <coordinates>19.041924,50.764585</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKORKI (23)</name>
+      <Point>
+        <coordinates>19.033556,50.762916</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LEŚNA (24)</name>
+      <Point>
+        <coordinates>19.022784,50.761545</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

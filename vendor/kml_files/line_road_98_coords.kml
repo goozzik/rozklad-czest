@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>57 OLSZTYN RYNEK</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>57 OLSZTYN RYNEK</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.124824,50.811945,2
+          19.127734,50.807562,3
+          19.129139,50.802687,4
+          19.132948,50.794,5
+          19.132991,50.789741,6
+          19.142025,50.783962,7
+          19.143248,50.783745,8
+          19.145908,50.78053,9
+          19.14784,50.778318,10
+          19.156401,50.772809,11
+          19.165821,50.766974,12
+          19.176207,50.765834,13
+          19.182944,50.76335,14
+          19.223886,50.760025,15
+          19.225044,50.755627,16
+          19.24103,50.743231,17
+          19.258089,50.7534,18
+          19.268432,50.750441,19
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (2)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (3)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (4)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (5)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (6)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (7)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (8)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (9)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (10)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (11)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (12)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WEYSSENHOFF (13)</name>
+      <Point>
+        <coordinates>19.176207,50.765834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KRĘCIWILK (14)</name>
+      <Point>
+        <coordinates>19.182944,50.76335</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRZYKOŃ (15)</name>
+      <Point>
+        <coordinates>19.223886,50.760025</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRZYKOŃ - NARCYZOWA (16)</name>
+      <Point>
+        <coordinates>19.225044,50.755627</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKRAJNICA (17)</name>
+      <Point>
+        <coordinates>19.24103,50.743231</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN ŻWIRKI I WIGURY (18)</name>
+      <Point>
+        <coordinates>19.258089,50.7534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OLSZTYN RYNEK (19)</name>
+      <Point>
+        <coordinates>19.268432,50.750441</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

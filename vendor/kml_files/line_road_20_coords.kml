@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>14B DWORZEC GŁÓWNY PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>14B DWORZEC GŁÓWNY PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.109559,50.763662,1
+          19.107971,50.761728,2
+          19.107563,50.761172,3
+          19.086857,50.733793,4
+          19.093723,50.751282,5
+          19.094024,50.758749,6
+          19.093852,50.757894,7
+          19.095054,50.766865,8
+          19.097114,50.771534,9
+          19.094238,50.77403,10
+          19.098873,50.781981,11
+          19.099903,50.785644,12
+          19.101276,50.789388,13
+          19.103336,50.795845,14
+          19.1085723,50.795709,15
+          19.115632,50.799344,16
+          19.11804,50.801226,17
+          19.118325,50.808714,18
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA (1)</name>
+      <Point>
+        <coordinates>19.109559,50.763662</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA II (2)</name>
+      <Point>
+        <coordinates>19.107971,50.761728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORKOWA I (3)</name>
+      <Point>
+        <coordinates>19.107563,50.761172</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLONIA BRZEZINY (4)</name>
+      <Point>
+        <coordinates>19.086857,50.733793</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRZEZINY (5)</name>
+      <Point>
+        <coordinates>19.093723,50.751282</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŻYZNA (6)</name>
+      <Point>
+        <coordinates>19.094024,50.758749</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LISIA (7)</name>
+      <Point>
+        <coordinates>19.093852,50.757894</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GRONOWA (8)</name>
+      <Point>
+        <coordinates>19.095054,50.766865</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POSELSKA (9)</name>
+      <Point>
+        <coordinates>19.097114,50.771534</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (10)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (11)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (12)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (13)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (14)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (15)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1 MAJA - UCZELNIA (16)</name>
+      <Point>
+        <coordinates>19.115632,50.799344</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO MICKIEWICZA  (17)</name>
+      <Point>
+        <coordinates>19.11804,50.801226</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (18)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

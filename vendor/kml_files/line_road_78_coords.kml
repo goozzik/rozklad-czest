@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>33A MIRÓW - PEGAZ</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>33A MIRÓW - PEGAZ</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.127047,50.811623,2
+          19.132175,50.811711,3
+          19.13887,50.812728,4
+          19.143714,50.819054,5
+          19.154298,50.820537,6
+          19.162474,50.822069,7
+          19.171486,50.819981,8
+          19.173803,50.816294,9
+          19.180541,50.816673,10
+          19.19157,50.817378,11
+          19.195261,50.818164,12
+          19.2029,50.818896,13
+          19.208565,50.820876,14
+          19.216375,50.821174,15
+          19.215002,50.821391,16
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (2)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (3)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (4)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>JURAJSKA (5)</name>
+      <Point>
+        <coordinates>19.143714,50.819054</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MANGANOWA (6)</name>
+      <Point>
+        <coordinates>19.154298,50.820537</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OCZYSZCZALNIA WARTA (7)</name>
+      <Point>
+        <coordinates>19.162474,50.822069</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMORNICKA (8)</name>
+      <Point>
+        <coordinates>19.171486,50.819981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MORENOWA (9)</name>
+      <Point>
+        <coordinates>19.173803,50.816294</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FILTROWA (10)</name>
+      <Point>
+        <coordinates>19.180541,50.816673</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SKARPOWA (11)</name>
+      <Point>
+        <coordinates>19.19157,50.817378</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIROWSKA (12)</name>
+      <Point>
+        <coordinates>19.195261,50.818164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRÓW (13)</name>
+      <Point>
+        <coordinates>19.2029,50.818896</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MSTOWSKA (14)</name>
+      <Point>
+        <coordinates>19.208565,50.820876</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ MIRÓW (15)</name>
+      <Point>
+        <coordinates>19.216375,50.821174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRÓW - PEGAZ (16)</name>
+      <Point>
+        <coordinates>19.215002,50.821391</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

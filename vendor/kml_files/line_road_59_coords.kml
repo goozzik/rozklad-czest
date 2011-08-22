@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>28 PARKITKA - SZPITAL</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>28 PARKITKA - SZPITAL</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.173417,50.790582,1
+          19.160542,50.792698,2
+          19.157624,50.793492,3
+          19.150028,50.80127,4
+          19.144707,50.806287,5
+          19.143763,50.807128,6
+          19.142132,50.808809,7
+          19.13887,50.812728,8
+          19.132175,50.811711,9
+          19.128098,50.81224,10
+          19.13003,50.818205,11
+          19.118099,50.817649,12
+          19.117842,50.821147,13
+          19.116898,50.825593,14
+          19.110546,50.824156,15
+          19.104559,50.823939,16
+          19.100461,50.823831,17
+          19.093423,50.82478,18
+          19.088037,50.829334,19
+          19.088616,50.82871,20
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (1)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GILOWA (2)</name>
+      <Point>
+        <coordinates>19.160542,50.792698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTNIKÓW (3)</name>
+      <Point>
+        <coordinates>19.157624,50.793492</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION MIEJSKI (4)</name>
+      <Point>
+        <coordinates>19.150028,50.80127</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ORLIK-RUCKEMANNA (5)</name>
+      <Point>
+        <coordinates>19.144707,50.806287</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (6)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (7)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (8)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (9)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RYNEK (10)</name>
+      <Point>
+        <coordinates>19.128098,50.81224</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (11)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (12)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLITECHNIKA (13)</name>
+      <Point>
+        <coordinates>19.117842,50.821147</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (14)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (15)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (16)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁÓDZKA (17)</name>
+      <Point>
+        <coordinates>19.100461,50.823831</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKULICKIEGO (18)</name>
+      <Point>
+        <coordinates>19.093423,50.82478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWOBIALSKA (19)</name>
+      <Point>
+        <coordinates>19.088037,50.829334</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - SZPITAL (20)</name>
+      <Point>
+        <coordinates>19.088616,50.82871</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

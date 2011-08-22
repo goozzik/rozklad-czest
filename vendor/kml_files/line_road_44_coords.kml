@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>22 ŁOJKI</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>22 ŁOJKI</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.115889,50.831312,1
+          19.129772,50.840284,2
+          19.126854,50.843888,3
+          19.126339,50.844877,4
+          19.119623,50.842601,5
+          19.120857,50.837092,6
+          19.11664,50.833671,7
+          19.119709,50.830703,8
+          19.122906,50.826718,9
+          19.116898,50.825593,10
+          19.110546,50.824156,11
+          19.104559,50.823939,12
+          19.104538,50.820849,13
+          19.103894,50.81711,14
+          19.104302,50.81216,15
+          19.103937,50.808159,16
+          19.09544,50.806667,17
+          19.087672,50.803331,18
+          19.071107,50.800131,19
+          19.061537,50.798015,20
+          19.051666,50.796821,21
+          19.038792,50.794163,22
+          19.028814,50.791952,23
+          19.019008,50.792345,24
+          19.011583,50.78852,25
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>GOMBROWICZA (1)</name>
+      <Point>
+        <coordinates>19.115889,50.831312</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (2)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BACEWICZ (3)</name>
+      <Point>
+        <coordinates>19.126854,50.843888</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (4)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCHILLERA (5)</name>
+      <Point>
+        <coordinates>19.119623,50.842601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (6)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (7)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KURPIŃSKIEGO (8)</name>
+      <Point>
+        <coordinates>19.119709,50.830703</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KIEDRZYŃSKA (9)</name>
+      <Point>
+        <coordinates>19.122906,50.826718</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (10)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (11)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (12)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁONIMSKIEGO (13)</name>
+      <Point>
+        <coordinates>19.104538,50.820849</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOMENDA MIEJSKA POLICJI (14)</name>
+      <Point>
+        <coordinates>19.103894,50.81711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>III AL. NAJŚWIĘTSZEJ MARYI PANNY (15)</name>
+      <Point>
+        <coordinates>19.104302,50.81216</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KAZIMIERZA (16)</name>
+      <Point>
+        <coordinates>19.103937,50.808159</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. BARBARY - SZPITAL (17)</name>
+      <Point>
+        <coordinates>19.09544,50.806667</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KINGI (18)</name>
+      <Point>
+        <coordinates>19.087672,50.803331</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRZESTRZENNA (19)</name>
+      <Point>
+        <coordinates>19.071107,50.800131</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KAWODRZA DOLNA (20)</name>
+      <Point>
+        <coordinates>19.061537,50.798015</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN (21)</name>
+      <Point>
+        <coordinates>19.051666,50.796821</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ENERGETYKÓW (22)</name>
+      <Point>
+        <coordinates>19.038792,50.794163</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GNASZYN - DWORZEC PKP (23)</name>
+      <Point>
+        <coordinates>19.028814,50.791952</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DRZEWNA (24)</name>
+      <Point>
+        <coordinates>19.019008,50.792345</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁOJKI (25)</name>
+      <Point>
+        <coordinates>19.011583,50.78852</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

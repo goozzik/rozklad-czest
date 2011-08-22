@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>14A PIŁSUDSKIEGO</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>14A PIŁSUDSKIEGO</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.176679,50.884869,1
+          19.169254,50.871764,2
+          19.158161,50.871682,3
+          19.168053,50.857164,4
+          19.167881,50.857408,5
+          19.166336,50.852775,6
+          19.160929,50.843834,7
+          19.159899,50.842181,8
+          19.147561,50.831502,9
+          19.15525,50.836904,10
+          19.150929,50.833698,11
+          19.136639,50.827192,12
+          19.133677,50.823668,13
+          19.13003,50.818205,14
+          19.127047,50.811623,15
+          19.122562,50.810653,16
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>RZĄSAWA - DWORZEC PKP (1)</name>
+      <Point>
+        <coordinates>19.176679,50.884869</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZĄSAWA (2)</name>
+      <Point>
+        <coordinates>19.169254,50.871764</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MELIORANTÓW (3)</name>
+      <Point>
+        <coordinates>19.158161,50.871682</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZIELNA (4)</name>
+      <Point>
+        <coordinates>19.168053,50.857164</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>UGODY (5)</name>
+      <Point>
+        <coordinates>19.167881,50.857408</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYPOCZYNKU (6)</name>
+      <Point>
+        <coordinates>19.166336,50.852775</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZĄSAWSKA - UCZELNIA (7)</name>
+      <Point>
+        <coordinates>19.160929,50.843834</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KARŁOWICZA (8)</name>
+      <Point>
+        <coordinates>19.159899,50.842181</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (9)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (10)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (11)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (12)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (13)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (14)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC DASZYŃSKIEGO (15)</name>
+      <Point>
+        <coordinates>19.127047,50.811623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (16)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

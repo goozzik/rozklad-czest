@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>28 PARKITKA - SZPITAL</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>28 PARKITKA - SZPITAL</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.191999,50.776174,1
+          19.187365,50.784478,2
+          19.189811,50.783419,3
+          19.185047,50.785739,4
+          19.173417,50.790582,5
+          19.160542,50.792698,6
+          19.157624,50.793492,7
+          19.150028,50.80127,8
+          19.144707,50.806287,9
+          19.143763,50.807128,10
+          19.142132,50.808809,11
+          19.13887,50.812728,12
+          19.132175,50.811711,13
+          19.128098,50.81224,14
+          19.13003,50.818205,15
+          19.118099,50.817649,16
+          19.117842,50.821147,17
+          19.116898,50.825593,18
+          19.110546,50.824156,19
+          19.104559,50.823939,20
+          19.100461,50.823831,21
+          19.093423,50.82478,22
+          19.088037,50.829334,23
+          19.088616,50.82871,24
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>WALCOWNIA (1)</name>
+      <Point>
+        <coordinates>19.191999,50.776174</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GUARDIAN (2)</name>
+      <Point>
+        <coordinates>19.187365,50.784478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORFANTEGO I (3)</name>
+      <Point>
+        <coordinates>19.189811,50.783419</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KORFANTEGO (4)</name>
+      <Point>
+        <coordinates>19.185047,50.785739</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KUCELIN - SZPITAL (5)</name>
+      <Point>
+        <coordinates>19.173417,50.790582</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GILOWA (6)</name>
+      <Point>
+        <coordinates>19.160542,50.792698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTNIKÓW (7)</name>
+      <Point>
+        <coordinates>19.157624,50.793492</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STADION MIEJSKI (8)</name>
+      <Point>
+        <coordinates>19.150028,50.80127</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ORLIK-RUCKEMANNA (9)</name>
+      <Point>
+        <coordinates>19.144707,50.806287</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FARADAYA (10)</name>
+      <Point>
+        <coordinates>19.143763,50.807128</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WOLNA (11)</name>
+      <Point>
+        <coordinates>19.142132,50.808809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RYNEK NARUTOWICZA (12)</name>
+      <Point>
+        <coordinates>19.13887,50.812728</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZAWODZIE - SZPITAL (13)</name>
+      <Point>
+        <coordinates>19.132175,50.811711</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RYNEK (14)</name>
+      <Point>
+        <coordinates>19.128098,50.81224</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (15)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ALEJA JANA PAWŁA II (16)</name>
+      <Point>
+        <coordinates>19.118099,50.817649</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POLITECHNIKA (17)</name>
+      <Point>
+        <coordinates>19.117842,50.821147</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HALA POLONIA (18)</name>
+      <Point>
+        <coordinates>19.116898,50.825593</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (19)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (20)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁÓDZKA (21)</name>
+      <Point>
+        <coordinates>19.100461,50.823831</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKULICKIEGO (22)</name>
+      <Point>
+        <coordinates>19.093423,50.82478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWOBIALSKA (23)</name>
+      <Point>
+        <coordinates>19.088037,50.829334</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - SZPITAL (24)</name>
+      <Point>
+        <coordinates>19.088616,50.82871</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

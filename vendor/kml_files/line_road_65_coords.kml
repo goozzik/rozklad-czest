@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>30A BATALIONÓW CHŁOPSKICH</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>30A BATALIONÓW CHŁOPSKICH</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.128098,50.81224,2
+          19.13003,50.818205,3
+          19.133677,50.823668,4
+          19.136639,50.827192,5
+          19.150929,50.833698,6
+          19.15525,50.836904,7
+          19.147561,50.831502,8
+          19.16904,50.840365,9
+          19.182386,50.839565,10
+          19.188652,50.837926,11
+          19.112778,50.708634,12
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARY RYNEK (2)</name>
+      <Point>
+        <coordinates>19.128098,50.81224</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RONDO TRZECH KRZYŻY (3)</name>
+      <Point>
+        <coordinates>19.13003,50.818205</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARNA (4)</name>
+      <Point>
+        <coordinates>19.133677,50.823668</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ANIOŁOWSKA (5)</name>
+      <Point>
+        <coordinates>19.136639,50.827192</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DICKENSA (6)</name>
+      <Point>
+        <coordinates>19.150929,50.833698</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUBERMANA (7)</name>
+      <Point>
+        <coordinates>19.15525,50.836904</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY DOLNE (8)</name>
+      <Point>
+        <coordinates>19.147561,50.831502</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WYCZERPY GÓRNE (9)</name>
+      <Point>
+        <coordinates>19.16904,50.840365</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SĄSIEDZKA (10)</name>
+      <Point>
+        <coordinates>19.182386,50.839565</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH I (11)</name>
+      <Point>
+        <coordinates>19.188652,50.837926</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BATALIONÓW CHŁOPSKICH (12)</name>
+      <Point>
+        <coordinates>19.112778,50.708634</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

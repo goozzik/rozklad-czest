@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>53 POCZESNA OSP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>53 POCZESNA OSP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.122562,50.810653,1
+          19.124824,50.811945,2
+          19.127734,50.807562,3
+          19.129139,50.802687,4
+          19.132948,50.794,5
+          19.132991,50.789741,6
+          19.142025,50.783962,7
+          19.143248,50.783745,8
+          19.145908,50.78053,9
+          19.14784,50.778318,10
+          19.156401,50.772809,11
+          19.165821,50.766974,12
+          19.160832,50.760948,13
+          19.15801,50.757527,14
+          19.148998,50.74854,15
+          19.136467,50.743747,16
+          19.133259,50.739429,17
+          19.132256,50.737557,18
+          19.127582,50.725916,19
+          19.135068,50.724769,20
+          19.132991,50.714396,21
+          19.130845,50.715292,22
+          19.129729,50.715618,23
+          19.142776,50.714613,24
+          19.150372,50.715374,25
+          19.153633,50.715428,26
+          19.15904,50.715482,27
+          19.155178,50.714015,28
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>PIŁSUDSKIEGO (1)</name>
+      <Point>
+        <coordinates>19.122562,50.810653</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>I AL. NAJŚWIĘTSZEJ MARYI PANNY (2)</name>
+      <Point>
+        <coordinates>19.124824,50.811945</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIELCZARSKIEGO (3)</name>
+      <Point>
+        <coordinates>19.127734,50.807562</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MAŁA (4)</name>
+      <Point>
+        <coordinates>19.129139,50.802687</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STROMA (5)</name>
+      <Point>
+        <coordinates>19.132948,50.794</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PUSTA (6)</name>
+      <Point>
+        <coordinates>19.132991,50.789741</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ESTAKADA (7)</name>
+      <Point>
+        <coordinates>19.142025,50.783962</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>C. H. JAGIELLOŃCZYCY (8)</name>
+      <Point>
+        <coordinates>19.143248,50.783745</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKRZEI (9)</name>
+      <Point>
+        <coordinates>19.145908,50.78053</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MIRECKIEGO (10)</name>
+      <Point>
+        <coordinates>19.14784,50.778318</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RAKOWSKA (11)</name>
+      <Point>
+        <coordinates>19.156401,50.772809</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BUGAJSKA (12)</name>
+      <Point>
+        <coordinates>19.165821,50.766974</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOLEJOWA (13)</name>
+      <Point>
+        <coordinates>19.160832,50.760948</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FABRYCZNA (14)</name>
+      <Point>
+        <coordinates>19.15801,50.757527</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA (15)</name>
+      <Point>
+        <coordinates>19.148998,50.74854</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRZOSOWA - SABINOWSKA I (16)</name>
+      <Point>
+        <coordinates>19.136467,50.743747</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTA STARA "B" OSIEDLE (17)</name>
+      <Point>
+        <coordinates>19.133259,50.739429</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTA STARA "B" (18)</name>
+      <Point>
+        <coordinates>19.132256,50.737557</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTA STARA "A" (19)</name>
+      <Point>
+        <coordinates>19.127582,50.725916</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HUTA STARA "A" - PSZENNA (20)</name>
+      <Point>
+        <coordinates>19.135068,50.724769</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA POŁUDNIOWA (21)</name>
+      <Point>
+        <coordinates>19.132991,50.714396</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA ŁĄKOWA I (22)</name>
+      <Point>
+        <coordinates>19.130845,50.715292</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA ŁĄKOWA II (23)</name>
+      <Point>
+        <coordinates>19.129729,50.715618</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA POŁUDNIOWA I (24)</name>
+      <Point>
+        <coordinates>19.142776,50.714613</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA KATOWICKA (25)</name>
+      <Point>
+        <coordinates>19.150372,50.715374</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA HANDLOWA (26)</name>
+      <Point>
+        <coordinates>19.153633,50.715428</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA STRAŻACKA (27)</name>
+      <Point>
+        <coordinates>19.15904,50.715482</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POCZESNA OSP (28)</name>
+      <Point>
+        <coordinates>19.155178,50.714015</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

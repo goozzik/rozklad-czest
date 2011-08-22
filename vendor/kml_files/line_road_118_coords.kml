@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>N1 DWORZEC GŁÓWNY PKP</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>N1 DWORZEC GŁÓWNY PKP</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.0618593,50.760744,1
+          19.071965,50.765047,2
+          19.07542,50.766933,3
+          19.085526,50.771479,4
+          19.093251,50.773623,5
+          19.094238,50.77403,6
+          19.098873,50.781981,7
+          19.099903,50.785644,8
+          19.101276,50.789388,9
+          19.103336,50.795845,10
+          19.1085723,50.795709,11
+          19.111034,50.799066,12
+          19.111179,50.802619,13
+          19.113816,50.806004,14
+          19.118993,50.806267,15
+          19.118325,50.808714,16
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>DŹBÓW (1)</name>
+      <Point>
+        <coordinates>19.0618593,50.760744</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>POWSTAŃCÓW WARSZAWY (2)</name>
+      <Point>
+        <coordinates>19.071965,50.765047</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>RZECZNA (3)</name>
+      <Point>
+        <coordinates>19.07542,50.766933</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ZBYSZKA (4)</name>
+      <Point>
+        <coordinates>19.085526,50.771479</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KMICICA (5)</name>
+      <Point>
+        <coordinates>19.093251,50.773623</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINÓW (6)</name>
+      <Point>
+        <coordinates>19.094238,50.77403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HETMAŃSKA (7)</name>
+      <Point>
+        <coordinates>19.098873,50.781981</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SZKOŁA STRAŻY POŻARNEJ (8)</name>
+      <Point>
+        <coordinates>19.099903,50.785644</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SABINOWSKA (9)</name>
+      <Point>
+        <coordinates>19.101276,50.789388</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PIASTOWSKA (10)</name>
+      <Point>
+        <coordinates>19.103336,50.795845</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>AL. BOHATERÓW MONTE CASSINO (11)</name>
+      <Point>
+        <coordinates>19.1085723,50.795709</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>HOENE - WROŃSKIEGO (12)</name>
+      <Point>
+        <coordinates>19.111034,50.799066</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SŁOWACKIEGO (13)</name>
+      <Point>
+        <coordinates>19.111179,50.802619</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PLAC PAMIĘCI NARODOWEJ (14)</name>
+      <Point>
+        <coordinates>19.113816,50.806004</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC PKS (15)</name>
+      <Point>
+        <coordinates>19.118993,50.806267</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DWORZEC GŁÓWNY PKP (16)</name>
+      <Point>
+        <coordinates>19.118325,50.808714</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

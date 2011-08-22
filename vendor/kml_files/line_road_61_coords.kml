@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>29 GOMBROWICZA</name>
+    <LookAt>
+      <latitude>50.817405</latitude>
+      <longitude>19.118485</longitude>
+      <range>5000000</range>
+      <tilt>0</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <Placemark>
+      <name>29 GOMBROWICZA</name>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          19.059863,50.837113,1
+          19.075377,50.826908,2
+          19.072909,50.828792,3
+          19.081278,50.82215,4
+          19.086996,50.819222,5
+          19.088316,50.822638,6
+          19.093423,50.82478,7
+          19.088037,50.829334,8
+          19.088616,50.82871,9
+          19.093573,50.824102,10
+          19.100461,50.823831,11
+          19.104559,50.823939,12
+          19.110546,50.824156,13
+          19.110889,50.827843,14
+          19.110342,50.82993,15
+          19.11664,50.833671,16
+          19.120857,50.837092,17
+          19.119623,50.842601,18
+          19.126339,50.844877,19
+          19.13018,50.846381,20
+          19.138098,50.84447,21
+          19.138677,50.841544,22
+          19.129772,50.840284,23
+          19.115889,50.831312,24
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>GRABÓWKA (1)</name>
+      <Point>
+        <coordinates>19.059863,50.837113</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. ROCHA - SZKOŁA (2)</name>
+      <Point>
+        <coordinates>19.075377,50.826908</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ODRODZENIA (3)</name>
+      <Point>
+        <coordinates>19.072909,50.828792</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WRĘCZYCKA (4)</name>
+      <Point>
+        <coordinates>19.081278,50.82215</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CMENTARZ ŚW. ROCHA (5)</name>
+      <Point>
+        <coordinates>19.086996,50.819222</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŚW. KRZYSZTOFA (6)</name>
+      <Point>
+        <coordinates>19.088316,50.822638</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>OKULICKIEGO (7)</name>
+      <Point>
+        <coordinates>19.093423,50.82478</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>NOWOBIALSKA (8)</name>
+      <Point>
+        <coordinates>19.088037,50.829334</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - SZPITAL (9)</name>
+      <Point>
+        <coordinates>19.088616,50.82871</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARKITKA - OSIEDLE (10)</name>
+      <Point>
+        <coordinates>19.093573,50.824102</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ŁÓDZKA (11)</name>
+      <Point>
+        <coordinates>19.100461,50.823831</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MARKET OBI (12)</name>
+      <Point>
+        <coordinates>19.104559,50.823939</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DOMY STUDENCKIE (13)</name>
+      <Point>
+        <coordinates>19.110546,50.824156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>BRONIEWSKIEGO (14)</name>
+      <Point>
+        <coordinates>19.110889,50.827843</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>TYSIĄCLECIE - SZPITAL (15)</name>
+      <Point>
+        <coordinates>19.110342,50.82993</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PROMENADA NIEMENA (16)</name>
+      <Point>
+        <coordinates>19.11664,50.833671</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IWASZKIEWICZA (17)</name>
+      <Point>
+        <coordinates>19.120857,50.837092</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SCHILLERA (18)</name>
+      <Point>
+        <coordinates>19.119623,50.842601</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MICHAŁOWSKIEGO (19)</name>
+      <Point>
+        <coordinates>19.126339,50.844877</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>STARZYŃSKIEGO (20)</name>
+      <Point>
+        <coordinates>19.13018,50.846381</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KOSMOWSKIEJ (21)</name>
+      <Point>
+        <coordinates>19.138098,50.84447</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>WITOSA (22)</name>
+      <Point>
+        <coordinates>19.138677,50.841544</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>FIELDORFA-NILA (23)</name>
+      <Point>
+        <coordinates>19.129772,50.840284</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GOMBROWICZA (24)</name>
+      <Point>
+        <coordinates>19.115889,50.831312</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
