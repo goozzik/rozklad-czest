@@ -1,1 +1,59 @@
-= render 'form'
+.prefix_3
+  .grid_6.box
+    %h2 Szukaj połączenia
+    = form_tag search_schedule_search_path, :method => :get do
+      %div{"data-role" => "fieldcontain"}
+        %fieldset{"data-role" => "controlgroup"}
+          %legend{:class => 'grid_2 alpha prefix_1'} Odjazd
+          .grid_2.omega
+            = radio_button_tag :from, :station, true
+            = label_tag :from_station, 'Z przystanku'
+          .grid_3.alpha.prefix_3
+            = radio_button_tag :from, :location, false
+            = label_tag :from_location, 'Z mojego położenia'
+        #station_from_container
+          = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_3 alpha'
+          = autocomplete_field_tag :station_from, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+        #within_container
+          = label_tag :within, 'W promieniu (w metrach)', :class => 'grid_3 alpha'
+          - if session[:mobile] 
+            = range_field_tag :within, 500, :min => 100, :max => 2000, :step => 100
+          - else 
+            = text_field_tag :within, '500', :class => 'grid_2 omega'
+
+      .vertical_spacer
+
+      %div{"data-role" => "fieldcontain"}
+        %fieldset{"data-role" => "controlgroup"}
+          %legend{:class => 'grid_2 alpha prefix_1'} Przyjazd
+          .grid_2.omega
+            = radio_button_tag :to, :station, true
+            = label_tag :to_station, 'Do przystanku'
+          .grid_3.alpha.prefix_3
+            = radio_button_tag :to, :location, false
+            = label_tag :to_location, 'Na adres'
+        #station_to_container
+          = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
+          = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+        #location_to_container
+          = label_tag :location_to, 'Adres docelowy', :class => 'grid_2 alpha prefix_1'
+          = text_field_tag :location_to, '', :class => 'grid_2 omega'
+
+      .vertical_spacer
+
+      %div{:class => 'grid_2 alpha prefix_2'}= button_to_function 'Odśwież położenie', 'getLocation();'
+
+      .grid_2.omega
+        = submit_tag 'Szukaj', 'data-icon' => 'forward'
+
+:javascript
+  $("input[name='from']").bind("change", function() {
+    $('#within_container').toggle('fast');
+    $('#station_from_container').toggle('fast');
+  });
+
+  $("input[name='to']").bind("change", function() {
+    $('#location_to_container').toggle('fast');
+    $('#station_to_container').toggle('fast');
+  });
+
