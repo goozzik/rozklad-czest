@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete', '0.6.3'
 gem 'geokit-rails3'
 gem 'bcrypt-ruby', :require => 'bcrypt'
+gem 'stringex'
 
 group :development do
   gem 'heroku', '2.3.6'

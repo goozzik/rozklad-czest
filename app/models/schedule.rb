@@ -73,7 +73,7 @@ class Schedule < ActiveRecord::Base
 
   def self.get_by_station_from_and_location(station_from_id, location)
     schedules = []
-    location = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    location = Geokit::Geocoders::GoogleGeocoder.geocode(location.to_ascii)
     Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc').each do |station|
       schedules << Schedule.get(station_from_id, station.id) if Line.find_first_by_stations(station_from_id, station.id)
     end
@@ -82,7 +82,7 @@ class Schedule < ActiveRecord::Base
 
   def self.get_by_near_stations_and_location(within, my_location, location)
     schedules = []
-    location = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    location = Geokit::Geocoders::GoogleGeocoder.geocode(location.to_ascii)
     stations_near = Station.within(Station.to_f(within), :origin => my_location).order('distance asc')
     stations_to = Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc')
     stations_near.each do |station_from|

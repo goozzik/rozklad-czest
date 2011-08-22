@@ -19,7 +19,8 @@ class InitialHtmlDataExtractor
     doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/linie.htm'))
     htmfiles = []
     doc.xpath("//html/body/center/table/tr[*]/td[*]/font/a/@href").map(&:content).each do |line|
-      next if line =~ /new|mapa|przystan/
+      # TODO Remove n from regexp when done with night lines parsing
+      next if line =~ /new|mapa|przystan|n/
       htmfiles.push line
     end
     puts "Processing files: "
@@ -54,7 +55,8 @@ class InitialHtmlDataExtractor
     _htmfiles = []
     htmfiles = []
     doc.xpath("//html/body/center/table/tr[*]/td[*]/font/a/@href").map(&:content).each do |line|
-      next if line =~ /new|mapa|przystan/
+      # TODO Remove n from regexp when done with night lines parsing
+      next if line =~ /new|mapa|przystan|n/
       _htmfiles.push line
     end
     _htmfiles.each do |_file|
