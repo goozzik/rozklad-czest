@@ -18,6 +18,7 @@ group :development do
   gem 'awesome_print', '0.3.2'
   gem 'rspec', '2.6.0'
   gem 'rspec-rails', '2.6.1'
+  gem 'capistrano', '2.8.0'
 end
 
 group :test do
@@ -31,4 +32,8 @@ group :test do
   gem 'database_cleaner'
   gem 'machinist', '2.0.0.beta2'
   gem 'pickle'
+end
+
+group :production do
+  gem 'unicorn', '4.1.0'
 end
