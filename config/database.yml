@@ -13,5 +13,13 @@ test: &test
   username: rozklad_czest_pl
   password:
 
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: rozklad_czest_pl_production
+  pool: 5
+  username: rozklad_czest_pl
+  password: alv9D1rSUllfszp2kZn1UIud30rq5Mn9MwawaTUjhN9u0dUQRl
+
 cucumber:
   <<: *test
