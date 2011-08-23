@@ -1,11 +1,11 @@
-require "bundler/capistrano"
-
-$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
-set :rvm_ruby_string, 'ruby-1.9.2'        # Or whatever env you want it to run in.
-
 set :application, "rozklad.czest.pl"
 set :repository,  "git@192.168.88.2:rozklad.czest.pl.git"
+
+set :rvm_gemset, application
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+set :rvm_ruby_string, "1.9.2@#{rvm_gemset}"        # Or whatever env you want it to run in.
+require "bundler/capistrano"
 
 set :scm, :git
 
@@ -30,15 +30,15 @@ set :default_environment, {
 }
 
 set :rails_env, :production
-set :unicorn_binary, "#{deploy_to}/shared/bundle/ruby/1.9.1/bin/unicorn_rails"
+set :unicorn_binary, "unicorn_rails"
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 
-#namespace :bundle do
-  #task :install do
-    #run "cd #{current_path} && bundle install --gemfile /var/apps/rozklad/releases/20110822102249/Gemfile --deployment --quiet --without development test"
-  #end
-#end
+namespace :bundle do
+  task :install do
+    run "cd #{current_path} && rvm '#{rvm_ruby_string}' && bundle install --gemfile #{latest_release}/Gemfile --quiet --without development test"
+  end
+end
 
 namespace :deploy do
   task :start, :roles => :app, :except => { :no_release => true } do 
