@@ -19,8 +19,7 @@ class InitialHtmlDataExtractor
     doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/linie.htm'))
     htmfiles = []
     doc.xpath("//html/body/center/table/tr[*]/td[*]/font/a/@href").map(&:content).each do |line|
-      # TODO Remove n from regexp when done with night lines parsing
-      next if line =~ /new|mapa|przystan|n/
+      next if line =~ /new|mapa|przystan/
       htmfiles.push line
     end
     puts "Processing files: "
@@ -49,14 +48,13 @@ class InitialHtmlDataExtractor
       end
     end
   end
-  
+
   def self.import_schedules
     doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/linie.htm'))
     _htmfiles = []
     htmfiles = []
     doc.xpath("//html/body/center/table/tr[*]/td[*]/font/a/@href").map(&:content).each do |line|
-      # TODO Remove n from regexp when done with night lines parsing
-      next if line =~ /new|mapa|przystan|n/
+      next if line =~ /new|mapa|przystan/
       _htmfiles.push line
     end
     _htmfiles.each do |_file|
@@ -81,19 +79,54 @@ class InitialHtmlDataExtractor
       line_id = Line.find_by_number_and_direction(number, direction).id rescue next
       station_id = Station::Import.get_id_by_name_if_exist(station)
 
-      # Robocze /html/body/table/tbody/tr[4]/td/b
-      works = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |work, n|
-        next if n == 0
-        minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
-        # TODO legend letters
-        
-        minutes.each do |minute|
-          Schedule.create!(
-            :line_id => line_id,
-            :station_id => station_id,
-            :arrival_at => Time.new(2000, 1, 1, work.content.to_i, minute.to_i, 0),
-            :work => true
-          )
+      # Robocze/Nocne /html/body/table/tbody/tr[4]/td/b
+      if number =~ /N/
+        if doc.xpath("//html/body/table/tr[2]/td").first.content == "NOCNY- kursuje CODZIENNIE"
+          nights = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |night, n|
+            next if n == 0
+            minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
+
+            minutes.each do |minute|
+              Schedule.create!(
+                :line_id => line_id,
+                :station_id => station_id,
+                :arrival_at => Time.new(2000, 1, 1, night.content.to_i, minute.to_i, 0),
+                :work => true,
+                :holiday => true,
+                :sunday => true,
+                :saturday => true
+              )
+            end
+          end
+        else #NOCNY- kursuje: z PIĄTKU / SOBOTĘ, z SOBOTY / NIEDZIELĘ i w długie WEEKENDY
+          nights_saturday_and_sunday = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |night, n|
+            next if n == 0
+            minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
+
+            minutes.each do |minute|
+              Schedule.create!(
+                :line_id => line_id,
+                :station_id => station_id,
+                :arrival_at => Time.new(2000, 1, 1, night.content.to_i, minute.to_i, 0),
+                :sunday => true,
+                :saturday => true
+              )
+            end
+          end
+        end
+      else
+        works = doc.xpath("//html/body/table/tr/td[1]/b").each_with_index do |work, n|
+          next if n == 0
+          minutes = doc.xpath("//html/body/table/tr[#{3+n}]/td[2]").first.content.gsub('-', '').split(" ")
+
+          minutes.each do |minute|
+            Schedule.create!(
+              :line_id => line_id,
+              :station_id => station_id,
+              :arrival_at => Time.new(2000, 1, 1, work.content.to_i, minute.to_i, 0),
+              :work => true
+            )
+          end
         end
       end
 
@@ -111,7 +144,7 @@ class InitialHtmlDataExtractor
         end
       end
 
-      # Soboty    /html/body/table/tbody/tr[4]/td[5]/b
+      # Soboty /html/body/table/tbody/tr[4]/td[5]/b
       saturdays = doc.xpath("//html/body/table/tr/td[5]/b").each_with_index do |saturday, n|
         minutes = doc.xpath("//html/body/table/tr[#{4+n}]/td[6]").first.content.gsub('-', '').split(" ")
 
@@ -139,20 +172,7 @@ class InitialHtmlDataExtractor
         end
       end
     end
-
-    #raise "OK"
-
-    #schedule = Schedule.create!(
-                #:line_id = line_id,
-                #:station_id = station_id,
-                #:time => Time.parse("#{record[:hours]}:#{minute.to_i}:00"),
-                #:work => true,
-                #:saturday => false,
-                #:sunday => false,
-                #:summer => false
-              #)
   end
-
 end
 
 
