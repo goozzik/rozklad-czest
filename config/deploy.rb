@@ -20,7 +20,7 @@ set :use_sudo, false
 set :deploy_to, "/var/apps/rozklad"
 
 set :rvm_type, :user  # Copy the exact line. I really mean :user here
-set :gem_path, "#{deploy_to}/.rvm/gems/ruby-1.9.2-p290"
+set :gem_path, "#{deploy_to}/.rvm/gems/ruby-1.9.2-p290@#{rvm_gemset}"
 set :default_environment, {
   'PATH' => "#{gem_path}/bin:#{deploy_to}/.rvm/bin:#{deploy_to}/.rvm/ruby-1.9.2-p290/bin:$PATH",
   'RUBY_VERSION' => 'ruby 1.9.2',
