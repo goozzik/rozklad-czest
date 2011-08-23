@@ -27,24 +27,26 @@ class InitialHtmlDataExtractor
       puts "#{file} - #{i+1} of #{htmfiles.count}"
       doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/' + file))
       number = doc.xpath("//html/body/table/tr/td/font/b").first.content.gsub("Linia ", "")
-      directions = doc.xpath("//html/body/table/tr[2]/td[*]")
-      directions.each_with_index do |direction, n|
-        _direction = direction.content.gsub("kierunek:", "").strip
-        _stations = []
-        stations = doc.xpath("//html/body/table/tr[3]/td[#{n+1}]/ul/li")
-        stations.each do |station|
-          _station = station.content
-          if _station == 'TEATR im. A. MICKIEWICZA'
-            _station = 'TEATR IM. A. MICKIEWICZA' 
+      [2, 4].each do |level|
+        directions = doc.xpath("//html/body/table/tr[#{level}]/td[*]")
+        directions.each_with_index do |direction, n|
+          _direction = direction.content.gsub("kierunek:", "").strip
+          _stations = []
+          stations = doc.xpath("//html/body/table/tr[#{level+1}]/td[#{n+1}]/ul/li")
+          stations.each do |station|
+            _station = station.content
+            if _station == 'TEATR im. A. MICKIEWICZA'
+              _station = 'TEATR IM. A. MICKIEWICZA' 
+            end
+            station = Station.find_by_name(_station)
+            _stations << station unless station.nil?
           end
-          station = Station.find_by_name(_station)
-          _stations << station unless station.nil?
+          Line.create!(
+            :number => number,
+            :direction => _direction,
+            :stations => _stations
+          )
         end
-        Line.create!(
-          :number => number,
-          :direction => _direction,
-          :stations => _stations
-        )
       end
     end
   end
@@ -59,8 +61,10 @@ class InitialHtmlDataExtractor
     end
     _htmfiles.each do |_file|
       doc = Nokogiri::HTML(open('http://mpk.czest.pl/int_rozkl/' + _file))
-      doc.xpath("//html/body/table/tr[3]/td/ul/li[*]/a/@href").map(&:content).each do |file|
-        htmfiles.push file.gsub('r', 't')
+      [3, 5].each do |level|
+        doc.xpath("//html/body/table/tr[#{level}]/td/ul/li[*]/a/@href").map(&:content).each do |file|
+          htmfiles.push file.gsub('r', 't')
+        end
       end
     end
     htmfiles.each_with_index do |file, i|
@@ -175,14 +179,14 @@ class InitialHtmlDataExtractor
   end
 end
 
-
-
 case ARGV.first
   when 'extract'
+    beginning_time = Time.now
     InitialHtmlDataExtractor.import_stations
     InitialHtmlDataExtractor.import_lines
     InitialHtmlDataExtractor.import_schedules
-  
+    puts "Done in #{(Time.now - beginning_time).to_f / 60} minutes."
+
   when 'test'
     station_from = Station.find_by_name("RYNEK WIELUŃSKI")
     puts "From: #{station_from.inspect}"
