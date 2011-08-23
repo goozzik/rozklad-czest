@@ -12,17 +12,18 @@ class Schedule < ActiveRecord::Base
         "line_id IN (?)
           AND station_id = ?
           AND arrival_at > ?
-          AND sunday = ?
-          AND saturday = ?
-          AND work = ?
-          AND holiday = ?",
+          AND ((sunday = 't' AND saturday = 't' AND work = 't' AND holiday = 't')
+          OR (sunday = ? AND saturday = ? AND work = ? AND holiday = ?)
+          OR (sunday = ? AND saturday = ? AND work = 'f' AND holiday = 'f'))",
         lines_id,
         station_from_id,
         Time.now,
         Time.now.at_beginning_of_day.wday == 0,
         Time.now.at_beginning_of_day.wday == 6,
-        ((Time.now.at_beginning_of_day.wday != 6 && Time.now.at_beginning_of_day.wday != 0) && !holiday?),
-       holiday?
+        (!night_weekend? && !holiday?),
+        holiday?,
+        night_weekend?,
+        night_weekend?
       ],
       :order => 'arrival_at',
       :limit => TODAY_LIMIT
@@ -35,17 +36,18 @@ class Schedule < ActiveRecord::Base
         "line_id IN (?)
           AND station_id = ?
           AND arrival_at > ?
-          AND sunday = ?
-          AND saturday = ?
-          AND work = ?
-          AND holiday = ?",
+          AND ((sunday = 't' AND saturday = 't' AND work = 't' AND holiday = 't')
+          OR (sunday = ? AND saturday = ? AND work = ? AND holiday = ?)
+          OR (sunday = ? AND saturday = ? AND work = 'f' AND holiday = 'f'))",
         lines_id,
         station_from_id,
         Time.now.tomorrow.at_beginning_of_day,
         Time.now.tomorrow.at_beginning_of_day.wday == 0,
         Time.now.tomorrow.at_beginning_of_day.wday == 6,
-        ((Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday != 0) && !tomorrow_holiday?),
-        tomorrow_holiday?
+        (!tomorrow_night_weekend? && !tomorrow_holiday?),
+        tomorrow_holiday?,
+        tomorrow_night_weekend?,
+        tomorrow_night_weekend?
     ],
       :order => 'arrival_at',
       :limit => limit
@@ -113,14 +115,22 @@ class Schedule < ActiveRecord::Base
 
   def self.holiday?
     holiday_months = Time.now.month == 7 || Time.now.month == 8
-    working_days = Time.now.at_beginning_of_day.wday == 1 || Time.now.at_beginning_of_day.wday == 2 || Time.now.at_beginning_of_day.wday == 3 || Time.now.at_beginning_of_day.wday == 4 || Time.now.at_beginning_of_day.wday == 5
-    holiday_months && working_days
+    working_days = Time.now.at_beginning_of_day.wday != 6 && Time.now.at_beginning_of_day.wday != 0
+    @holiday ||= holiday_months && working_days
   end
 
   def self.tomorrow_holiday?
     holiday_months = Time.now.tomorrow.month == 7 || Time.now.tomorrow.month == 8
-    working_days = Time.now.tomorrow.at_beginning_of_day.wday == 1 || Time.now.tomorrow.at_beginning_of_day.wday == 2 || Time.now.tomorrow.at_beginning_of_day.wday == 3 || Time.now.tomorrow.at_beginning_of_day.wday == 4 || Time.now.tomorrow.at_beginning_of_day.wday == 5
-    holiday_months && working_days
+    working_days = Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday == 0
+    @tomorrow_holiday ||= holiday_months && working_days
+  end
+
+  def self.night_weekend?
+    @night_weekend ||= Time.now.at_beginning_of_day.wday == 0 || Time.now.at_beginning_of_day.wday == 6
+  end
+
+  def self.tomorrow_night_weekend?
+    @tomorrow_night_weekend ||= Time.now.tomorrow.at_beginning_of_day.wday == 0 || Time.now.tomorrow.at_beginning_of_day.wday == 6
   end
 
 end

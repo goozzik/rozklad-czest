@@ -47,16 +47,17 @@ describe Schedule do
         "line_id IN (?)
           AND station_id = ?
           AND arrival_at > ?
-          AND sunday = ?
-          AND saturday = ?
-          AND work = ?
-          AND holiday = ?",
+          AND ((sunday = 't' AND saturday = 't' AND work = 't' AND holiday = 't')
+          OR (sunday = ? AND saturday = ? AND work = ? AND holiday = ?)
+          OR (sunday = ? AND saturday = ? AND work = 'f' AND holiday = 'f'))",
           lines_id,
           station_from_id,
           now,
           false,
           false,
           true,
+          false,
+          false,
           false
         ],
         :order => 'arrival_at',
@@ -88,16 +89,17 @@ describe Schedule do
         "line_id IN (?)
           AND station_id = ?
           AND arrival_at > ?
-          AND sunday = ?
-          AND saturday = ?
-          AND work = ?
-          AND holiday = ?",
+          AND ((sunday = 't' AND saturday = 't' AND work = 't' AND holiday = 't')
+          OR (sunday = ? AND saturday = ? AND work = ? AND holiday = ?)
+          OR (sunday = ? AND saturday = ? AND work = 'f' AND holiday = 'f'))",
           lines_id,
           station_from_id,
           tomorrow,
           false,
           false,
           true,
+          false,
+          false,
           false
         ],
         :order => 'arrival_at',
@@ -432,6 +434,7 @@ describe Schedule do
     let(:station2) { Station.create(:name => 'MALOWNICZA', :lat => 2, :lng => 2) }
     let(:station_from) { Station.create(:name => 'BULOWA', :lat => 3, :lng => 3) }
     let(:location) { mock }
+    let(:location_in_ascii) { mock }
     let(:found_location) { mock }
     let(:lat) { mock }
     let(:lng) { mock }
@@ -445,7 +448,8 @@ describe Schedule do
     let(:line_with_connection_with_station2) { nil }
     let(:schedules_with_station2) { [] }
     before do
-      Geokit::Geocoders::GoogleGeocoder.stub!(:geocode).with(location).and_return(found_location)
+      location.stub!(:to_ascii).and_return(location_in_ascii)
+      Geokit::Geocoders::GoogleGeocoder.stub!(:geocode).with(location_in_ascii).and_return(found_location)
       found_location.stub!(:lat).and_return(lat)
       found_location.stub!(:lng).and_return(lng)
       Station.stub!(:within).with(0.5, :origin => [lat, lng]).and_return(stations_within)
