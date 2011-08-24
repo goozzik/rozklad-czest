@@ -38,4 +38,5 @@ end
 
 group :production do
   gem 'unicorn', '4.1.0'
+  gem 'newrelic_rpm', '3.1.1'
 end
