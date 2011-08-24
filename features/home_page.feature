@@ -66,7 +66,7 @@ Feature: Home Page
     When I go to the home page
     And I follow "Rozkłady"
     Then I should see "dla stacji"
-    Then I should see "dla lini"
+    Then I should see "dla linii"
 
   Scenario: Navigate to stations page
     Given a station from station exists
@@ -84,6 +84,6 @@ Feature: Home Page
     Given a line exists
     When I go to the home page
     And I follow "Rozkłady"
-    And I follow "dla lini"
+    And I follow "dla linii"
     Then I should see upper menu
     And I should see border link "1" within list item
