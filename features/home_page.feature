@@ -65,15 +65,15 @@ Feature: Home Page
   Scenario: Navigate to schedules page
     When I go to the home page
     And I follow "Rozkłady"
-    Then I should see "dla stacji"
-    Then I should see "dla lini"
+    Then I should see "dla przystanku"
+    Then I should see "dla linii"
 
   Scenario: Navigate to stations page
     Given a station from station exists
     And a station to station exists
     When I go to the home page
     And I follow "Rozkłady"
-    And I follow "dla stacji"
+    And I follow "dla przystanku"
     Then I should see upper menu
     And I should see "Z" within list divider
     And I should see link "ZANA" within list item
@@ -84,6 +84,6 @@ Feature: Home Page
     Given a line exists
     When I go to the home page
     And I follow "Rozkłady"
-    And I follow "dla lini"
+    And I follow "dla linii"
     Then I should see upper menu
     And I should see border link "1" within list item
