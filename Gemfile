@@ -12,7 +12,6 @@ gem 'stringex'
 
 group :development do
   gem 'heroku', '2.3.6'
-  #gem 'heroku', '1.18.3'
   gem 'taps', '0.3.23'
   gem 'wirble', '0.1.3'
   gem 'hirb', '0.4.3'
