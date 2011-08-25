@@ -75,8 +75,7 @@ class Schedule < ActiveRecord::Base
 
   def self.get_by_station_from_and_location(station_from_id, location)
     schedules = []
-    location = Geokit::Geocoders::GoogleGeocoder.geocode(location.to_ascii)
-    Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc').each do |station|
+    Station.within(0.5, :origin => Schedule.location_to_latlng(location)).order('distance asc').each do |station|
       schedules << Schedule.get(station_from_id, station.id) if Line.find_first_by_stations(station_from_id, station.id)
     end
     schedules
@@ -84,9 +83,8 @@ class Schedule < ActiveRecord::Base
 
   def self.get_by_near_stations_and_location(within, my_location, location)
     schedules = []
-    location = Geokit::Geocoders::GoogleGeocoder.geocode(location.to_ascii)
     stations_near = Station.within(Station.to_f(within), :origin => my_location).order('distance asc')
-    stations_to = Station.within(0.5, :origin => [location.lat, location.lng]).order('distance asc')
+    stations_to = Station.within(0.5, :origin => Schedule.location_to_latlng(location)).order('distance asc')
     stations_near.each do |station_from|
       stations_to.each do |station_to|
         schedules << Schedule.get(station_from.id, station_to.id) if Line.find_first_by_stations(station_from.id, station_to.id)
@@ -94,6 +92,18 @@ class Schedule < ActiveRecord::Base
     end
     schedules
   end
+
+  def self.location_to_latlng(location)
+    location = location.to_ascii
+    if location =~ /,/
+      location_geocoded = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    else
+      location = "Czestochowa, " + location
+      location_geocoded = Geokit::Geocoders::GoogleGeocoder.geocode(location)
+    end
+    [location_geocoded.lat, location_geocoded.lng]
+  end
+      
 
   def self.paginate_by_hour(line_id, station_id, time_type)
     paginated_schedules = []
