@@ -57,4 +57,9 @@ namespace :deploy do
     stop
     start
   end
+
+  task :data_reload, :roles => :app, :except => { :no_release => true } do
+    run "rake db:data_reload"
+  end
+
 end
