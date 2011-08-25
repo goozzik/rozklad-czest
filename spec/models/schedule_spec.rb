@@ -282,10 +282,7 @@ describe Schedule do
     let(:station2) { Station.create(:name => 'MALOWNICZA', :lat => 2, :lng => 2) }
     let(:station_from) { Station.create(:name => 'BULOWA', :lat => 3, :lng => 3) }
     let(:location) { mock }
-    let(:location_in_ascii) { mock }
-    let(:found_location) { mock }
-    let(:lat) { mock }
-    let(:lng) { mock }
+    let(:location_latlng) { mock }
     let(:stations_within) { [station2, station1] }
     let(:stations_within_ordered) { [station1, station2] }
     let(:station_from_id) { station_from.id }
@@ -296,11 +293,8 @@ describe Schedule do
     let(:line_with_connection_with_station2) { nil }
     let(:schedules_with_station2) { [] }
     before do
-      location.stub!(:to_ascii).and_return(location_in_ascii)
-      Geokit::Geocoders::GoogleGeocoder.stub!(:geocode).with(location_in_ascii).and_return(found_location)
-      found_location.stub!(:lat).and_return(lat)
-      found_location.stub!(:lng).and_return(lng)
-      Station.stub!(:within).with(0.5, :origin => [lat, lng]).and_return(stations_within)
+      Schedule.stub!(:location_to_latlng).with(location).and_return(location_latlng)
+      Station.stub!(:within).with(0.5, :origin => location_latlng).and_return(stations_within)
       stations_within.stub!(:order).with('distance asc').and_return(stations_within_ordered)
       Line.stub!(:find_first_by_stations).with(station_from_id, station1_id).and_return(line_with_connection_with_station1)
       the_class.stub!(:get).with(station_from_id, station1_id).and_return(schedules_with_station1)
@@ -310,6 +304,24 @@ describe Schedule do
     subject { the_class.get_by_station_from_and_location(station_from_id, location) }
 
     it { should == [schedules_with_station1] }
+  end
+
+  describe ".location_to_latlng" do
+    context "when location passed have ','" do
+      describe "returns" do
+        subject { the_class.location_to_latlng("Blachownia, Mickiewicza") }
+
+        it { should == [50.77296, 18.97876] }
+      end
+    end
+
+    context "when location passed not have ','" do
+      describe "returns" do
+        subject { the_class.location_to_latlng("Mickiewicza 16") }
+
+        it { should == [50.8012568, 19.1137475] }
+      end
+    end
   end
 
 end
