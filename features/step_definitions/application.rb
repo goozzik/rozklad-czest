@@ -3,9 +3,13 @@ Then /^I should see "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, li
   Then "I should see \"#{text}\" within \"div[@data-role='navbar']/ul/li/a[@rel='external'][@href='#{link}']\""
 end
 
+Then /^I should see border "([^"]*)" within upper menu link to "([^"]*)"$/ do |text, link|
+  Then "I should see \"#{text}\" within \"div[@data-role='navbar']/ul/li/b/a[@rel='external'][@href='#{link}']\""
+end
+
 Then /^I should see upper menu$/ do
   Then "I should see \"Index\" within upper menu link to \"/\""
-  Then "I should see \"Szukaj\" within upper menu link to \"/search_schedule/new_search\""
+  Then "I should see border \"SZUKAJ\" within upper menu link to \"/search_schedule/new_search\""
   Then "I should see \"Rozkłady\" within upper menu link to \"/schedules\""
   Then "I should see \"Mapa\" within upper menu link to \"/pages/static_map\""
 end
@@ -145,8 +149,8 @@ Then /^I should see full schedules$/ do
 end
 
 Then /^I should see login information box$/ do
-  page.should have_xpath( "//li/b/a[contains(text(), \"Wyloguj\")]" )
-  page.should have_xpath( "//li/b/a[contains(text(), \"Odśwież położenie\")]" )
+  page.should have_xpath( "//input[@value=\"Wyloguj\"]" )
+  page.should have_xpath( "//input[@onclick='getLocation();;']" )
 end
 
 Then /^I should see location refresh button$/ do

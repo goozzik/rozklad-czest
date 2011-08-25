@@ -3,11 +3,9 @@
   .prefix_1
     .grid_5.box
       %h2= "Zalogowany jako #{current_user.user_name}"
-      %ul
-        %li
-          %b= link_to "Wyloguj", log_out_path
-        %li
-          %b= link_to_function 'Odśwież położenie', 'getLocation();'
+      #log_out= button_to "Wyloguj", log_out_path, :class => 'grid_2', :method => :get
+      = button_to_function 'Odśwież położenie', 'getLocation();', :class => 'grid_2 alpha'
+      .vertical_spacer
 - else
   = render :template => 'sessions/new'
   = render :template => 'users/new'

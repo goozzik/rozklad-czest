@@ -43,8 +43,8 @@ a {
   text-decoration: none;
 }
 
-[data-role="navbar"] a:link, [data-role="navbar"] a:visited { color: #00ced1; }
-[data-role="navbar"] a:hover, .special_link a:hover { color: red; }
+li.normal a:link, li.normal a:visited { color: #00ced1; }
+li.normal a:hover, .special_link a:hover { color: red; }
 
 a:link, a:visited { color: black; }
 a:hover { color: red; }
@@ -77,4 +77,16 @@ label, legend {
 
 .cell {
   min-height:420px;
+}
+
+li.search a {
+  background-color: white;
+  padding: 0 1em 0 1em;
+  color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+#log_out {
+  margin-left: 40px;
 }

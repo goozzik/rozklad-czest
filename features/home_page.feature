@@ -26,7 +26,7 @@ Feature: Home Page
 
   Scenario: Navigate to search page
     When I go to the home page
-    And I follow "Szukaj"
+    And I follow "SZUKAJ"
     Then I should see upper menu
     And I should see radio button "from_station" with label "Z przystanku"
     And I should see radio button "from_location" with label "Z mojego położenia"
