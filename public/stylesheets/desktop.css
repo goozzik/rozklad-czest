@@ -63,7 +63,9 @@ h2, .title {
 }
 
 #map, iframe {
-  width: 940px;
+  margin-left: 20px;
+  border: #87CEFA solid 1px;
+  width: 920px;
   height: 450px;
 }
 
