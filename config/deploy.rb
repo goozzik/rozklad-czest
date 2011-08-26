@@ -76,4 +76,5 @@ namespace :deploy do
 
 end
 
+after "deploy:symlink", "deploy:migrate"
 after "deploy", "deploy:notify_newrelic"
