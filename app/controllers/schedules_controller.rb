@@ -1,3 +1,4 @@
+#coding: utf-8
 class SchedulesController < ApplicationController
 
   def index
@@ -35,6 +36,10 @@ class SchedulesController < ApplicationController
     @schedules_sunday = Schedule.paginate_by_hour(params[:line_id], params[:station_id], :sunday)
     @schedules_saturday = Schedule.paginate_by_hour(params[:line_id], params[:station_id], :saturday)
     @schedules_holiday = Schedule.paginate_by_hour(params[:line_id], params[:station_id], :holiday)
+    if @schedules_work.empty?
+      flash[:error] = 'Brak tablicy rozkładów dla tego przystanku.'
+      render :template => pages_info_path
+    end
   end
 
 end

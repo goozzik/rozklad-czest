@@ -121,6 +121,7 @@ class Schedule < ActiveRecord::Base
       end
       paginated_schedules << _schedules
     end
+    paginated_schedules
   end
 
   def self.holiday?
