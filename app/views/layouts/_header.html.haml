@@ -1,0 +1,15 @@
+.container_12{'data-role' => 'header'}
+  - unless session[:mobile]
+    #logo
+      .grid_6.prefix_4{:style => 'margin-top: 4em;'}
+        %h1{:style => 'margin-bottom:0;'} Rozklad.czest.pl
+        #desc Jedyny serwis wyszukujący połączenia komunikacji miejskiej w Częstochowie.
+  %div{'data-role' => 'navbar'}
+    %ul
+      %li.normal_nav= link_to 'Index', root_path, :rel => 'external'
+      %li.search
+        %b= link_to 'SZUKAJ', search_schedule_new_search_path, :rel => 'external'
+      - if current_user
+        %li.normal_nav= link_to 'Ulubione', user_favourites_path(current_user.id), :rel => 'external'
+      %li.normal_nav= link_to 'Mapa', pages_static_map_path, :rel => 'external'
+      %li.normal_nav= link_to 'Rozkłady', schedules_index_path, :rel => 'external'

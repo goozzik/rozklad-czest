@@ -43,8 +43,8 @@ a {
   text-decoration: none;
 }
 
-li.normal a:link, li.normal a:visited { color: #00ced1; }
-li.normal a:hover, .special_link a:hover { color: red; }
+.normal_nav a:link, .normal_nav a:visited { color: #00ced1; }
+.normal_nav a:hover, .special_link a:hover { color: red; }
 
 a:link, a:visited { color: black; }
 a:hover { color: red; }
@@ -90,3 +90,23 @@ li.search a {
 #log_out {
   margin-left: 40px;
 }
+
+
+/* footer ->> */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+div[data-role='page'] {
+  min-height: 100%;
+  margin: 0 auto -21px;
+}
+
+div[data-role='footer'], .push {
+  height: 21px;
+}
+
+div[data-role='footer'] { color: #A0A0A0; }
+/* <-- footer */
