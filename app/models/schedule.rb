@@ -108,12 +108,12 @@ class Schedule < ActiveRecord::Base
   def self.paginate_by_hour(line_id, station_id, time_type)
     paginated_schedules = []
     _schedules = []
-    schedules = Schedule.where(:line_id => line_id, :station_id => station_id, time_type => true)
+    schedules = Schedule.where(:line_id => line_id, :station_id => station_id, time_type => true).select(:arrival_at).collect(&:arrival_at)
     unless schedules.empty?
-      last_hour = schedules.first.arrival_at.hour
+      last_hour = schedules.first.hour
       schedules.each do |schedule|
-        if schedule.arrival_at.hour != last_hour
-          last_hour = schedule.arrival_at.hour
+        if schedule.hour != last_hour
+          last_hour = schedule.hour
           paginated_schedules << _schedules
           _schedules = []
         end
