@@ -7,6 +7,8 @@ class Favourite < ActiveRecord::Base
            :validate_station_to_exist,
            :validate_line_exist
 
+  scope :on_start_page, :conditions => { :on_start_page => true }
+
   private
 
     def upcase_stations

@@ -6,16 +6,15 @@
       #log_out= button_to "Wyloguj", log_out_path, :class => 'grid_2', :method => :get
       = button_to_function 'Odśwież położenie', 'getLocation();', :class => 'grid_2 alpha'
       .vertical_spacer
-- else
-  = render :template => 'sessions/new'
-  = render :template => 'users/new'
-
-- unless @favourites.empty?
   .grid_5.box
     %h2 Ulubione
     %ul{'data-role' => 'listview'}
-      - @favourites.each do |favourite|
+      - current_user.start_page_favourites.each do |favourite|
         %li= link_to favourite.name, search_schedule_search_path(:station_from => favourite.station_from, :station_to => favourite.station_to, :from => 'station', :to => 'station')
+
+- else
+  = render :template => 'sessions/new'
+  = render :template => 'users/new'
 
 - if session[:lat].nil?
   :javascript

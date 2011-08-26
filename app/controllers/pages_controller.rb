@@ -1,8 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    @user = User.new
-    @favourites = Favourite.all(:conditions => ['on_start_page = ? AND user_id = ?', true, session[:user_id]])
+    @user = User.new unless current_user
   end
 
   def static_map

@@ -32,4 +32,8 @@ class User < ActiveRecord::Base
     end
   end
 
+  def start_page_favourites
+    favourites.on_start_page
+  end
+
 end
