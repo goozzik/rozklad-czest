@@ -70,4 +70,10 @@ namespace :deploy do
     run "cd #{current_path} && RAILS_ENV=production rake db:data_reload"
   end
 
+  task :notify_newrelic, :roles => :app, :except => { :no_release => true } do
+    system "newrelic deployments"
+  end
+
 end
+
+after "deploy", "deploy:notify_newrelic"
