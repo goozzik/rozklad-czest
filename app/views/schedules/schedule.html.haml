@@ -3,7 +3,7 @@
     %li.title{'data-role' => 'list-divider'} Robocze
     - @schedules_work.each do |hour|
       %li
-        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.hour
+        %b.hour= hour.first.hour
         - hour.each do |minute|
           = minute.min
     .mobile_spacer
@@ -13,7 +13,7 @@
     %li.title{'data-role' => 'list-divider'} Soboty
     - @schedules_saturday.each do |hour|
       %li
-        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.hour
+        %b.hour= hour.first.hour
         - hour.each do |minute|
           = minute.min
     .mobile_spacer
@@ -25,7 +25,7 @@
     %li.title{'data-role' => 'list-divider'} Niedziele i święta
     - @schedules_sunday.each do |hour|
       %li
-        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.hour
+        %b.hour= hour.first.hour
         - hour.each do |minute|
           = minute.min
     .mobile_spacer
@@ -35,6 +35,6 @@
     %li.title{'data-role' => 'list-divider'} Wakacyjne
     - @schedules_holiday.each do |hour|
       %li
-        %b{:style => 'background:#8b008b; color:white; padding: 2px;'}= hour.first.hour
+        %b.hour= hour.first.hour
         - hour.each do |minute|
           = minute.min

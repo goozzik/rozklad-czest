@@ -1,3 +1,9 @@
 #within_container, #location_to_container {
   display: none;
 }
+
+.hour {
+  background: #8b008b;
+  color: white;
+  padding: 2px;
+}
