@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110413044254) do
+ActiveRecord::Schema.define(:version => 20110826072440) do
 
   create_table "favourites", :force => true do |t|
     t.string   "station_from"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20110413044254) do
     t.boolean "sunday",     :default => false
     t.boolean "holiday",    :default => false
   end
+
+  add_index "schedules", ["line_id", "station_id"], :name => "index_schedules_on_line_id_and_station_id"
 
   create_table "stations", :force => true do |t|
     t.string "name", :null => false
