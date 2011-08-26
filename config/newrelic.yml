@@ -199,16 +199,28 @@ development:
   # executed since starting the app server.
   # NOTE: There is substantial overhead when running in developer mode.
   # Do not use for production or load testing.  
-  developer_mode: true
+  developer_mode: false
   
   # Enable textmate links
   # textmate: true
+
+  transaction_tracer:
+    enabled: false
+
+  error_collector:
+    enabled: false
 
 test:
   <<: *default_settings
   # It almost never makes sense to turn on the agent when running
   # unit, functional or integration tests or the like.
   monitor_mode: false
+
+  transaction_tracer:
+    enabled: false
+
+  error_collector:
+    enabled: false
 
 # Turn on the agent in production for 24x7 monitoring.  New Relic
 # testing shows an average performance impact of < 5 ms per
