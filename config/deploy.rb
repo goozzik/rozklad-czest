@@ -67,7 +67,7 @@ namespace :deploy do
   end
 
   task :data_reload, :roles => :app, :except => { :no_release => true } do
-    run "rake db:data_reload"
+    run "cd #{current_path} && RAILS_ENV=production rake db:data_reload"
   end
 
 end
