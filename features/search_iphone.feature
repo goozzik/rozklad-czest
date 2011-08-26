@@ -4,9 +4,7 @@ Feature: Search
   Scenario: Search from station when station from not exist
     Given a station to station exists
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Przystanek odjazdowy nie istnieje." within list item
@@ -14,9 +12,7 @@ Feature: Search
   Scenario: Search from station when station to not exist
     Given a station from station exists
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Przystanek docelowy nie istnieje." within list item
@@ -25,9 +21,7 @@ Feature: Search
     Given a station to station exists
     And a station from station exists
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see "Brak połączeń." within list item
@@ -36,9 +30,7 @@ Feature: Search
     Given a schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see div "Z: ZANA" within list divider
@@ -54,9 +46,7 @@ Feature: Search
     And an inversely schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see div "Z: ZANA" within list divider
@@ -71,9 +61,7 @@ Feature: Search
     And a schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
-    And I choose "Do przystanku"
     And I fill in "station_to" with "malownicza"
     And I click button "Szukaj"
     Then I should see div "Z: ZANA" within list divider
@@ -88,7 +76,6 @@ Feature: Search
     Given a schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
     And I choose "Na adres"
     And I fill in "location_to" with "xxxasd"
@@ -99,7 +86,6 @@ Feature: Search
     Given a schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
     And I choose "Na adres"
     And I fill in "location_to" with "warszawa"
@@ -109,7 +95,6 @@ Feature: Search
   Scenario: Search from station to address when station from not exist
     Given a station to station exists
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
     And I choose "Na adres"
     And I fill in "location_to" with "malownicza"
@@ -120,7 +105,6 @@ Feature: Search
     Given a station to station exists
     And a station from station exists
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
     And I choose "Na adres"
     And I fill in "location_to" with "malownicza"
@@ -131,7 +115,6 @@ Feature: Search
     Given a schedule exists
     And I have time 22:30
     When I go to the iphone search page
-    And I choose "Z przystanku"
     And I fill in "station_from" with "zana"
     And I choose "Na adres"
     And I fill in "location_to" with "malownicza"

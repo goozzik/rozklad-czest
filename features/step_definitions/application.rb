@@ -157,3 +157,6 @@ Then /^I should see location refresh button$/ do
   page.should have_xpath( "//input[@onclick='getLocation();;']" )
 end
 
+Then /^I should see "([^"]*)" within title$/ do |text|
+  page.should have_xpath( "//title[contains(text(), '#{text}')]" )
+end
