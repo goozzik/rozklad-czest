@@ -112,3 +112,5 @@ div[data-role='footer'], .push {
 
 div[data-role='footer'] { color: #A0A0A0; }
 /* <-- footer */
+
+.input_toggle { height: 21px; }

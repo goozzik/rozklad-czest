@@ -11,15 +11,16 @@
           .grid_3.alpha.prefix_3
             = radio_button_tag :from, :location, false
             = label_tag :from_location, 'Z mojego położenia'
-        #station_from_container
-          = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_3 alpha'
-          = autocomplete_field_tag :station_from, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
-        #within_container
-          = label_tag :within, 'W promieniu (w metrach)', :class => 'grid_3 alpha'
-          - if session[:mobile] 
-            = range_field_tag :within, 500, :min => 100, :max => 2000, :step => 100
-          - else 
-            = text_field_tag :within, '500', :class => 'grid_2 omega'
+        .input_toggle
+          #station_from_container
+            = label_tag :station_from, 'Przystanek odjazdowy', :class => 'grid_3 alpha'
+            = autocomplete_field_tag :station_from, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+          #within_container
+            = label_tag :within, 'W promieniu (w metrach)', :class => 'grid_3 alpha'
+            - if session[:mobile] 
+              = range_field_tag :within, 500, :min => 100, :max => 2000, :step => 100
+            - else 
+              = text_field_tag :within, '500', :class => 'grid_2 omega'
 
       .vertical_spacer
 
@@ -32,12 +33,13 @@
           .grid_3.alpha.prefix_3
             = radio_button_tag :to, :location, false
             = label_tag :to_location, 'Na adres'
-        #station_to_container
-          = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
-          = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
-        #location_to_container
-          = label_tag :location_to, 'Adres docelowy', :class => 'grid_2 alpha prefix_1'
-          = text_field_tag :location_to, '', :class => 'grid_2 omega'
+        .input_toggle
+          #station_to_container
+            = label_tag :station_to, 'Przystanek docelowy', :class => 'grid_2 alpha prefix_1'
+            = autocomplete_field_tag :station_to, '', search_schedule_autocomplete_station_name_path, :class => 'grid_2 omega'
+          #location_to_container
+            = label_tag :location_to, 'Adres docelowy', :class => 'grid_2 alpha prefix_1'
+            = text_field_tag :location_to, '', :class => 'grid_2 omega'
 
       .vertical_spacer
 
