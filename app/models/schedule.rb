@@ -132,7 +132,7 @@ class Schedule < ActiveRecord::Base
 
   def self.tomorrow_holiday?
     holiday_months = Time.now.tomorrow.month == 7 || Time.now.tomorrow.month == 8
-    working_days = Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday == 0
+    working_days = Time.now.tomorrow.at_beginning_of_day.wday != 6 && Time.now.tomorrow.at_beginning_of_day.wday != 0
     @tomorrow_holiday ||= holiday_months && working_days
   end
 
