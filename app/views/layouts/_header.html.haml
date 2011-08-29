@@ -6,9 +6,9 @@
         #desc Jedyny serwis wyszukujący połączenia komunikacji miejskiej w Częstochowie.
   %div{'data-role' => 'navbar'}
     %ul
-      %li.normal_nav= link_to 'Index', root_path
+      %li.normal_nav= link_to 'Index', root_path, :rel => 'external'
       %li.search
-        %b= link_to 'Szukaj', search_schedule_new_search_path
+        %b= link_to 'Szukaj', search_schedule_new_search_path, :rel => 'external'
       - if current_user
-        %li.normal_nav= link_to 'Ulubione', user_favourites_path(current_user.id)
-      %li.normal_nav= link_to 'Rozkłady', schedules_index_path
+        %li.normal_nav= link_to 'Ulubione', user_favourites_path(current_user.id), :rel => 'external'
+      %li.normal_nav= link_to 'Rozkłady', schedules_index_path, :rel => 'external'
