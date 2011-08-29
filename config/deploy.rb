@@ -78,3 +78,6 @@ end
 
 after "deploy:symlink", "deploy:migrate"
 after "deploy", "deploy:notify_newrelic"
+
+        require './config/boot'
+        require 'airbrake/capistrano'
