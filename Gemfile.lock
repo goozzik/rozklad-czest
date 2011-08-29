@@ -30,6 +30,9 @@ GEM
       activesupport (= 3.0.10)
     activesupport (3.0.10)
     addressable (2.2.6)
+    airbrake (3.0)
+      activesupport
+      builder
     arel (2.0.10)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -198,6 +201,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake (= 3.0)
   autotest (= 4.4.6)
   autotest-notification (= 2.3.1)
   awesome_print (= 0.3.2)
