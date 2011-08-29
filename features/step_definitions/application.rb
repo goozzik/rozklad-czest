@@ -11,7 +11,6 @@ Then /^I should see upper menu$/ do
   Then "I should see \"Index\" within upper menu link to \"/\""
   Then "I should see border \"Szukaj\" within upper menu link to \"/search_schedule/new_search\""
   Then "I should see \"Rozkłady\" within upper menu link to \"/schedules\""
-  Then "I should see \"Mapa\" within upper menu link to \"/pages/static_map\""
 end
 
 Then /^I should see login form$/ do

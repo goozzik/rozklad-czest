@@ -65,3 +65,7 @@ Then /^I should see login form on iphone$/ do
   Then "I should see checkbox \"remember_me\" with label \"Zapamiętaj mnie\" on iphone"
   Then "I should see button \"Zaloguj\""
 end
+
+When /^I wait till map load$/ do
+  sleep(10)
+end
