@@ -19,6 +19,7 @@ group :development do
   gem 'rspec', '2.6.0'
   gem 'rspec-rails', '2.6.1'
   gem 'capistrano', '2.8.0'
+  gem 'airbrake', '3.0'
 end
 
 group :test do
@@ -38,5 +39,4 @@ end
 group :production do
   gem 'unicorn', '4.1.0'
   gem 'newrelic_rpm', '3.1.1'
-  gem 'airbrake', '3.0'
 end
