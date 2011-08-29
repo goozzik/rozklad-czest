@@ -59,24 +59,19 @@ Feature: Home Page
     And I should see "W tej chwili nie masz żadnych ulubionych." within list item
     And I should see button "Dodaj" with icon "plus"
 
-  Scenario: Navigate to map page
-    When I go to the iphone home page
-    And I follow "Mapa" on iphone
-    Then I should see upper menu
-    And I should see static map
-
   Scenario: Navigate to schedules page
     When I go to the home page
     And I follow "Rozkłady"
-    Then I should see "dla przystanku"
-    Then I should see "dla linii"
+    Then I should see "Dla przystanku"
+    Then I should see "Dla linii"
+    Then I should see "Mapa przystanków"
 
   Scenario: Navigate to stations page
     Given a station from station exists
     And a station to station exists
     When I go to the iphone home page
     And I follow "Rozkłady" on iphone
-    And I follow "dla przystanku"
+    And I follow "Dla przystanku"
     Then I should see upper menu
     And I should see "Z" within list divider
     And I should see link "ZANA" within list item on iphone
@@ -87,6 +82,14 @@ Feature: Home Page
     Given a line exists
     When I go to the iphone home page
     And I follow "Rozkłady" on iphone
-    And I follow "dla linii" on iphone
+    And I follow "Dla linii" on iphone
     Then I should see upper menu
     And I should see border link "1" within list item on iphone
+
+  Scenario: Navigate to stations map page
+    When I go to the iphone home page
+    And I follow "Rozkłady"
+    And I follow "Mapa przystanków"
+    And I wait till map load
+    Then I should see upper menu
+    And I should see static map

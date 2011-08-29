@@ -11,5 +11,4 @@
         %b= link_to 'Szukaj', search_schedule_new_search_path, :rel => 'external'
       - if current_user
         %li.normal_nav= link_to 'Ulubione', user_favourites_path(current_user.id), :rel => 'external'
-      %li.normal_nav= link_to 'Mapa', pages_static_map_path, :rel => 'external'
       %li.normal_nav= link_to 'Rozkłady', schedules_index_path, :rel => 'external'
