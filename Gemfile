@@ -9,6 +9,7 @@ gem 'rails3-jquery-autocomplete', '0.6.3'
 gem 'geokit-rails3'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'stringex'
+gem 'airbrake', '3.0'
 
 group :development do
   gem 'heroku', '2.3.6'
@@ -19,7 +20,6 @@ group :development do
   gem 'rspec', '2.6.0'
   gem 'rspec-rails', '2.6.1'
   gem 'capistrano', '2.8.0'
-  gem 'airbrake', '3.0'
 end
 
 group :test do
