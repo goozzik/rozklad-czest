@@ -159,3 +159,7 @@ end
 Then /^I should see "([^"]*)" within title$/ do |text|
   page.should have_xpath( "//title[contains(text(), '#{text}')]" )
 end
+
+Then /^I should see Facebook like button$/ do
+  page.should have_xpath ( "//iframe[@src='http://www.facebook.com/plugins/like.php?app_id=267235096622042&href=http%3A%2F%2Frozklad.czest.pl&send=false&layout=button_count&width=450&show_faces=false&action=like&colorscheme=light&font=arial&height=21']" )
+end
