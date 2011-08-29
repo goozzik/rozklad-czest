@@ -9,6 +9,7 @@ gem 'rails3-jquery-autocomplete', '0.6.3'
 gem 'geokit-rails3'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'stringex'
+gem 'airbrake', '3.0'
 
 group :development do
   gem 'heroku', '2.3.6'
@@ -38,5 +39,4 @@ end
 group :production do
   gem 'unicorn', '4.1.0'
   gem 'newrelic_rpm', '3.1.1'
-  gem 'airbrake', '3.0'
 end
