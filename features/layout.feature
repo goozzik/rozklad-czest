@@ -14,7 +14,3 @@ Feature: Layout
     And I should see "Copyright©2011 DoubleDrones.com"
     And I should see "Design and Coding by DoubleDrones.com"
     And I should see "Wejdź przez telefon"
-
-  Scenario: Meta for iphone full screen
-    When I am on the iphone home page
-    Then I should have full screen
