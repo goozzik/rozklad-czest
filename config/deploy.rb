@@ -15,8 +15,8 @@ role :db,  nexus_server, :primary => true        # This is where Rails migration
 
 set :rvm_gemset, application
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
-set :rvm_ruby_string, "#{ruby_version}@#{rvm_gemset}"        # Or whatever env you want it to run in.
+require "rvm/capistrano"                               # Load RVM's capistrano plugin.
+set :rvm_ruby_string, "#{ruby_version}@#{rvm_gemset}"  # Or whatever env you want it to run in.
 require "bundler/capistrano"
 
 set :scm, :git
@@ -85,5 +85,5 @@ end
 after "deploy:symlink", "deploy:migrate"
 after "deploy", "deploy:notify_newrelic"
 
-        require './config/boot'
-        require 'airbrake/capistrano'
+require './config/boot'
+require 'airbrake/capistrano'
