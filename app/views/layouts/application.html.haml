@@ -14,8 +14,9 @@
       = stylesheet_link_tag '960', 'reset', 'text', 'desktop'
     = csrf_meta_tag
   %body{:onload => current_action?('map') ? 'getMap();' : nil}
-    %div{'data-role' => 'page', :style => (current_action?('map') && session[:mobile]) ? 'width:100%; height:100%;' : nil}
+    .container_12{'data-role' => 'page', :style => (current_action?('map') && session[:mobile]) ? 'width:100%; height:100%;' : nil}
       = render :partial => 'layouts/header'
       = render :partial => 'layouts/content'
     - unless session[:mobile]
+      .clear
       = render :partial => 'layouts/footer'
