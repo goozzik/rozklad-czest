@@ -4,6 +4,15 @@ set :repository,  "git@192.168.88.2:rozklad.czest.pl.git"
 set :ruby_version, "1.9.2"
 set :ruby_patch, "290"
 
+set :nexus_server, "176.9.20.181"
+set :user, "rozklad"
+
+
+
+role :web, nexus_server                          # Your HTTP server, Apache/etc
+role :app, nexus_server                          # This may be the same as your `Web` server
+role :db,  nexus_server, :primary => true        # This is where Rails migrations will run
+
 set :rvm_gemset, application
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 require "rvm/capistrano"                  # Load RVM's capistrano plugin.
@@ -11,14 +20,6 @@ set :rvm_ruby_string, "#{ruby_version}@#{rvm_gemset}"        # Or whatever env y
 require "bundler/capistrano"
 
 set :scm, :git
-
-set :nexus_server, "176.9.20.181"
-
-role :web, nexus_server                          # Your HTTP server, Apache/etc
-role :app, nexus_server                          # This may be the same as your `Web` server
-role :db,  nexus_server, :primary => true        # This is where Rails migrations will run
-
-set :user, "rozklad"
 set :git_shallow_clone, 1
 set :deploy_via, :copy
 set :use_sudo, false
