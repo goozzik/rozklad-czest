@@ -9,9 +9,11 @@ require "bundler/capistrano"
 
 set :scm, :git
 
-role :web, "176.9.20.181"                          # Your HTTP server, Apache/etc
-role :app, "176.9.20.181"                          # This may be the same as your `Web` server
-role :db,  "176.9.20.181", :primary => true        # This is where Rails migrations will run
+set :nexus_server, "176.9.20.181"
+
+role :web, nexus_server                          # Your HTTP server, Apache/etc
+role :app, nexus_server                          # This may be the same as your `Web` server
+role :db,  nexus_server, :primary => true        # This is where Rails migrations will run
 
 set :user, "rozklad"
 set :git_shallow_clone, 1
