@@ -7,7 +7,9 @@ set :ruby_patch, "290"
 set :nexus_server, "176.9.20.181"
 set :user, "rozklad"
 
-
+#
+# Next lines depends on previous configuration (please do not change them)
+#
 
 role :web, nexus_server                          # Your HTTP server, Apache/etc
 role :app, nexus_server                          # This may be the same as your `Web` server
