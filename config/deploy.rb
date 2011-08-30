@@ -40,7 +40,7 @@ set :default_environment, {
 set :rails_env, :production
 set :unicorn_binary, "unicorn_rails"
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
-set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
+set :unicorn_pid, "#{shared_path}/pids/unicorn.pid"
 
 namespace :bundle do
 
