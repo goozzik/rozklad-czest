@@ -103,11 +103,11 @@ html, body {
 }
 div[data-role='page'] {
   min-height: 100%;
-  margin: 0 auto -21px;
+  margin: 0 auto -27px;
 }
 
 div[data-role='footer'], .push {
-  height: 21px;
+  height: 27px;
 }
 
 div[data-role='footer'] { color: #A0A0A0; }
