@@ -19,7 +19,7 @@ set :user, "rozklad"
 set :git_shallow_clone, 1
 set :deploy_via, :copy
 set :use_sudo, false
-set :deploy_to, "/var/apps/rozklad"
+set :deploy_to, "/var/apps/#{user}"
 
 set :rvm_type, :user  # Copy the exact line. I really mean :user here
 set :gem_path, "#{deploy_to}/.rvm/gems/ruby-1.9.2-p290@#{rvm_gemset}"
