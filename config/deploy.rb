@@ -45,7 +45,7 @@ set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 namespace :bundle do
 
   task :install do
-    run "cd #{current_path} && rvm '#{rvm_ruby_string}' && bundle install --gemfile #{latest_release}/Gemfile --quiet --without development test"
+    run "cd #{latest_release} && rvm '#{rvm_ruby_string}' && bundle install --gemfile #{latest_release}/Gemfile --quiet --without development test"
   end
 
 end
